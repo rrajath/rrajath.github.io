@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="me" href="https://github.com/rrajath">
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Weekly Noise #9 - Managing Database - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/rrajath_favicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Weekly Noise #9 - Managing Database" />
+<meta property="og:description" content="After last week&rsquo;s development, there was pretty good progress with the project. We managed to get the following things done:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/weekly-noise-9/" />
+<meta property="article:published_time" content="2014-03-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-16T23:53:46-07:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Weekly Noise #9 - Managing Database"/>
+<meta name="twitter:description" content="After last week&rsquo;s development, there was pretty good progress with the project. We managed to get the following things done:"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="/css/dark.css" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" type="text/css" href="/css/custom-dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="/js/abc.js"></script>
+	<script src="/js/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="/">
+	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
+	<div class="site-description"><h2>random ramblings</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/rrajath" title="Github"><i data-feather="github"></i></a><a href="https://linkedin.com/rrajath" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/micro">Micro</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/now">Now</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Weekly Noise #9 - Managing Database</h1>
+            <div class="meta">Posted on &mdash; Mar 15, 2014  | 2 min read</div> 
+		</div>
+
+		<div class="markdown">
+			<p>After last week&rsquo;s development, there was pretty good progress with the project. We managed to get the following things done:</p>
+<ul>
+<li>Created an activity to manage database: This activity is a drop down of table names with buttons to delete both the auto-increment sequences and the data from selected table. This becomes easier for testing so that pretty much all database related tasks can be handled on the fly.</li>
+<li>Abstracted scan logic from the main activity to make the code more readable and increase modularity.</li>
+<li>Some code cleanup: segregating classes to different packages.</li>
+</ul>
+<p>The issue with colored cells in the grid still persists and I am not sure how to fix that. Will keep looking and I&rsquo;ll post an update soon if I find something that works.</p>
+<p>There are plenty of parking cells and relatively fewer navigation cells. Also parking cells have pretty much the same data that does not change over time. So it is better to bulk load the data since we already know the positions of these cells on the grid. The only thing we don&rsquo;t know is that the neighboring navigation cell id for each parking cell. We don&rsquo;t know this because we still haven&rsquo;t scanned the neighboring navigation cells. Once we scan a navigation cell, we will assign the neighboring parking cells the corresponding id so that it will be easier to pick the navigation cell as the destination point.</p>
+<p>Here&rsquo;s the target for next week:</p>
+<ul>
+<li>Bulk load the parking cell data</li>
+<li>Update neighboring parking cells to hold navigation cell IDs.</li>
+</ul>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/weekly">weekly</a></li>
+								
+								<li><a href="/tags/noise">noise</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script><p class="h-card vcard" style="display:none;">
+    <a style="text-decoration: none" href="http://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+    Rajath Ramakrishna</a>
+    <a class="p-nickname u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+    r.rajath@pm.me
+    </a>
+    <img class="u-photo" src="images/micro-post-photo.png" alt="" />
+</p>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rajath on Rajath Ramakrishna</title>
+    <link>/tags/rajath/</link>
+    <description>Recent content in rajath on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Wed, 07 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/rajath/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rajath?</title>
+      <link>/about/</link>
+      <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I’m a programmer currently living in Seattle, Washington. I came to the United States in 2012 to do my Masters in Computer Science.</description>
+    </item>
+    
+  </channel>
+</rss>

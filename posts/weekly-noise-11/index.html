@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="me" href="https://github.com/rrajath">
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Weekly Noise #11 - Online Phase - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/rrajath_favicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Weekly Noise #11 - Online Phase" />
+<meta property="og:description" content="The online phase is where scans are made periodically and matched with the offline database to find the current location of the user." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/weekly-noise-11/" />
+<meta property="article:published_time" content="2014-03-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-16T23:53:46-07:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Weekly Noise #11 - Online Phase"/>
+<meta name="twitter:description" content="The online phase is where scans are made periodically and matched with the offline database to find the current location of the user."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="/css/dark.css" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" type="text/css" href="/css/custom-dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="/js/abc.js"></script>
+	<script src="/js/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="/">
+	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
+	<div class="site-description"><h2>random ramblings</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/rrajath" title="Github"><i data-feather="github"></i></a><a href="https://linkedin.com/rrajath" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/micro">Micro</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/now">Now</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Weekly Noise #11 - Online Phase</h1>
+            <div class="meta">Posted on &mdash; Mar 29, 2014  | 2 min read</div> 
+		</div>
+
+		<div class="markdown">
+			<p>The online phase is where scans are made periodically and matched with the offline database to find the current location of the user. When a scan is made the set of fingerprints are captured and compared with existing data in the database. With Nearest Neighbour algorithm, we predict 3 closest matches as to where the user could be. Initially, we were searching the whole database to find the 3 closest matches, but later on we reduced our search space significantly by searching
+the current and the next 2 cells along the navigation path. If the database search yields a (or any) result, then the current location of the user will be updated to the yielded result. Else, we assume that there is no change in the user&rsquo;s location. This way, the search happens every 2 seconds and the position is updated accordingly as and when the car moves inside the parking lot. To illustrate this approach, refer the figure below.</p>
+<p><img src="/images/position-prediction.png" alt="Position Prediction"></p>
+<p>As you can see in the image, the green cells are the next 3 predicted cells on the navigation path, the blue cells are rest of the cells and the orange cells are the ramps in the middle of the parking that takes you to the next level of the parking structure. The worst case is when the search results yield nothing thus not changing the position of the car on the map. If the search results do yield something, the car moves forward.</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/weekly">weekly</a></li>
+								
+								<li><a href="/tags/noise">noise</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script><p class="h-card vcard" style="display:none;">
+    <a style="text-decoration: none" href="http://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+    Rajath Ramakrishna</a>
+    <a class="p-nickname u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+    r.rajath@pm.me
+    </a>
+    <img class="u-photo" src="images/micro-post-photo.png" alt="" />
+</p>
+
+</body>
+</html>

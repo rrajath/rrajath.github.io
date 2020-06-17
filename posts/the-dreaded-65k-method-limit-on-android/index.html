@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="me" href="https://github.com/rrajath">
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>The Dreaded 65k Method Limit on Android - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/rrajath_favicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="The Dreaded 65k Method Limit on Android" />
+<meta property="og:description" content="If you&rsquo;re an Android developer, it&rsquo;s likely that you have experienced this at least a few times during your development." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/the-dreaded-65k-method-limit-on-android/" />
+<meta property="article:published_time" content="2016-03-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-16T23:53:46-07:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Dreaded 65k Method Limit on Android"/>
+<meta name="twitter:description" content="If you&rsquo;re an Android developer, it&rsquo;s likely that you have experienced this at least a few times during your development."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="/css/dark.css" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" type="text/css" href="/css/custom-dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="/js/abc.js"></script>
+	<script src="/js/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="/">
+	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
+	<div class="site-description"><h2>random ramblings</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/rrajath" title="Github"><i data-feather="github"></i></a><a href="https://linkedin.com/rrajath" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/micro">Micro</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/now">Now</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">The Dreaded 65k Method Limit on Android</h1>
+            <div class="meta">Posted on &mdash; Mar 9, 2016  | 3 min read</div> 
+		</div>
+
+		<div class="markdown">
+			<p>If you&rsquo;re an Android developer, it&rsquo;s likely that you have experienced this at least a few times during your development.</p>
+<p>The first time I heard people talk about 65k method limit I wasn&rsquo;t aware of it so much. I was thinking, &ldquo;How can a small Android app have 65,000 methods? That&rsquo;s ridiculous! I don&rsquo;t know what people are complaining about.&rdquo; Then when I read what the fuss was all about, I realized that 65k method limit includes not just all the methods in my app, but also everything my app consumes. Yes, that includes libraries; even if you don&rsquo;t use them. Surprisingly I never ran into this issue before though I used to throw in libraries for every little thing without caring about how much it&rsquo;s contributing to the 65k limit. Of course, in the beginning I was using smaller libraries with low method count. Not giants like Goole Play Services. But in a recent project I was working on, one fine day I got this error:</p>
+<pre><code>Unable to execute dex: method ID not in [0, 0xffff]: 65536
+Conversion to Dalvik format failed: Unable to execute dex: method ID not in [0, 0xffff]: 65536
+</code></pre>
+<p>And I thought, &ldquo;Huh, looks like I&rsquo;m now in the same boat as many developers who&rsquo;ve been talking about 65k method limit.&rdquo; As I always do with weird unknown errors, I googled this one and got a bunch of StackOverflow links which all said pretty much the same thing - enable multidex. I was about to do that, but I stopped and thought &ldquo;Let me at least understand why this is happening. I&rsquo;m surely not using many libraries. All I&rsquo;m using is dagger, retrofit, timber, google play services and few others. Let me see the culprit that&rsquo;s making my method count reach 65k.&rdquo;</p>
+<p>After some searching, I came across this awesome website <a href="http://www.methodscount.com/">methodscount.com</a> by <a href="https://twitter.com/rotxed">Sebastian Gottardo</a> that gives the method count for any library. Later I found the <a href="http://www.methodscount.com/plugins">plugin for Android Studio</a> which made my day. After I installed the plugin, I saw the method counts of all the libraries I was using right in the build.gradle file and I found it. GooglePlayServices, with its massive 19k method count. I mean, come on. 19k? Really? I thought this is insane!! So did other developers, a long time ago. I was just late to the party. Few more minutes of googling and I found that Google Play Services 6.5 onwards the library is more modular - which means you can include only the stuff you want instead of the whole library. For my application I just needed wearable and location services and methods count for each is under 1.5k.</p>
+<pre><code>compile 'com.google.android.gms:play-services:8.4.0'
+</code></pre>
+<p>So, the above line became:</p>
+<pre><code>compile 'com.google.android.gms:play-services-wearable:8.4.0'
+compile 'com.google.android.gms:play-services-location:8.4.0'
+</code></pre>
+<p>giving me just what I need.</p>
+<p>Another awesome tool to consider to get the method counts in a more detailed manner is <a href="https://github.com/mihaip/dex-method-counts">dex-method-counts</a> by <a href="https://github.com/mihaip">Mihai Parparita</a>. This script gives the method counts in a tree format neatly segregating the counts for each package. There are few other tools out there to get method counts, but the key thing to remember is to think before using any 3rd party library. If it&rsquo;s helping you at the cost of bringing in thousands of methods into your DEX file, then is it really worth including it into your app? Can you use a different library that does the same job for you but with a considerably fewer method count?</p>
+<p>PS: If you&rsquo;re interested to know why 65k, or rather why 65,536 specifically, you should listen to <a href="http://fragmentedpodcast.com/episodes/29/">Fragmented Podcast Episode 29</a> where <a href="https://twitter.com/kaushikgopal">Koushik Gopal</a> explains about this.</p>
+<p>For more details on 65k limit, here are few links:</p>
+<ul>
+<li><a href="https://androidhub.intel.com/posts/blundell/Pushing_the_limit.html">2016 Prediction: Battling the 65k limit</a></li>
+<li><a href="https://medium.com/@rotxed/dex-skys-the-limit-no-65k-methods-is-28e6cb40cf71">[DEX] Sky&rsquo;s the limit? No, 65k methods is</a></li>
+<li><a href="http://www.fasteque.com/deep-dive-into-android-multidex">Deep dive into Android Multidex</a></li>
+</ul>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/android">android</a></li>
+								
+								<li><a href="/tags/dex">dex</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script><p class="h-card vcard" style="display:none;">
+    <a style="text-decoration: none" href="http://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+    Rajath Ramakrishna</a>
+    <a class="p-nickname u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+    r.rajath@pm.me
+    </a>
+    <img class="u-photo" src="images/micro-post-photo.png" alt="" />
+</p>
+
+</body>
+</html>

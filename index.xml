@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rajath Ramakrishna</title>
+    <link>/</link>
+    <description>Recent content on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Sun, 05 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What am I doing right now?</title>
+      <link>/now/</link>
+      <pubDate>Mon, 15 Jun 2020 18:23:51 -0700</pubDate>
+      
+      <guid>/now/</guid>
+      <description>Reading  Digital Minimalism What to write down when you&amp;rsquo;re reading to learn Building a second brain  Health  Working out at home Meditating  Projects  Moved my blog from Jekyll to Hugo and now customizing some templates IndieWeb integration Self-hosting my data using Nextcloud on my Raspberry Pi  What else?</description>
+    </item>
+    
+    <item>
+      <title>2019 in Review</title>
+      <link>/posts/2019-year-in-review/</link>
+      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2019-year-in-review/</guid>
+      <description>Another year done, and like always time flies by quicker and quicker every year. 2019 has been quite eventful in a few aspects and I took some time to reflect on how things went.</description>
+    </item>
+    
+    <item>
+      <title>2018 in Review</title>
+      <link>/posts/2018-year-in-review/</link>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2018-year-in-review/</guid>
+      <description>2018 went by really quick. It was one of the more eventful years - packed with activities, travel, new hobbies, experiences and accomplishments.</description>
+    </item>
+    
+    <item>
+      <title>The Dreaded 65k Method Limit on Android</title>
+      <link>/posts/the-dreaded-65k-method-limit-on-android/</link>
+      <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-dreaded-65k-method-limit-on-android/</guid>
+      <description>If you&amp;rsquo;re an Android developer, it&amp;rsquo;s likely that you have experienced this at least a few times during your development.</description>
+    </item>
+    
+    <item>
+      <title>Two Months With Project Fi</title>
+      <link>/posts/two-months-with-project-fi/</link>
+      <pubDate>Sat, 16 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/two-months-with-project-fi/</guid>
+      <description>It&amp;rsquo;s been 2 months since I started using Project Fi on my Nexus 6P and I thought I&amp;rsquo;ll write my review about it.</description>
+    </item>
+    
+    <item>
+      <title>Book Review: Alchemist</title>
+      <link>/posts/book-review-alchemist/</link>
+      <pubDate>Sat, 09 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/book-review-alchemist/</guid>
+      <description>Alchemist by Paulo Coelho is the first book I read in 2016. This book had been in my to-read list for quite a while now and I thought I&amp;rsquo;ll give it a read.</description>
+    </item>
+    
+    <item>
+      <title>2015 - Lessons Learned</title>
+      <link>/posts/2015-lessons-learned/</link>
+      <pubDate>Sat, 02 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2015-lessons-learned/</guid>
+      <description>I saw a couple of posts about what people did in 2015 (this and this) that inspired me to write my own.</description>
+    </item>
+    
+    <item>
+      <title>Macbook users must swap Caps Lock and Ctrl Keys. Seriously!</title>
+      <link>/posts/mac-users-must-swap-caps-lock-and-ctrl-keys/</link>
+      <pubDate>Sat, 14 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mac-users-must-swap-caps-lock-and-ctrl-keys/</guid>
+      <description>I tell this to everyone I meet who uses a MacBook. I mean, come on. People who are used to using a Windows keyboard put their pinky on the bottom left key of the keyboard to reach for the control key, and it&amp;rsquo;s easy to reach too since the Ctrl key is pretty wide.</description>
+    </item>
+    
+    <item>
+      <title>Rajath?</title>
+      <link>/about/</link>
+      <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I’m a programmer currently living in Seattle, Washington. I came to the United States in 2012 to do my Masters in Computer Science.</description>
+    </item>
+    
+    <item>
+      <title>Taskr - the simplest task management app</title>
+      <link>/posts/taskr/</link>
+      <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/taskr/</guid>
+      <description>I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design.</description>
+    </item>
+    
+    <item>
+      <title>Graduated :)</title>
+      <link>/posts/graduation/</link>
+      <pubDate>Sat, 10 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/graduation/</guid>
+      <description>Today I graduated with Masters in Computer Science from University of Illinois at Chicago. It&amp;rsquo;s been about two years since I came to this country and I had some really nice experiences working with my project mates, doing my internship, attending meetups and hackathons, spending sleepless nights working on projects and assignments while surviving on pizza, and sometimes coffee.</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #16 - Wrap up and future enhancements</title>
+      <link>/posts/weekly-noise-16/</link>
+      <pubDate>Sat, 03 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-16/</guid>
+      <description>All in all, this project was an extremely interesting one. We got to learn a lot from this project, especially being new to Android development.</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #15 - Experimental Results</title>
+      <link>/posts/weekly-noise-15/</link>
+      <pubDate>Sat, 26 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-15/</guid>
+      <description>Two phones were used as part of testing – LG Nexus 4 and HTC One. Logging was done multiple times during the day, between 11am and 5pm.</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #14 - Navigation and Voice Alerts</title>
+      <link>/posts/weekly-noise-14/</link>
+      <pubDate>Sat, 19 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-14/</guid>
+      <description>This week we concentrated on Navigation and Voice Alerts. Calculation of the route path is quite easy and it&amp;rsquo;s a one-time task, the results of which will be used repetitively for navigation.</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #13 - Routing Algorithm</title>
+      <link>/posts/weekly-noise-13/</link>
+      <pubDate>Sat, 12 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-13/</guid>
+      <description>This week we implemented the Routing Algorithm. We considered each intersection as a checkpoint and made a graph out of the navigation paths and the corresponding intersection points among them.</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #12 - Geofencing</title>
+      <link>/posts/weekly-noise-12/</link>
+      <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-12/</guid>
+      <description>Geofencing is a concept wherein a fence is created around a particular area and any action can be performed once a mobile device enters this fence.</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #11 - Online Phase</title>
+      <link>/posts/weekly-noise-11/</link>
+      <pubDate>Sat, 29 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-11/</guid>
+      <description>The online phase is where scans are made periodically and matched with the offline database to find the current location of the user.</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #10 - Offline Phase Complete</title>
+      <link>/posts/weekly-noise-10/</link>
+      <pubDate>Sat, 22 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-10/</guid>
+      <description>In order to bulk load the parking cell data, I chose to use a JSON file as it is simpler to edit cell information (if need be).</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #9 - Managing Database</title>
+      <link>/posts/weekly-noise-9/</link>
+      <pubDate>Sat, 15 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-9/</guid>
+      <description>After last week&amp;rsquo;s development, there was pretty good progress with the project. We managed to get the following things done:</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #8 - Database Schema</title>
+      <link>/posts/weekly-noise-8/</link>
+      <pubDate>Sat, 08 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-8/</guid>
+      <description>As per the design, we created database schemas, tables and other relevant classes:
+Database:
+ parking_table to store information about the parking slots.</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #7 - My Development Environment</title>
+      <link>/posts/weekly-noise-7/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-7/</guid>
+      <description>Before I go to the details about the working of the project, I would like to explain my Development Environment - the tools I use and why I use them.</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #6 - Design</title>
+      <link>/posts/weekly-noise-6/</link>
+      <pubDate>Sat, 22 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-6/</guid>
+      <description>ParkAssist In my previous post I gave a brief overview about the project that I was working on and its problem statement.</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #5 - My Masters Project</title>
+      <link>/posts/weekly-noise-5/</link>
+      <pubDate>Sat, 15 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-5/</guid>
+      <description>I would like to give a glimpse of what my Masters Project is all about and what I will be working on in the next couple of months.</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #4 - Hibernation</title>
+      <link>/posts/weekly-noise-4/</link>
+      <pubDate>Sat, 08 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-4/</guid>
+      <description>It&amp;rsquo;s been quite a while since I last updated my blog. I was busy with exams and then vacations. I went back home (Bangalore, India) after about 1.</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #3 - New Domain</title>
+      <link>/posts/weekly-noise-3/</link>
+      <pubDate>Sun, 24 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-3/</guid>
+      <description>As promised, last week I integrated Medium-style &amp;ldquo;time-to-read&amp;rdquo; kind of feature which is pretty much added manually since Jekyll is a static blog generator.</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #2 - Theme Enhancements</title>
+      <link>/posts/weekly-noise-2/</link>
+      <pubDate>Sun, 17 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-2/</guid>
+      <description>Last week I worked on the theme to modify few things which I have explained in the My Theme Setup post.</description>
+    </item>
+    
+    <item>
+      <title>My Theme Setup</title>
+      <link>/posts/my-theme-setup/</link>
+      <pubDate>Thu, 14 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/my-theme-setup/</guid>
+      <description>First of all, kudos to @mmistakes for coming up with such an elegant theme called So Simple. Everything looks perfect and every component is placed where it&amp;rsquo;s supposed to be.</description>
+    </item>
+    
+    <item>
+      <title>Weekly Noise #1 - Moving to GitHub Pages</title>
+      <link>/posts/weekly-noise-1/</link>
+      <pubDate>Sat, 09 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/weekly-noise-1/</guid>
+      <description>To set the context, Weekly Noise series is where I talk about what I accomplished during the week (like working on my personal projects among other things) and also set the goals for next week.</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>/posts/hello-world/</link>
+      <pubDate>Fri, 08 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hello-world/</guid>
+      <description>After being lazy as a sloth for a “really long” time, I finally pushed myself to create a blog where I can write/share about projects I work on in my free time and also about the technologies/tools that I encounter every now and then.</description>
+    </item>
+    
+  </channel>
+</rss>

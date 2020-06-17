@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>annual-review on Rajath Ramakrishna</title>
+    <link>/tags/annual-review/</link>
+    <description>Recent content in annual-review on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Sun, 05 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/annual-review/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2019 in Review</title>
+      <link>/posts/2019-year-in-review/</link>
+      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2019-year-in-review/</guid>
+      <description>Another year done, and like always time flies by quicker and quicker every year. 2019 has been quite eventful in a few aspects and I took some time to reflect on how things went.</description>
+    </item>
+    
+    <item>
+      <title>2018 in Review</title>
+      <link>/posts/2018-year-in-review/</link>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2018-year-in-review/</guid>
+      <description>2018 went by really quick. It was one of the more eventful years - packed with activities, travel, new hobbies, experiences and accomplishments.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>book on Rajath Ramakrishna</title>
+    <link>/tags/book/</link>
+    <description>Recent content in book on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Sat, 09 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Book Review: Alchemist</title>
+      <link>/posts/book-review-alchemist/</link>
+      <pubDate>Sat, 09 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/book-review-alchemist/</guid>
+      <description>Alchemist by Paulo Coelho is the first book I read in 2016. This book had been in my to-read list for quite a while now and I thought I&amp;rsquo;ll give it a read.</description>
+    </item>
+    
+  </channel>
+</rss>
