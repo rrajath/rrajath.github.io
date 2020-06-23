@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Micros on Rajath Ramakrishna</title>
+    <link>/micro/</link>
+    <description>Recent content in Micros on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Mon, 22 Jun 2020 22:35:01 -0700</lastBuildDate>
+    
+	<atom:link href="/micro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First Post</title>
+      <link>/micro/first-post/</link>
+      <pubDate>Mon, 22 Jun 2020 22:35:01 -0700</pubDate>
+      
+      <guid>/micro/first-post/</guid>
+      <description>First micro post. Planning to use this for short thoughts and sharing/saving interesting links I come across</description>
+    </item>
+    
+  </channel>
+</rss>
