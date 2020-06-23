@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 22 Jun 2020 23:40:14 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2020 00:12:42 -0700</lastBuildDate>
     
 	<atom:link href="/micro/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>100 Days to Offload</title>
+      <link>/micro/100-days-to-offload/</link>
+      <pubDate>Tue, 23 Jun 2020 00:12:42 -0700</pubDate>
+      
+      <guid>/micro/100-days-to-offload/</guid>
+      <description>Thinking of doing the #100DaysToOffload thing. Let&amp;rsquo;s see.
+https://100daystooffload.com</description>
+    </item>
     
     <item>
       <title>Crazy Brains</title>
@@ -18,7 +28,8 @@
       <pubDate>Mon, 22 Jun 2020 23:40:14 -0700</pubDate>
       
       <guid>/micro/crazy-brains/</guid>
-      <description>How crazy are our brains: https://mobile.twitter.com/Foone/status/1014267515696922624</description>
+      <description>How crazy are our brains:
+https://mobile.twitter.com/Foone/status/1014267515696922624</description>
     </item>
     
     <item>
