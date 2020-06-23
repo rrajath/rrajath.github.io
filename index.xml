@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 05 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 22:35:01 -0700</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>First Post</title>
+      <link>/micro/first-post/</link>
+      <pubDate>Mon, 22 Jun 2020 22:35:01 -0700</pubDate>
+      
+      <guid>/micro/first-post/</guid>
+      <description>First micro post. Planning to use this for short thoughts and sharing/saving interesting links I come across</description>
+    </item>
     
     <item>
       <title>What am I doing right now?</title>
