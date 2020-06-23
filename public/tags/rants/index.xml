@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rants on Rajath Ramakrishna</title>
+    <link>/tags/rants/</link>
+    <description>Recent content in rants on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Sat, 14 Mar 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/rants/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Macbook users must swap Caps Lock and Ctrl Keys. Seriously!</title>
+      <link>/posts/mac-users-must-swap-caps-lock-and-ctrl-keys/</link>
+      <pubDate>Sat, 14 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/mac-users-must-swap-caps-lock-and-ctrl-keys/</guid>
+      <description>I tell this to everyone I meet who uses a MacBook. I mean, come on. People who are used to using a Windows keyboard put their pinky on the bottom left key of the keyboard to reach for the control key, and it&amp;rsquo;s easy to reach too since the Ctrl key is pretty wide.</description>
+    </item>
+    
+  </channel>
+</rss>

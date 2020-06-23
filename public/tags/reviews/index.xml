@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reviews on Rajath Ramakrishna</title>
+    <link>/tags/reviews/</link>
+    <description>Recent content in reviews on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Sat, 16 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/reviews/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Two Months With Project Fi</title>
+      <link>/posts/two-months-with-project-fi/</link>
+      <pubDate>Sat, 16 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/two-months-with-project-fi/</guid>
+      <description>It&amp;rsquo;s been 2 months since I started using Project Fi on my Nexus 6P and I thought I&amp;rsquo;ll write my review about it.</description>
+    </item>
+    
+  </channel>
+</rss>
