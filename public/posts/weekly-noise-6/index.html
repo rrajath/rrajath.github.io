@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="me" href="https://github.com/rrajath">
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Weekly Noise #6 - Design - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/rrajath_favicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Weekly Noise #6 - Design" />
+<meta property="og:description" content="ParkAssist In my previous post I gave a brief overview about the project that I was working on and its problem statement." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/weekly-noise-6/" />
+<meta property="article:published_time" content="2014-02-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-22T23:10:26-07:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Weekly Noise #6 - Design"/>
+<meta name="twitter:description" content="ParkAssist In my previous post I gave a brief overview about the project that I was working on and its problem statement."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><link rel="stylesheet" type="text/css" href="/css/dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="/">
+	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
+	<div class="site-description"><h2>random ramblings</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/rrajath" title="Github"><i data-feather="github"></i></a><a href="https://linkedin.com/rrajath" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/micro">Micro</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/now">Now</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Weekly Noise #6 - Design</h1>
+            <div class="meta">Posted on &mdash; Feb 22, 2014  | 3 min read</div> 
+		</div>
+
+		<div class="markdown">
+			<h2 id="parkassist">ParkAssist</h2>
+<p>In my previous post I gave a brief overview about the project that I was working on and its problem statement. After much research about how WiFi localization works and everything that we need to know about it, we started working on the design. Our approach uses WiFi localization, accelerometer and gyroscope for navigating the car. By the way, the name of the app is called ParkAssist. The project will up on GitHub and will have regular commits for the next couple of months.</p>
+<h2 id="what-is-a-wifi-fingerprint">What is a WiFi fingerprint?</h2>
+<p>A fingerprint at a location is a set of access points and their corresponding signal strengths that can uniquely identify that location. Any point inside a building having multiple access points will have different set of fingerprints. Since we have different sets of (access point, signal strength) pairs for each location, we will be able to identify each location uniquely.</p>
+<h2 id="design">Design</h2>
+<p>We obtained the blueprint of the parking lot from our college Facilities Department. The parking lot has 3 floors with about 200+ slots spread out across each floor. We observed that the parking lot resembled a grid and hence we decided to divide the parking lot into a grind containing cells each of which must have a fingerprint associated with it. Later we realized that we don&rsquo;t have to record fingerprints for each cell, per se, but instead just the ones that lie on the navigation path. This is because the car only has to navigate up to the nearest point on the navigation path where the slot is; so we don&rsquo;t really need to know the fingerprint in the parking slot.</p>
+<h2 id="working">Working</h2>
+<p>The process is divided into two phases:</p>
+<ul>
+<li>Offline Phase</li>
+<li>Online Phase</li>
+</ul>
+<p>In the offline phase, each cell along the navigation path is associated with a particular fingerprint and these fingerprints are recorded and stored in a database. The database will be used in future during the online phase in order to track the location of the user.</p>
+<p>AS SHOWN IN THE FIGURE BELOW, the grid is divided into cells. ParkCells are the parking slots and NavCells are the cells along the navigation path. The offline phase is only about storing fingerprints at each navigation cell into a database.</p>
+<p><img src="/images/grid-illustration.png" alt="Grid Illustration"></p>
+<p>In the online phase, as the car enters the lot, the application is activated using GeoFencing technique. Once the application is activated, the user is shown the parking lot grid where he can choose a parking slot. When the user selects a parking slot, the neighboring navigation cell is selected as the destination point. We know the start point of the car since it is the entrance of the parking lot. We also continuously track the movement of the car using accelerometer and gyroscope. This technique combined with fingerprint matching will give an accurate location of the car and the car is routed from the start point to the destination point. This becomes a simple routing problem on a grid with predefined navigation path.</p>
+<h2 id="my-development-environment">My Development Environment</h2>
+<p><strong>IDE</strong>: IntelliJ IDEA 13.0[Insert Link]<br>
+<strong>Emulator</strong>: Genymotion[Insert Link]<br>
+<strong>Android version</strong>: 4.2 and above<br>
+<strong>Database</strong>: SQLite<br>
+<strong>Version Control</strong>: Git<br>
+<strong>Workflow</strong>: <a href="http://nvie.com/posts/a-successful-git-branching-model/">GitFlow</a></p>
+<p>This being said about the project, here&rsquo;s the plan for next week:</p>
+<ul>
+<li>Design the database</li>
+<li>Create entity beans for each table</li>
+<li>Create activities to display grid and perform scans</li>
+<li>Write logic to compute mean values for each fingerprint</li>
+</ul>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/weekly">weekly</a></li>
+								
+								<li><a href="/tags/noise">noise</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script><p class="h-card vcard" style="display:none;">
+    <a style="text-decoration: none" href="http://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+    Rajath Ramakrishna</a>
+    <a class="p-nickname u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+    r.rajath@pm.me
+    </a>
+    <img class="u-photo" src="images/micro-post-photo.png" alt="" />
+</p>
+
+</body>
+</html>

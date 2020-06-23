@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="me" href="https://github.com/rrajath">
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Taskr - the simplest task management app - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/rrajath_favicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Taskr - the simplest task management app" />
+<meta property="og:description" content="I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/taskr/" />
+<meta property="article:published_time" content="2015-01-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-22T23:10:26-07:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Taskr - the simplest task management app"/>
+<meta name="twitter:description" content="I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><link rel="stylesheet" type="text/css" href="/css/dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="/">
+	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
+	<div class="site-description"><h2>random ramblings</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/rrajath" title="Github"><i data-feather="github"></i></a><a href="https://linkedin.com/rrajath" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/micro">Micro</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/now">Now</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Taskr - the simplest task management app</h1>
+            <div class="meta">Posted on &mdash; Jan 7, 2015  | 4 min read</div> 
+		</div>
+
+		<div class="markdown">
+			<p>I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design. I was inspired by Material Design since it was launched, but never had the time to implement it in my hobby projects. Now I am trying to take baby steps every day and work on creating Android apps that mostly stick to the new Material Design.</p>
+<p>I came up with the name Taskr because I couldn&rsquo;t come up with anything better. I did think about many names but since this isn&rsquo;t going anywhere near Play Store, I just stuck to the most unimaginative name possible. Yes, this is probably the simplest task management app that you can find. It&rsquo;s so simple that all you can do is add/edit a task name and description, mark tasks as done and delete completed tasks. To make it a little more usable, I used SQLite database to persist data entered by
+the user.</p>
+<p>This application uses no fragments, but just a couple of activities. Here&rsquo;s how I designed the application.</p>
+<ul>
+<li>A <code>TaskItem</code> data class that holds information about each task and is used to translate cursor objects.</li>
+<li>ArrayAdapter that spews out tasks from the TaskItem list.</li>
+<li>A <code>DatabaseHelper</code> class that is used to save the task items in an SQLite database.</li>
+<li>A main list activity to display the list with a floating action button and an activity dialog to add/edit a task</li>
+<li>A menu that has an option to clean up completed tasks.</li>
+<li>A util class that is used to calculate time elapsed since the task was created and display appropriately.</li>
+</ul>
+<p>To make things simpler, I have used couple of libraries.</p>
+<h3 id="lombok">Lombok</h3>
+<p><a href="http://projectlombok.org/">Lombok</a> helps you skip writing getters and setters for data objects by adding the <code>@Data</code> annotation. This helps in keeping the code short, clean and readable. So the class would look something like this:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#268bd2">@Data</span>
+    <span style="color:#268bd2">public</span> <span style="color:#268bd2">class</span> <span style="color:#268bd2">TaskItem</span> <span style="color:#719e07">{</span>
+        <span style="color:#268bd2">private</span> <span style="color:#dc322f">int</span> id<span style="color:#719e07">;</span>
+        <span style="color:#268bd2">private</span> String taskName<span style="color:#719e07">;</span>
+        <span style="color:#268bd2">private</span> String taskDescription<span style="color:#719e07">;</span>
+        <span style="color:#268bd2">private</span> <span style="color:#dc322f">long</span> creationTime<span style="color:#719e07">;</span>
+        <span style="color:#268bd2">private</span> <span style="color:#dc322f">boolean</span> isTaskComplete<span style="color:#719e07">;</span>
+    <span style="color:#719e07">}</span></code></pre></div>
+<p>This looks much cleaner than a class that is cluttered with getters and setters.</p>
+<h3 id="butterknife">Butterknife</h3>
+<p><a href="https://jakewharton.github.io/butterknife/">Butterknife</a> is another library that helps you inject views more easily with annotations. Adding the @InjectView annotation will automatically cast the corresponding view in your layout. So you no longer have to write things like</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">View view <span style="color:#719e07">=</span> inflater<span style="color:#719e07">.</span>inflate<span style="color:#719e07">(</span>R<span style="color:#719e07">.</span>layout<span style="color:#719e07">.</span>layout_main<span style="color:#719e07">,</span> container<span style="color:#719e07">,</span> <span style="color:#cb4b16">false</span><span style="color:#719e07">);</span>
+etTaskName <span style="color:#719e07">=</span> <span style="color:#719e07">(</span>EditText<span style="color:#719e07">)</span> view<span style="color:#719e07">.</span>findViewById<span style="color:#719e07">(</span>R<span style="color:#719e07">.</span>id<span style="color:#719e07">.</span>task_name_edit_text<span style="color:#719e07">);</span></code></pre></div>
+<p>You instead write:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#268bd2">@InjectView</span><span style="color:#719e07">(</span>R<span style="color:#719e07">.</span>id<span style="color:#719e07">.</span>task_name_edit_text<span style="color:#719e07">)</span>
+EditText etTaskName<span style="color:#719e07">;</span></code></pre></div>
+<p>There are many more things that these libraries offer and I plan to use it in every Android project of mine.</p>
+<p><strong>Problems I faced</strong>:<br>
+I was finding it hard to keep the list up to date. Since I had my tasks in a List and I was using an instance of ArrayAdapter. It was hard to keep track of what was added to the list and what was deleted whenever the user interacted with the list. The main issue was when going from one activity to another and returning back to the main activity. Passing around intents with parcelable/serializable was a pain for a small app like this. And hitting database so often is not a great design.</p>
+<p><strong>Solution I used</strong>:<br>
+I used a singleton to have a single copy of the task list which will be available to all activities in the app. So any add/update/remove operations performed on this list anywhere in the app will be reflected and is readily available (so the list will have the latest information), though in background I was writing the tasks to database. This mainly helped me avoid passing around intents back and forth.</p>
+<p>It took me a few days to get this simple app done due to hectic work schedules. I guess I will get back to working on it and add some minor enhancements.</p>
+<h3 id="screenshots">Screenshots</h3>
+<p>Here are some screenshots of my app:</p>
+<p><img src="/images/taskr_task_list.png" alt="">
+ 
+<img src="/images/taskr_new_task.png" alt=""></p>
+<p>The white background of the app blends into the white background of the page :(<br>
+I&rsquo;ll have to change the theme sometime.</p>
+<p>The project can be found on my GitHub page: <a href="https://github.com/rrajath/taskr">taskr</a></p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/taskr">taskr</a></li>
+								
+								<li><a href="/tags/android">android</a></li>
+								
+								<li><a href="/tags/app">app</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script><p class="h-card vcard" style="display:none;">
+    <a style="text-decoration: none" href="http://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+    Rajath Ramakrishna</a>
+    <a class="p-nickname u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+    r.rajath@pm.me
+    </a>
+    <img class="u-photo" src="images/micro-post-photo.png" alt="" />
+</p>
+
+</body>
+</html>

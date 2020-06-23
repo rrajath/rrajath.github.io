@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android on Rajath Ramakrishna</title>
+    <link>/tags/android/</link>
+    <description>Recent content in android on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Wed, 09 Mar 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Dreaded 65k Method Limit on Android</title>
+      <link>/posts/the-dreaded-65k-method-limit-on-android/</link>
+      <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-dreaded-65k-method-limit-on-android/</guid>
+      <description>If you&amp;rsquo;re an Android developer, it&amp;rsquo;s likely that you have experienced this at least a few times during your development.</description>
+    </item>
+    
+    <item>
+      <title>Taskr - the simplest task management app</title>
+      <link>/posts/taskr/</link>
+      <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/taskr/</guid>
+      <description>I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design.</description>
+    </item>
+    
+  </channel>
+</rss>
