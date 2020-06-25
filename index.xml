@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Now Archive</title>
+      <link>/now-archive/</link>
+      <pubDate>Wed, 24 Jun 2020 22:54:37 -0700</pubDate>
+      
+      <guid>/now-archive/</guid>
+      <description>This page contains everything that was moved from the Now page
+Jun 24, 2020  Moved my blog from Jekyll to Hugo and now customizing some templates Indieweb integration  </description>
+    </item>
+    
+    <item>
       <title>100 Days to Offload</title>
       <link>/micro/100-days-to-offload/</link>
       <pubDate>Tue, 23 Jun 2020 00:12:42 -0700</pubDate>
@@ -47,7 +57,7 @@ https://mobile.twitter.com/Foone/status/1014267515696922624</description>
       <pubDate>Mon, 15 Jun 2020 18:23:51 -0700</pubDate>
       
       <guid>/now/</guid>
-      <description>Reading  Digital Minimalism What to write down when you&amp;rsquo;re reading to learn Building a second brain  Health  Working out at home Meditating  Projects  Moved my blog from Jekyll to Hugo and now customizing some templates IndieWeb integration Self-hosting my data using Nextcloud on my Raspberry Pi  What else?</description>
+      <description>Reading  Digital Minimalism What to write down when you&amp;rsquo;re reading to learn Building a second brain The Society of Mind  Health  Working out at home Meditating  Projects  Moved my blog from Jekyll to Hugo and now customizing some templates IndieWeb integration Self-hosting my data using Nextcloud on my Raspberry Pi  What else?</description>
     </item>
     
     <item>
