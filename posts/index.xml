@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 05 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2020 17:43:30 -0700</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Moving to Hugo</title>
+      <link>/posts/moving-to-hugo/</link>
+      <pubDate>Thu, 25 Jun 2020 17:43:30 -0700</pubDate>
+      
+      <guid>/posts/moving-to-hugo/</guid>
+      <description>I&amp;rsquo;ve used Jekyll as a static site generator ever since I created this blog, which was in 2013. Before that, I had tried few other blogging platforms.</description>
+    </item>
     
     <item>
       <title>2019 in Review</title>
