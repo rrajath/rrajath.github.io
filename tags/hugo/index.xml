@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>100DaysToOffload on Rajath Ramakrishna</title>
-    <link>/tags/100daystooffload/</link>
-    <description>Recent content in 100DaysToOffload on Rajath Ramakrishna</description>
+    <title>hugo on Rajath Ramakrishna</title>
+    <link>/tags/hugo/</link>
+    <description>Recent content in hugo on Rajath Ramakrishna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
     <lastBuildDate>Mon, 29 Jun 2020 22:32:42 -0700</lastBuildDate>
     
-	<atom:link href="/tags/100daystooffload/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       
       <guid>/posts/my-hugo-setup/</guid>
       <description>I recently moved my blog to Hugo and wrote a brief post about it. This post explains how I selected a theme and how I made the modifications I needed.</description>
-    </item>
-    
-    <item>
-      <title>Moving to Hugo</title>
-      <link>/posts/moving-to-hugo/</link>
-      <pubDate>Thu, 25 Jun 2020 17:43:30 -0700</pubDate>
-      
-      <guid>/posts/moving-to-hugo/</guid>
-      <description>I&amp;rsquo;ve used Jekyll as a static site generator ever since I created this blog, which was in 2013. Before that, I had tried few other blogging platforms.</description>
     </item>
     
   </channel>
