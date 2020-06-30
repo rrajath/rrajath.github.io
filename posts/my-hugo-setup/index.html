@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="me" href="https://github.com/rrajath">
+    <link rel="me" href="https://linkedin.com/in/rrajath">
+    <link rel="webmention" href="https://webmention.io/rrajath.com/webmention" />
+    <link rel="pingback" href="https://webmention.io/rrajath.com/xmlrpc" />
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+    <link rel="microsub" href="https://aperture.p3k.io/microsub/532">
+    <link rel="micropub" href="https://blotpub-rrajath.herokuapp.com/micropub">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>My Hugo Setup - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/rrajath_favicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="My Hugo Setup" />
+<meta property="og:description" content="I recently moved my blog to Hugo and wrote a brief post about it. This post explains how I selected a theme and how I made the modifications I needed." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/my-hugo-setup/" />
+<meta property="article:published_time" content="2020-06-29T22:32:42-07:00" />
+<meta property="article:modified_time" content="2020-06-29T22:39:40-07:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="My Hugo Setup"/>
+<meta name="twitter:description" content="I recently moved my blog to Hugo and wrote a brief post about it. This post explains how I selected a theme and how I made the modifications I needed."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><link rel="stylesheet" type="text/css" href="/css/dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <article class="h-entry">
+	<div class="container wrapper post e-content p-name">
+		<div class="header">
+	<base href="/">
+	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
+	<div class="site-description"><h2>random ramblings</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/rrajath" title="Github"><i data-feather="github"></i></a><a href="https://linkedin.com/in/rrajath" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/micro">Micro</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/now">Now</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">My Hugo Setup</h1>
+            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="/posts/my-hugo-setup/"><time class="dt-published">Jun 29, 2020</time></a>  | 3 min read</div> 
+		</div>
+
+		<div class="markdown">
+			<p>I recently moved my blog to Hugo and <a href="https://rrajath.com/posts/moving-to-hugo/">wrote a brief post about it</a>. This post explains how I selected a theme and how I made the modifications I needed.</p>
+<p>I needed a minimal theme for my blog and after searching a bit, I found <a href="https://themes.gohugo.io/ezhil/">ezhil</a>. This checked most of my boxes:</p>
+<ul>
+<li>looks simple and minimal</li>
+<li>configurable</li>
+<li>feather icons for my socials</li>
+<li>light/dark theme switch (nice to have)</li>
+</ul>
+<p>I tried it out on my blog and it looked good. The nice thing about the light/dark theme switch is that when set to &ldquo;auto&rdquo; it depends on the device&rsquo;s light or dark theme. For example, if the phone uses dark mode, the blog also uses dark mode.</p>
+<h2 id="custom-changes-to-my-theme">Custom changes to my theme</h2>
+<p>Although I liked the theme and it fit most of my needs, I had to make some changes to get tailored to my taste.</p>
+<h3 id="post-links-and-summaries-on-home-page">Post links and summaries on home page</h3>
+<p>The recent posts section (on the home page) was of the format:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&lt;post_title&gt; -- &lt;summary&gt;
+</code></pre></div><p>This felt a little cluttered for two reasons:</p>
+<ol>
+<li>Both the title and the summary were on the same line next to each other</li>
+<li>Title and summary were of the same font size</li>
+</ol>
+<p>I wanted the title to be a little bigger and have its own line, so I made the following changes to <a href="https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/index.html#L20-L29">themes/ezhil/layouts/index.html</a>:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#268bd2">a</span> class<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;title u-url&#34;</span> href<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;{{ .RelPermalink }}&#34;</span>&gt;&lt;<span style="color:#268bd2">font</span> size<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;+2&#34;</span>&gt;{{.Title}}&lt;/<span style="color:#268bd2">font</span>&gt;&lt;/<span style="color:#268bd2">a</span>&gt;
+		&lt;<span style="color:#268bd2">div</span>&gt;
+		    &lt;<span style="color:#268bd2">span</span> class<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;description&#34;</span>&gt;
+		        {{ if isset .Params &#34;description&#34; }}
+            {{ .Description }}
+            {{ else }}
+            {{ .Summary }}<span style="color:#cb4b16">&amp;hellip;</span>
+            {{ end }}
+        &lt;/<span style="color:#268bd2">span</span>&gt;
+    &lt;/<span style="color:#268bd2">div</span>&gt;
+</code></pre></div><p>Basically, add <code>&lt;font size=&quot;+2&quot;&gt;</code> and put the <code>&lt;span&gt;</code> inside a <code>&lt;div&gt;</code></p>
+<h3 id="added-reading-time">Added reading time</h3>
+<p>I remember Jekyll didn&rsquo;t have a straight-forward way to add reading time to posts. Hugo gives this out of the box. I like having it for blog posts just to set the expectation of how long it takes to read the blog post before you dive into it. It can be vaguely estimated by just eye-balling or scrolling. But it&rsquo;s nice to have reading time displayed at the top of the post.</p>
+<p>In <a href="https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/_default/single.html#L11">themes/ezhil/layouts/_default/single.html</a>:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">| {{ .ReadingTime }} min read
+</code></pre></div><p>Added the above text next to the publish date. I also added permalink to the publish date.</p>
+<h3 id="added-a-page-for-micro-posts">Added a page for Micro Posts</h3>
+<p>Blog posts are more formal and kinda long-form content which has a specific theme or intent behind them. I wanted to have a separate page for short thoughts (one or few lines) that don&rsquo;t warrant for a full blog post. This can include things like sharing an image, a link, or just some quick thoughts. So, I added a page called <a href="https://rrajath.com/micro/">Micro</a> and created my own template that is based off of  the standard list page, but a little different.</p>
+<p>Take a look at <a href="https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/micro/list.html">/themes/ezhil/layouts/micro/list.html</a> to understand the customization.</p>
+<ul>
+<li>I&rsquo;ve removed the heading of the post for since I want this to be like a twitter feed.</li>
+<li>Added a Permalink that takes you to the post page, in case one needs to link to the exact micro post.</li>
+<li>Added horizontal lines to separate out each micro post</li>
+</ul>
+<h3 id="added-a-now-page">Added a Now page</h3>
+<p>This page captures what I&rsquo;m doing right now. This includes a variety of tasks/activities/projects that I&rsquo;m doing at the moment to give a sense of what I&rsquo;m up to. This is <a href="https://sivers.org/nowff">inspired by Derek Sivers</a>. The <a href="https://rrajath.com/now/">Now page</a> layout is similar to the blog post page, <a href="https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/now/single.html">except few changes</a>.</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a class="p-category" href="/tags/hugo">hugo</a></li>
+								
+								<li><a class="p-category" href="/tags/100daystooffload">100DaysToOffload</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		</div>
+    </article>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script><p class="h-card vcard" style="display:none;">
+    <a style="text-decoration: none" href="http://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+    Rajath Ramakrishna</a>
+    <a rel="author">Rajath Ramakrishna</a>
+    <a class="p-nickname u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+    r.rajath@pm.me
+    </a>
+    <img class="u-photo" src="images/micro-post-photo.png" alt="" />
+</p>
+
+</body>
+</html>
