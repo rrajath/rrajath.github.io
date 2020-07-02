@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 29 Jun 2020 22:32:42 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2020 22:55:45 -0700</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lights and Shadows</title>
+      <link>/micro/lights-and-shadows/</link>
+      <pubDate>Wed, 01 Jul 2020 22:55:45 -0700</pubDate>
+      
+      <guid>/micro/lights-and-shadows/</guid>
+      <description>Lights and Shadows: https://ciechanow.ski/lights-and-shadows</description>
+    </item>
     
     <item>
       <title>My Hugo Setup</title>
