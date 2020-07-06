@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 29 Jun 2020 22:32:42 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2020 22:16:04 -0700</lastBuildDate>
     
 	<atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Hugo Setup Part 2</title>
+      <link>/posts/my-hugo-setup-part-2/</link>
+      <pubDate>Sun, 05 Jul 2020 22:16:04 -0700</pubDate>
+      
+      <guid>/posts/my-hugo-setup-part-2/</guid>
+      <description>In my previous post, I explained all the visual tweaks I did to my Hugo blog theme so that I could get the pages I wanted in the format I liked the most.</description>
+    </item>
     
     <item>
       <title>My Hugo Setup</title>
