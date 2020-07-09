@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="me" href="https://github.com/rrajath">
+    <link rel="me" href="https://linkedin.com/in/rrajath">
+    <link rel="webmention" href="https://webmention.io/rrajath.com/webmention" />
+    <link rel="pingback" href="https://webmention.io/rrajath.com/xmlrpc" />
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+    <link rel="microsub" href="https://aperture.p3k.io/microsub/532" />
+    <link rel="micropub" href="https://blotpub-rrajath.herokuapp.com/micropub" />
+    <link rel="me" href="https://micro.blog/rrajath" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>My Hugo Setup Part 3 - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/rrajath_favicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="My Hugo Setup Part 3" />
+<meta property="og:description" content="This is the third installment of my Hugo Setup. In this post I explain how I added support for &ldquo;series&rdquo; in my blog and also provide links that can be used for further explorations." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/my-hugo-setup-part-3/" />
+<meta property="article:published_time" content="2020-07-08T21:03:07-07:00" />
+<meta property="article:modified_time" content="2020-07-08T21:12:22-07:00" /><meta property="og:see_also" content="/posts/my-hugo-setup-part-2/" /><meta property="og:see_also" content="/posts/my-hugo-setup/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="My Hugo Setup Part 3"/>
+<meta name="twitter:description" content="This is the third installment of my Hugo Setup. In this post I explain how I added support for &ldquo;series&rdquo; in my blog and also provide links that can be used for further explorations."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><link rel="stylesheet" type="text/css" href="/css/dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <article class="h-entry">
+	<div class="container wrapper post e-content p-name">
+		<div class="header">
+	<base href="/">
+	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
+	<div class="site-description"><h2>random ramblings</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/rrajath" title="Github"><i data-feather="github"></i></a><a href="https://linkedin.com/in/rrajath" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/micro">Micro</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/now">Now</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">My Hugo Setup Part 3</h1>
+            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="/posts/my-hugo-setup-part-3/"><time class="dt-published">Jul 8, 2020</time></a>  | 4 min read</div> 
+		</div>
+
+		<div class="markdown">
+			
+  				
+  				<p class="series_top_page" style="font-weight:50; background-color:#333"><i>This post is part of the <a href="//series/hugo-setup">hugo-setup</a> series.</i></p>
+			
+			<p>This is the third installment of my Hugo Setup. In this post I explain how I added support for &ldquo;series&rdquo; in my blog and also provide links that can be used for further explorations.</p>
+<p>Also, this post is part of a &ldquo;series&rdquo; and explains about how to setup &ldquo;series&rdquo;. This is so meta!</p>
+<h2 id="what-is-series">What is Series?</h2>
+<p>Sometimes, we have a bunch of blog posts that are related and maybe continuous. Breaking down one big topic into multiple blog posts is the best way to explain the topic. This is where Series adds value. Series also helps keep track of where one is in the list of posts and can easily navigate to posts before or after the current post. This post has nothing to do with writing something differently, but rather presenting mutliple related posts in a more intuitive way.</p>
+<h2 id="how-is-it-different-from-adding-tags">How is it different from adding tags?</h2>
+<p>Tags are useful for categorizing similar topics. For example, there may be bunch of posts under the tag &ldquo;productivity&rdquo;, but they may all be stand-alone posts that can be read in any order. Whereas, having posts that need continuity will need something a little more sophisticated than tags.</p>
+<h2 id="implementation">Implementation</h2>
+<p>I was deciding to implement this in my templates, but before doing that I searched around for easy, already existing implementations, and I did find some help in the Hugo community. I came across a <a href="https://discourse.gohugo.io/t/creating-post-series/1115">Hugo forum post</a> where a user had a similar ask. The <a href="https://npf.io/2014/08/making-it-a-series/">link in the answer</a> had everything I needed to add the &ldquo;series&rdquo; support for my blog.</p>
+<p>Hugo supports Taxonomies where you can configure <a href="https://gohugo.io/content-management/taxonomies/#configuring-taxonomies">custom taxonomies</a> and can be used everywhere on your blog. The first step is to add the <code>series</code> taxonomy in your <code>config.toml</code> file</p>
+<h3 id="step-1">Step 1</h3>
+<p><strong>config.toml</strong></p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">[taxonomies]
+	tag = &#34;tags&#34;
+	series = &#34;series&#34;
+</code></pre></div><p>If you have a <code>yaml</code> file, change the syntax accordingly.</p>
+<h3 id="step-2">Step 2</h3>
+<p>Create a partial called <code>series_links.html</code> at <code>/layouts/partials/series_links.html</code></p>
+<p>This will contain the code that is responsible for displaying links to other posts in the series.</p>
+<p><strong>/layouts/partials/series_links.html</strong></p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">{{ if .Params.series }}
+    {{ $name := index .Params.series 0 }}
+    &lt;hr/&gt;
+    Other posts in this series:&lt;/p&gt;
+
+    {{ $name := $name | urlize }}
+    {{ $series := index .Site.Taxonomies.series $name }}
+    &lt;ul class=&#34;series&#34;&gt;
+    {{ range $series.Pages }}
+        &lt;li&gt;{{ .Date.Format &#34;Jan 02, 2006&#34; }} -
+        &lt;a href=&#34;{{.Permalink}}&#34;&gt;{{ .LinkTitle }}&lt;/a&gt;&lt;/li&gt;
+    {{ end }}
+    &lt;/ul&gt;
+{{ end }}
+</code></pre></div><p>I got the above code from: <a href="https://npf.io/2014/08/making-it-a-series/">https://npf.io/2014/08/making-it-a-series/</a></p>
+<p>The explanation of what this means is explained better there, so I&rsquo;m not going to reiterate the same thing here.</p>
+<h3 id="step-3">Step 3</h3>
+<p>Go to your <code>single.html</code> which is the template that renders each of your blog posts.<br>
+Replace <code>{{ .Content }}</code> with the code below</p>
+<p><strong>/layouts/_default/single.html</strong></p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#268bd2">div</span> class<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;markdown&#34;</span>&gt;
+			{{ if .Params.series }}
+  				{{ $name := index .Params.series 0 }}
+  				&lt;<span style="color:#268bd2">p</span> class<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;series_top_page&#34;</span> style<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;font-weight:50; background-color:#333&#34;</span>&gt;&lt;<span style="color:#268bd2">i</span>&gt;This post is part of the &lt;<span style="color:#268bd2">a</span> href<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;{{.Site.BaseURL}}/series/{{$name | urlize}}&#34;</span>&gt;{{$name}}&lt;/<span style="color:#268bd2">a</span>&gt; series.&lt;/<span style="color:#268bd2">i</span>&gt;&lt;/<span style="color:#268bd2">p</span>&gt;
+			{{ end }}
+			{{ .Content }}
+			{{ partial &#34;series_links.html&#34; . }}
+&lt;/<span style="color:#268bd2">div</span>&gt;
+</code></pre></div><p>What this does is, before your main content it displays a banner stating that the post is part of a series (this banner doesn&rsquo;t appear otherwise). This tells the reader right of the bat that there are more related posts they can check out and read. You can look at the banner at the top of this post to see what it looks like. All of this is done by the code that comes before the <code>{{ .Content }}</code></p>
+<p>The code that comes after content, i.e. <code>{{ partial &quot;series_links.html&quot; . }}</code> simply calls the <code>series_links.html</code> partial we created in step 2 and injects it here, right after your post&rsquo;s main content.</p>
+<h3 id="step-4">Step 4</h3>
+<p>Now for the final step, you&rsquo;ll have to add front matter to your posts - the ones you want to make part of the series. That will look something like this:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">---
+title: &#34;My Hugo Setup&#34;
+...
+series: [&#34;hugo-setup&#34;]
+tags:
+- tag1
+- tag2
+---
+</code></pre></div><h2 id="other-explorations">Other Explorations</h2>
+<ul>
+<li>I found <a href="http://www.joesacher.com/blog/2017/08/03/implementing-series-in-hugo/">an implementation</a> which added <a href="http://www.joesacher.com/blog/2017/08/27/converting-series-to-taxonomy/">fancier links to posts in series</a>, like keeping track of how many posts are in the series, adding next and previous links, etc. I had some trouble with that and I didn&rsquo;t have the patience to debug and set it up. This piece of code got the job done for me. But feel free to explore that and tweak it to your needs.</li>
+<li>I also stumbled upon <a href="https://www.notion.so/My-Hugo-Setup-Part-3-04f1eeac0db4403a8cdfdc37b6714db9">another implementation</a> which did something similar. It&rsquo;s worth checking that out.</li>
+</ul>
+
+			
+    
+    <hr/>
+    Other posts in this series:</p>
+
+    
+    
+    <ul class="series">
+    
+        <li>Jul 08, 2020 -
+        <a href="/posts/my-hugo-setup-part-3/">My Hugo Setup Part 3</a></li>
+    
+        <li>Jul 05, 2020 -
+        <a href="/posts/my-hugo-setup-part-2/">My Hugo Setup Part 2</a></li>
+    
+        <li>Jun 29, 2020 -
+        <a href="/posts/my-hugo-setup/">My Hugo Setup</a></li>
+    
+    </ul>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a class="p-category" href="/tags/hugo">hugo</a></li>
+								
+								<li><a class="p-category" href="/tags/100daystooffload">100DaysToOffload</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		</div>
+    </article>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script><p class="h-card vcard" style="display:none;">
+    <a style="text-decoration: none" href="https://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+    Rajath Ramakrishna</a>
+    <a rel="author">Rajath Ramakrishna</a>
+    <a class="p-nickname" rel="me">Rajath</a>
+    <a class="u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+    r.rajath@pm.me
+    </a>
+    <img class="u-photo" src="images/micro-post-photo.png" alt="" />
+</p>
+
+</body>
+</html>
