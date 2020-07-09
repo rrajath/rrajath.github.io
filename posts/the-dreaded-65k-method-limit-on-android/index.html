@@ -80,6 +80,7 @@
 		</div>
 
 		<div class="markdown">
+			
 			<p>If you&rsquo;re an Android developer, it&rsquo;s likely that you have experienced this at least a few times during your development.</p>
 <p>The first time I heard people talk about 65k method limit I wasn&rsquo;t aware of it so much. I was thinking, &ldquo;How can a small Android app have 65,000 methods? That&rsquo;s ridiculous! I don&rsquo;t know what people are complaining about.&rdquo; Then when I read what the fuss was all about, I realized that 65k method limit includes not just all the methods in my app, but also everything my app consumes. Yes, that includes libraries; even if you don&rsquo;t use them. Surprisingly I never ran into this issue before though I used to throw in libraries for every little thing without caring about how much it&rsquo;s contributing to the 65k limit. Of course, in the beginning I was using smaller libraries with low method count. Not giants like Goole Play Services. But in a recent project I was working on, one fine day I got this error:</p>
 <pre><code>Unable to execute dex: method ID not in [0, 0xffff]: 65536
@@ -103,6 +104,7 @@ compile 'com.google.android.gms:play-services-location:8.4.0'
 <li><a href="http://www.fasteque.com/deep-dive-into-android-multidex">Deep dive into Android Multidex</a></li>
 </ul>
 
+			
 		</div>
 
 		<div class="post-tags">
