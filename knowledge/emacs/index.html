@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="me" href="https://github.com/rrajath">
+    <link rel="me" href="https://linkedin.com/in/rrajath">
+    <link rel="webmention" href="https://webmention.io/rrajath.com/webmention" />
+    <link rel="pingback" href="https://webmention.io/rrajath.com/xmlrpc" />
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+    <link rel="microsub" href="https://aperture.p3k.io/microsub/532" />
+    <link rel="micropub" href="https://blotpub-rrajath.herokuapp.com/micropub" />
+    <link rel="me" href="https://micro.blog/rrajath" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Emacs - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/rrajath_favicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Emacs" />
+<meta property="og:description" content="tags Productivity, OrgMode  Keybindings Following are some of the commonly needed keybindings that I may not remember
+   Feature Keybinding Comment     Doom reload SPC h r r No need to restart Emacs." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/knowledge/emacs/" />
+<meta property="article:published_time" content="2020-09-08T00:00:00-07:00" />
+<meta property="article:modified_time" content="2020-09-08T22:18:42-07:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Emacs"/>
+<meta name="twitter:description" content="tags Productivity, OrgMode  Keybindings Following are some of the commonly needed keybindings that I may not remember
+   Feature Keybinding Comment     Doom reload SPC h r r No need to restart Emacs."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><link rel="stylesheet" type="text/css" href="/css/dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <article class="h-entry">
+	<div class="container wrapper post e-content p-name">
+		<div class="header">
+	<base href="/">
+	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
+	<div class="site-description"><h2>random ramblings</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/rrajath" title="Github"><i data-feather="github"></i></a><a href="https://linkedin.com/in/rrajath" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/micro">Micro</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/now">Now</a>
+			</li>
+			
+			<li>
+				<a href="/knowledge">Knowledge</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Emacs</h1>
+            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="/knowledge/emacs/"><time class="dt-published">Sep 8, 2020</time></a>  | 3 min read</div> 
+		</div>
+
+		<div class="markdown">
+			
+			<dl>
+<dt>tags</dt>
+<dd><a href="/knowledge/productivity/">Productivity</a>, <a href="/knowledge/orgmode/">OrgMode</a></dd>
+</dl>
+<h2 id="keybindings">Keybindings</h2>
+<p>Following are some of the commonly needed keybindings that I may not remember</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Keybinding</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Doom reload</td>
+<td><code>SPC h r r</code></td>
+<td>No need to restart Emacs. This is the same as running <code>doom sync</code></td>
+</tr>
+<tr>
+<td>Search for text using pattern</td>
+<td><code>SPC n v</code></td>
+<td>Searches headings in open buffers (and I think even bookmarks)</td>
+</tr>
+<tr>
+<td>Surround region</td>
+<td><code>S (</code></td>
+<td>Select a word using visual mode and then press this to change it to <code>( word )</code></td>
+</tr>
+<tr>
+<td>Set Property</td>
+<td><code>SPC m o</code></td>
+<td>Sets properties to headings</td>
+</tr>
+<tr>
+<td>Jump to Org Heading</td>
+<td><code>C-c C-j</code> or <code>SPC s i</code></td>
+<td>Brings up a list of headings in a mini buffer where you can jump to any heading <strong>in the current file</strong></td>
+</tr>
+<tr>
+<td>Export subtree to a markdown file</td>
+<td><code>SPC m e C-s m m</code></td>
+<td>Exports subtree in an org file to a .md file with the same name as the org file unless the property <code>EXPORT_FILE_NAME</code> is specified</td>
+</tr>
+<tr>
+<td>Org Capture dispatch</td>
+<td><code>SPC X</code></td>
+<td>Gives a list of capture templates to choose from</td>
+</tr>
+<tr>
+<td>Search for files in the project</td>
+<td><code>SPC s p</code></td>
+<td>You may have to switch to a different project if you want to find files in a different folder</td>
+</tr>
+<tr>
+<td>Locate files</td>
+<td><code>SPC s f</code></td>
+<td>Searches for files by name in the entire OS, not just the current directory</td>
+</tr>
+<tr>
+<td>Open private config folder</td>
+<td><code>SPC f p</code></td>
+<td>This opens the <code>~/.doom.d/</code> folder where you can select a file to open</td>
+</tr>
+<tr>
+<td>Switch workspaces</td>
+<td><code>Cmd+&lt;N&gt;</code></td>
+<td>Switch to the Nth workspace by hitting Cmd+N</td>
+</tr>
+<tr>
+<td>Filter headings by tags</td>
+<td><code>C-c \</code></td>
+<td>Hitting this will give you a list of tags which you can select and filter by</td>
+</tr>
+<tr>
+<td>Toggle Org Heading</td>
+<td><code>SPC m h</code></td>
+<td>Enable/disable heading on the current line</td>
+</tr>
+</tbody>
+</table>
+<h2 id="jump-to-word-in-a-file">Jump to word in a file</h2>
+<p>Type <code>g s SPC</code>. This will dim the screen where you can search for any string. After you type your characters, if there is only one match, it&rsquo;ll highlight the beginning of that word with a letter (usually, the letter <code>a</code>). Typing <code>a</code> will take the cursor to that word. If there are multiple words, Emacs will highlight each occurrence with one or two letter which you can then type and get to that word. It&rsquo;s super convenient in large files.</p>
+<p><strong>Note</strong>: This whole thing works only in the <strong>visible portion of the screen</strong> and not the entire doc.</p>
+<h2 id="jump-to-word-in-the-same-line">Jump to word in the same line</h2>
+<p>Using <code>evil-snipe</code>. Use <code>s</code> (forward snipe) or <code>S</code> (backward snipe) and immediately type couple of characters of the word you want to jump to.
+Use <code>,</code> to navigate to previous results and <code>;</code> to navigate to next results (if there are multiple results)</p>
+<p><strong>Remember</strong>: <code>evil-snipe</code> takes only two characters.</p>
+<h2 id="switch-between-todo-and-done-states-using-enter">Switch between <strong>TODO</strong> and <strong>DONE</strong> states using Enter</h2>
+<p>Press Enter (or <strong>RET</strong>) to change the state of a <strong>TODO</strong> item between <strong>TODO</strong> and <strong>DONE</strong> states. This behavior is similar to crossing items off a checklist <strong>[ ]</strong></p>
+<p><strong>Remember</strong>: this only switches between <strong>TODO</strong> and <strong>DONE</strong> and not any other states</p>
+
+			
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		</div>
+    </article>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script><p class="h-card vcard" style="display:none;">
+    <a style="text-decoration: none" href="https://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+    Rajath Ramakrishna</a>
+    <a rel="author">Rajath Ramakrishna</a>
+    <a class="p-nickname" rel="me">Rajath</a>
+    <a class="u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+    r.rajath@pm.me
+    </a>
+    <img class="u-photo" src="images/micro-post-photo.png" alt="" />
+</p>
+
+</body>
+</html>

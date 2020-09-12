@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Knowledges on Rajath Ramakrishna</title>
+    <link>/knowledge/</link>
+    <description>Recent content in Knowledges on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Fri, 11 Sep 2020 22:25:12 -0700</lastBuildDate>
+    
+	<atom:link href="/knowledge/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunset Illusion</title>
+      <link>/knowledge/sunset_illusion/</link>
+      <pubDate>Fri, 11 Sep 2020 22:25:12 -0700</pubDate>
+      
+      <guid>/knowledge/sunset_illusion/</guid>
+      <description>tags Astrophysics source YouTube  Sunset Illusion When light travels from one medium to another, it refracts. You can see this when you look at a straw through a glass of water.</description>
+    </item>
+    
+    <item>
+      <title>How to take smart notes</title>
+      <link>/knowledge/how_to_take_smart_notes/</link>
+      <pubDate>Fri, 11 Sep 2020 17:52:25 -0700</pubDate>
+      
+      <guid>/knowledge/how_to_take_smart_notes/</guid>
+      <description>Taking smart notes  take fleeting notes. Have a single place where all your notes go. These notes won&amp;rsquo;t be part of your zettelkasten.</description>
+    </item>
+    
+    <item>
+      <title>Earth&#39;s Orbit is not a long ellipse</title>
+      <link>/knowledge/earth_s_orbit_is_not_a_long_ellipse/</link>
+      <pubDate>Wed, 09 Sep 2020 10:54:00 -0700</pubDate>
+      
+      <guid>/knowledge/earth_s_orbit_is_not_a_long_ellipse/</guid>
+      <description>tags Astrophysics source YouTube  Earth&amp;rsquo;s orbit around the sun  it&amp;rsquo;s not a circle, not a long ellipse either.</description>
+    </item>
+    
+    <item>
+      <title>The Gettier Problem</title>
+      <link>/knowledge/the_gettier_problem/</link>
+      <pubDate>Wed, 09 Sep 2020 10:34:21 -0700</pubDate>
+      
+      <guid>/knowledge/the_gettier_problem/</guid>
+      <description>tags Learning, Sotware Development source Gettiers  The Gettier Problem To know something is to have a justified true belief about it:</description>
+    </item>
+    
+    <item>
+      <title>Bulk Export org-mode to md</title>
+      <link>/knowledge/bulk_export_org_mode_to_md/</link>
+      <pubDate>Wed, 09 Sep 2020 10:32:56 -0700</pubDate>
+      
+      <guid>/knowledge/bulk_export_org_mode_to_md/</guid>
+      <description>tags OrgMode, Emacs, Workflows source Bulk export org-mode to markdown  TODO: implement the script in the above link to make the following changes: - send all org files to a specific folder where Docsify is hosted - index.</description>
+    </item>
+    
+    <item>
+      <title>Astrophysics</title>
+      <link>/knowledge/astrophysics/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/astrophysics/</guid>
+      <description> tags Learning  </description>
+    </item>
+    
+    <item>
+      <title>Book: The Great Mental Models Vol.1</title>
+      <link>/knowledge/book_the_great_mental_models_vol_1/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/book_the_great_mental_models_vol_1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Books</title>
+      <link>/knowledge/books/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Caching</title>
+      <link>/knowledge/caching/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/caching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cooking</title>
+      <link>/knowledge/cooking/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/cooking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Databases</title>
+      <link>/knowledge/databases/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/databases/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distributed Caching</title>
+      <link>/knowledge/distributed_caching/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/distributed_caching/</guid>
+      <description>tags Caching source What is Distributed Caching  Notes  Cache is used to get the most frequently requested information faster instead of making a database call What are caches mainly used for?</description>
+    </item>
+    
+    <item>
+      <title>Do Better Code Reviews</title>
+      <link>/knowledge/do_better_code_reviews/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/do_better_code_reviews/</guid>
+      <description>tags Sotware Development  Things to keep in mind while doing code reviews:
+ While giving a comment, never mention the person, always reference the code.</description>
+    </item>
+    
+    <item>
+      <title>Docsify</title>
+      <link>/knowledge/docsify/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/docsify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emacs</title>
+      <link>/knowledge/emacs/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/emacs/</guid>
+      <description>tags Productivity, OrgMode  Keybindings Following are some of the commonly needed keybindings that I may not remember
+   Feature Keybinding Comment     Doom reload SPC h r r No need to restart Emacs.</description>
+    </item>
+    
+    <item>
+      <title>Learning</title>
+      <link>/knowledge/learning/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LifeProTips</title>
+      <link>/knowledge/lifeprotips/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/lifeprotips/</guid>
+      <description> Opening a banana upside down will make the stringy things stick to the peel (source: reddit)  </description>
+    </item>
+    
+    <item>
+      <title>Map is not the Territory</title>
+      <link>/knowledge/map_is_not_the_territory/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/map_is_not_the_territory/</guid>
+      <description>tags Mental Models, Learning, Book: The Great Mental Models Vol.1, Books source The Great Mental Models Vol. 1  The Map is not the Territory In other words, the description of the thing is not the thing itself.</description>
+    </item>
+    
+    <item>
+      <title>Mental Models</title>
+      <link>/knowledge/mental_models/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/mental_models/</guid>
+      <description>The quality of our thinking is largely influenced by the mental models in our heads. We learn something specific and don&amp;rsquo;t get exposure to the big ideas of other disciplines.</description>
+    </item>
+    
+    <item>
+      <title>NoSQL Databases</title>
+      <link>/knowledge/nosql_databases/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/nosql_databases/</guid>
+      <description> tags Databases source NoSQL Databases  Comparison with RDBMS    NoSQL RDBMS     insertions and retrievals are easy since all data are together in a JSON blob needs foreign keys and other tables for getting a coherent set of data   doesn&amp;rsquo;t guarantee ACID properties, so it can&amp;rsquo;t be used for transactions guarantees ACID   not read optimzed because it has to go to each row, unpack the JSON and update easier because it just has to go to that column and do aggregations   relations are not implicit, which means something like foreign key constraint cannot be enforced relationships are implicit   not built for joins and they are very expensive built for joins    </description>
+    </item>
+    
+    <item>
+      <title>OrgMode</title>
+      <link>/knowledge/orgmode/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/orgmode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OrgMode links to headings</title>
+      <link>/knowledge/org_mode_add_links_to_headings/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/org_mode_add_links_to_headings/</guid>
+      <description>tags Emacs, Productivity, OrgMode, Workflows  Add a link to headings in other org files Use file:~/path/to/file.org::Target
+ Target searches for a heading called Target.</description>
+    </item>
+    
+    <item>
+      <title>OrgMode Smart Archive</title>
+      <link>/knowledge/orgmode_smart_archive/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/orgmode_smart_archive/</guid>
+      <description>tags OrgMode, Emacs, Workflows  Smart Archive So far, my workflow in OrgMode for managing tasks and events was to have one file called organize.</description>
+    </item>
+    
+    <item>
+      <title>Personal Development</title>
+      <link>/knowledge/personal_development/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/personal_development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Philosophy</title>
+      <link>/knowledge/philosophy/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/philosophy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Podcasts</title>
+      <link>/knowledge/podcasts/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/podcasts/</guid>
+      <description>Some of them I actively listen to, others are just for reference:
+ LetsKnowThings Joe Rogan Experience Naval Podcast Philosophize This King Falls AM Stoicism for a Better Life Brain Lenses Derek Sivers Meta Mind Sean Carroll&amp;rsquo;s Mindscape Seen and the Unseen Eric Weinstein&amp;rsquo;s Portal The Tim Ferriss Show Future Thinkers Podcast  </description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>/knowledge/productivity/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sotware Development</title>
+      <link>/knowledge/sotware_development/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/sotware_development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stoicism</title>
+      <link>/knowledge/stoicism/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/stoicism/</guid>
+      <description>tags Personal Development, Philosophy  Quotes  An unexamined life is not worth living - Socrates
+ The Dichotomy of Control There are things that you can control and there are things that you cannot control.</description>
+    </item>
+    
+    <item>
+      <title>Workflows</title>
+      <link>/knowledge/workflows/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/workflows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writing</title>
+      <link>/knowledge/writing/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/writing/</guid>
+      <description>Mostly, tips for blogging. But, can be applied in general also.
+ A Blogging Style Guide A Blogging Style Guide Vol.</description>
+    </item>
+    
+    <item>
+      <title>Cooking Tips</title>
+      <link>/knowledge/cooking_tips/</link>
+      <pubDate>Sun, 06 Sep 2020 00:00:00 -0700</pubDate>
+      
+      <guid>/knowledge/cooking_tips/</guid>
+      <description>tags Cooking, LifeProTips    While sauteing onions, add salt to make it cook faster If you add excess salt in your curry, add a piece of potato for some time.</description>
+    </item>
+    
+  </channel>
+</rss>

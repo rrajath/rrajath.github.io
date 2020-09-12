@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 08 Jul 2020 21:03:07 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2020 22:25:12 -0700</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>astrophysics</title>
+      <link>/tags/astrophysics/</link>
+      <pubDate>Fri, 11 Sep 2020 22:25:12 -0700</pubDate>
+      
+      <guid>/tags/astrophysics/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>100DaysToOffload</title>
