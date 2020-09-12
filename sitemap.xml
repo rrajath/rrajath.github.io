@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/micro/</loc>
-    <lastmod>2020-09-11T22:34:06-07:00</lastmod>
+    <loc>/micro/gordon-brander/</loc>
+    <lastmod>2020-09-12T11:25:48-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/micro/pkm/</loc>
-    <lastmod>2020-09-11T22:34:06-07:00</lastmod>
+    <loc>/micro/</loc>
+    <lastmod>2020-09-12T11:25:48-07:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
+    <lastmod>2020-09-12T11:25:48-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/micro/pkm/</loc>
     <lastmod>2020-09-11T22:34:06-07:00</lastmod>
   </url>
   
