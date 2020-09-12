@@ -70,6 +70,10 @@
 				<a href="/now">Now</a>
 			</li>
 			
+			<li>
+				<a href="/knowledge">Knowledge</a>
+			</li>
+			
 		</ul>
 	</nav>
 </div>
@@ -89,7 +93,7 @@
 <p>I was used to Jekyll&rsquo;s way of doing things where it&rsquo;s just one repository on GitHub and all I had to do was <code>git push</code> and the blog would show up after about a minute. This means the repository contained both source and generated files. However, Hugo does things a little differently and I actually like it. There are several ways to deploy your Hugo website - using GitHub pages, GitLab, Netlify, etc. I chose GitHub pages since that&rsquo;s what I&rsquo;m most familiar with.</p>
 <p>If you are going with GitHub&rsquo;s User or Organization Pages, <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages">Hugo&rsquo;s recommendation</a> is to split the source and generated files into two different repositories. The repository that the generated files go to will be the front for the website. Let me explain what I did in a little more detail.</p>
 <p>Step 1: Create a GitHub repository. I called mine &ldquo;blog&rdquo;</p>
-<p>Step 2: Create another GitHub repository called <!-- raw HTML omitted -->.github.io. Mine is rrajath.github.io</p>
+<p>Step 2: Create another GitHub repository called <username>.github.io. Mine is rrajath.github.io</p>
 <p>Step 3: Do a <code>git clone</code> of the &ldquo;blog&rdquo; repository you created on GitHub.</p>
 <p>Step 4: Copy over your Hugo website on your local to the &ldquo;blog&rdquo; directory that you just cloned.</p>
 <p>Step 5: Add a submodule using the command: <code>git submodule add -b master https://github.com/username/username.github.io public</code>. This creates a git submodule that points to the <code>public</code> directory in your Hugo website.</p>

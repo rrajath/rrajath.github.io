@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>astrophysics on Rajath Ramakrishna</title>
+    <link>/tags/astrophysics/</link>
+    <description>Recent content in astrophysics on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Fri, 11 Sep 2020 22:25:12 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/astrophysics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunset Illusion</title>
+      <link>/knowledge/sunset_illusion/</link>
+      <pubDate>Fri, 11 Sep 2020 22:25:12 -0700</pubDate>
+      
+      <guid>/knowledge/sunset_illusion/</guid>
+      <description>tags Astrophysics source YouTube  Sunset Illusion When light travels from one medium to another, it refracts. You can see this when you look at a straw through a glass of water.</description>
+    </item>
+    
+  </channel>
+</rss>

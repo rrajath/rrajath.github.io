@@ -3,17 +3,192 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tags/astrophysics/</loc>
+    <lastmod>2020-09-11T22:25:12-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/</loc>
+    <lastmod>2020-09-11T22:25:12-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-09-11T22:25:12-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/sunset_illusion/</loc>
+    <lastmod>2020-09-11T22:25:12-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-09-11T22:25:12-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/how_to_take_smart_notes/</loc>
+    <lastmod>2020-09-11T17:52:25-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/earth_s_orbit_is_not_a_long_ellipse/</loc>
+    <lastmod>2020-09-09T10:54:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/the_gettier_problem/</loc>
+    <lastmod>2020-09-09T10:34:21-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/bulk_export_org_mode_to_md/</loc>
+    <lastmod>2020-09-09T10:32:56-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/astrophysics/</loc>
+    <lastmod>2020-09-09T09:56:22-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/book_the_great_mental_models_vol_1/</loc>
+    <lastmod>2020-09-08T22:20:06-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/books/</loc>
+    <lastmod>2020-09-08T22:20:23-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/caching/</loc>
+    <lastmod>2020-09-08T22:11:33-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/cooking/</loc>
+    <lastmod>2020-09-08T22:19:04-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/databases/</loc>
+    <lastmod>2020-09-08T22:12:48-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/distributed_caching/</loc>
+    <lastmod>2020-09-08T22:11:08-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/do_better_code_reviews/</loc>
+    <lastmod>2020-09-08T22:14:19-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/docsify/</loc>
+    <lastmod>2020-09-08T22:18:28-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/emacs/</loc>
+    <lastmod>2020-09-08T22:18:42-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/learning/</loc>
+    <lastmod>2020-09-08T22:18:47-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/lifeprotips/</loc>
+    <lastmod>2020-09-08T22:18:58-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/map_is_not_the_territory/</loc>
+    <lastmod>2020-09-08T22:01:01-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/mental_models/</loc>
+    <lastmod>2020-09-08T22:20:29-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/nosql_databases/</loc>
+    <lastmod>2020-09-08T22:12:25-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/orgmode/</loc>
+    <lastmod>2020-09-08T22:18:21-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/org_mode_add_links_to_headings/</loc>
+    <lastmod>2020-09-08T22:19:29-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/orgmode_smart_archive/</loc>
+    <lastmod>2020-09-08T22:18:03-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/personal_development/</loc>
+    <lastmod>2020-09-08T22:17:06-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/philosophy/</loc>
+    <lastmod>2020-09-08T22:16:53-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/podcasts/</loc>
+    <lastmod>2020-09-09T10:15:34-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/productivity/</loc>
+    <lastmod>2020-09-08T22:18:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/sotware_development/</loc>
+    <lastmod>2020-09-08T22:14:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/stoicism/</loc>
+    <lastmod>2020-09-08T22:15:01-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/workflows/</loc>
+    <lastmod>2020-09-08T22:18:32-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/writing/</loc>
+    <lastmod>2020-09-08T22:15:59-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/cooking_tips/</loc>
+    <lastmod>2020-09-08T22:18:53-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/micro/building-a-second-brain/</loc>
     <lastmod>2020-07-18T11:55:13-07:00</lastmod>
   </url>
   
   <url>
     <loc>/micro/</loc>
-    <lastmod>2020-07-18T11:55:13-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2020-07-18T11:55:13-07:00</lastmod>
   </url>
   
@@ -44,11 +219,6 @@
   
   <url>
     <loc>/series/</loc>
-    <lastmod>2020-07-08T21:12:22-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-07-08T21:12:22-07:00</lastmod>
   </url>
   
