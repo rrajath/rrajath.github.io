@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 18 Jul 2020 11:53:42 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2020 22:26:59 -0700</lastBuildDate>
     
 	<atom:link href="/micro/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pkm</title>
+      <link>/micro/pkm/</link>
+      <pubDate>Fri, 11 Sep 2020 22:26:59 -0700</pubDate>
+      
+      <guid>/micro/pkm/</guid>
+      <description>My new found interests: Personal Knowledge Management and Digital Gardens.
+ https://logseq.com https://wiki.nikitavoloboev.xyz  </description>
+    </item>
     
     <item>
       <title>Building a Second Brain</title>
