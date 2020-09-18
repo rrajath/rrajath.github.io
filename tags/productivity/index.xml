@@ -13,12 +13,12 @@
     
     
     <item>
-      <title>OrgMode Smart Refile</title>
-      <link>/posts/org-mode-smart-refile/</link>
+      <title>OrgMode Smart Archive</title>
+      <link>/posts/org-mode-smart-archive/</link>
       <pubDate>Thu, 17 Sep 2020 21:32:00 -0700</pubDate>
       
-      <guid>/posts/org-mode-smart-refile/</guid>
-      <description>Note: I use Doom Emacs, so some of the keybindings I mention in this article will be specific to Doom Emacs.</description>
+      <guid>/posts/org-mode-smart-archive/</guid>
+      <description>So far, my workflow in OrgMode for managing tasks and events was to have one file called organize.org that contains top-level headings - Tasks, Events that contained respective items.</description>
     </item>
     
   </channel>
