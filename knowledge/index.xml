@@ -7,10 +7,91 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Fri, 11 Sep 2020 22:25:12 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2020 22:33:11 -0700</lastBuildDate>
     
 	<atom:link href="/knowledge/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Questions</title>
+      <link>/knowledge/question/</link>
+      <pubDate>Tue, 15 Sep 2020 22:33:11 -0700</pubDate>
+      
+      <guid>/knowledge/question/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Customs and Traditions</title>
+      <link>/knowledge/customs_and_traditions/</link>
+      <pubDate>Tue, 15 Sep 2020 22:07:18 -0700</pubDate>
+      
+      <guid>/knowledge/customs_and_traditions/</guid>
+      <description>tags Map is not the Territory, Mental Models  Customs and Traditions Every culture has customs and traditions that have been passed down to us from generation to generation.</description>
+    </item>
+    
+    <item>
+      <title>Tragedy of the Commons</title>
+      <link>/knowledge/tragedy_of_the_commons/</link>
+      <pubDate>Tue, 15 Sep 2020 22:06:49 -0700</pubDate>
+      
+      <guid>/knowledge/tragedy_of_the_commons/</guid>
+      <description>tags Mental Models  Tragedy of the Commons It&amp;rsquo;s a concept where people take advantage of and overuse what&amp;rsquo;s common to everyone assuming that their singular overuse wouldn&amp;rsquo;t affect the whole.</description>
+    </item>
+    
+    <item>
+      <title>Map is not the Territory</title>
+      <link>/knowledge/map_is_not_the_territory/</link>
+      <pubDate>Tue, 15 Sep 2020 22:06:15 -0700</pubDate>
+      
+      <guid>/knowledge/map_is_not_the_territory/</guid>
+      <description>tags Mental Models, Learning, Book: The Great Mental Models Vol.1, Books source The Great Mental Models Vol. 1  Notes  Map is not a perfect depiction of the territory.</description>
+    </item>
+    
+    <item>
+      <title>Cognitive Biases</title>
+      <link>/knowledge/cognitive_biases/</link>
+      <pubDate>Tue, 15 Sep 2020 21:44:16 -0700</pubDate>
+      
+      <guid>/knowledge/cognitive_biases/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continued Influence Effect</title>
+      <link>/knowledge/continued_influence_effect/</link>
+      <pubDate>Tue, 15 Sep 2020 21:44:00 -0700</pubDate>
+      
+      <guid>/knowledge/continued_influence_effect/</guid>
+      <description>tags Cognitive Biases  Concept Even when we learn that something is incorrect, parts of the belief still remain intact.</description>
+    </item>
+    
+    <item>
+      <title>Slow update of Education System</title>
+      <link>/knowledge/slow_update_of_education_system/</link>
+      <pubDate>Tue, 15 Sep 2020 21:40:36 -0700</pubDate>
+      
+      <guid>/knowledge/slow_update_of_education_system/</guid>
+      <description>tags Map is not the Territory, Mental Models  The Education System Decades ago, the education system that we see today was created based on the job landscape that existed at the time.</description>
+    </item>
+    
+    <item>
+      <title>How to model a Zettel</title>
+      <link>/knowledge/how_to_model_a_zettel/</link>
+      <pubDate>Sun, 13 Sep 2020 21:53:05 -0700</pubDate>
+      
+      <guid>/knowledge/how_to_model_a_zettel/</guid>
+      <description>How to model index card in my zettelkasten  each index card (or note) must have one idea. It shouldn&amp;rsquo;t be a catch all for a subject like astrophysics.</description>
+    </item>
+    
+    <item>
+      <title>How to take smart notes</title>
+      <link>/knowledge/how_to_take_smart_notes/</link>
+      <pubDate>Sun, 13 Sep 2020 21:48:49 -0700</pubDate>
+      
+      <guid>/knowledge/how_to_take_smart_notes/</guid>
+      <description>Taking smart notes  take fleeting notes. Have a single place where all your notes go. These notes won&amp;rsquo;t be part of your zettelkasten.</description>
+    </item>
     
     <item>
       <title>Sunset Illusion</title>
@@ -19,15 +100,6 @@
       
       <guid>/knowledge/sunset_illusion/</guid>
       <description>tags Astrophysics source YouTube  Sunset Illusion When light travels from one medium to another, it refracts. You can see this when you look at a straw through a glass of water.</description>
-    </item>
-    
-    <item>
-      <title>How to take smart notes</title>
-      <link>/knowledge/how_to_take_smart_notes/</link>
-      <pubDate>Fri, 11 Sep 2020 17:52:25 -0700</pubDate>
-      
-      <guid>/knowledge/how_to_take_smart_notes/</guid>
-      <description>Taking smart notes  take fleeting notes. Have a single place where all your notes go. These notes won&amp;rsquo;t be part of your zettelkasten.</description>
     </item>
     
     <item>
@@ -94,15 +166,6 @@
     </item>
     
     <item>
-      <title>Cooking</title>
-      <link>/knowledge/cooking/</link>
-      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
-      
-      <guid>/knowledge/cooking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Databases</title>
       <link>/knowledge/databases/</link>
       <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
@@ -165,15 +228,6 @@
       
       <guid>/knowledge/lifeprotips/</guid>
       <description> Opening a banana upside down will make the stringy things stick to the peel (source: reddit)  </description>
-    </item>
-    
-    <item>
-      <title>Map is not the Territory</title>
-      <link>/knowledge/map_is_not_the_territory/</link>
-      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
-      
-      <guid>/knowledge/map_is_not_the_territory/</guid>
-      <description>tags Mental Models, Learning, Book: The Great Mental Models Vol.1, Books source The Great Mental Models Vol. 1  The Map is not the Territory In other words, the description of the thing is not the thing itself.</description>
     </item>
     
     <item>
@@ -295,15 +349,6 @@
       <guid>/knowledge/writing/</guid>
       <description>Mostly, tips for blogging. But, can be applied in general also.
  A Blogging Style Guide A Blogging Style Guide Vol.</description>
-    </item>
-    
-    <item>
-      <title>Cooking Tips</title>
-      <link>/knowledge/cooking_tips/</link>
-      <pubDate>Sun, 06 Sep 2020 00:00:00 -0700</pubDate>
-      
-      <guid>/knowledge/cooking_tips/</guid>
-      <description>tags Cooking, LifeProTips    While sauteing onions, add salt to make it cook faster If you add excess salt in your curry, add a piece of potato for some time.</description>
     </item>
     
   </channel>

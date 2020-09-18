@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>productivity on Rajath Ramakrishna</title>
+    <link>/tags/productivity/</link>
+    <description>Recent content in productivity on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Thu, 17 Sep 2020 21:32:00 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OrgMode Smart Refile</title>
+      <link>/posts/org-mode-smart-refile/</link>
+      <pubDate>Thu, 17 Sep 2020 21:32:00 -0700</pubDate>
+      
+      <guid>/posts/org-mode-smart-refile/</guid>
+      <description>Note: I use Doom Emacs, so some of the keybindings I mention in this article will be specific to Doom Emacs.</description>
+    </item>
+    
+  </channel>
+</rss>

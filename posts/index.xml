@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 08 Jul 2020 21:03:07 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2020 21:32:00 -0700</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OrgMode Smart Refile</title>
+      <link>/posts/org-mode-smart-refile/</link>
+      <pubDate>Thu, 17 Sep 2020 21:32:00 -0700</pubDate>
+      
+      <guid>/posts/org-mode-smart-refile/</guid>
+      <description>Note: I use Doom Emacs, so some of the keybindings I mention in this article will be specific to Doom Emacs.</description>
+    </item>
     
     <item>
       <title>My Hugo Setup Part 3</title>

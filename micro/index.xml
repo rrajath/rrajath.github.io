@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 12 Sep 2020 11:24:11 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2020 11:47:09 -0700</lastBuildDate>
     
 	<atom:link href="/micro/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Internet Explained First Principles</title>
+      <link>/micro/internet-explained-first-principles/</link>
+      <pubDate>Sat, 12 Sep 2020 11:47:09 -0700</pubDate>
+      
+      <guid>/micro/internet-explained-first-principles/</guid>
+      <description>Internet explained from First Principles
+https://explained-from-first-principles.com/internet</description>
+    </item>
     
     <item>
       <title>Gordon Brander</title>

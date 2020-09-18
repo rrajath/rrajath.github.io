@@ -3,17 +3,102 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/micro/gordon-brander/</loc>
-    <lastmod>2020-09-12T11:25:48-07:00</lastmod>
+    <loc>/tags/emacs/</loc>
+    <lastmod>2020-09-17T21:32:31-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/micro/</loc>
-    <lastmod>2020-09-12T11:25:48-07:00</lastmod>
+    <loc>/tags/orgmode/</loc>
+    <lastmod>2020-09-17T21:32:31-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/org-mode-smart-refile/</loc>
+    <lastmod>2020-09-17T21:32:31-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-09-17T21:32:31-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/productivity/</loc>
+    <lastmod>2020-09-17T21:32:31-07:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
+    <lastmod>2020-09-17T21:32:31-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-09-17T21:32:31-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/</loc>
+    <lastmod>2020-09-15T22:33:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/question/</loc>
+    <lastmod>2020-09-15T22:33:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/customs_and_traditions/</loc>
+    <lastmod>2020-09-15T22:07:18-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/tragedy_of_the_commons/</loc>
+    <lastmod>2020-09-15T22:06:50-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/map_is_not_the_territory/</loc>
+    <lastmod>2020-09-15T22:06:15-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/cognitive_biases/</loc>
+    <lastmod>2020-09-15T21:44:16-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/continued_influence_effect/</loc>
+    <lastmod>2020-09-15T21:44:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/slow_update_of_education_system/</loc>
+    <lastmod>2020-09-15T21:40:36-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/how_to_model_a_zettel/</loc>
+    <lastmod>2020-09-13T21:53:06-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/knowledge/how_to_take_smart_notes/</loc>
+    <lastmod>2020-09-13T21:48:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/micro/internet-explained-first-principles/</loc>
+    <lastmod>2020-09-12T11:47:09-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/micro/</loc>
+    <lastmod>2020-09-12T11:47:09-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/micro/gordon-brander/</loc>
     <lastmod>2020-09-12T11:25:48-07:00</lastmod>
   </url>
   
@@ -28,23 +113,8 @@
   </url>
   
   <url>
-    <loc>/knowledge/</loc>
-    <lastmod>2020-09-11T22:25:12-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/knowledge/sunset_illusion/</loc>
     <lastmod>2020-09-11T22:25:12-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-09-11T22:25:12-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/knowledge/how_to_take_smart_notes/</loc>
-    <lastmod>2020-09-11T17:52:25-07:00</lastmod>
   </url>
   
   <url>
@@ -83,11 +153,6 @@
   </url>
   
   <url>
-    <loc>/knowledge/cooking/</loc>
-    <lastmod>2020-09-08T22:19:04-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/knowledge/databases/</loc>
     <lastmod>2020-09-08T22:12:48-07:00</lastmod>
   </url>
@@ -120,11 +185,6 @@
   <url>
     <loc>/knowledge/lifeprotips/</loc>
     <lastmod>2020-09-08T22:18:58-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/knowledge/map_is_not_the_territory/</loc>
-    <lastmod>2020-09-08T22:01:01-07:00</lastmod>
   </url>
   
   <url>
@@ -193,11 +253,6 @@
   </url>
   
   <url>
-    <loc>/knowledge/cooking_tips/</loc>
-    <lastmod>2020-09-08T22:18:53-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/micro/building-a-second-brain/</loc>
     <lastmod>2020-07-18T11:55:13-07:00</lastmod>
   </url>
@@ -219,11 +274,6 @@
   
   <url>
     <loc>/posts/my-hugo-setup-part-3/</loc>
-    <lastmod>2020-07-08T21:12:22-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
     <lastmod>2020-07-08T21:12:22-07:00</lastmod>
   </url>
   
