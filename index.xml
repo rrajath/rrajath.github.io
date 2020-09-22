@@ -7,10 +7,73 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 17 Sep 2020 21:32:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2020 22:13:20 -0700</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Broken Window Theory</title>
+      <link>/knowledge/broken_window_theory/</link>
+      <pubDate>Mon, 21 Sep 2020 22:13:20 -0700</pubDate>
+      
+      <guid>/knowledge/broken_window_theory/</guid>
+      <description>tags Mental Models  Concept  One unrepaired broken window is a signal that no one cares, and so breaking more windows costs nothing - James Q.</description>
+    </item>
+    
+    <item>
+      <title>Podcast: Brain Lenses</title>
+      <link>/knowledge/podcast_brain_lenses/</link>
+      <pubDate>Mon, 21 Sep 2020 22:12:55 -0700</pubDate>
+      
+      <guid>/knowledge/podcast_brain_lenses/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Second Order Thinking</title>
+      <link>/knowledge/second_order_thinking/</link>
+      <pubDate>Mon, 21 Sep 2020 22:12:15 -0700</pubDate>
+      
+      <guid>/knowledge/second_order_thinking/</guid>
+      <description>tags Mental Models source Podcast: Brain Lenses  Concept  It&amp;rsquo;s a concept where one not only thinks about the immediate consequences of an event, but also the secondary outcomes that are produced by the first outcomes This is hard because predicting primary outcomes is easy because there are very few unknowns.</description>
+    </item>
+    
+    <item>
+      <title>Circle of Competence</title>
+      <link>/knowledge/circle_of_competence/</link>
+      <pubDate>Sun, 20 Sep 2020 22:15:44 -0700</pubDate>
+      
+      <guid>/knowledge/circle_of_competence/</guid>
+      <description>tags Mental Models, Books source Book: The Great Mental Models Vol.1  Concept It&amp;rsquo;s where you know what you&amp;rsquo;re good at and what you&amp;rsquo;re not good at.</description>
+    </item>
+    
+    <item>
+      <title>Book: How to take Smart Notes</title>
+      <link>/knowledge/book_how_to_take_smart_notes/</link>
+      <pubDate>Thu, 17 Sep 2020 22:46:33 -0700</pubDate>
+      
+      <guid>/knowledge/book_how_to_take_smart_notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zeigarnik Effect</title>
+      <link>/knowledge/zeigarnik_effect/</link>
+      <pubDate>Thu, 17 Sep 2020 22:46:14 -0700</pubDate>
+      
+      <guid>/knowledge/zeigarnik_effect/</guid>
+      <description>tags Cognitive Biases source Book: How to take Smart Notes  Concept  Open tasks tend to occupy our short-term memory until they&amp;rsquo;re finished.</description>
+    </item>
+    
+    <item>
+      <title>Using Zeigarnik Effect to our advantage</title>
+      <link>/knowledge/using_zeigarnik_effect_to_our_advantage/</link>
+      <pubDate>Thu, 17 Sep 2020 22:46:02 -0700</pubDate>
+      
+      <guid>/knowledge/using_zeigarnik_effect_to_our_advantage/</guid>
+      <description>tags Zeigarnik Effect source Book: How to take Smart Notes  Zeigarnik Effect can be used to our advantage by taking notes.</description>
+    </item>
     
     <item>
       <title>OrgMode Smart Archive</title>
@@ -222,16 +285,6 @@ https://explained-from-first-principles.com/internet</description>
     </item>
     
     <item>
-      <title>Do Better Code Reviews</title>
-      <link>/knowledge/do_better_code_reviews/</link>
-      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
-      
-      <guid>/knowledge/do_better_code_reviews/</guid>
-      <description>tags Sotware Development  Things to keep in mind while doing code reviews:
- While giving a comment, never mention the person, always reference the code.</description>
-    </item>
-    
-    <item>
       <title>Docsify</title>
       <link>/knowledge/docsify/</link>
       <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
@@ -303,15 +356,6 @@ https://explained-from-first-principles.com/internet</description>
       <guid>/knowledge/org_mode_add_links_to_headings/</guid>
       <description>tags Emacs, Productivity, OrgMode, Workflows  Add a link to headings in other org files Use file:~/path/to/file.org::Target
  Target searches for a heading called Target.</description>
-    </item>
-    
-    <item>
-      <title>OrgMode Smart Archive</title>
-      <link>/knowledge/orgmode_smart_archive/</link>
-      <pubDate>Tue, 08 Sep 2020 00:00:00 -0700</pubDate>
-      
-      <guid>/knowledge/orgmode_smart_archive/</guid>
-      <description>tags OrgMode, Emacs, Workflows  Smart Archive So far, my workflow in OrgMode for managing tasks and events was to have one file called organize.</description>
     </item>
     
     <item>
