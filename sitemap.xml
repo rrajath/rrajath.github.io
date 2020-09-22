@@ -3,17 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/micro/cognitive-bias-cheat-sheet/</loc>
+    <lastmod>2020-09-21T22:23:15-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/micro/</loc>
+    <lastmod>2020-09-21T22:23:15-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-09-21T22:23:15-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/knowledge/broken_window_theory/</loc>
     <lastmod>2020-09-21T22:13:20-07:00</lastmod>
   </url>
   
   <url>
     <loc>/knowledge/</loc>
-    <lastmod>2020-09-21T22:13:20-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2020-09-21T22:13:20-07:00</lastmod>
   </url>
   
@@ -128,11 +138,6 @@
   </url>
   
   <url>
-    <loc>/micro/</loc>
-    <lastmod>2020-09-12T11:47:09-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/micro/gordon-brander/</loc>
     <lastmod>2020-09-12T11:25:48-07:00</lastmod>
   </url>
@@ -210,11 +215,6 @@
   <url>
     <loc>/knowledge/learning/</loc>
     <lastmod>2020-09-08T22:18:47-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/knowledge/lifeprotips/</loc>
-    <lastmod>2020-09-08T22:18:58-07:00</lastmod>
   </url>
   
   <url>
