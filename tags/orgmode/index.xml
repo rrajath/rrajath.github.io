@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 17 Sep 2020 21:32:00 -0700</lastBuildDate>
-    
-	<atom:link href="/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 17 Sep 2020 21:32:00 -0700</lastBuildDate><atom:link href="/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OrgMode Smart Archive</title>
       <link>/posts/org-mode-smart-archive/</link>
