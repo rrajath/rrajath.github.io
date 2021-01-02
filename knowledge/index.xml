@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 21 Sep 2020 22:13:20 -0700</lastBuildDate>
-    
-	<atom:link href="/knowledge/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 21 Sep 2020 22:13:20 -0700</lastBuildDate><atom:link href="/knowledge/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Broken Window Theory</title>
       <link>/knowledge/broken_window_theory/</link>

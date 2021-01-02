@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 16 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/project-fi/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 16 Jan 2016 00:00:00 +0000</lastBuildDate><atom:link href="/tags/project-fi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Two Months With Project Fi</title>
       <link>/posts/two-months-with-project-fi/</link>

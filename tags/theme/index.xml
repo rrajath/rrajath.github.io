@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 14 Nov 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/theme/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 14 Nov 2013 00:00:00 +0000</lastBuildDate><atom:link href="/tags/theme/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Theme Setup</title>
       <link>/posts/my-theme-setup/</link>
