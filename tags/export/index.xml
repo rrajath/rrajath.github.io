@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>export on Rajath Ramakrishna</title>
+    <link>/tags/export/</link>
+    <description>Recent content in export on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Sat, 02 Jan 2021 15:17:57 -0800</lastBuildDate><atom:link href="/tags/export/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exporting Google Photos</title>
+      <link>/posts/exporting-google-photos/</link>
+      <pubDate>Sat, 02 Jan 2021 15:17:57 -0800</pubDate>
+      
+      <guid>/posts/exporting-google-photos/</guid>
+      <description>I recently purchased a Synology NAS and I started hosting a media server containing movies, TV shows and photos. I had stored all my photos in Google Photos for the past several years.</description>
+    </item>
+    
+  </channel>
+</rss>
