@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/</loc>
+    <lastmod>2021-01-09T16:29:29-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/privacy/</loc>
+    <lastmod>2021-01-09T16:29:29-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-01-09T16:29:29-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/signal/</loc>
+    <lastmod>2021-01-09T16:29:29-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-01-09T16:29:29-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/whatsapp/</loc>
+    <lastmod>2021-01-09T16:29:29-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/whatsapp-privacy-policy-signal/</loc>
+    <lastmod>2021-01-09T16:29:29-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/baketime/</loc>
     <lastmod>2021-01-02T17:45:28-08:00</lastmod>
   </url>
@@ -19,21 +54,6 @@
   
   <url>
     <loc>/tags/learning/</loc>
-    <lastmod>2021-01-02T17:45:28-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
-    <lastmod>2021-01-02T17:45:28-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2021-01-02T17:45:28-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2021-01-02T17:45:28-08:00</lastmod>
   </url>
   
