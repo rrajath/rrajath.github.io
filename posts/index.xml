@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Tue, 05 Jan 2021 17:10:14 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jan 2021 15:16:44 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WhatsApp 0:1 Signal</title>
+      <link>/posts/whatsapp-privacy-policy-signal/</link>
+      <pubDate>Sat, 09 Jan 2021 15:16:44 -0800</pubDate>
+      
+      <guid>/posts/whatsapp-privacy-policy-signal/</guid>
+      <description>I&amp;rsquo;ve been on Signal for a few years now, but it has mostly been crickets and tumbleweeds there because I only had a handful of contacts that were on Signal.</description>
+    </item>
+    
     <item>
       <title>Ideas Need Sufficient Baketime</title>
       <link>/posts/ideas-need-sufficient-baketime/</link>
