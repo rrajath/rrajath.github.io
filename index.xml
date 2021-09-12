@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 30 May 2021 17:44:42 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Aug 2021 11:10:00 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OrgMode Tips and Tricks</title>
+      <link>/posts/orgmode-tips-tricks/</link>
+      <pubDate>Wed, 04 Aug 2021 11:10:00 -0700</pubDate>
+      
+      <guid>/posts/orgmode-tips-tricks/</guid>
+      <description>Add a link to headings in other org files Use file:~/path/to/file.org::Target
+ Target searches for a heading called Target. If not found, it&amp;rsquo;ll ask to create one *Target points to a heading called Target  </description>
+    </item>
+    
     <item>
       <title>On Analysis Paralysis</title>
       <link>/posts/on-analysis-paralysis/</link>
