@@ -41,7 +41,7 @@ a:hover {
 }
 
 .underline {
-		text-decoration: underline double red;
+		text-decoration: underline;
 }
 
 .post-tags .tags a {

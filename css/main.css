@@ -151,7 +151,7 @@ ul.flat li {
 }
 
 .underline {
-		text-decoration: underline double red;
+		text-decoration: underline;
 }
 
 .prevent-collapse {
