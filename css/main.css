@@ -150,6 +150,10 @@ ul.flat li {
     margin-left: 0;
 }
 
+.underline {
+		text-decoration: underline double red;
+}
+
 .prevent-collapse {
     min-height: .1rem
 }

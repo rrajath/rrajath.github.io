@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 21 Sep 2020 22:22:15 -0700</lastBuildDate><atom:link href="/micro/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Sep 2021 19:35:00 -0700</lastBuildDate><atom:link href="/micro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Untools</title>
+      <link>/micro/untools-tools-for-better-thinking/</link>
+      <pubDate>Sat, 11 Sep 2021 19:35:00 -0700</pubDate>
+      
+      <guid>/micro/untools-tools-for-better-thinking/</guid>
+      <description>Untools - Tools for better thinking
+https://untools.co</description>
+    </item>
+    
     <item>
       <title>Cognitive Bias Cheat Sheet</title>
       <link>/micro/cognitive-bias-cheat-sheet/</link>
