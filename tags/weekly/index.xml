@@ -14,7 +14,15 @@
       <pubDate>Sat, 03 May 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-16/</guid>
-      <description>All in all, this project was an extremely interesting one. We got to learn a lot from this project, especially being new to Android development.</description>
+      <description>&lt;p&gt;All in all, this project was an extremely interesting one. We got to learn a lot from this project, especially being new to Android development.&lt;/p&gt;
+&lt;p&gt;In conclusion, this project demonstrates a car navigation system as an Android app that uses one of the localization techniques, namely, WiFi Fingerprinting to navigate a car in a restricted indoor space. Due to poor visibility of satellites inside an indoor structure, fingerprints from the available access points can be used for navigation. Although this method of navigating cars inside indoor spaces are basically smartphone apps that add nothing to the existing infrastructure, the
+downside of this approach is that one has to not only depend on the availability of routers during the offline/online phase, but also keep track of the addition or deletion of routers between offline and online phases.&lt;/p&gt;
+&lt;p&gt;We made few mistakes which we realized too late in the project and it was too costly to correct. Some of them are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Making our own routing algorithm instead of using Dijkstra&amp;rsquo;s. Had we used Dijkstra&amp;rsquo;s shortest path algorithm, our code would have been much simpler and would have worked for pretty much any parking lot.&lt;/li&gt;
+&lt;li&gt;Not using a MapView. Being new to Android, it was hard for us to play around with MapView and understand how to make a pointer move on the map as the car moves in the parking lot. We postponed that task till the end, though researching about it periodically. But that&amp;rsquo;s one major drawback with this project.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -23,7 +31,20 @@
       <pubDate>Sat, 26 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-15/</guid>
-      <description>Two phones were used as part of testing – LG Nexus 4 and HTC One. Logging was done multiple times during the day, between 11am and 5pm.</description>
+      <description>&lt;p&gt;Two phones were used as part of testing – LG Nexus 4 and HTC One. Logging was done multiple times during the day, between 11am and 5pm. One floor was considered to test the accuracy of the algorithm. A total of 28 feature points were collected on one floor. About 150 scans were performed on each feature point and about 750 records were inserted into the database. With the above-mentioned algorithm and localization approach, an accuracy of at least 10m was obtained. We noticed that HTC One
+did not record signal strengths less than - 90 and hence we had to tweak the code for data collection to make it uniform with the other phones.&lt;/p&gt;
+&lt;h3 id=&#34;challenges-faced&#34;&gt;Challenges faced&lt;/h3&gt;
+&lt;p&gt;We faced many challenges while working on this project.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Unavailability of GPS was a huge drawback. We did not get GPS signal in the middle of the parking lot, but when we tried locating ourselves near the corners of the parking lot, the GPS was pointing to a different building altogether.&lt;/li&gt;
+&lt;li&gt;Unavailability of wireless access points inside the parking lot. Since there are no wireless routers inside the parking lot and we depend on the beacons received from neighboring buildings, trilateration cannot be applied which became a huge drawback for accuracy.&lt;/li&gt;
+&lt;li&gt;In the online phase, some wireless routers were turned off at certain times, mostly during the evening and weekends. This delays data collection process and also hinders the actual working of the app since there are no access points to match the existing database with.&lt;/li&gt;
+&lt;li&gt;Phones detect signals differently. We tested our app with LG Nexus 4 and HTC One. We observed that HTC One is incapable of recognizing weak signals. So if data collection is done with a Nexus 4, HTC One will have errors in matching fingerprints since most of the signals captured and stored in the database will be outliers to HTC.&lt;/li&gt;
+&lt;li&gt;We tried using accelerometer, gyroscope and other sensor to detect movement, direction and orientation. But this posed a problem since the results from sensors change in microseconds time and we will not get an accurate reading of the sensors.&lt;/li&gt;
+&lt;li&gt;We tried classifying each feature point into different classes and use Support Vector Machines to localize. But this approach does not really work with less data in this case since we have less number of feature points.&lt;/li&gt;
+&lt;li&gt;The signal strengths from wireless routers keep varying since they depend on many factors such as weather, location and number of cars or people inside the parking lot. Also, some scans identify a good number of access points while some don’t. This instability makes it difficult to match fingerprints from the database thus resulting in inaccuracy.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -32,7 +53,12 @@
       <pubDate>Sat, 19 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-14/</guid>
-      <description>This week we concentrated on Navigation and Voice Alerts. Calculation of the route path is quite easy and it&amp;rsquo;s a one-time task, the results of which will be used repetitively for navigation.</description>
+      <description>&lt;p&gt;This week we concentrated on Navigation and Voice Alerts. Calculation of the route path is quite easy and it&amp;rsquo;s a one-time task, the results of which will be used repetitively for navigation. Navigation in itself is quite complicated since it involves detecting the location of the user and then directing him accordingly. So the whole process banks on the accuracy of the current location of the user. Any mistake in the location of the user will result in displaying the directions too early or
+too late thus leading to a bad user experience. Hence this needs efficient calibration in terms of number of times the search for the location happens, the number of navigation cells to be considered for search and the like.&lt;/p&gt;
+&lt;p&gt;We have used the current navigation cell and the next two cells along the navigation path during testing and fine tuning and they ended up giving good results. What we employed was to detect intersection points in the route digraph and alert the user when he reaches the intersection point. Thus in the search for the next probable position of the car along the navigation path, if the returned grid coordinate is one of the intersection points, the alert is displayed to the user asking him
+to make a left turn or a right turn accordingly. Similarly, if the destination is among the next 3 cells, then the last voice alert is displayed which says - your destination is on the left (or right).&lt;/p&gt;
+&lt;p&gt;Voice alerts were easy since all it expects is a string and it says whatever is passed through that string. We maintained all the voice alerts in a queue and these were computed during the route calculation. As and when an intersection is approached, the queue is emptied one by one.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -41,7 +67,12 @@
       <pubDate>Sat, 12 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-13/</guid>
-      <description>This week we implemented the Routing Algorithm. We considered each intersection as a checkpoint and made a graph out of the navigation paths and the corresponding intersection points among them.</description>
+      <description>&lt;p&gt;This week we implemented the Routing Algorithm. We considered each intersection as a checkpoint and made a graph out of the navigation paths and the corresponding intersection points among them. Doing this helps us in finding out the best way to navigate to any parking slot. Most parking structures have uni-directional paths. That is, cars can go only in one direction. They pretty much don&amp;rsquo;t have a choice in terms of choosing different ways to get to the destination parking slot. We used this
+to our advantage in our routing algorithm. The directed graph that we created had nodes as the intersections and edges as the navigation paths in which cars can move. Below is a good illustration of how we visualized our routing algorithm.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/routing-algorithm.png&#34; alt=&#34;Routing Algorithm&#34;&gt;&lt;/p&gt;
+&lt;p&gt;As you see in the figure, N, S, E, W, NE, SW refers to the direction in which a car can move upon reaching that intersection point. The edges have a fixed value so that it would be easy to calculate distances. The arrows shown in red are part of the navigation path. From the start point to the destination the path is along the checkpoints - N, W, W, SW and E. And the distances along the path are calculated accordingly. The starting point is fixed since the app starts when the car enters
+the lot. Once the user selects a parking slot, the route is calculated using the routing algorithm mentioned above. This should be giving the user a step by step navigation and voice alerts as and when he turns.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -50,7 +81,9 @@
       <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-12/</guid>
-      <description>Geofencing is a concept wherein a fence is created around a particular area and any action can be performed once a mobile device enters this fence.</description>
+      <description>&lt;p&gt;Geofencing is a concept wherein a fence is created around a particular area and any action can be performed once a mobile device enters this fence. Google detects when the mobile device enters this fence and allows the developer to invoke any activity or service. So the way it works is that it expects an x,y coordinate and a radius parameter. The radius parameter creates a circular fence around the co-ordinates.&lt;/p&gt;
+&lt;p&gt;We have used this concept in our project in order to detect if the user is entering the parking structure. If so, we invoke our application and set the starting point as the entrance of the parking structure and present the user with the list of available parking slots to choose from. Once the user chooses the parking slot, the app calculates the route and starts navigating.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -59,7 +92,11 @@
       <pubDate>Sat, 29 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-11/</guid>
-      <description>The online phase is where scans are made periodically and matched with the offline database to find the current location of the user.</description>
+      <description>&lt;p&gt;The online phase is where scans are made periodically and matched with the offline database to find the current location of the user. When a scan is made the set of fingerprints are captured and compared with existing data in the database. With Nearest Neighbour algorithm, we predict 3 closest matches as to where the user could be. Initially, we were searching the whole database to find the 3 closest matches, but later on we reduced our search space significantly by searching
+the current and the next 2 cells along the navigation path. If the database search yields a (or any) result, then the current location of the user will be updated to the yielded result. Else, we assume that there is no change in the user&amp;rsquo;s location. This way, the search happens every 2 seconds and the position is updated accordingly as and when the car moves inside the parking lot. To illustrate this approach, refer the figure below.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/position-prediction.png&#34; alt=&#34;Position Prediction&#34;&gt;&lt;/p&gt;
+&lt;p&gt;As you can see in the image, the green cells are the next 3 predicted cells on the navigation path, the blue cells are rest of the cells and the orange cells are the ramps in the middle of the parking that takes you to the next level of the parking structure. The worst case is when the search results yield nothing thus not changing the position of the car on the map. If the search results do yield something, the car moves forward.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -68,7 +105,17 @@
       <pubDate>Sat, 22 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-10/</guid>
-      <description>In order to bulk load the parking cell data, I chose to use a JSON file as it is simpler to edit cell information (if need be).</description>
+      <description>&lt;p&gt;In order to bulk load the parking cell data, I chose to use a JSON file as it is simpler to edit cell information (if need be). I wrote a Python script to generate the JSON file with parking cell information. The JSON file is an array of parking cells wherein each element in that array has the grid co-ordinates. With this information, I will be able to bulk insert information about all parking cells into the database. A simple button on the Intro Activity takes care of this task.&lt;/p&gt;
+&lt;p&gt;Since each navigation cell has a parking cell on either side, the navigation cell id for those parking cells must be updated. The DataSource file has all the relevant methods to do these operations.&lt;/p&gt;
+&lt;p&gt;Also, the colored cell issue still persists and I&amp;rsquo;m almost on the verge of giving up in order to not waste any more time on this. I am instead thinking of reducing the height of the cells in the grid view to make it non-scrollable.&lt;/p&gt;
+&lt;p&gt;I also added a background image (the floor plan) to the grid view and made the grid transparent, but for some reason the image is distorted. I am currently not concentrating on fixing that issue since the offline phase is used for our reference to build the database with fingerprints and will not be shown to the user.&lt;/p&gt;
+&lt;p&gt;This completes the development for the offline phase. Any more development on this will only be bug fixes. The online phase will be a new app altogether that involves tracking current user location, routing algorithm and navigation.&lt;/p&gt;
+&lt;p&gt;So here&amp;rsquo;s the target for next week:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Explore a way to train the offline data using data mining algorithms. Also explore other ways to find nearest match of fingerprints with the offline database.&lt;/li&gt;
+&lt;li&gt;Implement GeoFencing.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -77,7 +124,20 @@
       <pubDate>Sat, 15 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-9/</guid>
-      <description>After last week&amp;rsquo;s development, there was pretty good progress with the project. We managed to get the following things done:</description>
+      <description>&lt;p&gt;After last week&amp;rsquo;s development, there was pretty good progress with the project. We managed to get the following things done:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Created an activity to manage database: This activity is a drop down of table names with buttons to delete both the auto-increment sequences and the data from selected table. This becomes easier for testing so that pretty much all database related tasks can be handled on the fly.&lt;/li&gt;
+&lt;li&gt;Abstracted scan logic from the main activity to make the code more readable and increase modularity.&lt;/li&gt;
+&lt;li&gt;Some code cleanup: segregating classes to different packages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The issue with colored cells in the grid still persists and I am not sure how to fix that. Will keep looking and I&amp;rsquo;ll post an update soon if I find something that works.&lt;/p&gt;
+&lt;p&gt;There are plenty of parking cells and relatively fewer navigation cells. Also parking cells have pretty much the same data that does not change over time. So it is better to bulk load the data since we already know the positions of these cells on the grid. The only thing we don&amp;rsquo;t know is that the neighboring navigation cell id for each parking cell. We don&amp;rsquo;t know this because we still haven&amp;rsquo;t scanned the neighboring navigation cells. Once we scan a navigation cell, we will assign the neighboring parking cells the corresponding id so that it will be easier to pick the navigation cell as the destination point.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the target for next week:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bulk load the parking cell data&lt;/li&gt;
+&lt;li&gt;Update neighboring parking cells to hold navigation cell IDs.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -86,9 +146,28 @@
       <pubDate>Sat, 08 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-8/</guid>
-      <description>As per the design, we created database schemas, tables and other relevant classes:
-Database:
- parking_table to store information about the parking slots.</description>
+      <description>&lt;p&gt;As per the design, we created database schemas, tables and other relevant classes:&lt;/p&gt;
+&lt;p&gt;Database:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;parking_table&lt;/code&gt; to store information about the parking slots.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;navigation_table&lt;/code&gt; to store information about navigation path.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fingerprint_table&lt;/code&gt; to store information about fingerprints scanned in different cells on the grid.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Other classes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Created two activities - one to display the grid and one to scan and save fingerprints.&lt;/li&gt;
+&lt;li&gt;Created entity beans corresponding to the database schemas that were created.&lt;/li&gt;
+&lt;li&gt;Added multiple scans feature wherein you can perform any number of scans you want (using Start and Stop buttons) and the mean RSS value will be considered.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To make a grid we tried TableLayout, LinearLayout and GridLayout, but finally ended up using GridView to represent the grid since that is the easiest way to handle parking cells and navigation cells in our project. I changed the color of the selected cell to indicate that the scan has been performed. The only issue is that upon scroll, the colored cells change position; so every time there&amp;rsquo;s a scroll where the colored cell goes off the screen, a different cell is colored upon scrolling back. Nonetheless, it does not affect the values in the grid, it&amp;rsquo;s only the colored cell that changes.&lt;/p&gt;
+&lt;p&gt;Also, a DataSource class contains methods to perform CRUD operations on tables. For each fingerprint that is scanned, a record will be inserted in the &lt;code&gt;navigation_table&lt;/code&gt; with the respective grid co-ordinates. Each record will point to a fingerprint id that was generated during the scan.&lt;/p&gt;
+&lt;p&gt;Plan for next week:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix the colored cell issue&lt;/li&gt;
+&lt;li&gt;Abstract the scanning logic from the Activity&lt;/li&gt;
+&lt;li&gt;Add an activity to view and manage database&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -97,7 +176,16 @@ Database:
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-7/</guid>
-      <description>Before I go to the details about the working of the project, I would like to explain my Development Environment - the tools I use and why I use them.</description>
+      <description>&lt;p&gt;Before I go to the details about the working of the project, I would like to explain my Development Environment - the tools I use and why I use them.&lt;/p&gt;
+&lt;h2 id=&#34;ide-intellij-idea-13&#34;&gt;IDE: IntelliJ IDEA 13&lt;/h2&gt;
+&lt;p&gt;I am a huge fan of IntelliJ IDEA since I got my hands on it during my internship. This JetBrains team is pure genius and have put some serious thought while creating the IDE. It is so much better than Eclipse in terms of features, speed and performance. It also has Eclipse shortcuts which makes the transition from Eclipse a lot smoother. It has an awesome set of plugins, which are easy to load and install. It also has its own versioning system wherein you can dig up files from local history and revert to any previous version or just include part of the changes. There are plenty of good features to talk about and I&amp;rsquo;m sure any developer will fall in love with this IDE once s/he starts using it.&lt;/p&gt;
+&lt;h2 id=&#34;emulator-genymotion&#34;&gt;Emulator: Genymotion&lt;/h2&gt;
+&lt;p&gt;Accept it. The default Android emulator SUCKS! It&amp;rsquo;s too slow and there&amp;rsquo;s always a lag no matter what you do - open an application or just swipe screens. It consumes lot of memory making the laptop slow and also burning your lap (Oh yes. It heats up the laptop turning it into a furnace). Genymotion is, again, an emulator that I used during my internship and it&amp;rsquo;s extremely fast. It&amp;rsquo;s as if using your phone. The transitions are smooth and seamless and it consumes less memory. Android developers MUST give it a try.&lt;/p&gt;
+&lt;h2 id=&#34;version-control-git&#34;&gt;Version Control: Git&lt;/h2&gt;
+&lt;p&gt;Git is obviously the primary choice when it comes to version control. Since I have a teammate in the project, it will be easier to collaborate using Git, maintain a Wiki, track issues, etc.&lt;/p&gt;
+&lt;h2 id=&#34;workflow-gitflow&#34;&gt;Workflow: GitFlow&lt;/h2&gt;
+&lt;p&gt;The workflow we follow is the famous &lt;a href=&#34;http://nvie.com/posts/a-successful-git-branching-model/&#34;&gt;GitFlow&lt;/a&gt; model. So basically the &lt;code&gt;master&lt;/code&gt; branch is untouched until a major release. &lt;code&gt;develop&lt;/code&gt; branch is where all the development happens. When we split up the tasks and each work on a feature, we create local branches, commit changes, merge the branch with &lt;code&gt;develop&lt;/code&gt; and then delete that branch. This makes managing code base a lot simpler.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -106,7 +194,37 @@ Database:
       <pubDate>Sat, 22 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-6/</guid>
-      <description>ParkAssist In my previous post I gave a brief overview about the project that I was working on and its problem statement.</description>
+      <description>&lt;h2 id=&#34;parkassist&#34;&gt;ParkAssist&lt;/h2&gt;
+&lt;p&gt;In my previous post I gave a brief overview about the project that I was working on and its problem statement. After much research about how WiFi localization works and everything that we need to know about it, we started working on the design. Our approach uses WiFi localization, accelerometer and gyroscope for navigating the car. By the way, the name of the app is called ParkAssist. The project will up on GitHub and will have regular commits for the next couple of months.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-a-wifi-fingerprint&#34;&gt;What is a WiFi fingerprint?&lt;/h2&gt;
+&lt;p&gt;A fingerprint at a location is a set of access points and their corresponding signal strengths that can uniquely identify that location. Any point inside a building having multiple access points will have different set of fingerprints. Since we have different sets of (access point, signal strength) pairs for each location, we will be able to identify each location uniquely.&lt;/p&gt;
+&lt;h2 id=&#34;design&#34;&gt;Design&lt;/h2&gt;
+&lt;p&gt;We obtained the blueprint of the parking lot from our college Facilities Department. The parking lot has 3 floors with about 200+ slots spread out across each floor. We observed that the parking lot resembled a grid and hence we decided to divide the parking lot into a grind containing cells each of which must have a fingerprint associated with it. Later we realized that we don&amp;rsquo;t have to record fingerprints for each cell, per se, but instead just the ones that lie on the navigation path. This is because the car only has to navigate up to the nearest point on the navigation path where the slot is; so we don&amp;rsquo;t really need to know the fingerprint in the parking slot.&lt;/p&gt;
+&lt;h2 id=&#34;working&#34;&gt;Working&lt;/h2&gt;
+&lt;p&gt;The process is divided into two phases:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Offline Phase&lt;/li&gt;
+&lt;li&gt;Online Phase&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the offline phase, each cell along the navigation path is associated with a particular fingerprint and these fingerprints are recorded and stored in a database. The database will be used in future during the online phase in order to track the location of the user.&lt;/p&gt;
+&lt;p&gt;AS SHOWN IN THE FIGURE BELOW, the grid is divided into cells. ParkCells are the parking slots and NavCells are the cells along the navigation path. The offline phase is only about storing fingerprints at each navigation cell into a database.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/grid-illustration.png&#34; alt=&#34;Grid Illustration&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In the online phase, as the car enters the lot, the application is activated using GeoFencing technique. Once the application is activated, the user is shown the parking lot grid where he can choose a parking slot. When the user selects a parking slot, the neighboring navigation cell is selected as the destination point. We know the start point of the car since it is the entrance of the parking lot. We also continuously track the movement of the car using accelerometer and gyroscope. This technique combined with fingerprint matching will give an accurate location of the car and the car is routed from the start point to the destination point. This becomes a simple routing problem on a grid with predefined navigation path.&lt;/p&gt;
+&lt;h2 id=&#34;my-development-environment&#34;&gt;My Development Environment&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;IDE&lt;/strong&gt;: IntelliJ IDEA 13.0[Insert Link]&lt;br&gt;
+&lt;strong&gt;Emulator&lt;/strong&gt;: Genymotion[Insert Link]&lt;br&gt;
+&lt;strong&gt;Android version&lt;/strong&gt;: 4.2 and above&lt;br&gt;
+&lt;strong&gt;Database&lt;/strong&gt;: SQLite&lt;br&gt;
+&lt;strong&gt;Version Control&lt;/strong&gt;: Git&lt;br&gt;
+&lt;strong&gt;Workflow&lt;/strong&gt;: &lt;a href=&#34;http://nvie.com/posts/a-successful-git-branching-model/&#34;&gt;GitFlow&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This being said about the project, here&amp;rsquo;s the plan for next week:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Design the database&lt;/li&gt;
+&lt;li&gt;Create entity beans for each table&lt;/li&gt;
+&lt;li&gt;Create activities to display grid and perform scans&lt;/li&gt;
+&lt;li&gt;Write logic to compute mean values for each fingerprint&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -115,7 +233,18 @@ Database:
       <pubDate>Sat, 15 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-5/</guid>
-      <description>I would like to give a glimpse of what my Masters Project is all about and what I will be working on in the next couple of months.</description>
+      <description>&lt;p&gt;I would like to give a glimpse of what my Masters Project is all about and what I will be working on in the next couple of months. The project involves spatial databases, navigation and a ton of Android programming.&lt;/p&gt;
+&lt;h2 id=&#34;parking-in-restricted-spaces&#34;&gt;Parking in Restricted Spaces&lt;/h2&gt;
+&lt;p&gt;The idea is to develop a Car Navigation System that enables a user to drive around a parking lot and navigate him to the parking slot of his choice without using battery intensive sensors like GPS.&lt;/p&gt;
+&lt;p&gt;The project is divided into 3 stages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a digital map of the parking lot showing different parking slots and the navigation paths.&lt;/li&gt;
+&lt;li&gt;Use a low-power method such as WiFi localization to identify when the car enters the space, and thus trigger retrieval of the developed map and dead-reckoning.&lt;/li&gt;
+&lt;li&gt;Provide navigation on the smartphone to a given location in the restricted space; the location will be given as a parameter to the navigation system developed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The parking lot we chose is a multi-level structure where one cannot rely on GPS for navigation since GPS doesn&amp;rsquo;t work so well indoors as it does outdoors. Besides, GPS does not give meter-level accuracy to differentiate between different parking slots. So it would be efficient to use WiFi localization to accurately determine where a car is in the parking lot and then use the same approach to navigate the car to its destination.&lt;/p&gt;
+&lt;p&gt;Since this is a significantly huge experimental project, I am working on it with another Masters student. A working demo of the project is expected by the end of April.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -124,7 +253,8 @@ Database:
       <pubDate>Sat, 08 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-4/</guid>
-      <description>It&amp;rsquo;s been quite a while since I last updated my blog. I was busy with exams and then vacations. I went back home (Bangalore, India) after about 1.</description>
+      <description>&lt;p&gt;It&amp;rsquo;s been quite a while since I last updated my blog. I was busy with exams and then vacations. I went back home (Bangalore, India) after about 1.5 years to enjoy a warm winter break as I was missing the terrible polar vortex that hit Chicago for couple of weeks in December. I couldn&amp;rsquo;t get to work on any of my hobby projects since I had to spend time with family and friends. The one month went by really fast and before I knew it I was back walking on the freezing streets of Chicago again. I got busy with doing literature survey for my Masters Project and had to read lot of papers to deeply understand the problem statement. The project is about developing a Car Navigation System inside a parking lot. I will be talking more about the project in my next Weekly Noise post. But for now, it&amp;rsquo;s glad to be back :)&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -133,7 +263,13 @@ Database:
       <pubDate>Sun, 24 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-3/</guid>
-      <description>As promised, last week I integrated Medium-style &amp;ldquo;time-to-read&amp;rdquo; kind of feature which is pretty much added manually since Jekyll is a static blog generator.</description>
+      <description>&lt;p&gt;As promised, last week I integrated Medium-style &amp;ldquo;time-to-read&amp;rdquo; kind of feature which is pretty much added manually since Jekyll is a static blog generator. So it doesn&amp;rsquo;t calculate such things and insert them at run time. I changed the formatting of the description of a post to appear beside the tags and the &amp;ldquo;time to read&amp;rdquo; must be added manually after running a simple &lt;code&gt;wc -w&lt;/code&gt; command on the .md file. Once I finish writing a post, I run the above command and insert it manually. Besides that, I also purchased a domain from &lt;a href=&#34;http://www.namecheap.com&#34;&gt;NameCheap&lt;/a&gt; and made it point to the blog. I added a write up about one of the projects - Tweet Sentiment Classifier - that I developed during my Data Mining course. I also added a new page to hold my Resume.&lt;/p&gt;
+&lt;p&gt;I have one of my finals coming up right after Thanksgiving, so I&amp;rsquo;ll be busy with that. However, since one of the projects involves Android development, I&amp;rsquo;m planning to develop some sample apps as a quick recap into Android development. So target for next week would be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Develop 1 or 2 simple Android apps.&lt;/li&gt;
+&lt;li&gt;A write up about another hobby project.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -142,7 +278,13 @@ Database:
       <pubDate>Sun, 17 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-2/</guid>
-      <description>Last week I worked on the theme to modify few things which I have explained in the My Theme Setup post.</description>
+      <description>&lt;p&gt;Last week I worked on the theme to modify few things which I have explained in the &lt;a href=&#34;/my-theme-setup/&#34;&gt;My Theme Setup&lt;/a&gt; post. I added a Projects link in the Navbar at the top which I will be filling up with my hobby projects sometime soon. I was held up with a class project in one of the courses which ate up most of my time. But I did finish what I had planned to finish. I&amp;rsquo;ve also got my finals approaching in less than a month so my updates may not be significant. That being said, here are some tasks for next week:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integrate Medium-style &amp;ldquo;time it takes to read the post&amp;rdquo; (I don&amp;rsquo;t know what it&amp;rsquo;s called) feature into posts.&lt;/li&gt;
+&lt;li&gt;Write about one of my hobby projects.&lt;/li&gt;
+&lt;li&gt;Buy a domain and make it point to my GitHub page.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -151,7 +293,41 @@ Database:
       <pubDate>Sat, 09 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-1/</guid>
-      <description>To set the context, Weekly Noise series is where I talk about what I accomplished during the week (like working on my personal projects among other things) and also set the goals for next week.</description>
+      <description>&lt;p&gt;To set the context, Weekly Noise series is where I talk about what I accomplished during the week (like working on my personal projects among other things) and also set the goals for next week. So this will be a weekly iteration of my progress in the projects I work on.&lt;/p&gt;
+&lt;p&gt;So to start off with the Weekly Noise series, I would share an update on what happened in the last one month. Here&amp;rsquo;s my story on hopping between different blogging platforms in the quest to find the right one (for me).&lt;/p&gt;
+&lt;p&gt;The story so far:&lt;/p&gt;
+&lt;p&gt;I wanted to have a very simple, minimalistic, no fluff kind of a blog to share my thoughts. Though I&amp;rsquo;m far from being a designer, a good theme is a must and I don&amp;rsquo;t stop unless I find a good one. Given that I&amp;rsquo;m a little too lazy, I wanted something of very minimal effort; as little as writing a blog post in a text file and posting it on the web. So I tried the following:&lt;/p&gt;
+&lt;h3 id=&#34;wordpresshttpwwwwordpresscom&#34;&gt;&lt;a href=&#34;http://www.wordpress.com&#34;&gt;Wordpress&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Nope. Not my cup of tea. I started off with Wordpress and somehow I didn&amp;rsquo;t really like the themes there. Moreover, it was a little too much for my needs. One of the main reasons for not choosing Wordpress is that there&amp;rsquo;s no freedom when it comes to editing the existing theme and I wasn&amp;rsquo;t really happy with that. It has an admin panel that&amp;rsquo;s not very helpful in terms of version control.&lt;/p&gt;
+&lt;h3 id=&#34;scriptogramhttpwwwscriptogram&#34;&gt;&lt;a href=&#34;http://www.scriptogr.am&#34;&gt;Scriptogr.am&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I really liked this blogging for it offered Markdown editing and Dropbox sync which makes it a good choice for quick blogging. But the theme editor is not all that great and also, I didn&amp;rsquo;t see much support for Scriptogr.am. They&amp;rsquo;re not very active on Twitter, nor have they updated their own official blog for more than a year. And the link to their support page hasn&amp;rsquo;t been working for the past one month or so. It turned me off and I had to switch to something else. It&amp;rsquo;s probably still in its nascent stage of development, but I don&amp;rsquo;t see much happening at their end (at least that&amp;rsquo;s what it looks like).&lt;/p&gt;
+&lt;h3 id=&#34;ghosthttpghostorg&#34;&gt;&lt;a href=&#34;http://ghost.org&#34;&gt;Ghost&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;When Ghost was launched to the public, no wonder there was so much buzz in the blogging and web hosting communities. It indeed lives up to its expectations and I believe it&amp;rsquo;s a great blogging platform. It does what it says - nothing more, nothing less. But the catch is I need a VPS to host it for which I have to pay every month. And there&amp;rsquo;s also the reliability and latency issues that come with every VPS. So I ditched Ghost in the hope of finding something that better suited my needs.&lt;/p&gt;
+&lt;h3 id=&#34;along-came-github-pageshttppagesgithubcom&#34;&gt;Along came &lt;a href=&#34;http://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I stumbled upon &lt;a href=&#34;http://sirupsen.com/the-switch-to-github-pages/&#34;&gt;this page&lt;/a&gt; which hinted me to take a peek at GitHub pages and I was impressed. I checked out &lt;a href=&#34;http://jekyllbootstrap.com&#34;&gt;Jekyll&lt;/a&gt; and it seemed perfect and exactly what I wanted. All I had to do was, fork the repo and push my posts to GitHub. As simple as that.&lt;/p&gt;
+&lt;p&gt;Posts can be created in markdown. A simple rake command generates the boilerplate stuff to get you started.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;rake post title&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#39;A new blog post&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The above command is all that is needed to create a new post. It fills up the new file with headers which has some important information that looks something like this.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;---
+layout: post  
+title: &amp;#34;Weekly Noise #1&amp;#34;  
+description: &amp;#34;Moving to GitHub pages&amp;#34;  
+category: &amp;#34;weekly-noise&amp;#34;  
+tags: [weekly, noise]
+---
+&amp;lt;Write your blog post here&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Once you&amp;rsquo;re done writing a post, you just have to add, commit and push&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;git add .
+git commit
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And Voila! You&amp;rsquo;re done. :)&lt;/p&gt;
+&lt;p&gt;GitHub Pages is so simple and fast. It doesn&amp;rsquo;t need a database, the so-called admin panel is just a YAML config file. And the best part is, the whole blog is in your control. &lt;em&gt;You&lt;/em&gt; have the freedom to change anything and everything.&lt;/p&gt;
+&lt;p&gt;I spent the week customizing the blog and pushing my changes to the repo. There are still couple of changes that I should be doing. But most of the blog layout and plugins are in place. Here&amp;rsquo;s the target for next week:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix the Navbar at the top of the blog.&lt;/li&gt;
+&lt;li&gt;Write a blog post about my theme setup.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

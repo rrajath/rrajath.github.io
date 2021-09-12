@@ -14,7 +14,10 @@
       <pubDate>Sat, 02 Jan 2021 15:17:57 -0800</pubDate>
       
       <guid>/posts/exporting-google-photos/</guid>
-      <description>I recently purchased a Synology NAS and I started hosting a media server containing movies, TV shows and photos. I had stored all my photos in Google Photos for the past several years.</description>
+      <description>&lt;p&gt;I recently purchased a &lt;a href=&#34;https://www.synology.com/en-us/products/series/home&#34;&gt;Synology NAS&lt;/a&gt; and I started hosting a media server containing movies, TV shows and photos. I had stored all my photos in Google Photos for the past several years. But recently Google announced that &lt;a href=&#34;https://blog.google/products/photos/storage-changes&#34;&gt;it was going to charge for storing photos as they near the storage limit of 15GB&lt;/a&gt;. I knew of &lt;a href=&#34;https://takeout.google.com&#34;&gt;Google Takeout&lt;/a&gt; and I downloaded some 44 GB of photos which were packed in about 23 zip files.&lt;/p&gt;
+&lt;p&gt;I found that these zip files had lot of repetitive files, seemed like a lot of duplicates. I ended up extracting all of them to a single folder. And, I saw a lot of json files mixed in. When I searched online, I found couple of tools to get rid of them: &lt;a href=&#34;https://metadatafixer.com&#34;&gt;Metadata Fixer&lt;/a&gt; and &lt;a href=&#34;https://github.com/TheLastGimbus/GooglePhotosTakeoutHelper&#34;&gt;Google Photos Takeout Helper&lt;/a&gt;. These didn&amp;rsquo;t work well and I thought of writing my own tool to do the job for me.&lt;/p&gt;
+&lt;p&gt;I later came across a Reddit post where &lt;a href=&#34;https://www.reddit.com/r/googlephotos/comments/jyyg53/psa_i_found_an_alternative_to_google_takeout_for&#34;&gt;somebody posted an alternative for exporting Google Photos&lt;/a&gt;. The alternative is basically to select all the photos per year and download them via UI. This will not give us any json files. It just downloads the photos as is. This was perfect and worked for me.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

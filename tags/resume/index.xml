@@ -14,7 +14,13 @@
       <pubDate>Sun, 24 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-3/</guid>
-      <description>As promised, last week I integrated Medium-style &amp;ldquo;time-to-read&amp;rdquo; kind of feature which is pretty much added manually since Jekyll is a static blog generator.</description>
+      <description>&lt;p&gt;As promised, last week I integrated Medium-style &amp;ldquo;time-to-read&amp;rdquo; kind of feature which is pretty much added manually since Jekyll is a static blog generator. So it doesn&amp;rsquo;t calculate such things and insert them at run time. I changed the formatting of the description of a post to appear beside the tags and the &amp;ldquo;time to read&amp;rdquo; must be added manually after running a simple &lt;code&gt;wc -w&lt;/code&gt; command on the .md file. Once I finish writing a post, I run the above command and insert it manually. Besides that, I also purchased a domain from &lt;a href=&#34;http://www.namecheap.com&#34;&gt;NameCheap&lt;/a&gt; and made it point to the blog. I added a write up about one of the projects - Tweet Sentiment Classifier - that I developed during my Data Mining course. I also added a new page to hold my Resume.&lt;/p&gt;
+&lt;p&gt;I have one of my finals coming up right after Thanksgiving, so I&amp;rsquo;ll be busy with that. However, since one of the projects involves Android development, I&amp;rsquo;m planning to develop some sample apps as a quick recap into Android development. So target for next week would be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Develop 1 or 2 simple Android apps.&lt;/li&gt;
+&lt;li&gt;A write up about another hobby project.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

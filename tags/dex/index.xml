@@ -14,7 +14,29 @@
       <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>/posts/the-dreaded-65k-method-limit-on-android/</guid>
-      <description>If you&amp;rsquo;re an Android developer, it&amp;rsquo;s likely that you have experienced this at least a few times during your development.</description>
+      <description>&lt;p&gt;If you&amp;rsquo;re an Android developer, it&amp;rsquo;s likely that you have experienced this at least a few times during your development.&lt;/p&gt;
+&lt;p&gt;The first time I heard people talk about 65k method limit I wasn&amp;rsquo;t aware of it so much. I was thinking, &amp;ldquo;How can a small Android app have 65,000 methods? That&amp;rsquo;s ridiculous! I don&amp;rsquo;t know what people are complaining about.&amp;rdquo; Then when I read what the fuss was all about, I realized that 65k method limit includes not just all the methods in my app, but also everything my app consumes. Yes, that includes libraries; even if you don&amp;rsquo;t use them. Surprisingly I never ran into this issue before though I used to throw in libraries for every little thing without caring about how much it&amp;rsquo;s contributing to the 65k limit. Of course, in the beginning I was using smaller libraries with low method count. Not giants like Goole Play Services. But in a recent project I was working on, one fine day I got this error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Unable to execute dex: method ID not in [0, 0xffff]: 65536
+Conversion to Dalvik format failed: Unable to execute dex: method ID not in [0, 0xffff]: 65536
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And I thought, &amp;ldquo;Huh, looks like I&amp;rsquo;m now in the same boat as many developers who&amp;rsquo;ve been talking about 65k method limit.&amp;rdquo; As I always do with weird unknown errors, I googled this one and got a bunch of StackOverflow links which all said pretty much the same thing - enable multidex. I was about to do that, but I stopped and thought &amp;ldquo;Let me at least understand why this is happening. I&amp;rsquo;m surely not using many libraries. All I&amp;rsquo;m using is dagger, retrofit, timber, google play services and few others. Let me see the culprit that&amp;rsquo;s making my method count reach 65k.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;After some searching, I came across this awesome website &lt;a href=&#34;http://www.methodscount.com/&#34;&gt;methodscount.com&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/rotxed&#34;&gt;Sebastian Gottardo&lt;/a&gt; that gives the method count for any library. Later I found the &lt;a href=&#34;http://www.methodscount.com/plugins&#34;&gt;plugin for Android Studio&lt;/a&gt; which made my day. After I installed the plugin, I saw the method counts of all the libraries I was using right in the build.gradle file and I found it. GooglePlayServices, with its massive 19k method count. I mean, come on. 19k? Really? I thought this is insane!! So did other developers, a long time ago. I was just late to the party. Few more minutes of googling and I found that Google Play Services 6.5 onwards the library is more modular - which means you can include only the stuff you want instead of the whole library. For my application I just needed wearable and location services and methods count for each is under 1.5k.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;compile &#39;com.google.android.gms:play-services:8.4.0&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So, the above line became:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;compile &#39;com.google.android.gms:play-services-wearable:8.4.0&#39;
+compile &#39;com.google.android.gms:play-services-location:8.4.0&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;giving me just what I need.&lt;/p&gt;
+&lt;p&gt;Another awesome tool to consider to get the method counts in a more detailed manner is &lt;a href=&#34;https://github.com/mihaip/dex-method-counts&#34;&gt;dex-method-counts&lt;/a&gt; by &lt;a href=&#34;https://github.com/mihaip&#34;&gt;Mihai Parparita&lt;/a&gt;. This script gives the method counts in a tree format neatly segregating the counts for each package. There are few other tools out there to get method counts, but the key thing to remember is to think before using any 3rd party library. If it&amp;rsquo;s helping you at the cost of bringing in thousands of methods into your DEX file, then is it really worth including it into your app? Can you use a different library that does the same job for you but with a considerably fewer method count?&lt;/p&gt;
+&lt;p&gt;PS: If you&amp;rsquo;re interested to know why 65k, or rather why 65,536 specifically, you should listen to &lt;a href=&#34;http://fragmentedpodcast.com/episodes/29/&#34;&gt;Fragmented Podcast Episode 29&lt;/a&gt; where &lt;a href=&#34;https://twitter.com/kaushikgopal&#34;&gt;Koushik Gopal&lt;/a&gt; explains about this.&lt;/p&gt;
+&lt;p&gt;For more details on 65k limit, here are few links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://androidhub.intel.com/posts/blundell/Pushing_the_limit.html&#34;&gt;2016 Prediction: Battling the 65k limit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@rotxed/dex-skys-the-limit-no-65k-methods-is-28e6cb40cf71&#34;&gt;[DEX] Sky&amp;rsquo;s the limit? No, 65k methods is&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.fasteque.com/deep-dive-into-android-multidex&#34;&gt;Deep dive into Android Multidex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>
