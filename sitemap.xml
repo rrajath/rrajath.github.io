@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/posts/my-experience-with-emacs-so-far/</loc>
+    <lastmod>2021-09-11T21:48:42-07:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2021-09-11T21:48:42-07:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-09-11T21:48:42-07:00</lastmod>
+  </url><url>
+    <loc>/micro/</loc>
+    <lastmod>2021-09-11T19:35:41-07:00</lastmod>
+  </url><url>
+    <loc>/micro/untools-tools-for-better-thinking/</loc>
+    <lastmod>2021-09-11T19:35:41-07:00</lastmod>
+  </url><url>
     <loc>/tags/emacs/</loc>
     <lastmod>2021-09-06T17:38:07-07:00</lastmod>
   </url><url>
@@ -11,13 +26,7 @@
     <loc>/posts/orgmode-tips-tricks/</loc>
     <lastmod>2021-09-06T17:38:07-07:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2021-09-06T17:38:07-07:00</lastmod>
-  </url><url>
     <loc>/tags/productivity/</loc>
-    <lastmod>2021-09-06T17:38:07-07:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2021-09-06T17:38:07-07:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
@@ -75,9 +84,6 @@
     <lastmod>2021-01-01T20:53:23-08:00</lastmod>
   </url><url>
     <loc>/micro/cognitive-bias-cheat-sheet/</loc>
-    <lastmod>2020-09-21T22:23:15-07:00</lastmod>
-  </url><url>
-    <loc>/micro/</loc>
     <lastmod>2020-09-21T22:23:15-07:00</lastmod>
   </url><url>
     <loc>/posts/org-mode-smart-archive/</loc>
