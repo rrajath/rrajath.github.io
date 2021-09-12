@@ -14,7 +14,34 @@
       <pubDate>Fri, 01 Jan 2021 20:30:59 -0800</pubDate>
       
       <guid>/posts/2020-year-in-review/</guid>
-      <description>2020 has been quite a year for all of us and I don&amp;rsquo;t want to get into the long list of things that have shook us this year.</description>
+      <description>&lt;p&gt;2020 has been quite a year for all of us and I don&amp;rsquo;t want to get into the long list of things that have shook us this year. We&amp;rsquo;re still resilient and stand strong even though we experience some of the most horrific events we&amp;rsquo;re thrown into. I&amp;rsquo;m grateful for being privileged enough in terms of health, career, etc. This year hasn&amp;rsquo;t been the best for pretty much anyone and the same goes for me. Having said that, like I do every year, here are some of the things I did more of, less of, some side quests and lessons learned along the way.&lt;/p&gt;
+&lt;h1 id=&#34;things-i-did-more-of&#34;&gt;Things I did more of&lt;/h1&gt;
+&lt;h2 id=&#34;self-hosting&#34;&gt;Self hosting&lt;/h2&gt;
+&lt;p&gt;This started out as a project for a few raspberry pis I had at home where I did a RAID-1 setup initially with NextCloud installed. However, I had to do a lot of heavy lifting in a lot of different areas, like configuring DDNS, setting up another raspberry pi as a mirror for data duplication, and other minor quirks I had along the way. Besides that, there were times when Nextcloud didn&amp;rsquo;t work the way it was supposed to. Like, I wasn&amp;rsquo;t seeing the &amp;lsquo;Sharing&amp;rsquo; tab for any of the files or folders. There was not a lot of help from the community either. Besides that, the raspberry pi I had installed it on was constantly running out of memory. I just couldn&amp;rsquo;t devote more time to it and fix all the quirks. Towards the end of 2020, I bought a Synology NAS DS220+ and I&amp;rsquo;ve been very happy with it.&lt;/p&gt;
+&lt;p&gt;The DS220+ did all the heavy lifting for me and the initial setup took less than 15 minutes. After that I just had to move my data to it. The DiskStation is definitely a superior and a much nicer product too. The fact that I have a great level of control into how my data is stored, shared and accessed while all the nitty gritty of the configuration is abstracted away has been a great experience. It&amp;rsquo;s a huge time saver and I could focus my time and energy on other projects.&lt;/p&gt;
+&lt;h2 id=&#34;chess&#34;&gt;Chess&lt;/h2&gt;
+&lt;p&gt;The quarantine prevented me from going out and that made me get into Chess. I spent many hours playing chess with my wife and got better at it. I also solved Chess puzzles on Lichess which I highly recommend if somebody is looking for good chess apps.&lt;/p&gt;
+&lt;h2 id=&#34;emacsorg-mode&#34;&gt;Emacs/org-mode&lt;/h2&gt;
+&lt;p&gt;I used org-mode before with Spacemacs and it was okay. The workflow was great when I was in front of my computer, but for &amp;ldquo;on the go&amp;rdquo;, I just couldn&amp;rsquo;t get a good workflow going. This made me disinterested in emacs and org-mode and I switched to a different solution - Notion. I then learned about Doom Emacs which in my opinion is way better than Spacemacs since Spacemacs was really slow and clunky when I used it. With Orgzly installed on my phone, Syncthing set up on my phone and my computer, I got a good system that I could work with. Every day I learn new things about Emacs either intentionally or accidentally and I&amp;rsquo;m loving every bit of it.&lt;/p&gt;
+&lt;h2 id=&#34;journaling&#34;&gt;Journaling&lt;/h2&gt;
+&lt;p&gt;I journaled every single day this entire year. There were days when I journaled more and did a lot of brain dumps and there were other days where I journaled very little. I&amp;rsquo;m glad to have developed this habit since it has helped me organize my thoughts, come to logical solutions whenever I&amp;rsquo;m preoccupied with things that bother me, or just write down my thoughts. IMO, it&amp;rsquo;s a very underrated habit and especially over time, you get a good ROI with journaling.&lt;/p&gt;
+&lt;h2 id=&#34;zettelkasten&#34;&gt;Zettelkasten&lt;/h2&gt;
+&lt;p&gt;I take notes extensively. I used to take notes whenever I read a book, but these days I find myself taking notes when I read blog posts or listen to podcasts too. What I stumbled upon recently was a new note-taking method called &lt;a href=&#34;https://en.wikipedia.org/wiki/Zettelkasten&#34;&gt;Zettelkasten&lt;/a&gt; (or slip-box) - a system developed by Niklas Luhmann. I write smaller notes where each note contains an idea instead of a book summary. These notes end up getting interconnected to other notes. This system has been working well so far. Let&amp;rsquo;s see where it takes me.&lt;/p&gt;
+&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;
+&lt;p&gt;I read few good books this year. I didn&amp;rsquo;t focus on reading more books, but instead focused on reading bits and pieces of different books and reflecting on those ideas. This has been extremely valuable to me compared to how I used to read books or listen to audiobooks. For example, I read a 4 page chapter (called &amp;ldquo;A sketch of good communication&amp;rdquo;) from a &lt;a href=&#34;https://www.lesswrong.com/books&#34;&gt;LessWrong book set&lt;/a&gt; (book name Epistemology) and reflected on it for couple of days which led me to few scenarios where was I guilty of bad communication in the past. The chapter is super interesting and is also available as a &lt;a href=&#34;https://www.lesswrong.com/posts/yeADMcScw8EW9yxpH/a-sketch-of-good-communication&#34;&gt;blogpost&lt;/a&gt; (as are all other chapters in the book set) if you&amp;rsquo;re interested.&lt;/p&gt;
+&lt;h1 id=&#34;things-i-did-less-of&#34;&gt;Things I did less of&lt;/h1&gt;
+&lt;h2 id=&#34;running&#34;&gt;Running&lt;/h2&gt;
+&lt;p&gt;The quarantine made us stay home and summer was mostly spent indoors. I did run a couple of times on a treadmill in our apartment gym, but that was closed too after a bit. I&amp;rsquo;m looking forward to running outside in 2021 once it gets warmer&lt;/p&gt;
+&lt;h2 id=&#34;working-out&#34;&gt;Working out&lt;/h2&gt;
+&lt;p&gt;I stopped doing bodyweight workouts too and I tend to have mostly focused on eating more, and gaining more weight (though that wasn&amp;rsquo;t part of the plan).&lt;/p&gt;
+&lt;h2 id=&#34;personal-projects&#34;&gt;Personal projects&lt;/h2&gt;
+&lt;p&gt;With the whole WFH situation, I ended up working way more than I did when I used to go to office. This made me so tired that it was extremely hard to get motivated to do personal projects.&lt;/p&gt;
+&lt;h1 id=&#34;side-quests&#34;&gt;Side Quests&lt;/h1&gt;
+&lt;h2 id=&#34;making-music&#34;&gt;Making music&lt;/h2&gt;
+&lt;p&gt;I recently discovered Groovepad and I really liked how easy it is to use that app and make music. As of this writing I made 3 tracks and I&amp;rsquo;m planning to put them up on Soundcloud and Spotify.&lt;/p&gt;
+&lt;h1 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h1&gt;
+&lt;p&gt;With everything that happened in 2020 and so much time being spent indoors, it made me reflect on a lot things. I&amp;rsquo;m extremely grateful to have good health, family, career and friends. It has made me appreciate life more and gave me some perspective. It&amp;rsquo;s easy to take things for granted and look the other way. But it takes a lot of strength and speaks to one&amp;rsquo;s character to stand up for the right thing and fight for it.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -23,7 +50,47 @@
       <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/posts/2019-year-in-review/</guid>
-      <description>Another year done, and like always time flies by quicker and quicker every year. 2019 has been quite eventful in a few aspects and I took some time to reflect on how things went.</description>
+      <description>&lt;p&gt;Another year done, and like always time flies by quicker and quicker every year. 2019 has been quite eventful in a few aspects and I took some time to reflect on how things went. This time I categorized my activities and personal growth into 3 sections - things I did more of, things I did less of, things I explored. Let&amp;rsquo;s begin!&lt;/p&gt;
+&lt;h1 id=&#34;things-i-did-more-of&#34;&gt;Things I did more of&lt;/h1&gt;
+&lt;h2 id=&#34;running&#34;&gt;Running&lt;/h2&gt;
+&lt;p&gt;I was faster (compared to last year) in almost all my races in 2019. I also participated in more races and set a few PRs.&lt;/p&gt;
+&lt;h3 id=&#34;stats&#34;&gt;Stats&lt;/h3&gt;
+&lt;p&gt;All in for Autism 10K - 53m 33s&lt;/p&gt;
+&lt;p&gt;Mother&amp;rsquo;s Day Half - 1h 57m&lt;/p&gt;
+&lt;p&gt;The Big Run 5K (trail run) - 29m 1s&lt;/p&gt;
+&lt;p&gt;Evergreen Half - 1h 53m&lt;/p&gt;
+&lt;p&gt;Craft Classic Half - 1h 49m&lt;/p&gt;
+&lt;p&gt;Iron Horse Half - 1h 42m&lt;/p&gt;
+&lt;p&gt;Fly 5K - 25m 46s&lt;/p&gt;
+&lt;p&gt;Snohomish 10K - 51m 51s&lt;/p&gt;
+&lt;p&gt;Snohomish River Run Full - 3h 56m&lt;/p&gt;
+&lt;p&gt;I started off with the 10K in April with no training and I&amp;rsquo;m happy to see that my time only improved from then on. There was a time when I was running half marathons every couple of weeks and it got a little exhausting. But it feels great to look back and see all the races I&amp;rsquo;ve done.&lt;/p&gt;
+&lt;h3 id=&#34;marathon&#34;&gt;Marathon&lt;/h3&gt;
+&lt;p&gt;The full marathon gets a special mention because the training was fun and the race, even more so. In 2018, I did my first full marathon and the training was quite brutal - mostly because I didn&amp;rsquo;t know what to expect. And, I got first hand experience of what mile 18 feels like in a full marathon. But in 2019, I knew how the training would be, I knew how to prep and how to recover, when to push myself and when to take it easy. I used &lt;a href=&#34;https://www.halhigdon.com/training-programs/marathon-training/intermediate-1-marathon&#34;&gt;Hal Higdon&amp;rsquo;s Intermediate 1 training plan&lt;/a&gt; and made my own modifications to it. Overall, I improved and set a PR.&lt;/p&gt;
+&lt;h2 id=&#34;traveling&#34;&gt;Traveling&lt;/h2&gt;
+&lt;p&gt;I did some traveling in 2019 with a few road trips - one in Oregon, couple in Washington, and few hikes around Seattle. I also visited Los Angeles. The most amazing and memorable one was the 4-day Inca Trail hike to Machu Picchu which was a birthday gift from my wife. Highly recommend going there and doing the 4-day hike, it&amp;rsquo;s totally worth it. Also, a shout out to &lt;a href=&#34;https://www.alpacaexpeditions.com&#34;&gt;Alpaca Expeditions&lt;/a&gt; for their awesome crew that helped us with the hike, food, camps, etc.&lt;/p&gt;
+&lt;h1 id=&#34;things-i-did-less-of&#34;&gt;Things I did less of&lt;/h1&gt;
+&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;
+&lt;p&gt;I fell off on the reading habit and ended up reading only about 14 books (compared to 24 in 2018). This is something I want to get back into.&lt;/p&gt;
+&lt;h2 id=&#34;working-out&#34;&gt;Working out&lt;/h2&gt;
+&lt;p&gt;I hardly worked out last year and thanks to my training for marathon, I just didn&amp;rsquo;t have the time or energy to work out at all. When I wasn&amp;rsquo;t training for my marathon, I was just plain lazy.&lt;/p&gt;
+&lt;h2 id=&#34;bouldering&#34;&gt;Bouldering&lt;/h2&gt;
+&lt;p&gt;This fell off also because of my marathon training. I used to be regular and climb twice a week. But it just wasn&amp;rsquo;t feasible.&lt;/p&gt;
+&lt;h1 id=&#34;things-i-explored-aka-side-quests&#34;&gt;Things I explored (aka Side Quests)&lt;/h1&gt;
+&lt;h2 id=&#34;snowboarding&#34;&gt;Snowboarding&lt;/h2&gt;
+&lt;p&gt;I picked up snowboarding in early 2019, thanks to my wife. I fell in love with it. I wasn&amp;rsquo;t super interested in winter activities before, but after giving snowboarding a try I was always looking forward to driving to a nearby mountain and keep getting better at snowboarding. I&amp;rsquo;ll be doing more of that this year for sure.&lt;/p&gt;
+&lt;h2 id=&#34;self-hosting&#34;&gt;Self Hosting&lt;/h2&gt;
+&lt;p&gt;I stumbled upon self hosting recently and it looked very appealing to me. The fact that I could just use Raspberry Pis to self host few things is what made me more inclined towards trying it out and playing with it. I see privacy concerns with storing my data on Google servers or with any other big corporations. I&amp;rsquo;d rather be in charge of my own data. So, I decided to slowly move things off of cloud services that I&amp;rsquo;m currently using and host my own data. I already set up a private cloud server and it&amp;rsquo;s working like a charm. I got to learn lot of new technologies and it&amp;rsquo;s been fun tinkering with Raspberry Pis.&lt;/p&gt;
+&lt;h2 id=&#34;learning-new-things&#34;&gt;Learning new things&lt;/h2&gt;
+&lt;p&gt;In my journey of learning to self host, I stumbled upon Docker, Traefik, Ansible, Prometheus, Grafana and I&amp;rsquo;ve been keen on learning these new technologies. I&amp;rsquo;ve also learnt a lot about networking, DNS, dynamic DNS, VPN, etc. I&amp;rsquo;ve spent many hours playing around with these, failing, learning and redoing a lot of the setup. It&amp;rsquo;s a fun exercise which will continue this year as I get better at hosting a robust system with everything I need.&lt;/p&gt;
+&lt;h2 id=&#34;indie-web&#34;&gt;Indie Web&lt;/h2&gt;
+&lt;p&gt;I stopped using social media platforms like Facebook, Twitter, Instagram few years ago. I knew about what Mastodon was in principle about a year ago, but never really got around to exploring it much. But towards the end of 2019, I checked out few instances in Mastodon and started exploring. I really liked the idea of instances that are built on certain set of principles and people adhering to it, and federating with other instances. I&amp;rsquo;ve only started with Mastodon, but I&amp;rsquo;ll soon be exploring Pixelfed, Pleroma and the likes.&lt;/p&gt;
+&lt;h1 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h1&gt;
+&lt;h2 id=&#34;you-cant-do-everything&#34;&gt;You can&amp;rsquo;t do &lt;em&gt;everything&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s how my brain works. I find something interesting, I want to learn more about it. But I also don&amp;rsquo;t want to give up on all the things I&amp;rsquo;m already doing. I fall short on some of the things (because it&amp;rsquo;s not realistic to master everything, given the limited number of hours in a day). I get disappointed that I&amp;rsquo;m not doing enough. I&amp;rsquo;ve been doing this for years, even though I know that it doesn&amp;rsquo;t make sense. What I should constantly remind myself is that I can&amp;rsquo;t do (or master) &lt;em&gt;everything&lt;/em&gt;. I should identify core areas where I want to grow and then focus all my energy on that. I should still explore things, and some of them may grow into something bigger and more important for my personal growth. But I must always acknowledge the fact that there is only limited amount of time and I must use it wisely.&lt;/p&gt;
+&lt;h2 id=&#34;less-consumption-more-creation&#34;&gt;Less consumption, more creation&lt;/h2&gt;
+&lt;p&gt;What I didn&amp;rsquo;t do more of is work on side projects, or create more. Even though, I don&amp;rsquo;t use social media, I still check a lot of blogs and stuff myself with information. It&amp;rsquo;s exhausting. Every time I have couple of minutes free on my hand, I check my phone and try to read a blog post. I have to practice to sit still, not touch my phone and not look at any screen. I used to meditate regularly and it definitely helps with being mindful about what we do. This is something I really want to do this year.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -32,7 +99,81 @@
       <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/posts/2018-year-in-review/</guid>
-      <description>2018 went by really quick. It was one of the more eventful years - packed with activities, travel, new hobbies, experiences and accomplishments.</description>
+      <description>&lt;p&gt;2018 went by really quick. It was one of the more eventful years - packed with activities, travel, new hobbies, experiences and accomplishments. I have been following James Clear and Tim Ferris for a long time now and &lt;a href=&#34;https://jamesclear.com/2018-annual-review&#34;&gt;their posts&lt;/a&gt; about &lt;a href=&#34;https://tim.blog/2018/12/28/past-year-review/&#34;&gt;past year review&lt;/a&gt; have been the inspiration behind this blog post.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t like setting goals, but rather invest my time in building habits, as I feel they&amp;rsquo;re more sustainable and long term rather than having an end point that brings me a lot of anxiety while approaching the due date. I like small incremental progress on a daily basis than few days of powering through a task that ends up half-baked. Having said that, I do like to identify few areas I want to focus on to at least head in a general direction to form a habit.&lt;/p&gt;
+&lt;p&gt;Here are some of the goals (or habits) I had planned for 2018:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Practice guitar&lt;/li&gt;
+&lt;li&gt;Read more books&lt;/li&gt;
+&lt;li&gt;Update blog more regularly&lt;/li&gt;
+&lt;li&gt;Learn yoga&lt;/li&gt;
+&lt;li&gt;Eat fruits every day&lt;/li&gt;
+&lt;li&gt;Practice mindfulness&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;what-went-well&#34;&gt;What went well&lt;/h1&gt;
+&lt;p&gt;The first thing I did was to maintain a list called 2018 Highlights. I did this to keep track of the main events that happened to me in 2018, as a look back to see how it went. This list contained things that I tried for the first time, or something outside the ordinary, memorable activities and accomplishments. Here are some of more noteworthy ones from my list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Finished Level 1 of Japanese on Memrise&lt;/li&gt;
+&lt;li&gt;Picked up Origami&lt;/li&gt;
+&lt;li&gt;Picked up Chess (and solving Chess puzzles)&lt;/li&gt;
+&lt;li&gt;Picked up Rubiks cube and got pretty good at it&lt;/li&gt;
+&lt;li&gt;Started meditating every day (325 days and counting)&lt;/li&gt;
+&lt;li&gt;Deleted my Facebook account&lt;/li&gt;
+&lt;li&gt;7 hikes&lt;/li&gt;
+&lt;li&gt;3 half marathons&lt;/li&gt;
+&lt;li&gt;2 10Ks&lt;/li&gt;
+&lt;li&gt;1 full marathon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Besides this list, here&amp;rsquo;s a little more on how I did with my goals&lt;/p&gt;
+&lt;h2 id=&#34;read-more-books&#34;&gt;Read more books&lt;/h2&gt;
+&lt;p&gt;I read 27 books in 2017 and I wanted to read more than that in 2018. Due to other commitments, I didn&amp;rsquo;t hit that mark. I did have phases where I&amp;rsquo;d read books every day and there were weeks where I didn&amp;rsquo;t read them. But I got to read lot of good books on various topics like Physics, Philosophy, Biology, Biographies, and Running.
+&lt;a href=&#34;https://www.goodreads.com/review/list/9699298-rajath-ramakrishna?read_at=2018&#34;&gt;Here&amp;rsquo;s a list of books I read in 2018&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;learn-yoga&#34;&gt;Learn yoga&lt;/h2&gt;
+&lt;p&gt;I started doing yoga at the rock climbing gym that I was going to. I started with Yin Yoga and fell in love with it. I did it very regularly for few months. I had to stop when I was training for my marathon, since there wasn&amp;rsquo;t enough time to fit climbing, yoga, strength training and 5 days of running in my 7 day schedule. However, I&amp;rsquo;m back to yoga and climbing after taking a 3-month break. Trying Vinyasa now just to see how it is. This is a habit that I plan to continue as I&amp;rsquo;m already seeing the benefits it has on my body.&lt;/p&gt;
+&lt;h2 id=&#34;eat-fruits-every-day&#34;&gt;Eat fruits every day&lt;/h2&gt;
+&lt;p&gt;This was decided on a whim when I realized I wasn&amp;rsquo;t eating a lot of fruits. I wanted to have a healthy diet, but always missed out on fruits due to laziness. I succeeded in this by incorporating fruits at different parts of my diet, most of them being part of my breakfast smoothie.&lt;/p&gt;
+&lt;h2 id=&#34;practice-mindfulness&#34;&gt;Practice Mindfulness&lt;/h2&gt;
+&lt;p&gt;Sometime in March, I was reading some blog and I came across &lt;a href=&#34;https://www.headspace.com/&#34;&gt;Headspace&lt;/a&gt;. I had heard of it before, but I never bothered trying it because I was not very interested in guided meditations. This time I thought I&amp;rsquo;ll bite the bullet and give it a shot, and bought a yearly subscription. It was one of the best decisions I&amp;rsquo;ve made recently as it helped me meditate better and be more mindful. My run streak in the app says 325 days and I&amp;rsquo;ve been doing it either as soon as I wake up, or during my commute or sometimes before I go to sleep or whenever I have some time during the day.&lt;/p&gt;
+&lt;h2 id=&#34;running&#34;&gt;Running&lt;/h2&gt;
+&lt;p&gt;2018 was probably the best year for running. The year started off with my getting back to running after my knee injury (and couple of months of physical therapy). Starting off with 10 minute runs on the treadmill, I ended up doing my first half marathon in March. And it only got better after that. Here&amp;rsquo;s all the runs I did in 2018:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;March: Mercer Island Half Marathon (1h 53m)&lt;/li&gt;
+&lt;li&gt;April: 10K Autism Run (53m 28s)&lt;/li&gt;
+&lt;li&gt;May: Mother&amp;rsquo;s Day Half Marathon (1h 59m)&lt;/li&gt;
+&lt;li&gt;June: Seattle Rock N&#39; Roll Half Marathon (1h 48m)&lt;/li&gt;
+&lt;li&gt;July: 10K Trail Run (55m)&lt;/li&gt;
+&lt;li&gt;October: Snohomish River Run Full Marathon (4h 16m)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&amp;rsquo;m planning to run more this year. Let&amp;rsquo;s see how it goes.&lt;/p&gt;
+&lt;h2 id=&#34;daily-journaling&#34;&gt;Daily Journaling&lt;/h2&gt;
+&lt;p&gt;This is something I was never interested in until last year. But I thought of giving it a shot. I did it for an entire year and I don&amp;rsquo;t regret it, I still do it. I realized the importance of putting my thoughts down. It helped me think more clearly and the habit of doing it every day makes me reflect on my days from a different perspective. I use the app &lt;a href=&#34;https://daylio.webflow.io/&#34;&gt;Daylio&lt;/a&gt; which captures the activity and mood as well, and it gives a nice graph every week to see how the past week went.&lt;/p&gt;
+&lt;h1 id=&#34;what-didnt-go-well&#34;&gt;What didn&amp;rsquo;t go well&lt;/h1&gt;
+&lt;p&gt;As much as I enjoyed reading books, doing yoga and running a lot, there were goals that I missed. Here are some of them:&lt;/p&gt;
+&lt;h2 id=&#34;practice-guitar&#34;&gt;Practice Guitar&lt;/h2&gt;
+&lt;p&gt;I wanted to make this a regular habit, but never got around to it. There were phases - couple of weeks of every day practice and then couple of months of nothing, mainly due to work commitments. Things just got hectic and I stopped playing guitar. This is something I want to work on. To keep the practice consistent, even if I&amp;rsquo;m playing for few minutes every other day. It&amp;rsquo;s a good stress-buster.&lt;/p&gt;
+&lt;h2 id=&#34;blog-regularly&#34;&gt;Blog Regularly&lt;/h2&gt;
+&lt;p&gt;This is the worst of all. Never made a single blog post in the entire year, even though I had it as a goal. It&amp;rsquo;s mostly due to the problem of inertia. It&amp;rsquo;s so hard for me to get started on simple tasks, or tasks that only take few minutes. But once I start, I&amp;rsquo;ll have enough momentum to finish it off. Hope I blog more often this year.&lt;/p&gt;
+&lt;h1 id=&#34;side-quests&#34;&gt;Side Quests&lt;/h1&gt;
+&lt;p&gt;Besides the goals I had, there were few things I picked up during the year. Mainly because I somehow got interested in them long enough to actually commit a good chunk of time learning it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Rubiks Cube&lt;/strong&gt;: My best time to solving a 3x3x3 is about 2m 15s now. Planning on improving it :)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Kendama&lt;/strong&gt;: My friend got Kendama at work and I was fascinated by it. I bought one for myself and ended up learning few tricks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Origami&lt;/strong&gt;: Made some cool stuff like DNA, Hyperbolic Paraboloid, Tangram, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Level 1 of Japanese on Memrise&lt;/strong&gt;: Decided to learn a new language - Japanese. Finished Level 1 on Memrise. Will pick it up later this year.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Side projects with Raspberry Pi&lt;/strong&gt;: Set up &lt;a href=&#34;https://pi-hole.net/&#34;&gt;Pi-Hole&lt;/a&gt; (a network-wide ad-blocking software). Also tried setting up a voice assistant using &lt;a href=&#34;http://snips.ai&#34;&gt;snips.ai&lt;/a&gt;. Couldn&amp;rsquo;t get the speaker to work, but everything else worked fine.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Picked up drawing&lt;/strong&gt;: This was a one-off thing where I saw a Medium post about a &lt;a href=&#34;https://medium.com/personal-growth/a-quick-beginners-guide-to-drawing-58213877715e&#34;&gt;Quick Beginner&amp;rsquo;s Guide to Drawing&lt;/a&gt; that involved hand workouts for pencil sketching and I just did those. Things like, filling up a page with circles and another one with hatched lines. Turned out pretty good, but never continued it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;what-i-learned&#34;&gt;What I learned&lt;/h1&gt;
+&lt;p&gt;With all the things I did and didn&amp;rsquo;t do, here are the lessons I learned in 2018:&lt;/p&gt;
+&lt;h2 id=&#34;youre-never-ready-just-go-for-it&#34;&gt;You&amp;rsquo;re never ready, just go for it&lt;/h2&gt;
+&lt;p&gt;I learned this from my running. Beginning of the year, I never thought of doing a half marathon (which I did in March), let alone doing a full marathon. After my friend forced me to sign up, I thought I&amp;rsquo;ll do it even if I sucked at it. And it went pretty well, for my first time - did it in under 2 hours. Same with running a full marathon in October. I thought I&amp;rsquo;m not ready for a full. But I also thought I shouldn&amp;rsquo;t regret later. And it was pretty good time (4h 16m) for a first timer :)&lt;/p&gt;
+&lt;h2 id=&#34;dont-underestimate-the-training&#34;&gt;Don&amp;rsquo;t underestimate the training&lt;/h2&gt;
+&lt;p&gt;This one again comes from running. I finished my first full marathon in just over 4 hours, but looking back I see hundreds of hours of running, hundreds of miles of running, lot of IT band issues, hurt ankles, hurt everything. There were many times I lost hope during training, especially when I hurt my IT band during the run and then end up limping for the next two days. But it&amp;rsquo;s that rigorous training that helped me do well in the actual event. What I got out of it is that if you&amp;rsquo;re going for something big, you&amp;rsquo;ll need to train a lot, you&amp;rsquo;ll need to put in the hours. Not every day will turn out the way you want. There will be good days. There will be bad days. And there will definitely be shitty days. You just got to persist.&lt;/p&gt;
+&lt;h2 id=&#34;try-to-increase-your-circle-of-competence&#34;&gt;Try to increase your circle of competence&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Circle_of_competence&#34;&gt;Circle of Competence Theory&lt;/a&gt; developed by Warren Buffet and Charlie Munger is something I believe in and strive to live every day. The more you learn and expand your knowledge, the more you realize you don&amp;rsquo;t know enough. Try to learn new things outside your domain. This will help you think with new perspectives and also help find unique solutions to problems you face in your every day life.&lt;/p&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;That wraps up 2018. It definitely was an eventful year and I learnt a lot. Looking forward to another year of activities, travel, new hobbies, more running, and hopefully more accomplishments.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

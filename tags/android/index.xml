@@ -14,7 +14,29 @@
       <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>/posts/the-dreaded-65k-method-limit-on-android/</guid>
-      <description>If you&amp;rsquo;re an Android developer, it&amp;rsquo;s likely that you have experienced this at least a few times during your development.</description>
+      <description>&lt;p&gt;If you&amp;rsquo;re an Android developer, it&amp;rsquo;s likely that you have experienced this at least a few times during your development.&lt;/p&gt;
+&lt;p&gt;The first time I heard people talk about 65k method limit I wasn&amp;rsquo;t aware of it so much. I was thinking, &amp;ldquo;How can a small Android app have 65,000 methods? That&amp;rsquo;s ridiculous! I don&amp;rsquo;t know what people are complaining about.&amp;rdquo; Then when I read what the fuss was all about, I realized that 65k method limit includes not just all the methods in my app, but also everything my app consumes. Yes, that includes libraries; even if you don&amp;rsquo;t use them. Surprisingly I never ran into this issue before though I used to throw in libraries for every little thing without caring about how much it&amp;rsquo;s contributing to the 65k limit. Of course, in the beginning I was using smaller libraries with low method count. Not giants like Goole Play Services. But in a recent project I was working on, one fine day I got this error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Unable to execute dex: method ID not in [0, 0xffff]: 65536
+Conversion to Dalvik format failed: Unable to execute dex: method ID not in [0, 0xffff]: 65536
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And I thought, &amp;ldquo;Huh, looks like I&amp;rsquo;m now in the same boat as many developers who&amp;rsquo;ve been talking about 65k method limit.&amp;rdquo; As I always do with weird unknown errors, I googled this one and got a bunch of StackOverflow links which all said pretty much the same thing - enable multidex. I was about to do that, but I stopped and thought &amp;ldquo;Let me at least understand why this is happening. I&amp;rsquo;m surely not using many libraries. All I&amp;rsquo;m using is dagger, retrofit, timber, google play services and few others. Let me see the culprit that&amp;rsquo;s making my method count reach 65k.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;After some searching, I came across this awesome website &lt;a href=&#34;http://www.methodscount.com/&#34;&gt;methodscount.com&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/rotxed&#34;&gt;Sebastian Gottardo&lt;/a&gt; that gives the method count for any library. Later I found the &lt;a href=&#34;http://www.methodscount.com/plugins&#34;&gt;plugin for Android Studio&lt;/a&gt; which made my day. After I installed the plugin, I saw the method counts of all the libraries I was using right in the build.gradle file and I found it. GooglePlayServices, with its massive 19k method count. I mean, come on. 19k? Really? I thought this is insane!! So did other developers, a long time ago. I was just late to the party. Few more minutes of googling and I found that Google Play Services 6.5 onwards the library is more modular - which means you can include only the stuff you want instead of the whole library. For my application I just needed wearable and location services and methods count for each is under 1.5k.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;compile &#39;com.google.android.gms:play-services:8.4.0&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So, the above line became:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;compile &#39;com.google.android.gms:play-services-wearable:8.4.0&#39;
+compile &#39;com.google.android.gms:play-services-location:8.4.0&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;giving me just what I need.&lt;/p&gt;
+&lt;p&gt;Another awesome tool to consider to get the method counts in a more detailed manner is &lt;a href=&#34;https://github.com/mihaip/dex-method-counts&#34;&gt;dex-method-counts&lt;/a&gt; by &lt;a href=&#34;https://github.com/mihaip&#34;&gt;Mihai Parparita&lt;/a&gt;. This script gives the method counts in a tree format neatly segregating the counts for each package. There are few other tools out there to get method counts, but the key thing to remember is to think before using any 3rd party library. If it&amp;rsquo;s helping you at the cost of bringing in thousands of methods into your DEX file, then is it really worth including it into your app? Can you use a different library that does the same job for you but with a considerably fewer method count?&lt;/p&gt;
+&lt;p&gt;PS: If you&amp;rsquo;re interested to know why 65k, or rather why 65,536 specifically, you should listen to &lt;a href=&#34;http://fragmentedpodcast.com/episodes/29/&#34;&gt;Fragmented Podcast Episode 29&lt;/a&gt; where &lt;a href=&#34;https://twitter.com/kaushikgopal&#34;&gt;Koushik Gopal&lt;/a&gt; explains about this.&lt;/p&gt;
+&lt;p&gt;For more details on 65k limit, here are few links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://androidhub.intel.com/posts/blundell/Pushing_the_limit.html&#34;&gt;2016 Prediction: Battling the 65k limit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@rotxed/dex-skys-the-limit-no-65k-methods-is-28e6cb40cf71&#34;&gt;[DEX] Sky&amp;rsquo;s the limit? No, 65k methods is&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.fasteque.com/deep-dive-into-android-multidex&#34;&gt;Deep dive into Android Multidex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -23,7 +45,52 @@
       <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>/posts/taskr/</guid>
-      <description>I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design.</description>
+      <description>&lt;p&gt;I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design. I was inspired by Material Design since it was launched, but never had the time to implement it in my hobby projects. Now I am trying to take baby steps every day and work on creating Android apps that mostly stick to the new Material Design.&lt;/p&gt;
+&lt;p&gt;I came up with the name Taskr because I couldn&amp;rsquo;t come up with anything better. I did think about many names but since this isn&amp;rsquo;t going anywhere near Play Store, I just stuck to the most unimaginative name possible. Yes, this is probably the simplest task management app that you can find. It&amp;rsquo;s so simple that all you can do is add/edit a task name and description, mark tasks as done and delete completed tasks. To make it a little more usable, I used SQLite database to persist data entered by
+the user.&lt;/p&gt;
+&lt;p&gt;This application uses no fragments, but just a couple of activities. Here&amp;rsquo;s how I designed the application.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;code&gt;TaskItem&lt;/code&gt; data class that holds information about each task and is used to translate cursor objects.&lt;/li&gt;
+&lt;li&gt;ArrayAdapter that spews out tasks from the TaskItem list.&lt;/li&gt;
+&lt;li&gt;A &lt;code&gt;DatabaseHelper&lt;/code&gt; class that is used to save the task items in an SQLite database.&lt;/li&gt;
+&lt;li&gt;A main list activity to display the list with a floating action button and an activity dialog to add/edit a task&lt;/li&gt;
+&lt;li&gt;A menu that has an option to clean up completed tasks.&lt;/li&gt;
+&lt;li&gt;A util class that is used to calculate time elapsed since the task was created and display appropriately.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To make things simpler, I have used couple of libraries.&lt;/p&gt;
+&lt;h3 id=&#34;lombok&#34;&gt;Lombok&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://projectlombok.org/&#34;&gt;Lombok&lt;/a&gt; helps you skip writing getters and setters for data objects by adding the &lt;code&gt;@Data&lt;/code&gt; annotation. This helps in keeping the code short, clean and readable. So the class would look something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;    &lt;span style=&#34;color:#268bd2&#34;&gt;@Data&lt;/span&gt;
+    &lt;span style=&#34;color:#268bd2&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;TaskItem&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#dc322f&#34;&gt;int&lt;/span&gt; id&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; String taskName&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; String taskDescription&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#dc322f&#34;&gt;long&lt;/span&gt; creationTime&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#dc322f&#34;&gt;boolean&lt;/span&gt; isTaskComplete&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#719e07&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This looks much cleaner than a class that is cluttered with getters and setters.&lt;/p&gt;
+&lt;h3 id=&#34;butterknife&#34;&gt;Butterknife&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://jakewharton.github.io/butterknife/&#34;&gt;Butterknife&lt;/a&gt; is another library that helps you inject views more easily with annotations. Adding the @InjectView annotation will automatically cast the corresponding view in your layout. So you no longer have to write things like&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;View view &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; inflater&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;inflate&lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;layout&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;layout_main&lt;span style=&#34;color:#719e07&#34;&gt;,&lt;/span&gt; container&lt;span style=&#34;color:#719e07&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;false&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;);&lt;/span&gt;
+etTaskName &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;EditText&lt;span style=&#34;color:#719e07&#34;&gt;)&lt;/span&gt; view&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;findViewById&lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;task_name_edit_text&lt;span style=&#34;color:#719e07&#34;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You instead write:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;@InjectView&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;task_name_edit_text&lt;span style=&#34;color:#719e07&#34;&gt;)&lt;/span&gt;
+EditText etTaskName&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;There are many more things that these libraries offer and I plan to use it in every Android project of mine.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problems I faced&lt;/strong&gt;:&lt;br&gt;
+I was finding it hard to keep the list up to date. Since I had my tasks in a List and I was using an instance of ArrayAdapter. It was hard to keep track of what was added to the list and what was deleted whenever the user interacted with the list. The main issue was when going from one activity to another and returning back to the main activity. Passing around intents with parcelable/serializable was a pain for a small app like this. And hitting database so often is not a great design.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution I used&lt;/strong&gt;:&lt;br&gt;
+I used a singleton to have a single copy of the task list which will be available to all activities in the app. So any add/update/remove operations performed on this list anywhere in the app will be reflected and is readily available (so the list will have the latest information), though in background I was writing the tasks to database. This mainly helped me avoid passing around intents back and forth.&lt;/p&gt;
+&lt;p&gt;It took me a few days to get this simple app done due to hectic work schedules. I guess I will get back to working on it and add some minor enhancements.&lt;/p&gt;
+&lt;h3 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h3&gt;
+&lt;p&gt;Here are some screenshots of my app:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/taskr_task_list.png&#34; alt=&#34;&#34;&gt;
+ 
+&lt;img src=&#34;/images/taskr_new_task.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The white background of the app blends into the white background of the page :(&lt;br&gt;
+I&amp;rsquo;ll have to change the theme sometime.&lt;/p&gt;
+&lt;p&gt;The project can be found on my GitHub page: &lt;a href=&#34;https://github.com/rrajath/taskr&#34;&gt;taskr&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

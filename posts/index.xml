@@ -14,7 +14,39 @@
       <pubDate>Sat, 11 Sep 2021 21:48:00 -0700</pubDate>
       
       <guid>/posts/my-experience-with-emacs-so-far/</guid>
-      <description>I&amp;rsquo;ve been a vim user for about 15 years and loved every aspect of it. I&amp;rsquo;m nowhere close to the vim wizards I&amp;rsquo;ve seen on YouTube nor some of my coworkers who spend most part of their day writing shell scripts in vim.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been a vim user for about 15 years and loved every aspect of it. I&amp;rsquo;m nowhere close to the vim wizards I&amp;rsquo;ve seen on YouTube nor some of my coworkers who spend most part of their day writing shell scripts in vim. But among my friends and my team, I was considered a power-user. I used a lot of plugins to get things done much easily, I had my shortcuts that my friends found fascinated by and some of them were kind of amazed that I would do a code walkthrough jumping from function to function and file to file using just vim where most of them were going to their IDEs to do that.&lt;/p&gt;
+&lt;p&gt;But that&amp;rsquo;s about it. My vim usage was just for making quick edits to code (larger edits meant opening up an IDE), editing shell scripts and viewing files quickly. I had to use a different tool for managing my tasks, journaling, saving links, etc.&lt;/p&gt;
+&lt;h2 id=&#34;using-notion&#34;&gt;Using Notion&lt;/h2&gt;
+&lt;p&gt;I came across &lt;a href=&#34;https://notion.so&#34;&gt;Notion&lt;/a&gt; and I fell in love with how great it looked and how customizable it was. A lot of them were drag and drop, all the saved links had thumbnails, I could write comments, it was great for task management - I could set up dates and deadlines and get notifications accordingly, templates were great (I came up with my own journaling template since I used bullet journaling), tables were awesome and I could create different views. I used it for couple of years and I thoroughly enjoyed it.&lt;/p&gt;
+&lt;h3 id=&#34;downsides-of-notion&#34;&gt;Downsides of Notion&lt;/h3&gt;
+&lt;p&gt;There were couple of downsides with my Notion setup.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;There was no offline support (at least at that time when I was using it). My notes were stored somewhere else and I needed internet to access it every time. This means, I couldn&amp;rsquo;t use it at work.&lt;/li&gt;
+&lt;li&gt;My notes were in a format that I couldn&amp;rsquo;t control. If I didn&amp;rsquo;t like Notion some time in the future, I couldn&amp;rsquo;t just export it to a different note taking app. I should either wait for the other app to add support to import Notion docs into it or export each and every note I had to markdown and then find a way to deal with it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There were other downsides to Notion depending on the usage, but these were the ones I was affected by the most. I wanted a note taking system that would stand the test of time, something that was preferably open source, one where I had control of my notes, offline supported, customizable.&lt;/p&gt;
+&lt;p&gt;As I was searching for alternatives, I saw several HackerNews posts about note-taking, I kept seeing emacs (and specifically org-mode) pop up everywhere and every single person had only postive things to say about it.&lt;/p&gt;
+&lt;h2 id=&#34;my-first-introduction-to-emacs--spacemacs&#34;&gt;My first introduction to Emacs (spacemacs)&lt;/h2&gt;
+&lt;p&gt;A couple of years ago I was talking to a coworker of mine about vim and he said he uses emacs. Until then, nobody I met talked about emacs. With all the HN posts I read before, I was curious to try it and asked him where do I start. He said, use &lt;a href=&#34;https://www.spacemacs.org&#34;&gt;spacemacs&lt;/a&gt;. So, I did.&lt;/p&gt;
+&lt;p&gt;I liked some parts of spacemacs, especially &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt;. I got pretty excited and I started using it as my daily driver, but after using it for a couple of weeks I gave up. I found spacemacs to be very clunky and slow. I didn&amp;rsquo;t like the UI very much, and frankly, I didn&amp;rsquo;t know how customizable emacs was at the time. Spacemacs had something called layers that I could enable. Elisp was so foreign to me that I didn&amp;rsquo;t bother customizing anything because I had to learn a new language just to customize what I use and the amount of parenthesis threw me off.&lt;/p&gt;
+&lt;h2 id=&#34;doom-emacs&#34;&gt;Doom Emacs&lt;/h2&gt;
+&lt;p&gt;About a year ago, I heard about &lt;a href=&#34;https://github.com/hlissner/doom-emacs&#34;&gt;Doom Emacs&lt;/a&gt;, I think in one of the emacs subreddits. I was intrigued again and I installed it. This time I was immediately hooked. The UI was better, the application was faster, configuration was easier, what I got out of the box with Doom Emacs was perfect for me. Everything felt intuitive and I started using it more and more. I developed my own workflows to organize my tasks, take meeting notes and journal.&lt;/p&gt;
+&lt;p&gt;I liked the fact that I was able to easily toggle things on and off in the config, and I didn&amp;rsquo;t really need to know Elisp to make any changes mainly because I got everything I needed out of the box anyway. I was using Android at the time and &lt;a href=&#34;http://www.orgzly.com&#34;&gt;Orgzly&lt;/a&gt; was a good app for managing orgmode files as well.&lt;/p&gt;
+&lt;p&gt;I was happy with the setup I had and like I mentioned before, I used it mainly for taking notes, organizing my tasks and journaling. Very minimal configuration and package setup. I honestly didn&amp;rsquo;t really understand how everything fit together, how packages worked, how things can be customized by setting variables, or anything. But it worked for me, for the most part and I went with it.&lt;/p&gt;
+&lt;h2 id=&#34;my-custom-configuration&#34;&gt;My Custom Configuration&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve been following &lt;a href=&#34;https://www.youtube.com/channel/UCAiiOTio8Yu69c3XnR7nQBQ&#34;&gt;System Crafters youtube channel&lt;/a&gt; for a few months and I wanted to check out the &lt;a href=&#34;https://www.youtube.com/watch?v=74zOY-vgkyw&amp;amp;list=PLEoMzSkcN8oPH1au7H6B7bBJ4ZO7BXjSZ&#34;&gt;Emacs from Scratch series&lt;/a&gt;. For the longest time, I used to think building an emacs config from scratch is a complete waste of time when we already have something like Doom Emacs which gives us most of the things we need.&lt;/p&gt;
+&lt;p&gt;But I was wrong. About 3 weeks ago, I decided to give it a shot, followed the series and started building my own config. The amount of learning I had in the last 3 weeks is far greater than what I&amp;rsquo;ve learned ever since I started using Emacs. I learned so much about Emacs that I have a deep appreciation for it now. In 3 weeks I came up with a config that is a 1000+ lines long. Every day I tweak my config and make something better. I keep looking forward to using Emacs all the time.&lt;/p&gt;
+&lt;p&gt;The fact that I could literally look at what a specific keybinding does, which function gets invoked when I hit the keybinding, what the implemntation of that function is and basically change it to do what I want was so mind-boggling to me. I felt a sense of freedom where I could change Emacs to literally do whatever I want and behave exactly the way I want it. No other editor even comes close to this level of customizability and that&amp;rsquo;s what excited me.&lt;/p&gt;
+&lt;p&gt;Every customization I was doing involved Elisp in some capacity that each such change was a new learning opportunity for me. So, with each change, my Emacs got better &lt;em&gt;and&lt;/em&gt; I learned Elisp, which is like a win-win. As soon as I started this journey, so many doors opened up for me and I found opportunities to use Emacs for something more than just journaling and taking notes.&lt;/p&gt;
+&lt;p&gt;I now use it as a file manager, terminal, taking notes, organizing my life, journaling, git client, a fully functional IDE with code completions and such, manage my work calendar, quick file edits, viewing and querying json files and blogging. This very post was written in Emacs and published using &lt;a href=&#34;https://ox-hugo.scripter.co&#34;&gt;ox-hugo&lt;/a&gt; - a package used for exporting org files to markdown files that Hugo understands.&lt;/p&gt;
+&lt;h2 id=&#34;obligatory-xkcd-comic-about-emacs&#34;&gt;Obligatory XKCD comic about emacs&lt;/h2&gt;
+&lt;p&gt;Now that I&amp;rsquo;ve said all this about emacs, I &lt;em&gt;have&lt;/em&gt; to use the obligatory xkcd comic about emacs:&lt;/p&gt;
+&lt;figure&gt;&lt;a href=&#34;/images/xkcd_emacs.png&#34;&gt;&lt;img src=&#34;/images/xkcd_emacs.png&#34;/&gt;&lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;If you have never tried Emacs before, I highly recommend you try it. It has a steep learning curve, but it&amp;rsquo;s totally worth it. The more you learn about it, the more appreciation you&amp;rsquo;d have. If you&amp;rsquo;re an absolute beginner, Doom Emacs is a great place to start. However, once you have familiarized yourself with Emacs via Doom Emacs, I encourage you to build your own config. This would ensure you&amp;rsquo;ll know exactly what&amp;rsquo;s going on in your config and it&amp;rsquo;s compeltely in your control. Your emacs will be truly personalized to your liking.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -23,8 +55,13 @@
       <pubDate>Wed, 04 Aug 2021 11:10:00 -0700</pubDate>
       
       <guid>/posts/orgmode-tips-tricks/</guid>
-      <description>Add a link to headings in other org files Use file:~/path/to/file.org::Target
- Target searches for a heading called Target. If not found, it&amp;rsquo;ll ask to create one *Target points to a heading called Target  </description>
+      <description>&lt;h2 id=&#34;add-a-link-to-headings-in-other-org-files&#34;&gt;Add a link to headings in other org files&lt;/h2&gt;
+&lt;p&gt;Use &lt;code&gt;file:~/path/to/file.org::Target&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Target&lt;/code&gt; searches for a heading called &lt;code&gt;Target&lt;/code&gt;. If not found, it&amp;rsquo;ll ask to create one&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*Target&lt;/code&gt; points to a heading called Target&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -33,7 +70,12 @@
       <pubDate>Sun, 30 May 2021 17:44:42 -0700</pubDate>
       
       <guid>/posts/on-analysis-paralysis/</guid>
-      <description>I have often gotten stuck in analysis paralysis mode where I constantly look for the right way to solve a problem and end up spending way too much time on it than actually solving the problem.</description>
+      <description>&lt;p&gt;I have often gotten stuck in analysis paralysis mode where I constantly look for the right way to solve a problem and end up spending way too much time on it than actually solving the problem. A lot of times what happens is the activity of searching for the right way to do something itself takes so much time and energy that I&amp;rsquo;d develop an aversion to the actual activity. Or I&amp;rsquo;d not feel the same level of enthusiasm with which I started.&lt;/p&gt;
+&lt;p&gt;A recent example for this was when I was thinking about the right way to journal. I&amp;rsquo;ve been journaling on and off the past few years and I&amp;rsquo;ve also changed my note-taking apps/services a few times. These note-taking apps have also influenced the way I journal.&lt;/p&gt;
+&lt;p&gt;I currently use &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt; to manage my tasks, events, journal, notes, thoughts, etc. Given that I wanted to journal in org-more, I started searching for the best ways to go about it - to &amp;ldquo;streamline the process&amp;rdquo;, so to speak. Like, what would the headings be? Should I follow a template? Can I use a text expander for the template? Should I add tags for each heading in that template? I was even looking up the &lt;a href=&#34;https://www.reddit.com/r/Journaling&#34;&gt;/r/journaling&lt;/a&gt; subreddit to get some ideas.&lt;/p&gt;
+&lt;p&gt;But after spending some time on this, it just hit me - I should worry more about content than workflows. So, I just went ahead and freestyled it by putting in vague yet meaningful enough headings for each journal entry that either captures the task/event/feeling. And then I added tags to capture how I&amp;rsquo;m feeling. This took a lot of stress away from me and helped me focus on journaling instead of building a workflow.&lt;/p&gt;
+&lt;p&gt;This is just one example out of several where I spent too much time trying to find the right way to do something before actually doing it. What I realized from the above experience was to identify what is important to me. In the journaling example, what&amp;rsquo;s important is the content - writing down what I think, how I feel, rationalizing my thoughts when I&amp;rsquo;m anxious, etc. Everything else is secondary. As long as I make it extremely easy to accomplish this, I shouldn&amp;rsquo;t care about workflows. Because, workflows develop organically based on usage.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -42,7 +84,31 @@
       <pubDate>Sat, 09 Jan 2021 15:16:44 -0800</pubDate>
       
       <guid>/posts/whatsapp-privacy-policy-signal/</guid>
-      <description>I&amp;rsquo;ve been on Signal for a few years now, but it has mostly been crickets and tumbleweeds there because I only had a handful of contacts that were on Signal.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been on Signal for a few years now, but it has mostly been crickets and tumbleweeds there because I only had a handful of contacts that were on Signal. My main (and only) app for communication with friends and family was WhatsApp. I used to install Signal and a few days later I&amp;rsquo;d uninstall it because I didn&amp;rsquo;t really have many people to talk to on Signal. I wanted to keep it and at least use it as an SMS app, but with the amount of spam texts I get and the fact that it doesn&amp;rsquo;t have a feature to filter texts by keyword made me not use it as an SMS app either.&lt;/p&gt;
+&lt;h1 id=&#34;the-problem-with-new-platforms&#34;&gt;The problem with new platforms&lt;/h1&gt;
+&lt;p&gt;The main problem with newer platforms is the user base. If all your friends and family are not on the new platform (social media or messenger), then you really can&amp;rsquo;t use it. That&amp;rsquo;s what happened with me on Signal. It was a herculean task for me to convince people who cared very little about privacy to make them switch to Signal. The thing is, it ends up being a huge task for them too. They also have to convince their contacts to switch to Signal or else they&amp;rsquo;ll experience the same silence of having no one to talk to on that app. Some people are okay with using multiple messaging apps and I know a lot of people that don&amp;rsquo;t. I personally don&amp;rsquo;t enjoy it.&lt;/p&gt;
+&lt;h1 id=&#34;whatsapps-new-privacy-policy&#34;&gt;WhatsApp&amp;rsquo;s new privacy policy&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.whatsapp.com/legal/updates/privacy-policy/?lang=en&#34;&gt;WhatsApp&amp;rsquo;s new privacy policy&lt;/a&gt; that will take effect in Feb 2021 went viral and made enough people talk about it. The fact that there was no way to opt out was the final straw that broke the camel&amp;rsquo;s back. Even &lt;a href=&#34;https://twitter.com/elonmusk/status/1347165127036977153&#34;&gt;Elon Musk tweeted&lt;/a&gt; which ended up &lt;a href=&#34;https://twitter.com/signalapp/status/1347240006444675072&#34;&gt;putting way too much stress on Signal&amp;rsquo;s servers&lt;/a&gt; where there was a delay for new users in receiving verification codes. As much as downtimes are hated in tech services, this particular problem is actually good to have for any tech company.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d say this is a kind of blessing in disguise which gave a lot of people the final push to stop giving in to big tech companies to continue stealing data from customers. What I did realize was how easy and valuable it was to make people aware of the data collection practices.&lt;/p&gt;
+&lt;p&gt;If this privacy policy update had come in the form of an email that we usually get from other services, like &amp;ldquo;We have updated our privacy policy. Please click here to learn more.&amp;rdquo; I don&amp;rsquo;t think we would have taken it this seriously.&lt;/p&gt;
+&lt;h1 id=&#34;how-i-spread-awareness&#34;&gt;How I spread awareness&lt;/h1&gt;
+&lt;p&gt;WhatsApp made the job easier for me to spread awareness of their privacy and data collection nightmare.&lt;/p&gt;
+&lt;h2 id=&#34;1-update-my-whatsapp-status&#34;&gt;1. Update my WhatsApp status&lt;/h2&gt;
+&lt;p&gt;The first thing I did was to update my WhatsApp status to say &amp;ldquo;I&amp;rsquo;m deleting WhatsApp on 1/31. Find me on Signal&amp;rdquo;. This would give people a heads-up about my availability on WhatsApp and also tell them where to find me.&lt;/p&gt;
+&lt;h2 id=&#34;2-starting-conversations-about-privacy-with-people&#34;&gt;2. Starting conversations about privacy with people&lt;/h2&gt;
+&lt;p&gt;I ended up sharing two screenshots with the groups and people I interact with the most on WhatsApp. Once I shared them, it was abundantly clear to them that they had to ditch WhatsApp and most of them immediately hopped on to Signal.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img style=&#34;width:50%&#34; src=&#34;/images/whatsapp-privacy-policy-feb2021.jpeg&#34;/&gt;
+    &lt;figcaption&gt;WhatsApp Privacy Policy&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;/images/data-collection-messaging-apps.jpeg&#34;/&gt;
+    &lt;figcaption&gt;&lt;a href=&#34;https://www.forbes.com/sites/zakdoffman/2021/01/03/whatsapp-beaten-by-apples-new-imessage-update-for-iphone-users/?sh=191b47e36234&#34;&gt;Data collection by different apps&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;What I also did was to create Groups on Signal and send the group invite to respective groups in WhatsApp. It made the transition easier. Now the number of contacts in Signal is growing.&lt;/p&gt;
+&lt;h1 id=&#34;signal-is-the-future&#34;&gt;Signal is the future&lt;/h1&gt;
+&lt;p&gt;Signal paved the way and showed the world how apps can be made that wouldn&amp;rsquo;t profit off of your data. &lt;a href=&#34;https://www.reddit.com/r/technology/comments/kt91qk/signal_private_messenger_team_here_we_support_an&#34;&gt;Their Reddit AMA&lt;/a&gt; provides good insight into their values, their vision and a lot more about who they are and how they operate. I have donated to Signal and will continue to do so. I love the fact that they&amp;rsquo;re non-profit and open source; that&amp;rsquo;s a huge plus to me. It&amp;rsquo;s so peaceful stress-free to use an app or a service that we know has our best interests and wouldn&amp;rsquo;t make money off of our data. In the world where it seems as if privacy no longer exists, it&amp;rsquo;s great to see a very private and secure messaging app is growing to be so popular and it is on its way to become people&amp;rsquo;s primary mode of communication.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -51,7 +117,26 @@
       <pubDate>Tue, 05 Jan 2021 17:10:14 -0800</pubDate>
       
       <guid>/posts/ideas-need-sufficient-baketime/</guid>
-      <description>I&amp;rsquo;ve always been curious about learning new things. I&amp;rsquo;ve always consumed new information with great enthusiasm. I&amp;rsquo;d read book after book, blog post after blog post and listen to lot of podcasts and audiobooks.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve always been curious about learning new things. I&amp;rsquo;ve always consumed new information with great enthusiasm. I&amp;rsquo;d read book after book, blog post after blog post and listen to lot of podcasts and audiobooks. What ended up happening was I&amp;rsquo;d never really reflect on what I&amp;rsquo;ve read. So, after some time I&amp;rsquo;d have no recollection of the contents of any book. I used to be under the impression that the more I read, the more I learn and I was checking books off my list. Then I thought reading should really be about grasping the essence instead of trying to remember the nitty gritty details the author talks about in any book. All of this led to me passively consume information without giving any time for myself to reflect on what I&amp;rsquo;ve read.&lt;/p&gt;
+&lt;h1 id=&#34;dont-passively-consume-information&#34;&gt;Don&amp;rsquo;t passively consume information&lt;/h1&gt;
+&lt;p&gt;This is the mistake I made while I used to read a lot of books. When I get a book recommendation via one of the many sources - friends, blogposts, podcasts, goodreads, etc., I&amp;rsquo;d keep adding them to my to-read list on Goodreads. Then, I&amp;rsquo;d either get the audiobook or I&amp;rsquo;d get the Kindle ebook. And, I&amp;rsquo;d just read them one after another. I&amp;rsquo;d thoroughly enjoy reading them and while I&amp;rsquo;m doing that I&amp;rsquo;d feel like I&amp;rsquo;m learning something.&lt;/p&gt;
+&lt;p&gt;What happened later was that, when I&amp;rsquo;ll be talking to a friend I&amp;rsquo;d say something like,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;My friend&lt;/strong&gt;: *Talking about their experience with crows being a team and using a diversion tactic to take his fries one day*&lt;br&gt;
+&lt;strong&gt;Me&lt;/strong&gt;: &amp;ldquo;Hey, that reminds me, I read a book called Selfish Gene that explains the altruistic nature of crows. Richard Dawkins says in that book that crows are&amp;hellip; um&amp;hellip;&amp;rdquo;.&lt;br&gt;
+&lt;em&gt;*Silence*&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I just couldn&amp;rsquo;t explain it, because I retained almost nothing from that book. I kind of sort of know about the altruistic nature of crows, but I just couldn&amp;rsquo;t succinctly put it across. It infuriated me and I always wondered where I&amp;rsquo;m going wrong.&lt;/p&gt;
+&lt;p&gt;I listened to a podcast few months ago where &lt;a href=&#34;https://sive.rs&#34;&gt;Derek Sivers&lt;/a&gt; was interviewed where he said&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Learning doesn&amp;rsquo;t happen when you read, it happens when you reflect on what you&amp;rsquo;ve read&amp;rdquo;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This quote hit home with me. It made so much sense and I felt I wasted a lot of time just consuming information without really &amp;ldquo;consuming information&amp;rdquo;. Whatever I was reading was just useless.&lt;/p&gt;
+&lt;h1 id=&#34;ideas-need-baketime&#34;&gt;Ideas need baketime&lt;/h1&gt;
+&lt;p&gt;I changed my reading style from reading too much back to back, to reading little with breaks in between. Sometimes I&amp;rsquo;d read just a couple of pages and reflect on it for a few hours or a few days. The difference is night and day. Now it&amp;rsquo;s no longer about remembering the little details of whatever I read, but it&amp;rsquo;s about making connections between the different ideas I have in my mental model.&lt;/p&gt;
+&lt;p&gt;Where I found this to be most valuable is when I would do something that doesn&amp;rsquo;t require a lot of thought - like cooking, working out without headphones, cleaning my apartment, going for a run, that&amp;rsquo;s when I&amp;rsquo;d relect on whatever information I consumed and make connections. I&amp;rsquo;ve had several &amp;ldquo;Aha!&amp;rdquo; moments where I fit pieces together and develop a much better understanding.&lt;/p&gt;
+&lt;p&gt;In my opinion, the kind of reading for which you just have to grasp the essence is something that doesn&amp;rsquo;t require you to understand an idea deeply, make connections and possibly apply it to your life. An example of this would be reading the newspaper. You don&amp;rsquo;t have to understand deeply what happened in politics the previous day and reflect on them. However, when it comes to reading a book with lot of useful information, it becomes really valuable to understand the fundamentals. Reflecting upon ideas becomes one of the best tools in the box for succeeding in the learning process.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -60,7 +145,10 @@
       <pubDate>Sat, 02 Jan 2021 15:17:57 -0800</pubDate>
       
       <guid>/posts/exporting-google-photos/</guid>
-      <description>I recently purchased a Synology NAS and I started hosting a media server containing movies, TV shows and photos. I had stored all my photos in Google Photos for the past several years.</description>
+      <description>&lt;p&gt;I recently purchased a &lt;a href=&#34;https://www.synology.com/en-us/products/series/home&#34;&gt;Synology NAS&lt;/a&gt; and I started hosting a media server containing movies, TV shows and photos. I had stored all my photos in Google Photos for the past several years. But recently Google announced that &lt;a href=&#34;https://blog.google/products/photos/storage-changes&#34;&gt;it was going to charge for storing photos as they near the storage limit of 15GB&lt;/a&gt;. I knew of &lt;a href=&#34;https://takeout.google.com&#34;&gt;Google Takeout&lt;/a&gt; and I downloaded some 44 GB of photos which were packed in about 23 zip files.&lt;/p&gt;
+&lt;p&gt;I found that these zip files had lot of repetitive files, seemed like a lot of duplicates. I ended up extracting all of them to a single folder. And, I saw a lot of json files mixed in. When I searched online, I found couple of tools to get rid of them: &lt;a href=&#34;https://metadatafixer.com&#34;&gt;Metadata Fixer&lt;/a&gt; and &lt;a href=&#34;https://github.com/TheLastGimbus/GooglePhotosTakeoutHelper&#34;&gt;Google Photos Takeout Helper&lt;/a&gt;. These didn&amp;rsquo;t work well and I thought of writing my own tool to do the job for me.&lt;/p&gt;
+&lt;p&gt;I later came across a Reddit post where &lt;a href=&#34;https://www.reddit.com/r/googlephotos/comments/jyyg53/psa_i_found_an_alternative_to_google_takeout_for&#34;&gt;somebody posted an alternative for exporting Google Photos&lt;/a&gt;. The alternative is basically to select all the photos per year and download them via UI. This will not give us any json files. It just downloads the photos as is. This was perfect and worked for me.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -69,7 +157,34 @@
       <pubDate>Fri, 01 Jan 2021 20:30:59 -0800</pubDate>
       
       <guid>/posts/2020-year-in-review/</guid>
-      <description>2020 has been quite a year for all of us and I don&amp;rsquo;t want to get into the long list of things that have shook us this year.</description>
+      <description>&lt;p&gt;2020 has been quite a year for all of us and I don&amp;rsquo;t want to get into the long list of things that have shook us this year. We&amp;rsquo;re still resilient and stand strong even though we experience some of the most horrific events we&amp;rsquo;re thrown into. I&amp;rsquo;m grateful for being privileged enough in terms of health, career, etc. This year hasn&amp;rsquo;t been the best for pretty much anyone and the same goes for me. Having said that, like I do every year, here are some of the things I did more of, less of, some side quests and lessons learned along the way.&lt;/p&gt;
+&lt;h1 id=&#34;things-i-did-more-of&#34;&gt;Things I did more of&lt;/h1&gt;
+&lt;h2 id=&#34;self-hosting&#34;&gt;Self hosting&lt;/h2&gt;
+&lt;p&gt;This started out as a project for a few raspberry pis I had at home where I did a RAID-1 setup initially with NextCloud installed. However, I had to do a lot of heavy lifting in a lot of different areas, like configuring DDNS, setting up another raspberry pi as a mirror for data duplication, and other minor quirks I had along the way. Besides that, there were times when Nextcloud didn&amp;rsquo;t work the way it was supposed to. Like, I wasn&amp;rsquo;t seeing the &amp;lsquo;Sharing&amp;rsquo; tab for any of the files or folders. There was not a lot of help from the community either. Besides that, the raspberry pi I had installed it on was constantly running out of memory. I just couldn&amp;rsquo;t devote more time to it and fix all the quirks. Towards the end of 2020, I bought a Synology NAS DS220+ and I&amp;rsquo;ve been very happy with it.&lt;/p&gt;
+&lt;p&gt;The DS220+ did all the heavy lifting for me and the initial setup took less than 15 minutes. After that I just had to move my data to it. The DiskStation is definitely a superior and a much nicer product too. The fact that I have a great level of control into how my data is stored, shared and accessed while all the nitty gritty of the configuration is abstracted away has been a great experience. It&amp;rsquo;s a huge time saver and I could focus my time and energy on other projects.&lt;/p&gt;
+&lt;h2 id=&#34;chess&#34;&gt;Chess&lt;/h2&gt;
+&lt;p&gt;The quarantine prevented me from going out and that made me get into Chess. I spent many hours playing chess with my wife and got better at it. I also solved Chess puzzles on Lichess which I highly recommend if somebody is looking for good chess apps.&lt;/p&gt;
+&lt;h2 id=&#34;emacsorg-mode&#34;&gt;Emacs/org-mode&lt;/h2&gt;
+&lt;p&gt;I used org-mode before with Spacemacs and it was okay. The workflow was great when I was in front of my computer, but for &amp;ldquo;on the go&amp;rdquo;, I just couldn&amp;rsquo;t get a good workflow going. This made me disinterested in emacs and org-mode and I switched to a different solution - Notion. I then learned about Doom Emacs which in my opinion is way better than Spacemacs since Spacemacs was really slow and clunky when I used it. With Orgzly installed on my phone, Syncthing set up on my phone and my computer, I got a good system that I could work with. Every day I learn new things about Emacs either intentionally or accidentally and I&amp;rsquo;m loving every bit of it.&lt;/p&gt;
+&lt;h2 id=&#34;journaling&#34;&gt;Journaling&lt;/h2&gt;
+&lt;p&gt;I journaled every single day this entire year. There were days when I journaled more and did a lot of brain dumps and there were other days where I journaled very little. I&amp;rsquo;m glad to have developed this habit since it has helped me organize my thoughts, come to logical solutions whenever I&amp;rsquo;m preoccupied with things that bother me, or just write down my thoughts. IMO, it&amp;rsquo;s a very underrated habit and especially over time, you get a good ROI with journaling.&lt;/p&gt;
+&lt;h2 id=&#34;zettelkasten&#34;&gt;Zettelkasten&lt;/h2&gt;
+&lt;p&gt;I take notes extensively. I used to take notes whenever I read a book, but these days I find myself taking notes when I read blog posts or listen to podcasts too. What I stumbled upon recently was a new note-taking method called &lt;a href=&#34;https://en.wikipedia.org/wiki/Zettelkasten&#34;&gt;Zettelkasten&lt;/a&gt; (or slip-box) - a system developed by Niklas Luhmann. I write smaller notes where each note contains an idea instead of a book summary. These notes end up getting interconnected to other notes. This system has been working well so far. Let&amp;rsquo;s see where it takes me.&lt;/p&gt;
+&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;
+&lt;p&gt;I read few good books this year. I didn&amp;rsquo;t focus on reading more books, but instead focused on reading bits and pieces of different books and reflecting on those ideas. This has been extremely valuable to me compared to how I used to read books or listen to audiobooks. For example, I read a 4 page chapter (called &amp;ldquo;A sketch of good communication&amp;rdquo;) from a &lt;a href=&#34;https://www.lesswrong.com/books&#34;&gt;LessWrong book set&lt;/a&gt; (book name Epistemology) and reflected on it for couple of days which led me to few scenarios where was I guilty of bad communication in the past. The chapter is super interesting and is also available as a &lt;a href=&#34;https://www.lesswrong.com/posts/yeADMcScw8EW9yxpH/a-sketch-of-good-communication&#34;&gt;blogpost&lt;/a&gt; (as are all other chapters in the book set) if you&amp;rsquo;re interested.&lt;/p&gt;
+&lt;h1 id=&#34;things-i-did-less-of&#34;&gt;Things I did less of&lt;/h1&gt;
+&lt;h2 id=&#34;running&#34;&gt;Running&lt;/h2&gt;
+&lt;p&gt;The quarantine made us stay home and summer was mostly spent indoors. I did run a couple of times on a treadmill in our apartment gym, but that was closed too after a bit. I&amp;rsquo;m looking forward to running outside in 2021 once it gets warmer&lt;/p&gt;
+&lt;h2 id=&#34;working-out&#34;&gt;Working out&lt;/h2&gt;
+&lt;p&gt;I stopped doing bodyweight workouts too and I tend to have mostly focused on eating more, and gaining more weight (though that wasn&amp;rsquo;t part of the plan).&lt;/p&gt;
+&lt;h2 id=&#34;personal-projects&#34;&gt;Personal projects&lt;/h2&gt;
+&lt;p&gt;With the whole WFH situation, I ended up working way more than I did when I used to go to office. This made me so tired that it was extremely hard to get motivated to do personal projects.&lt;/p&gt;
+&lt;h1 id=&#34;side-quests&#34;&gt;Side Quests&lt;/h1&gt;
+&lt;h2 id=&#34;making-music&#34;&gt;Making music&lt;/h2&gt;
+&lt;p&gt;I recently discovered Groovepad and I really liked how easy it is to use that app and make music. As of this writing I made 3 tracks and I&amp;rsquo;m planning to put them up on Soundcloud and Spotify.&lt;/p&gt;
+&lt;h1 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h1&gt;
+&lt;p&gt;With everything that happened in 2020 and so much time being spent indoors, it made me reflect on a lot things. I&amp;rsquo;m extremely grateful to have good health, family, career and friends. It has made me appreciate life more and gave me some perspective. It&amp;rsquo;s easy to take things for granted and look the other way. But it takes a lot of strength and speaks to one&amp;rsquo;s character to stand up for the right thing and fight for it.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -78,7 +193,41 @@
       <pubDate>Thu, 17 Sep 2020 21:32:00 -0700</pubDate>
       
       <guid>/posts/org-mode-smart-archive/</guid>
-      <description>So far, my workflow in OrgMode for managing tasks and events was to have one file called organize.org that contains top-level headings - Tasks, Events that contained respective items.</description>
+      <description>&lt;p&gt;So far, my workflow in &lt;a href=&#34;https://orgmode.org/&#34;&gt;OrgMode&lt;/a&gt; for managing tasks and events was to have one file called &lt;code&gt;organize.org&lt;/code&gt; that contains top-level headings - &lt;strong&gt;Tasks&lt;/strong&gt;, &lt;strong&gt;Events&lt;/strong&gt; that contained respective items. Once I finished those items, I&amp;rsquo;d move them to a different file called &lt;code&gt;archive.org&lt;/code&gt;. So, my &lt;code&gt;organize.org&lt;/code&gt; file looked something like this:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;organize.org&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt; * Tasks
+  * Task 1
+  * Task 2
+ * Events
+  * Event 1
+  * Event 2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Initially, I was directly archiving all the tasks/events that I completed, so my &lt;code&gt;archive.org&lt;/code&gt; became a dumping ground. A few weeks later I looked at my archive file and it was so hard to go look at it and separate them out, so I created similar top-level headings.&lt;/p&gt;
+&lt;p&gt;Now my &lt;code&gt;archive.org&lt;/code&gt; had &lt;strong&gt;Tasks&lt;/strong&gt; and &lt;strong&gt;Events&lt;/strong&gt; as the top-level headings and I would archive all the DONE tasks and events to their respective headings. This also felt a little tedious because each time I had to archive something, I had to select the specific file and heading. I could have used the archive feature that org-mode provides, but that creates a new file whenever I want to archive something from another file. I want to maintain just one file for archive and if I want to archive anything from any of the other files, they&amp;rsquo;ll all go to this one &lt;code&gt;archive.org&lt;/code&gt;. This is part of my PARA workflow.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;: By the way, I use Doom Emacs, so some of the keybindings I mention in this article will be specific to &lt;a href=&#34;https://github.com/hlissner/doom-emacs&#34;&gt;Doom Emacs&lt;/a&gt;. They may not work with &lt;a href=&#34;https://www.spacemacs.org/&#34;&gt;Spacemacs&lt;/a&gt; or &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34;&gt;Vanilla Emacs&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;What I figured out later was to have a &lt;code&gt;:PROPERTIES:&lt;/code&gt; drawer containing the location of the archive file &lt;em&gt;and&lt;/em&gt; the heading under which it can be archived to. And, I did this for all the headings where I usually archive stuff. Now that I&amp;rsquo;ve set this up, all I do is hit &lt;code&gt;SPC m A&lt;/code&gt; (or &lt;code&gt;M-x org-archive-subtree&lt;/code&gt;) and the item goes to the right location. And not just that, it also adds a &lt;code&gt;:PROPERTIES:&lt;/code&gt; drawer in the destination location with all the relevant details like where that heading came from, at what time the task was archived, etc.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;organize.org&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt; * Tasks
+   :PROPERTIES:
+   :ARCHIVE: ./archive.org::* Tasks
+   :END:
+ * Events
+   :PROPERTIES:
+   :ARCHIVE: ./archive.org::* Events
+   :END:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, if I have to look at all the things I&amp;rsquo;ve done and events I&amp;rsquo;ve attended over the past day/week/month/quarter/year, I just have to go to &lt;code&gt;archive.org&lt;/code&gt; and do a sparse tree search (&lt;code&gt;SPC m s s&lt;/code&gt; or &lt;code&gt;M-x org-sparse-tree&lt;/code&gt;) on that tree and I can slice and dice the data however I want. In case you want to know what properties get added in &lt;code&gt;archive.org&lt;/code&gt;, here&amp;rsquo;s a preview.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;archive.org&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt; * Tasks
+ ** DONE Task 1
+    CLOSED: [2020-09-12 Sat 11:51]
+    :PROPERTIES:
+    :ARCHIVE_TIME: 2020-09-12 Sat 11:52
+    :ARCHIVE_FILE: ~/Documents/org-mode/organize.org
+    :ARCHIVE_OLPATH: Tasks
+    :ARCHIVE_CATEGORY: organize
+    :ARCHIVE_TODO: DONE
+    :ARCHIVE_ITAGS: task
+    :END:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -87,7 +236,71 @@
       <pubDate>Wed, 08 Jul 2020 21:03:07 -0700</pubDate>
       
       <guid>/posts/my-hugo-setup-part-3/</guid>
-      <description>This is the third installment of my Hugo Setup. In this post I explain how I added support for &amp;ldquo;series&amp;rdquo; in my blog and also provide links that can be used for further explorations.</description>
+      <description>&lt;p&gt;This is the third installment of my Hugo Setup. In this post I explain how I added support for &amp;ldquo;series&amp;rdquo; in my blog and also provide links that can be used for further explorations.&lt;/p&gt;
+&lt;p&gt;Also, this post is part of a &amp;ldquo;series&amp;rdquo; and explains about how to setup &amp;ldquo;series&amp;rdquo;. This is so meta!&lt;/p&gt;
+&lt;h2 id=&#34;what-is-series&#34;&gt;What is Series?&lt;/h2&gt;
+&lt;p&gt;Sometimes, we have a bunch of blog posts that are related and maybe continuous. Breaking down one big topic into multiple blog posts is the best way to explain the topic. This is where Series adds value. Series also helps keep track of where one is in the list of posts and can easily navigate to posts before or after the current post. This post has nothing to do with writing something differently, but rather presenting mutliple related posts in a more intuitive way.&lt;/p&gt;
+&lt;h2 id=&#34;how-is-it-different-from-adding-tags&#34;&gt;How is it different from adding tags?&lt;/h2&gt;
+&lt;p&gt;Tags are useful for categorizing similar topics. For example, there may be bunch of posts under the tag &amp;ldquo;productivity&amp;rdquo;, but they may all be stand-alone posts that can be read in any order. Whereas, having posts that need continuity will need something a little more sophisticated than tags.&lt;/p&gt;
+&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;I was deciding to implement this in my templates, but before doing that I searched around for easy, already existing implementations, and I did find some help in the Hugo community. I came across a &lt;a href=&#34;https://discourse.gohugo.io/t/creating-post-series/1115&#34;&gt;Hugo forum post&lt;/a&gt; where a user had a similar ask. The &lt;a href=&#34;https://npf.io/2014/08/making-it-a-series/&#34;&gt;link in the answer&lt;/a&gt; had everything I needed to add the &amp;ldquo;series&amp;rdquo; support for my blog.&lt;/p&gt;
+&lt;p&gt;Hugo supports Taxonomies where you can configure &lt;a href=&#34;https://gohugo.io/content-management/taxonomies/#configuring-taxonomies&#34;&gt;custom taxonomies&lt;/a&gt; and can be used everywhere on your blog. The first step is to add the &lt;code&gt;series&lt;/code&gt; taxonomy in your &lt;code&gt;config.toml&lt;/code&gt; file&lt;/p&gt;
+&lt;h3 id=&#34;step-1&#34;&gt;Step 1&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;config.toml&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;[taxonomies]
+	tag = &amp;#34;tags&amp;#34;
+	series = &amp;#34;series&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you have a &lt;code&gt;yaml&lt;/code&gt; file, change the syntax accordingly.&lt;/p&gt;
+&lt;h3 id=&#34;step-2&#34;&gt;Step 2&lt;/h3&gt;
+&lt;p&gt;Create a partial called &lt;code&gt;series_links.html&lt;/code&gt; at &lt;code&gt;/layouts/partials/series_links.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This will contain the code that is responsible for displaying links to other posts in the series.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;/layouts/partials/series_links.html&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;{{ if .Params.series }}
+    {{ $name := index .Params.series 0 }}
+    &amp;lt;hr/&amp;gt;
+    Other posts in this series:&amp;lt;/p&amp;gt;
+
+    {{ $name := $name | urlize }}
+    {{ $series := index .Site.Taxonomies.series $name }}
+    &amp;lt;ul class=&amp;#34;series&amp;#34;&amp;gt;
+    {{ range $series.Pages }}
+        &amp;lt;li&amp;gt;{{ .Date.Format &amp;#34;Jan 02, 2006&amp;#34; }} -
+        &amp;lt;a href=&amp;#34;{{.Permalink}}&amp;#34;&amp;gt;{{ .LinkTitle }}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    {{ end }}
+    &amp;lt;/ul&amp;gt;
+{{ end }}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I got the above code from: &lt;a href=&#34;https://npf.io/2014/08/making-it-a-series/&#34;&gt;https://npf.io/2014/08/making-it-a-series/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The explanation of what this means is explained better there, so I&amp;rsquo;m not going to reiterate the same thing here.&lt;/p&gt;
+&lt;h3 id=&#34;step-3&#34;&gt;Step 3&lt;/h3&gt;
+&lt;p&gt;Go to your &lt;code&gt;single.html&lt;/code&gt; which is the template that renders each of your blog posts.&lt;br&gt;
+Replace &lt;code&gt;{{ .Content }}&lt;/code&gt; with the code below&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;/layouts/_default/single.html&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;markdown&amp;#34;&lt;/span&gt;&amp;gt;
+			{{ if .Params.series }}
+  				{{ $name := index .Params.series 0 }}
+  				&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;p&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;series_top_page&amp;#34;&lt;/span&gt; style&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;font-weight:50; background-color:#333&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;&amp;gt;This post is part of the &amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt; href&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;{{.Site.BaseURL}}/series/{{$name | urlize}}&amp;#34;&lt;/span&gt;&amp;gt;{{$name}}&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt;&amp;gt; series.&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;p&lt;/span&gt;&amp;gt;
+			{{ end }}
+			{{ .Content }}
+			{{ partial &amp;#34;series_links.html&amp;#34; . }}
+&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;What this does is, before your main content it displays a banner stating that the post is part of a series (this banner doesn&amp;rsquo;t appear otherwise). This tells the reader right of the bat that there are more related posts they can check out and read. You can look at the banner at the top of this post to see what it looks like. All of this is done by the code that comes before the &lt;code&gt;{{ .Content }}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The code that comes after content, i.e. &lt;code&gt;{{ partial &amp;quot;series_links.html&amp;quot; . }}&lt;/code&gt; simply calls the &lt;code&gt;series_links.html&lt;/code&gt; partial we created in step 2 and injects it here, right after your post&amp;rsquo;s main content.&lt;/p&gt;
+&lt;h3 id=&#34;step-4&#34;&gt;Step 4&lt;/h3&gt;
+&lt;p&gt;Now for the final step, you&amp;rsquo;ll have to add front matter to your posts - the ones you want to make part of the series. That will look something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;---
+title: &amp;#34;My Hugo Setup&amp;#34;
+...
+series: [&amp;#34;hugo-setup&amp;#34;]
+tags:
+- tag1
+- tag2
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;other-explorations&#34;&gt;Other Explorations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I found &lt;a href=&#34;http://www.joesacher.com/blog/2017/08/03/implementing-series-in-hugo/&#34;&gt;an implementation&lt;/a&gt; which added &lt;a href=&#34;http://www.joesacher.com/blog/2017/08/27/converting-series-to-taxonomy/&#34;&gt;fancier links to posts in series&lt;/a&gt;, like keeping track of how many posts are in the series, adding next and previous links, etc. I had some trouble with that and I didn&amp;rsquo;t have the patience to debug and set it up. This piece of code got the job done for me. But feel free to explore that and tweak it to your needs.&lt;/li&gt;
+&lt;li&gt;I also stumbled upon &lt;a href=&#34;https://www.notion.so/My-Hugo-Setup-Part-3-04f1eeac0db4403a8cdfdc37b6714db9&#34;&gt;another implementation&lt;/a&gt; which did something similar. It&amp;rsquo;s worth checking that out.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -96,7 +309,19 @@
       <pubDate>Sun, 05 Jul 2020 22:16:04 -0700</pubDate>
       
       <guid>/posts/my-hugo-setup-part-2/</guid>
-      <description>In my previous post, I explained all the visual tweaks I did to my Hugo blog theme so that I could get the pages I wanted in the format I liked the most.</description>
+      <description>&lt;p&gt;In my &lt;a href=&#34;https://rrajath.com/posts/my-hugo-setup/&#34;&gt;previous post&lt;/a&gt;, I explained all the visual tweaks I did to my Hugo blog theme so that I could get the pages I wanted in the format I liked the most. This post explains the publish part of it because I faced some issues doing that.&lt;/p&gt;
+&lt;p&gt;I was used to Jekyll&amp;rsquo;s way of doing things where it&amp;rsquo;s just one repository on GitHub and all I had to do was &lt;code&gt;git push&lt;/code&gt; and the blog would show up after about a minute. This means the repository contained both source and generated files. However, Hugo does things a little differently and I actually like it. There are several ways to deploy your Hugo website - using GitHub pages, GitLab, Netlify, etc. I chose GitHub pages since that&amp;rsquo;s what I&amp;rsquo;m most familiar with.&lt;/p&gt;
+&lt;p&gt;If you are going with GitHub&amp;rsquo;s User or Organization Pages, &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages&#34;&gt;Hugo&amp;rsquo;s recommendation&lt;/a&gt; is to split the source and generated files into two different repositories. The repository that the generated files go to will be the front for the website. Let me explain what I did in a little more detail.&lt;/p&gt;
+&lt;p&gt;Step 1: Create a GitHub repository. I called mine &amp;ldquo;blog&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Step 2: Create another GitHub repository called &lt;username&gt;.github.io. Mine is rrajath.github.io&lt;/p&gt;
+&lt;p&gt;Step 3: Do a &lt;code&gt;git clone&lt;/code&gt; of the &amp;ldquo;blog&amp;rdquo; repository you created on GitHub.&lt;/p&gt;
+&lt;p&gt;Step 4: Copy over your Hugo website on your local to the &amp;ldquo;blog&amp;rdquo; directory that you just cloned.&lt;/p&gt;
+&lt;p&gt;Step 5: Add a submodule using the command: &lt;code&gt;git submodule add -b master https://github.com/username/username.github.io public&lt;/code&gt;. This creates a git submodule that points to the &lt;code&gt;public&lt;/code&gt; directory in your Hugo website.&lt;/p&gt;
+&lt;p&gt;Step 5 is where I encountered the issue. The idea is to point the &lt;code&gt;public&lt;/code&gt; in your &amp;ldquo;blog&amp;rdquo; directory to a remote on GitHub by making it a submodule. The folder &lt;code&gt;public&lt;/code&gt; contains all the generated files. Once you create a post and run &lt;code&gt;hugo server&lt;/code&gt; to generate all the files, you have to do a &lt;code&gt;git push&lt;/code&gt; on both the &amp;ldquo;blog&amp;rdquo; directory and the &amp;ldquo;public&amp;rdquo; directory (which is a submodule pointing to &lt;code&gt;username.github.io&lt;/code&gt; repo on GitHub). And having the &lt;code&gt;public&lt;/code&gt; directory as part of the &lt;code&gt;.gitignore&lt;/code&gt; will exclude it from pushing its contents to the &amp;ldquo;blog&amp;rdquo; directory which is supposed to only contain the source files.&lt;/p&gt;
+&lt;p&gt;However, this was not happening. I tried reconfiguring the submodules, changing my .gitignore file and doing several other things, but what was generated by Hugo in the &lt;code&gt;public&lt;/code&gt; directory never got pushed to the remote repo; which means, my site never got updated even though I was updated the source files and things were working fine when I ran it on &lt;code&gt;localhost&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The way I solved this is by cloning the &lt;code&gt;username.github.io&lt;/code&gt; repo to &lt;em&gt;outside&lt;/em&gt; the &amp;ldquo;blog&amp;rdquo; directory. Then changing the script &lt;code&gt;deploy.sh&lt;/code&gt; mentioned &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages&#34;&gt;in the documentation&lt;/a&gt; to copy all the files from &lt;code&gt;public&lt;/code&gt; directory into the cloned directory, then committing and pushing the changes. The &lt;code&gt;public&lt;/code&gt; directory now doesn&amp;rsquo;t point to anything in the remote. Though this is slightly round about, it does the job and fixed my issue. It&amp;rsquo;s also a one time setup and I don&amp;rsquo;t have to touch it again.&lt;/p&gt;
+&lt;p&gt;All I do when I create a new post is, do a &lt;code&gt;git add&lt;/code&gt; and a &lt;code&gt;git commit&lt;/code&gt;. Then run &lt;code&gt;deploy.sh&lt;/code&gt; to copy the generated files to the right repository (&lt;code&gt;username.github.io&lt;/code&gt;) and then do a &lt;code&gt;git push&lt;/code&gt; on the &amp;ldquo;blog&amp;rdquo; directory to push the source files.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -105,7 +330,53 @@
       <pubDate>Mon, 29 Jun 2020 22:32:42 -0700</pubDate>
       
       <guid>/posts/my-hugo-setup/</guid>
-      <description>I recently moved my blog to Hugo and wrote a brief post about it. This post explains how I selected a theme and how I made the modifications I needed.</description>
+      <description>&lt;p&gt;I recently moved my blog to Hugo and &lt;a href=&#34;https://rrajath.com/posts/moving-to-hugo/&#34;&gt;wrote a brief post about it&lt;/a&gt;. This post explains how I selected a theme and how I made the modifications I needed.&lt;/p&gt;
+&lt;p&gt;I needed a minimal theme for my blog and after searching a bit, I found &lt;a href=&#34;https://themes.gohugo.io/ezhil/&#34;&gt;ezhil&lt;/a&gt;. This checked most of my boxes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;looks simple and minimal&lt;/li&gt;
+&lt;li&gt;configurable&lt;/li&gt;
+&lt;li&gt;feather icons for my socials&lt;/li&gt;
+&lt;li&gt;light/dark theme switch (nice to have)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I tried it out on my blog and it looked good. The nice thing about the light/dark theme switch is that when set to &amp;ldquo;auto&amp;rdquo; it depends on the device&amp;rsquo;s light or dark theme. For example, if the phone uses dark mode, the blog also uses dark mode.&lt;/p&gt;
+&lt;h2 id=&#34;custom-changes-to-my-theme&#34;&gt;Custom changes to my theme&lt;/h2&gt;
+&lt;p&gt;Although I liked the theme and it fit most of my needs, I had to make some changes to get tailored to my taste.&lt;/p&gt;
+&lt;h3 id=&#34;post-links-and-summaries-on-home-page&#34;&gt;Post links and summaries on home page&lt;/h3&gt;
+&lt;p&gt;The recent posts section (on the home page) was of the format:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&amp;lt;post_title&amp;gt; -- &amp;lt;summary&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This felt a little cluttered for two reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Both the title and the summary were on the same line next to each other&lt;/li&gt;
+&lt;li&gt;Title and summary were of the same font size&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I wanted the title to be a little bigger and have its own line, so I made the following changes to &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/index.html#L20-L29&#34;&gt;themes/ezhil/layouts/index.html&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;title u-url&amp;#34;&lt;/span&gt; href&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;{{ .RelPermalink }}&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;font&lt;/span&gt; size&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;+2&amp;#34;&lt;/span&gt;&amp;gt;{{.Title}}&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;font&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt;&amp;gt;
+		&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt;&amp;gt;
+		    &amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;span&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt;&amp;gt;
+		        {{ if isset .Params &amp;#34;description&amp;#34; }}
+            {{ .Description }}
+            {{ else }}
+            {{ .Summary }}&lt;span style=&#34;color:#cb4b16&#34;&gt;&amp;amp;hellip;&lt;/span&gt;
+            {{ end }}
+        &amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;span&lt;/span&gt;&amp;gt;
+    &amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Basically, add &lt;code&gt;&amp;lt;font size=&amp;quot;+2&amp;quot;&amp;gt;&lt;/code&gt; and put the &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; inside a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;added-reading-time&#34;&gt;Added reading time&lt;/h3&gt;
+&lt;p&gt;I remember Jekyll didn&amp;rsquo;t have a straight-forward way to add reading time to posts. Hugo gives this out of the box. I like having it for blog posts just to set the expectation of how long it takes to read the blog post before you dive into it. It can be vaguely estimated by just eye-balling or scrolling. But it&amp;rsquo;s nice to have reading time displayed at the top of the post.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/_default/single.html#L11&#34;&gt;themes/ezhil/layouts/_default/single.html&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;| {{ .ReadingTime }} min read
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Added the above text next to the publish date. I also added permalink to the publish date.&lt;/p&gt;
+&lt;h3 id=&#34;added-a-page-for-micro-posts&#34;&gt;Added a page for Micro Posts&lt;/h3&gt;
+&lt;p&gt;Blog posts are more formal and kinda long-form content which has a specific theme or intent behind them. I wanted to have a separate page for short thoughts (one or few lines) that don&amp;rsquo;t warrant for a full blog post. This can include things like sharing an image, a link, or just some quick thoughts. So, I added a page called &lt;a href=&#34;https://rrajath.com/micro/&#34;&gt;Micro&lt;/a&gt; and created my own template that is based off of  the standard list page, but a little different.&lt;/p&gt;
+&lt;p&gt;Take a look at &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/micro/list.html&#34;&gt;/themes/ezhil/layouts/micro/list.html&lt;/a&gt; to understand the customization.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I&amp;rsquo;ve removed the heading of the post for since I want this to be like a twitter feed.&lt;/li&gt;
+&lt;li&gt;Added a Permalink that takes you to the post page, in case one needs to link to the exact micro post.&lt;/li&gt;
+&lt;li&gt;Added horizontal lines to separate out each micro post&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;added-a-now-page&#34;&gt;Added a Now page&lt;/h3&gt;
+&lt;p&gt;This page captures what I&amp;rsquo;m doing right now. This includes a variety of tasks/activities/projects that I&amp;rsquo;m doing at the moment to give a sense of what I&amp;rsquo;m up to. This is &lt;a href=&#34;https://sivers.org/nowff&#34;&gt;inspired by Derek Sivers&lt;/a&gt;. The &lt;a href=&#34;https://rrajath.com/now/&#34;&gt;Now page&lt;/a&gt; layout is similar to the blog post page, &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/now/single.html&#34;&gt;except few changes&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -114,7 +385,12 @@
       <pubDate>Thu, 25 Jun 2020 17:43:30 -0700</pubDate>
       
       <guid>/posts/moving-to-hugo/</guid>
-      <description>I&amp;rsquo;ve used Jekyll as a static site generator ever since I created this blog, which was in 2013. Before that, I had tried few other blogging platforms.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve used &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; as a static site generator ever since I created this blog, which was in 2013. Before that, I had &lt;a href=&#34;https://rrajath.com/posts/weekly-noise-1&#34;&gt;tried few other blogging platforms&lt;/a&gt;. Over the past few years when I irregularly updated my blog, I faced some friction with Jekyll. Every time I tried to make a new post and push to GitHub, Jekyll would complain about something that&amp;rsquo;s either deprecated or broken. And, I had to go fix that first and then make a blog post and push it. That was a minor annoyance mostly due to the fact that I hardly touched my blog and things got outdated. But what annoyed me more than anything is the slowness of Jekyll to build the site and start the server. It was taking a good 10 seconds for it to build the entire site (which consisted of less than 30 files) and serve it on localhost.&lt;/p&gt;
+&lt;p&gt;On the other hand, in the last few months I have been tinkering with few Raspberry Pis and started self-hosting few things. I&amp;rsquo;m not done self-hosting everything I wanted, so there will be more playing around and more learnings that come out of it. This gives me a good opportunity to write about what I learned during the process so that people (including myself) can benefit from it.&lt;/p&gt;
+&lt;p&gt;And finally, I recently stumbled upon the &lt;a href=&#34;https://indieweb.org/&#34;&gt;IndieWeb movement&lt;/a&gt; when I was checking out few &lt;a href=&#34;https://indieweb.social/about&#34;&gt;Mastodon instances&lt;/a&gt; and I got super intrigued about it. There was &lt;a href=&#34;https://indieweb.org/Hugo&#34;&gt;good enough support for Hugo&lt;/a&gt; in the IndieWeb community. More details about what got me into IndieWeb movement in an other post. I&amp;rsquo;ll also probably create a separate post about how I added IndieWeb support to my blog.&lt;/p&gt;
+&lt;p&gt;So, I decided to switch the static site generator to something better. I looked around, tried a few and finally settled on &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; for two main reasons - it&amp;rsquo;s fast and it has good community support.&lt;/p&gt;
+&lt;p&gt;Since the switch, I&amp;rsquo;ve tweaked the theme to suit my needs, and added few specific pages that I think are important. Let&amp;rsquo;s see where this takes me.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -123,7 +399,47 @@
       <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/posts/2019-year-in-review/</guid>
-      <description>Another year done, and like always time flies by quicker and quicker every year. 2019 has been quite eventful in a few aspects and I took some time to reflect on how things went.</description>
+      <description>&lt;p&gt;Another year done, and like always time flies by quicker and quicker every year. 2019 has been quite eventful in a few aspects and I took some time to reflect on how things went. This time I categorized my activities and personal growth into 3 sections - things I did more of, things I did less of, things I explored. Let&amp;rsquo;s begin!&lt;/p&gt;
+&lt;h1 id=&#34;things-i-did-more-of&#34;&gt;Things I did more of&lt;/h1&gt;
+&lt;h2 id=&#34;running&#34;&gt;Running&lt;/h2&gt;
+&lt;p&gt;I was faster (compared to last year) in almost all my races in 2019. I also participated in more races and set a few PRs.&lt;/p&gt;
+&lt;h3 id=&#34;stats&#34;&gt;Stats&lt;/h3&gt;
+&lt;p&gt;All in for Autism 10K - 53m 33s&lt;/p&gt;
+&lt;p&gt;Mother&amp;rsquo;s Day Half - 1h 57m&lt;/p&gt;
+&lt;p&gt;The Big Run 5K (trail run) - 29m 1s&lt;/p&gt;
+&lt;p&gt;Evergreen Half - 1h 53m&lt;/p&gt;
+&lt;p&gt;Craft Classic Half - 1h 49m&lt;/p&gt;
+&lt;p&gt;Iron Horse Half - 1h 42m&lt;/p&gt;
+&lt;p&gt;Fly 5K - 25m 46s&lt;/p&gt;
+&lt;p&gt;Snohomish 10K - 51m 51s&lt;/p&gt;
+&lt;p&gt;Snohomish River Run Full - 3h 56m&lt;/p&gt;
+&lt;p&gt;I started off with the 10K in April with no training and I&amp;rsquo;m happy to see that my time only improved from then on. There was a time when I was running half marathons every couple of weeks and it got a little exhausting. But it feels great to look back and see all the races I&amp;rsquo;ve done.&lt;/p&gt;
+&lt;h3 id=&#34;marathon&#34;&gt;Marathon&lt;/h3&gt;
+&lt;p&gt;The full marathon gets a special mention because the training was fun and the race, even more so. In 2018, I did my first full marathon and the training was quite brutal - mostly because I didn&amp;rsquo;t know what to expect. And, I got first hand experience of what mile 18 feels like in a full marathon. But in 2019, I knew how the training would be, I knew how to prep and how to recover, when to push myself and when to take it easy. I used &lt;a href=&#34;https://www.halhigdon.com/training-programs/marathon-training/intermediate-1-marathon&#34;&gt;Hal Higdon&amp;rsquo;s Intermediate 1 training plan&lt;/a&gt; and made my own modifications to it. Overall, I improved and set a PR.&lt;/p&gt;
+&lt;h2 id=&#34;traveling&#34;&gt;Traveling&lt;/h2&gt;
+&lt;p&gt;I did some traveling in 2019 with a few road trips - one in Oregon, couple in Washington, and few hikes around Seattle. I also visited Los Angeles. The most amazing and memorable one was the 4-day Inca Trail hike to Machu Picchu which was a birthday gift from my wife. Highly recommend going there and doing the 4-day hike, it&amp;rsquo;s totally worth it. Also, a shout out to &lt;a href=&#34;https://www.alpacaexpeditions.com&#34;&gt;Alpaca Expeditions&lt;/a&gt; for their awesome crew that helped us with the hike, food, camps, etc.&lt;/p&gt;
+&lt;h1 id=&#34;things-i-did-less-of&#34;&gt;Things I did less of&lt;/h1&gt;
+&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;
+&lt;p&gt;I fell off on the reading habit and ended up reading only about 14 books (compared to 24 in 2018). This is something I want to get back into.&lt;/p&gt;
+&lt;h2 id=&#34;working-out&#34;&gt;Working out&lt;/h2&gt;
+&lt;p&gt;I hardly worked out last year and thanks to my training for marathon, I just didn&amp;rsquo;t have the time or energy to work out at all. When I wasn&amp;rsquo;t training for my marathon, I was just plain lazy.&lt;/p&gt;
+&lt;h2 id=&#34;bouldering&#34;&gt;Bouldering&lt;/h2&gt;
+&lt;p&gt;This fell off also because of my marathon training. I used to be regular and climb twice a week. But it just wasn&amp;rsquo;t feasible.&lt;/p&gt;
+&lt;h1 id=&#34;things-i-explored-aka-side-quests&#34;&gt;Things I explored (aka Side Quests)&lt;/h1&gt;
+&lt;h2 id=&#34;snowboarding&#34;&gt;Snowboarding&lt;/h2&gt;
+&lt;p&gt;I picked up snowboarding in early 2019, thanks to my wife. I fell in love with it. I wasn&amp;rsquo;t super interested in winter activities before, but after giving snowboarding a try I was always looking forward to driving to a nearby mountain and keep getting better at snowboarding. I&amp;rsquo;ll be doing more of that this year for sure.&lt;/p&gt;
+&lt;h2 id=&#34;self-hosting&#34;&gt;Self Hosting&lt;/h2&gt;
+&lt;p&gt;I stumbled upon self hosting recently and it looked very appealing to me. The fact that I could just use Raspberry Pis to self host few things is what made me more inclined towards trying it out and playing with it. I see privacy concerns with storing my data on Google servers or with any other big corporations. I&amp;rsquo;d rather be in charge of my own data. So, I decided to slowly move things off of cloud services that I&amp;rsquo;m currently using and host my own data. I already set up a private cloud server and it&amp;rsquo;s working like a charm. I got to learn lot of new technologies and it&amp;rsquo;s been fun tinkering with Raspberry Pis.&lt;/p&gt;
+&lt;h2 id=&#34;learning-new-things&#34;&gt;Learning new things&lt;/h2&gt;
+&lt;p&gt;In my journey of learning to self host, I stumbled upon Docker, Traefik, Ansible, Prometheus, Grafana and I&amp;rsquo;ve been keen on learning these new technologies. I&amp;rsquo;ve also learnt a lot about networking, DNS, dynamic DNS, VPN, etc. I&amp;rsquo;ve spent many hours playing around with these, failing, learning and redoing a lot of the setup. It&amp;rsquo;s a fun exercise which will continue this year as I get better at hosting a robust system with everything I need.&lt;/p&gt;
+&lt;h2 id=&#34;indie-web&#34;&gt;Indie Web&lt;/h2&gt;
+&lt;p&gt;I stopped using social media platforms like Facebook, Twitter, Instagram few years ago. I knew about what Mastodon was in principle about a year ago, but never really got around to exploring it much. But towards the end of 2019, I checked out few instances in Mastodon and started exploring. I really liked the idea of instances that are built on certain set of principles and people adhering to it, and federating with other instances. I&amp;rsquo;ve only started with Mastodon, but I&amp;rsquo;ll soon be exploring Pixelfed, Pleroma and the likes.&lt;/p&gt;
+&lt;h1 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h1&gt;
+&lt;h2 id=&#34;you-cant-do-everything&#34;&gt;You can&amp;rsquo;t do &lt;em&gt;everything&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s how my brain works. I find something interesting, I want to learn more about it. But I also don&amp;rsquo;t want to give up on all the things I&amp;rsquo;m already doing. I fall short on some of the things (because it&amp;rsquo;s not realistic to master everything, given the limited number of hours in a day). I get disappointed that I&amp;rsquo;m not doing enough. I&amp;rsquo;ve been doing this for years, even though I know that it doesn&amp;rsquo;t make sense. What I should constantly remind myself is that I can&amp;rsquo;t do (or master) &lt;em&gt;everything&lt;/em&gt;. I should identify core areas where I want to grow and then focus all my energy on that. I should still explore things, and some of them may grow into something bigger and more important for my personal growth. But I must always acknowledge the fact that there is only limited amount of time and I must use it wisely.&lt;/p&gt;
+&lt;h2 id=&#34;less-consumption-more-creation&#34;&gt;Less consumption, more creation&lt;/h2&gt;
+&lt;p&gt;What I didn&amp;rsquo;t do more of is work on side projects, or create more. Even though, I don&amp;rsquo;t use social media, I still check a lot of blogs and stuff myself with information. It&amp;rsquo;s exhausting. Every time I have couple of minutes free on my hand, I check my phone and try to read a blog post. I have to practice to sit still, not touch my phone and not look at any screen. I used to meditate regularly and it definitely helps with being mindful about what we do. This is something I really want to do this year.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -132,7 +448,81 @@
       <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/posts/2018-year-in-review/</guid>
-      <description>2018 went by really quick. It was one of the more eventful years - packed with activities, travel, new hobbies, experiences and accomplishments.</description>
+      <description>&lt;p&gt;2018 went by really quick. It was one of the more eventful years - packed with activities, travel, new hobbies, experiences and accomplishments. I have been following James Clear and Tim Ferris for a long time now and &lt;a href=&#34;https://jamesclear.com/2018-annual-review&#34;&gt;their posts&lt;/a&gt; about &lt;a href=&#34;https://tim.blog/2018/12/28/past-year-review/&#34;&gt;past year review&lt;/a&gt; have been the inspiration behind this blog post.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t like setting goals, but rather invest my time in building habits, as I feel they&amp;rsquo;re more sustainable and long term rather than having an end point that brings me a lot of anxiety while approaching the due date. I like small incremental progress on a daily basis than few days of powering through a task that ends up half-baked. Having said that, I do like to identify few areas I want to focus on to at least head in a general direction to form a habit.&lt;/p&gt;
+&lt;p&gt;Here are some of the goals (or habits) I had planned for 2018:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Practice guitar&lt;/li&gt;
+&lt;li&gt;Read more books&lt;/li&gt;
+&lt;li&gt;Update blog more regularly&lt;/li&gt;
+&lt;li&gt;Learn yoga&lt;/li&gt;
+&lt;li&gt;Eat fruits every day&lt;/li&gt;
+&lt;li&gt;Practice mindfulness&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;what-went-well&#34;&gt;What went well&lt;/h1&gt;
+&lt;p&gt;The first thing I did was to maintain a list called 2018 Highlights. I did this to keep track of the main events that happened to me in 2018, as a look back to see how it went. This list contained things that I tried for the first time, or something outside the ordinary, memorable activities and accomplishments. Here are some of more noteworthy ones from my list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Finished Level 1 of Japanese on Memrise&lt;/li&gt;
+&lt;li&gt;Picked up Origami&lt;/li&gt;
+&lt;li&gt;Picked up Chess (and solving Chess puzzles)&lt;/li&gt;
+&lt;li&gt;Picked up Rubiks cube and got pretty good at it&lt;/li&gt;
+&lt;li&gt;Started meditating every day (325 days and counting)&lt;/li&gt;
+&lt;li&gt;Deleted my Facebook account&lt;/li&gt;
+&lt;li&gt;7 hikes&lt;/li&gt;
+&lt;li&gt;3 half marathons&lt;/li&gt;
+&lt;li&gt;2 10Ks&lt;/li&gt;
+&lt;li&gt;1 full marathon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Besides this list, here&amp;rsquo;s a little more on how I did with my goals&lt;/p&gt;
+&lt;h2 id=&#34;read-more-books&#34;&gt;Read more books&lt;/h2&gt;
+&lt;p&gt;I read 27 books in 2017 and I wanted to read more than that in 2018. Due to other commitments, I didn&amp;rsquo;t hit that mark. I did have phases where I&amp;rsquo;d read books every day and there were weeks where I didn&amp;rsquo;t read them. But I got to read lot of good books on various topics like Physics, Philosophy, Biology, Biographies, and Running.
+&lt;a href=&#34;https://www.goodreads.com/review/list/9699298-rajath-ramakrishna?read_at=2018&#34;&gt;Here&amp;rsquo;s a list of books I read in 2018&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;learn-yoga&#34;&gt;Learn yoga&lt;/h2&gt;
+&lt;p&gt;I started doing yoga at the rock climbing gym that I was going to. I started with Yin Yoga and fell in love with it. I did it very regularly for few months. I had to stop when I was training for my marathon, since there wasn&amp;rsquo;t enough time to fit climbing, yoga, strength training and 5 days of running in my 7 day schedule. However, I&amp;rsquo;m back to yoga and climbing after taking a 3-month break. Trying Vinyasa now just to see how it is. This is a habit that I plan to continue as I&amp;rsquo;m already seeing the benefits it has on my body.&lt;/p&gt;
+&lt;h2 id=&#34;eat-fruits-every-day&#34;&gt;Eat fruits every day&lt;/h2&gt;
+&lt;p&gt;This was decided on a whim when I realized I wasn&amp;rsquo;t eating a lot of fruits. I wanted to have a healthy diet, but always missed out on fruits due to laziness. I succeeded in this by incorporating fruits at different parts of my diet, most of them being part of my breakfast smoothie.&lt;/p&gt;
+&lt;h2 id=&#34;practice-mindfulness&#34;&gt;Practice Mindfulness&lt;/h2&gt;
+&lt;p&gt;Sometime in March, I was reading some blog and I came across &lt;a href=&#34;https://www.headspace.com/&#34;&gt;Headspace&lt;/a&gt;. I had heard of it before, but I never bothered trying it because I was not very interested in guided meditations. This time I thought I&amp;rsquo;ll bite the bullet and give it a shot, and bought a yearly subscription. It was one of the best decisions I&amp;rsquo;ve made recently as it helped me meditate better and be more mindful. My run streak in the app says 325 days and I&amp;rsquo;ve been doing it either as soon as I wake up, or during my commute or sometimes before I go to sleep or whenever I have some time during the day.&lt;/p&gt;
+&lt;h2 id=&#34;running&#34;&gt;Running&lt;/h2&gt;
+&lt;p&gt;2018 was probably the best year for running. The year started off with my getting back to running after my knee injury (and couple of months of physical therapy). Starting off with 10 minute runs on the treadmill, I ended up doing my first half marathon in March. And it only got better after that. Here&amp;rsquo;s all the runs I did in 2018:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;March: Mercer Island Half Marathon (1h 53m)&lt;/li&gt;
+&lt;li&gt;April: 10K Autism Run (53m 28s)&lt;/li&gt;
+&lt;li&gt;May: Mother&amp;rsquo;s Day Half Marathon (1h 59m)&lt;/li&gt;
+&lt;li&gt;June: Seattle Rock N&#39; Roll Half Marathon (1h 48m)&lt;/li&gt;
+&lt;li&gt;July: 10K Trail Run (55m)&lt;/li&gt;
+&lt;li&gt;October: Snohomish River Run Full Marathon (4h 16m)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&amp;rsquo;m planning to run more this year. Let&amp;rsquo;s see how it goes.&lt;/p&gt;
+&lt;h2 id=&#34;daily-journaling&#34;&gt;Daily Journaling&lt;/h2&gt;
+&lt;p&gt;This is something I was never interested in until last year. But I thought of giving it a shot. I did it for an entire year and I don&amp;rsquo;t regret it, I still do it. I realized the importance of putting my thoughts down. It helped me think more clearly and the habit of doing it every day makes me reflect on my days from a different perspective. I use the app &lt;a href=&#34;https://daylio.webflow.io/&#34;&gt;Daylio&lt;/a&gt; which captures the activity and mood as well, and it gives a nice graph every week to see how the past week went.&lt;/p&gt;
+&lt;h1 id=&#34;what-didnt-go-well&#34;&gt;What didn&amp;rsquo;t go well&lt;/h1&gt;
+&lt;p&gt;As much as I enjoyed reading books, doing yoga and running a lot, there were goals that I missed. Here are some of them:&lt;/p&gt;
+&lt;h2 id=&#34;practice-guitar&#34;&gt;Practice Guitar&lt;/h2&gt;
+&lt;p&gt;I wanted to make this a regular habit, but never got around to it. There were phases - couple of weeks of every day practice and then couple of months of nothing, mainly due to work commitments. Things just got hectic and I stopped playing guitar. This is something I want to work on. To keep the practice consistent, even if I&amp;rsquo;m playing for few minutes every other day. It&amp;rsquo;s a good stress-buster.&lt;/p&gt;
+&lt;h2 id=&#34;blog-regularly&#34;&gt;Blog Regularly&lt;/h2&gt;
+&lt;p&gt;This is the worst of all. Never made a single blog post in the entire year, even though I had it as a goal. It&amp;rsquo;s mostly due to the problem of inertia. It&amp;rsquo;s so hard for me to get started on simple tasks, or tasks that only take few minutes. But once I start, I&amp;rsquo;ll have enough momentum to finish it off. Hope I blog more often this year.&lt;/p&gt;
+&lt;h1 id=&#34;side-quests&#34;&gt;Side Quests&lt;/h1&gt;
+&lt;p&gt;Besides the goals I had, there were few things I picked up during the year. Mainly because I somehow got interested in them long enough to actually commit a good chunk of time learning it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Rubiks Cube&lt;/strong&gt;: My best time to solving a 3x3x3 is about 2m 15s now. Planning on improving it :)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Kendama&lt;/strong&gt;: My friend got Kendama at work and I was fascinated by it. I bought one for myself and ended up learning few tricks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Origami&lt;/strong&gt;: Made some cool stuff like DNA, Hyperbolic Paraboloid, Tangram, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Level 1 of Japanese on Memrise&lt;/strong&gt;: Decided to learn a new language - Japanese. Finished Level 1 on Memrise. Will pick it up later this year.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Side projects with Raspberry Pi&lt;/strong&gt;: Set up &lt;a href=&#34;https://pi-hole.net/&#34;&gt;Pi-Hole&lt;/a&gt; (a network-wide ad-blocking software). Also tried setting up a voice assistant using &lt;a href=&#34;http://snips.ai&#34;&gt;snips.ai&lt;/a&gt;. Couldn&amp;rsquo;t get the speaker to work, but everything else worked fine.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Picked up drawing&lt;/strong&gt;: This was a one-off thing where I saw a Medium post about a &lt;a href=&#34;https://medium.com/personal-growth/a-quick-beginners-guide-to-drawing-58213877715e&#34;&gt;Quick Beginner&amp;rsquo;s Guide to Drawing&lt;/a&gt; that involved hand workouts for pencil sketching and I just did those. Things like, filling up a page with circles and another one with hatched lines. Turned out pretty good, but never continued it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;what-i-learned&#34;&gt;What I learned&lt;/h1&gt;
+&lt;p&gt;With all the things I did and didn&amp;rsquo;t do, here are the lessons I learned in 2018:&lt;/p&gt;
+&lt;h2 id=&#34;youre-never-ready-just-go-for-it&#34;&gt;You&amp;rsquo;re never ready, just go for it&lt;/h2&gt;
+&lt;p&gt;I learned this from my running. Beginning of the year, I never thought of doing a half marathon (which I did in March), let alone doing a full marathon. After my friend forced me to sign up, I thought I&amp;rsquo;ll do it even if I sucked at it. And it went pretty well, for my first time - did it in under 2 hours. Same with running a full marathon in October. I thought I&amp;rsquo;m not ready for a full. But I also thought I shouldn&amp;rsquo;t regret later. And it was pretty good time (4h 16m) for a first timer :)&lt;/p&gt;
+&lt;h2 id=&#34;dont-underestimate-the-training&#34;&gt;Don&amp;rsquo;t underestimate the training&lt;/h2&gt;
+&lt;p&gt;This one again comes from running. I finished my first full marathon in just over 4 hours, but looking back I see hundreds of hours of running, hundreds of miles of running, lot of IT band issues, hurt ankles, hurt everything. There were many times I lost hope during training, especially when I hurt my IT band during the run and then end up limping for the next two days. But it&amp;rsquo;s that rigorous training that helped me do well in the actual event. What I got out of it is that if you&amp;rsquo;re going for something big, you&amp;rsquo;ll need to train a lot, you&amp;rsquo;ll need to put in the hours. Not every day will turn out the way you want. There will be good days. There will be bad days. And there will definitely be shitty days. You just got to persist.&lt;/p&gt;
+&lt;h2 id=&#34;try-to-increase-your-circle-of-competence&#34;&gt;Try to increase your circle of competence&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Circle_of_competence&#34;&gt;Circle of Competence Theory&lt;/a&gt; developed by Warren Buffet and Charlie Munger is something I believe in and strive to live every day. The more you learn and expand your knowledge, the more you realize you don&amp;rsquo;t know enough. Try to learn new things outside your domain. This will help you think with new perspectives and also help find unique solutions to problems you face in your every day life.&lt;/p&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;That wraps up 2018. It definitely was an eventful year and I learnt a lot. Looking forward to another year of activities, travel, new hobbies, more running, and hopefully more accomplishments.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -141,7 +531,29 @@
       <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>/posts/the-dreaded-65k-method-limit-on-android/</guid>
-      <description>If you&amp;rsquo;re an Android developer, it&amp;rsquo;s likely that you have experienced this at least a few times during your development.</description>
+      <description>&lt;p&gt;If you&amp;rsquo;re an Android developer, it&amp;rsquo;s likely that you have experienced this at least a few times during your development.&lt;/p&gt;
+&lt;p&gt;The first time I heard people talk about 65k method limit I wasn&amp;rsquo;t aware of it so much. I was thinking, &amp;ldquo;How can a small Android app have 65,000 methods? That&amp;rsquo;s ridiculous! I don&amp;rsquo;t know what people are complaining about.&amp;rdquo; Then when I read what the fuss was all about, I realized that 65k method limit includes not just all the methods in my app, but also everything my app consumes. Yes, that includes libraries; even if you don&amp;rsquo;t use them. Surprisingly I never ran into this issue before though I used to throw in libraries for every little thing without caring about how much it&amp;rsquo;s contributing to the 65k limit. Of course, in the beginning I was using smaller libraries with low method count. Not giants like Goole Play Services. But in a recent project I was working on, one fine day I got this error:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Unable to execute dex: method ID not in [0, 0xffff]: 65536
+Conversion to Dalvik format failed: Unable to execute dex: method ID not in [0, 0xffff]: 65536
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And I thought, &amp;ldquo;Huh, looks like I&amp;rsquo;m now in the same boat as many developers who&amp;rsquo;ve been talking about 65k method limit.&amp;rdquo; As I always do with weird unknown errors, I googled this one and got a bunch of StackOverflow links which all said pretty much the same thing - enable multidex. I was about to do that, but I stopped and thought &amp;ldquo;Let me at least understand why this is happening. I&amp;rsquo;m surely not using many libraries. All I&amp;rsquo;m using is dagger, retrofit, timber, google play services and few others. Let me see the culprit that&amp;rsquo;s making my method count reach 65k.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;After some searching, I came across this awesome website &lt;a href=&#34;http://www.methodscount.com/&#34;&gt;methodscount.com&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/rotxed&#34;&gt;Sebastian Gottardo&lt;/a&gt; that gives the method count for any library. Later I found the &lt;a href=&#34;http://www.methodscount.com/plugins&#34;&gt;plugin for Android Studio&lt;/a&gt; which made my day. After I installed the plugin, I saw the method counts of all the libraries I was using right in the build.gradle file and I found it. GooglePlayServices, with its massive 19k method count. I mean, come on. 19k? Really? I thought this is insane!! So did other developers, a long time ago. I was just late to the party. Few more minutes of googling and I found that Google Play Services 6.5 onwards the library is more modular - which means you can include only the stuff you want instead of the whole library. For my application I just needed wearable and location services and methods count for each is under 1.5k.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;compile &#39;com.google.android.gms:play-services:8.4.0&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So, the above line became:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;compile &#39;com.google.android.gms:play-services-wearable:8.4.0&#39;
+compile &#39;com.google.android.gms:play-services-location:8.4.0&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;giving me just what I need.&lt;/p&gt;
+&lt;p&gt;Another awesome tool to consider to get the method counts in a more detailed manner is &lt;a href=&#34;https://github.com/mihaip/dex-method-counts&#34;&gt;dex-method-counts&lt;/a&gt; by &lt;a href=&#34;https://github.com/mihaip&#34;&gt;Mihai Parparita&lt;/a&gt;. This script gives the method counts in a tree format neatly segregating the counts for each package. There are few other tools out there to get method counts, but the key thing to remember is to think before using any 3rd party library. If it&amp;rsquo;s helping you at the cost of bringing in thousands of methods into your DEX file, then is it really worth including it into your app? Can you use a different library that does the same job for you but with a considerably fewer method count?&lt;/p&gt;
+&lt;p&gt;PS: If you&amp;rsquo;re interested to know why 65k, or rather why 65,536 specifically, you should listen to &lt;a href=&#34;http://fragmentedpodcast.com/episodes/29/&#34;&gt;Fragmented Podcast Episode 29&lt;/a&gt; where &lt;a href=&#34;https://twitter.com/kaushikgopal&#34;&gt;Koushik Gopal&lt;/a&gt; explains about this.&lt;/p&gt;
+&lt;p&gt;For more details on 65k limit, here are few links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://androidhub.intel.com/posts/blundell/Pushing_the_limit.html&#34;&gt;2016 Prediction: Battling the 65k limit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@rotxed/dex-skys-the-limit-no-65k-methods-is-28e6cb40cf71&#34;&gt;[DEX] Sky&amp;rsquo;s the limit? No, 65k methods is&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.fasteque.com/deep-dive-into-android-multidex&#34;&gt;Deep dive into Android Multidex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -150,7 +562,26 @@
       <pubDate>Sat, 16 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>/posts/two-months-with-project-fi/</guid>
-      <description>It&amp;rsquo;s been 2 months since I started using Project Fi on my Nexus 6P and I thought I&amp;rsquo;ll write my review about it.</description>
+      <description>&lt;p&gt;It&amp;rsquo;s been 2 months since I started using Project Fi on my Nexus 6P and I thought I&amp;rsquo;ll write my review about it.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-project-fi&#34;&gt;What is Project Fi&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://fi.google.com/about/&#34;&gt;Project Fi&lt;/a&gt; is a mobile phone carrier offered by Google and it&amp;rsquo;s a prepaid service (at least for now). It uses 2 cellular networks - Sprint and T-Mobile with switching between the two depending on which network has better connection. It also features Wi-Fi calling so when you&amp;rsquo;re at home or work or at a place where there is good Wi-Fi connectivity calls can be made through Wi-Fi. Currently &lt;a href=&#34;https://fi.google.com/about/faq/#supported-devices-1&#34;&gt;only Nexus 5X, 6 and 6P are supported&lt;/a&gt;. Signing up for it is a simple process. You &lt;a href=&#34;https://fi.google.com/signup&#34;&gt;request an invite&lt;/a&gt; and within few days you&amp;rsquo;ll receive the nano sim card. When you sign up for it, you have to provide your details like home address, billing address, credit card details and your mobile phone number (for mobile number portability). This can be done later too, but if you do all this before you get the sim card, then the transition is instant. You just use the new sim card and you&amp;rsquo;re good to go. Once you make the switch to Project Fi, your current prepaid number will be paused. If
+you don&amp;rsquo;t feel like continuing with Project Fi you can opt out of it and you&amp;rsquo;ll get back your old number and connection. I like the simplicity of this. No going to the store, no paperwork, no wait times.&lt;/p&gt;
+&lt;h2 id=&#34;plan&#34;&gt;Plan&lt;/h2&gt;
+&lt;p&gt;Project Fi &lt;a href=&#34;https://fi.google.com/about/plan/&#34;&gt;plans&lt;/a&gt; look neat and straightforward. $20 for just talk and text and then $10 per GB. Best part about this plan is if you don&amp;rsquo;t use all the data that was assigned to you in the plan, you&amp;rsquo;ll be refunded for the unused data and it will reflect in your next bill. Similarly, if you use over your limit, you&amp;rsquo;ll be charged extra on a prorated basis. So for example, if you don&amp;rsquo;t use about 0.4GB of data by the end of your billing cycle, you&amp;rsquo;ll get
+$4 as refund. No hidden charges, you just pay for what you use (+ taxes of course). They have good &lt;a href=&#34;https://fi.google.com/about/faq/#international-usage&#34;&gt;international coverage&lt;/a&gt; in case you want to call numbers outside US or use it outside US. It also supports international roaming in over 120+ countries. You don&amp;rsquo;t get LTE while on roaming, it&amp;rsquo;s limited to 256kbps. But it&amp;rsquo;s okay. At least you&amp;rsquo;re not paying extra for data, you just continue your current plan. And you don&amp;rsquo;t have to buy
+another SIM card and share your temporary number with your friends when you&amp;rsquo;re on vacation.&lt;/p&gt;
+&lt;h2 id=&#34;my-experience-using-it-outside-us&#34;&gt;My experience using it outside US&lt;/h2&gt;
+&lt;p&gt;I was in India for 3 weeks last December and I depended on Project Fi for all my calls and texts both in India and to US. It worked seamlessly, for the most part. I had no issues with connectivity, I always had cellular network and I was able to make calls easily and there were no call drops midway during the call. Data worked perfectly too but only until about 5 days before I left. On a Saturday morning, my data just stopped working. I didn&amp;rsquo;t change any setting, I didn&amp;rsquo;t fiddle with the
+phone, nothing. I wake up and it&amp;rsquo;s gone, no data. I tried turning it off and on again, switching to airplane mode and back, switching off and on the international roaming, and also turning off the phone and turning it on again. Nothing worked. I called up customer service and they asked me to do everything I already did and it didn&amp;rsquo;t help. They weren&amp;rsquo;t able to figure it out either. It just didn&amp;rsquo;t work until I came back to US. I could still make and receive calls though. The biggest problem was none of the messages anybody sent to me on WhatsApp or Hangouts reached me and they couldn&amp;rsquo;t call me since mine was an international number and it would cost them about 8-10 times more than a regular local call. I also couldn&amp;rsquo;t use Uber/Maps, which sucked.&lt;/p&gt;
+&lt;h2 id=&#34;other-hiccups&#34;&gt;Other hiccups?&lt;/h2&gt;
+&lt;p&gt;I didn&amp;rsquo;t really have any other problems with Project Fi. Call quality is great, plans are cheap and customizable and no issues with data (at least in the US). But sometimes my phone searches for network when enter my apartment lobby and also sometimes after hanging up. I added a screenshot of that below. It&amp;rsquo;s no biggie, but it never happened to me with my previous carrier.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/project-fi-network-search.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;a-sweet-surprise&#34;&gt;A sweet surprise&lt;/h2&gt;
+&lt;p&gt;When I came back from India, a package was waiting for me. A package sent by Google. And it was a LEGO kit to create a phone stand or docking station or other fun things. I had &lt;a href=&#34;http://www.androidpolice.com/2015/11/25/googles-project-fi-sending-out-awesome-lego-kits-to-some-subscribers/&#34;&gt;read on AndroidPolice&lt;/a&gt; that Google was giving away Lego kits to some subscribers of Project Fi. I never expected I&amp;rsquo;d get it. So I opened it and built my own docking station. Check it out ;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/project-fi-lego-kit.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;I like it. I like the plan and the idea of refunding for unused data, I liked the smooth transition from existing carrier to Project Fi, I like the beautiful app they have to manage accounts, track data usage, view bills and past statements and do so much more and I love the LEGO kit :D I&amp;rsquo;ll stick to it until something stops working unexpectedly (like how my data stopped working for no reason when I was in India). I hope they enable higher data speeds outside US sometime soon.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -159,7 +590,20 @@
       <pubDate>Sat, 09 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>/posts/book-review-alchemist/</guid>
-      <description>Alchemist by Paulo Coelho is the first book I read in 2016. This book had been in my to-read list for quite a while now and I thought I&amp;rsquo;ll give it a read.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/865.The_Alchemist&#34;&gt;Alchemist&lt;/a&gt; by &lt;a href=&#34;https://www.goodreads.com/author/show/566.Paulo_Coelho&#34;&gt;Paulo Coelho&lt;/a&gt; is the first book I read in 2016. This book had been in my to-read list for quite a while now and I thought I&amp;rsquo;ll give it a read. Also since it&amp;rsquo;s a short book I felt I can get through the whole book in few hours.&lt;/p&gt;
+&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
+&lt;p&gt;The book talks about one boy&amp;rsquo;s journey in finding a hidden treasure which he sees in a recurrent dream. His pursuit of finding the treasure and how he goes against all odds in search of it is what makes this book an interesting read.&lt;/p&gt;
+&lt;h3 id=&#34;review&#34;&gt;Review&lt;/h3&gt;
+&lt;p&gt;I found this book quite inspiring. It starts off with a boy who is a shepherd has spent 2 years of his life traveling to different places and looking after his sheep and once gets a recurrent dream about finding treasure. He wants to pursue it no matter what because he thinks it&amp;rsquo;s a sign from the universe since he got the exact same dream twice. So he travels to the Pyramids trying to look for the treasure and in the meanwhile meets a fortune teller, an old king, a crystal merchant,
+an alchemist and few other people. He tries to understand how the world interacts, how people who don&amp;rsquo;t know the same language can still have a conversation and help each other and how everything is connected. He personifies pretty much everything from camels to desert, wind, sun, everything. There are times during the journey where he feels like giving up or sometimes feels like he has enough with him that he can call treasure. But he still moves on to search for it. Every person he
+meets, everything he observes around him teaches him something about life and how different people are.&lt;/p&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;The key take away from this book is that one must follow their passion (or Personal Legend as it&amp;rsquo;s called in this book). We will face many obstacles along the way for sure, we must not give up and keep working towards the goal of fulfilling our personal legend. Also, the journey of fulfilling our dreams may be filled with obstacles and roadblocks and in the end we may get disappointed looking at the reward as it may seem less compared to the effort we put in to get it. But
+what we forget is that the journey &lt;em&gt;is&lt;/em&gt; the reward.&lt;/p&gt;
+&lt;p&gt;Few things I didn&amp;rsquo;t like about the book is the style of writing. It could have been better. Also, it gets a little weird towards the end where there&amp;rsquo;s too much personification and the boy starts talking to the desert, the wind, the sun, etc. Some people may find a deeper meaning in all this, but it&amp;rsquo;s just not my cup of tea. But apart from that the book is great and I recommend reading it.&lt;/p&gt;
+&lt;p&gt;My rating: &lt;strong&gt;4/5&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/review/list/9699298?shelf=to-read&#34;&gt;My Goodreads to-read list&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -168,7 +612,64 @@
       <pubDate>Sat, 02 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>/posts/2015-lessons-learned/</guid>
-      <description>I saw a couple of posts about what people did in 2015 (this and this) that inspired me to write my own.</description>
+      <description>&lt;p&gt;I saw a couple of posts about what people did in 2015 (&lt;a href=&#34;https://medium.com/@vanschneider/my-2015-the-year-of-change-e90c71a50a1e#.lxzac07mb&#34;&gt;this&lt;/a&gt; and &lt;a href=&#34;http://blog.fogus.me/2015/12/29/the-best-things-and-stuff-of-2015/&#34;&gt;this&lt;/a&gt;) that inspired me to write my own. While both posts go in good detail about what they accomplished, my post kind of does the opposite. Mine is more about me reflecting on what I had planned to do, what I did and what I didn&amp;rsquo;t do, and lessons learned during that. And
+new year is a good time to look back on how the past one year went; how productive/lazy you were, how committed/easy going you were.&lt;/p&gt;
+&lt;p&gt;At the start of the year, I wrote down some goals for myself. I called it goals instead of resolutions (like I used to before) to make it sound serious (after all the goal-setting we do at our workplace). And to be honest it worked, to an extent. Couple of goals, I really crushed it and I&amp;rsquo;m happy about it, but few others, meh. Most importantly when I look at the whole of 2015 I&amp;rsquo;m surprised to see how I functioned. I was keeping myself busy for the most part doing something and learning
+something, but now I don&amp;rsquo;t have much to show for all that. So I want to write down the lessons I learned for each goal that I had set and think about how I can improve what I&amp;rsquo;m doing well and also work on my shortcomings.&lt;/p&gt;
+&lt;h2 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s start with what went well.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Workout (a.k.a Project Lose-The-Tummy)&lt;/strong&gt;: I&amp;rsquo;m lazy. Physical activities wise, fitness wise, I&amp;rsquo;m really lazy. I go on few hikes in the summer, but that&amp;rsquo;s it. I just stay indoors rest of the time glued to my laptop. I&amp;rsquo;ve been this way for few years now and I&amp;rsquo;ve acquired enough fat around my waist. For the first 5 months after setting this goal, I didn&amp;rsquo;t do anything. One day when I looked at myself in the mirror, I said &amp;ldquo;Shit! I should do something about it&amp;rdquo;. And I started running one
+mile, thrice a week. After that I slowly started running more and more. Then I started going to the gym in my apartment 5 days a week. Been doing it for close to 6 months now. I won&amp;rsquo;t say I&amp;rsquo;m in perfect shape. But I can see the difference. Also from the time I started going to the gym, my eating habits have improved. So that&amp;rsquo;s a happy byproduct of a good habit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Read more books (Goodreads reading challenge)&lt;/strong&gt;: I never used to read books, and I know that&amp;rsquo;s a bad thing. One must read as many books as possible. The knowledge we get from them is immense. Also, I wanted to have hobbies that don&amp;rsquo;t involve a screen. So I picked up a Kindle Paperwhite, but that screen doesn&amp;rsquo;t count :) Goodreads has this &lt;a href=&#34;https://www.goodreads.com/challenges/3890-2016-reading-challenge&#34;&gt;reading challenge&lt;/a&gt; that you can take up and track your progress. You can also see
+what your friends have set their reading challenges as and what they&amp;rsquo;re reading to get some nice recommendations. Anyway, I took the Goodreads reading challenge and set a goal for myself to read 10 books this year. I read 12, which is good. I plan to read more in 2016. I&amp;rsquo;ll take up that challenge again.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here are the books I read:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/4069.Man_s_Search_for_Meaning&#34;&gt;Man&amp;rsquo;s Search for Meaning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/143877.Freedom_from_the_Known&#34;&gt;Freedom from the Known&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/61535.The_Selfish_Gene&#34;&gt;The Selfish Gene&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/6916833-introducing-stephen-hawking-introducing&#34;&gt;Introducing Stephan Hawking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/1202.Freakonomics&#34;&gt;Freakonomics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/17670898-how-to-stop-sucking-and-be-awesome-instead&#34;&gt;How to Stop Sucking and Be Awesome Instead&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/20567918-mini-habits&#34;&gt;Mini Habits&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/17835351-nikola-tesla&#34;&gt;Nikola Tesla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/18007564-the-martian&#34;&gt;The Martian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/3735293-clean-code&#34;&gt;Clean Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer&#34;&gt;Pragmatic Programmer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/85012.Enterprise_Integration_Patterns&#34;&gt;Enterprise Integration Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I guess that&amp;rsquo;s it for what went well. Here&amp;rsquo;s stuff that didn&amp;rsquo;t go well.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Make an Android app every 3 months&lt;/strong&gt;: There&amp;rsquo;s so much going on in Android app development that it&amp;rsquo;s quite hard to catch up. My goal was to learn different design patterns, libraries, architectures and get to a comfortable state where I could develop apps with ease. Why I said 3 months is because I felt that would be enough time for me to learn some patterns/architectures, spend time in design and make a stable app while managing hectic work schedules and on call, instead of something that was hacked over a weekend just to make
+things work. I also wanted to learn a bit of UI design to not only make the apps scalable, maintainable and robust, but also beautiful. I tried making 3 Android phone apps and 1 Android wear app and I took 2 of them close to completion, but never completed. Where I went wrong is I spent too much time in design and wanted to get everything perfect the first time. Also, when I was halfway through the development I would come across blog posts about the right way of designing your app, or
+the best suited pattern and I would get lost in reading more about these patterns. After reading them I&amp;rsquo;d be in a dilemma if I should continue what I was doing that or redo the whole thing.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what I learnt from all this. If you&amp;rsquo;re making an app as a side project, go ahead with it and finish it. Completion is more important than quality, at least for beginners. Moreover, you can call the shitty version as v1. Then you can add all sorts of improvements later on and make it nice, but at the end of the day every bit of it would be a good learning experience. It may not be the best app, but you get to learn so much about how not to do stuff. Also, if you complete the
+app you&amp;rsquo;ll have some level of satisfaction as compared to how you feel when you just stop working on your side project for a while and it dies out. Things you do well and don&amp;rsquo;t do well both make for a good blog post. So, that&amp;rsquo;s a good way to keep your blog updated too.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Play Guitar&lt;/strong&gt;: I didn&amp;rsquo;t know how to quantify this goal or measure it, so I made it a little vague. This is less of a goal and more like a hobby. This is the second hobby that doesn&amp;rsquo;t involve a screen. I started playing the guitar regularly on weekends for the first 2-3 months and then I just got busy with work and on call. An hour or two per week shouldn&amp;rsquo;t be hard enough to allocate and practice. I&amp;rsquo;m going to work on this in 2016 and come up with a more solid plan to follow a course, read up some
+theory, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Blog every week&lt;/strong&gt;: I did terribly on this. I made two blog posts in 2015 and that&amp;rsquo;s it. It should have been a weekly thing where I talk about what I did the previous week or some random stuff I&amp;rsquo;m interested in. But for some reason, I was way too lazy to update my blog. Even though I was sometimes working on my side project and learning new things. I should just keep it more updated in 2016.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Each of my goals and how I did against them taught me more about myself and how I handle things. To me, at least now, it boils down to these 3 things.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Discipline&lt;/strong&gt;. If there&amp;rsquo;s one thing that&amp;rsquo;s present in the goals that went well and absent in the ones that didn&amp;rsquo;t go well, it&amp;rsquo;s discipline. Because discipline trumps motivation. Motivation is temporary; it&amp;rsquo;s like a spark, it comes and goes. You can&amp;rsquo;t keep waiting to get motivated in order to start working on something. Discipline on the other hand is more permanent. It&amp;rsquo;s something that you religiously follow, something you&amp;rsquo;re accountable to. If I have a discipline that I must blog every
+week, come what may, then I will make most of my week eventful to make that happen. This helps in both blog-writing and also working on my side projects. I&amp;rsquo;d get better at both coding and writing. :) Same goes with side projects. Some days you&amp;rsquo;re exhausted after work and you don&amp;rsquo;t have the energy to work on your side project. That&amp;rsquo;s a good time to refactor your code or read some blogs about best practices, new libraries/frameworks, whatever. In order to become an expert at something, you
+need to work on it every day and keep practicing what you&amp;rsquo;re doing. You cannot become an expert over night.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Finish what you start&lt;/strong&gt;. Always finish what you start. A goal left midway is more disappointing than not doing it at all because you start feeling that you had the capability to finish it had you put in a little more effort, but you just didn&amp;rsquo;t do it. It may turn out to be a shitty app, or a shitty blog post. Only if you finish what you start, you&amp;rsquo;ll know where you went wrong and what can be improved. Nobody gets it right the first time and you don&amp;rsquo;t have to get it right the first time. Learning is important. Learning is
+beautiful.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Review your goals often&lt;/strong&gt;. Never be lazy. Do something. Anything. Anything productive. It&amp;rsquo;s okay to chill out sometimes, but otherwise, it&amp;rsquo;s important to keep learning and making the best use of your time. Reviewing your goals on a timely basis helps you to stay on track and get shit done. Sometimes you may end up in a state where you feel like you&amp;rsquo;re doing something pretty much every day, but not really getting anywhere. By making your goals measurable and reviewing them regularly, you
+know exactly how far away you are from your goal and you can work towards it.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -177,7 +678,8 @@
       <pubDate>Sat, 14 Mar 2015 00:00:00 +0000</pubDate>
       
       <guid>/posts/mac-users-must-swap-caps-lock-and-ctrl-keys/</guid>
-      <description>I tell this to everyone I meet who uses a MacBook. I mean, come on. People who are used to using a Windows keyboard put their pinky on the bottom left key of the keyboard to reach for the control key, and it&amp;rsquo;s easy to reach too since the Ctrl key is pretty wide.</description>
+      <description>&lt;p&gt;I tell this to everyone I meet who uses a MacBook. I mean, come on. People who are used to using a Windows keyboard put their pinky on the bottom left key of the keyboard to reach for the control key, and it&amp;rsquo;s easy to reach too since the Ctrl key is pretty wide. But geniuses at Apple decided to use that key as the function key thus making us twist our wrists more so that our pinky can reach the control key. It&amp;rsquo;s so damn uncomfortable to do that all the time. But thankfully, Mac OSX has the feature to switch modifier keys. You can basically make any modifier key (Ctrl, Shift, Alt, Caps Lock) to behave as any other modifier key. And we use Ctrl more than Caps Lock; mainly programmers. Moreover I&amp;rsquo;ve seen so many people holding Shift to type out phrases in caps where they could have used Caps Lock key once and comfortably typed out the phrase (without holding Shift the whole time). So to fix all this and type comfortably, just swap Caps Lock and Ctrl and live in peace.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -186,7 +688,52 @@
       <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>/posts/taskr/</guid>
-      <description>I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design.</description>
+      <description>&lt;p&gt;I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design. I was inspired by Material Design since it was launched, but never had the time to implement it in my hobby projects. Now I am trying to take baby steps every day and work on creating Android apps that mostly stick to the new Material Design.&lt;/p&gt;
+&lt;p&gt;I came up with the name Taskr because I couldn&amp;rsquo;t come up with anything better. I did think about many names but since this isn&amp;rsquo;t going anywhere near Play Store, I just stuck to the most unimaginative name possible. Yes, this is probably the simplest task management app that you can find. It&amp;rsquo;s so simple that all you can do is add/edit a task name and description, mark tasks as done and delete completed tasks. To make it a little more usable, I used SQLite database to persist data entered by
+the user.&lt;/p&gt;
+&lt;p&gt;This application uses no fragments, but just a couple of activities. Here&amp;rsquo;s how I designed the application.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;code&gt;TaskItem&lt;/code&gt; data class that holds information about each task and is used to translate cursor objects.&lt;/li&gt;
+&lt;li&gt;ArrayAdapter that spews out tasks from the TaskItem list.&lt;/li&gt;
+&lt;li&gt;A &lt;code&gt;DatabaseHelper&lt;/code&gt; class that is used to save the task items in an SQLite database.&lt;/li&gt;
+&lt;li&gt;A main list activity to display the list with a floating action button and an activity dialog to add/edit a task&lt;/li&gt;
+&lt;li&gt;A menu that has an option to clean up completed tasks.&lt;/li&gt;
+&lt;li&gt;A util class that is used to calculate time elapsed since the task was created and display appropriately.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To make things simpler, I have used couple of libraries.&lt;/p&gt;
+&lt;h3 id=&#34;lombok&#34;&gt;Lombok&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://projectlombok.org/&#34;&gt;Lombok&lt;/a&gt; helps you skip writing getters and setters for data objects by adding the &lt;code&gt;@Data&lt;/code&gt; annotation. This helps in keeping the code short, clean and readable. So the class would look something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;    &lt;span style=&#34;color:#268bd2&#34;&gt;@Data&lt;/span&gt;
+    &lt;span style=&#34;color:#268bd2&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;TaskItem&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#dc322f&#34;&gt;int&lt;/span&gt; id&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; String taskName&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; String taskDescription&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#dc322f&#34;&gt;long&lt;/span&gt; creationTime&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#dc322f&#34;&gt;boolean&lt;/span&gt; isTaskComplete&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#719e07&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This looks much cleaner than a class that is cluttered with getters and setters.&lt;/p&gt;
+&lt;h3 id=&#34;butterknife&#34;&gt;Butterknife&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://jakewharton.github.io/butterknife/&#34;&gt;Butterknife&lt;/a&gt; is another library that helps you inject views more easily with annotations. Adding the @InjectView annotation will automatically cast the corresponding view in your layout. So you no longer have to write things like&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;View view &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; inflater&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;inflate&lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;layout&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;layout_main&lt;span style=&#34;color:#719e07&#34;&gt;,&lt;/span&gt; container&lt;span style=&#34;color:#719e07&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;false&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;);&lt;/span&gt;
+etTaskName &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;EditText&lt;span style=&#34;color:#719e07&#34;&gt;)&lt;/span&gt; view&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;findViewById&lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;task_name_edit_text&lt;span style=&#34;color:#719e07&#34;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You instead write:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;@InjectView&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;task_name_edit_text&lt;span style=&#34;color:#719e07&#34;&gt;)&lt;/span&gt;
+EditText etTaskName&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;There are many more things that these libraries offer and I plan to use it in every Android project of mine.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problems I faced&lt;/strong&gt;:&lt;br&gt;
+I was finding it hard to keep the list up to date. Since I had my tasks in a List and I was using an instance of ArrayAdapter. It was hard to keep track of what was added to the list and what was deleted whenever the user interacted with the list. The main issue was when going from one activity to another and returning back to the main activity. Passing around intents with parcelable/serializable was a pain for a small app like this. And hitting database so often is not a great design.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution I used&lt;/strong&gt;:&lt;br&gt;
+I used a singleton to have a single copy of the task list which will be available to all activities in the app. So any add/update/remove operations performed on this list anywhere in the app will be reflected and is readily available (so the list will have the latest information), though in background I was writing the tasks to database. This mainly helped me avoid passing around intents back and forth.&lt;/p&gt;
+&lt;p&gt;It took me a few days to get this simple app done due to hectic work schedules. I guess I will get back to working on it and add some minor enhancements.&lt;/p&gt;
+&lt;h3 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h3&gt;
+&lt;p&gt;Here are some screenshots of my app:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/taskr_task_list.png&#34; alt=&#34;&#34;&gt;
+ 
+&lt;img src=&#34;/images/taskr_new_task.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The white background of the app blends into the white background of the page :(&lt;br&gt;
+I&amp;rsquo;ll have to change the theme sometime.&lt;/p&gt;
+&lt;p&gt;The project can be found on my GitHub page: &lt;a href=&#34;https://github.com/rrajath/taskr&#34;&gt;taskr&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

@@ -14,7 +14,39 @@
       <pubDate>Sat, 11 Sep 2021 21:48:00 -0700</pubDate>
       
       <guid>/posts/my-experience-with-emacs-so-far/</guid>
-      <description>I&amp;rsquo;ve been a vim user for about 15 years and loved every aspect of it. I&amp;rsquo;m nowhere close to the vim wizards I&amp;rsquo;ve seen on YouTube nor some of my coworkers who spend most part of their day writing shell scripts in vim.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been a vim user for about 15 years and loved every aspect of it. I&amp;rsquo;m nowhere close to the vim wizards I&amp;rsquo;ve seen on YouTube nor some of my coworkers who spend most part of their day writing shell scripts in vim. But among my friends and my team, I was considered a power-user. I used a lot of plugins to get things done much easily, I had my shortcuts that my friends found fascinated by and some of them were kind of amazed that I would do a code walkthrough jumping from function to function and file to file using just vim where most of them were going to their IDEs to do that.&lt;/p&gt;
+&lt;p&gt;But that&amp;rsquo;s about it. My vim usage was just for making quick edits to code (larger edits meant opening up an IDE), editing shell scripts and viewing files quickly. I had to use a different tool for managing my tasks, journaling, saving links, etc.&lt;/p&gt;
+&lt;h2 id=&#34;using-notion&#34;&gt;Using Notion&lt;/h2&gt;
+&lt;p&gt;I came across &lt;a href=&#34;https://notion.so&#34;&gt;Notion&lt;/a&gt; and I fell in love with how great it looked and how customizable it was. A lot of them were drag and drop, all the saved links had thumbnails, I could write comments, it was great for task management - I could set up dates and deadlines and get notifications accordingly, templates were great (I came up with my own journaling template since I used bullet journaling), tables were awesome and I could create different views. I used it for couple of years and I thoroughly enjoyed it.&lt;/p&gt;
+&lt;h3 id=&#34;downsides-of-notion&#34;&gt;Downsides of Notion&lt;/h3&gt;
+&lt;p&gt;There were couple of downsides with my Notion setup.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;There was no offline support (at least at that time when I was using it). My notes were stored somewhere else and I needed internet to access it every time. This means, I couldn&amp;rsquo;t use it at work.&lt;/li&gt;
+&lt;li&gt;My notes were in a format that I couldn&amp;rsquo;t control. If I didn&amp;rsquo;t like Notion some time in the future, I couldn&amp;rsquo;t just export it to a different note taking app. I should either wait for the other app to add support to import Notion docs into it or export each and every note I had to markdown and then find a way to deal with it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There were other downsides to Notion depending on the usage, but these were the ones I was affected by the most. I wanted a note taking system that would stand the test of time, something that was preferably open source, one where I had control of my notes, offline supported, customizable.&lt;/p&gt;
+&lt;p&gt;As I was searching for alternatives, I saw several HackerNews posts about note-taking, I kept seeing emacs (and specifically org-mode) pop up everywhere and every single person had only postive things to say about it.&lt;/p&gt;
+&lt;h2 id=&#34;my-first-introduction-to-emacs--spacemacs&#34;&gt;My first introduction to Emacs (spacemacs)&lt;/h2&gt;
+&lt;p&gt;A couple of years ago I was talking to a coworker of mine about vim and he said he uses emacs. Until then, nobody I met talked about emacs. With all the HN posts I read before, I was curious to try it and asked him where do I start. He said, use &lt;a href=&#34;https://www.spacemacs.org&#34;&gt;spacemacs&lt;/a&gt;. So, I did.&lt;/p&gt;
+&lt;p&gt;I liked some parts of spacemacs, especially &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt;. I got pretty excited and I started using it as my daily driver, but after using it for a couple of weeks I gave up. I found spacemacs to be very clunky and slow. I didn&amp;rsquo;t like the UI very much, and frankly, I didn&amp;rsquo;t know how customizable emacs was at the time. Spacemacs had something called layers that I could enable. Elisp was so foreign to me that I didn&amp;rsquo;t bother customizing anything because I had to learn a new language just to customize what I use and the amount of parenthesis threw me off.&lt;/p&gt;
+&lt;h2 id=&#34;doom-emacs&#34;&gt;Doom Emacs&lt;/h2&gt;
+&lt;p&gt;About a year ago, I heard about &lt;a href=&#34;https://github.com/hlissner/doom-emacs&#34;&gt;Doom Emacs&lt;/a&gt;, I think in one of the emacs subreddits. I was intrigued again and I installed it. This time I was immediately hooked. The UI was better, the application was faster, configuration was easier, what I got out of the box with Doom Emacs was perfect for me. Everything felt intuitive and I started using it more and more. I developed my own workflows to organize my tasks, take meeting notes and journal.&lt;/p&gt;
+&lt;p&gt;I liked the fact that I was able to easily toggle things on and off in the config, and I didn&amp;rsquo;t really need to know Elisp to make any changes mainly because I got everything I needed out of the box anyway. I was using Android at the time and &lt;a href=&#34;http://www.orgzly.com&#34;&gt;Orgzly&lt;/a&gt; was a good app for managing orgmode files as well.&lt;/p&gt;
+&lt;p&gt;I was happy with the setup I had and like I mentioned before, I used it mainly for taking notes, organizing my tasks and journaling. Very minimal configuration and package setup. I honestly didn&amp;rsquo;t really understand how everything fit together, how packages worked, how things can be customized by setting variables, or anything. But it worked for me, for the most part and I went with it.&lt;/p&gt;
+&lt;h2 id=&#34;my-custom-configuration&#34;&gt;My Custom Configuration&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve been following &lt;a href=&#34;https://www.youtube.com/channel/UCAiiOTio8Yu69c3XnR7nQBQ&#34;&gt;System Crafters youtube channel&lt;/a&gt; for a few months and I wanted to check out the &lt;a href=&#34;https://www.youtube.com/watch?v=74zOY-vgkyw&amp;amp;list=PLEoMzSkcN8oPH1au7H6B7bBJ4ZO7BXjSZ&#34;&gt;Emacs from Scratch series&lt;/a&gt;. For the longest time, I used to think building an emacs config from scratch is a complete waste of time when we already have something like Doom Emacs which gives us most of the things we need.&lt;/p&gt;
+&lt;p&gt;But I was wrong. About 3 weeks ago, I decided to give it a shot, followed the series and started building my own config. The amount of learning I had in the last 3 weeks is far greater than what I&amp;rsquo;ve learned ever since I started using Emacs. I learned so much about Emacs that I have a deep appreciation for it now. In 3 weeks I came up with a config that is a 1000+ lines long. Every day I tweak my config and make something better. I keep looking forward to using Emacs all the time.&lt;/p&gt;
+&lt;p&gt;The fact that I could literally look at what a specific keybinding does, which function gets invoked when I hit the keybinding, what the implemntation of that function is and basically change it to do what I want was so mind-boggling to me. I felt a sense of freedom where I could change Emacs to literally do whatever I want and behave exactly the way I want it. No other editor even comes close to this level of customizability and that&amp;rsquo;s what excited me.&lt;/p&gt;
+&lt;p&gt;Every customization I was doing involved Elisp in some capacity that each such change was a new learning opportunity for me. So, with each change, my Emacs got better &lt;em&gt;and&lt;/em&gt; I learned Elisp, which is like a win-win. As soon as I started this journey, so many doors opened up for me and I found opportunities to use Emacs for something more than just journaling and taking notes.&lt;/p&gt;
+&lt;p&gt;I now use it as a file manager, terminal, taking notes, organizing my life, journaling, git client, a fully functional IDE with code completions and such, manage my work calendar, quick file edits, viewing and querying json files and blogging. This very post was written in Emacs and published using &lt;a href=&#34;https://ox-hugo.scripter.co&#34;&gt;ox-hugo&lt;/a&gt; - a package used for exporting org files to markdown files that Hugo understands.&lt;/p&gt;
+&lt;h2 id=&#34;obligatory-xkcd-comic-about-emacs&#34;&gt;Obligatory XKCD comic about emacs&lt;/h2&gt;
+&lt;p&gt;Now that I&amp;rsquo;ve said all this about emacs, I &lt;em&gt;have&lt;/em&gt; to use the obligatory xkcd comic about emacs:&lt;/p&gt;
+&lt;figure&gt;&lt;a href=&#34;/images/xkcd_emacs.png&#34;&gt;&lt;img src=&#34;/images/xkcd_emacs.png&#34;/&gt;&lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;If you have never tried Emacs before, I highly recommend you try it. It has a steep learning curve, but it&amp;rsquo;s totally worth it. The more you learn about it, the more appreciation you&amp;rsquo;d have. If you&amp;rsquo;re an absolute beginner, Doom Emacs is a great place to start. However, once you have familiarized yourself with Emacs via Doom Emacs, I encourage you to build your own config. This would ensure you&amp;rsquo;ll know exactly what&amp;rsquo;s going on in your config and it&amp;rsquo;s compeltely in your control. Your emacs will be truly personalized to your liking.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -23,8 +55,9 @@
       <pubDate>Sat, 11 Sep 2021 19:35:00 -0700</pubDate>
       
       <guid>/micro/untools-tools-for-better-thinking/</guid>
-      <description>Untools - Tools for better thinking
-https://untools.co</description>
+      <description>&lt;p&gt;Untools - Tools for better thinking&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://untools.co&#34;&gt;https://untools.co&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -33,8 +66,13 @@ https://untools.co</description>
       <pubDate>Wed, 04 Aug 2021 11:10:00 -0700</pubDate>
       
       <guid>/posts/orgmode-tips-tricks/</guid>
-      <description>Add a link to headings in other org files Use file:~/path/to/file.org::Target
- Target searches for a heading called Target. If not found, it&amp;rsquo;ll ask to create one *Target points to a heading called Target  </description>
+      <description>&lt;h2 id=&#34;add-a-link-to-headings-in-other-org-files&#34;&gt;Add a link to headings in other org files&lt;/h2&gt;
+&lt;p&gt;Use &lt;code&gt;file:~/path/to/file.org::Target&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Target&lt;/code&gt; searches for a heading called &lt;code&gt;Target&lt;/code&gt;. If not found, it&amp;rsquo;ll ask to create one&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*Target&lt;/code&gt; points to a heading called Target&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -43,7 +81,12 @@ https://untools.co</description>
       <pubDate>Sun, 30 May 2021 17:44:42 -0700</pubDate>
       
       <guid>/posts/on-analysis-paralysis/</guid>
-      <description>I have often gotten stuck in analysis paralysis mode where I constantly look for the right way to solve a problem and end up spending way too much time on it than actually solving the problem.</description>
+      <description>&lt;p&gt;I have often gotten stuck in analysis paralysis mode where I constantly look for the right way to solve a problem and end up spending way too much time on it than actually solving the problem. A lot of times what happens is the activity of searching for the right way to do something itself takes so much time and energy that I&amp;rsquo;d develop an aversion to the actual activity. Or I&amp;rsquo;d not feel the same level of enthusiasm with which I started.&lt;/p&gt;
+&lt;p&gt;A recent example for this was when I was thinking about the right way to journal. I&amp;rsquo;ve been journaling on and off the past few years and I&amp;rsquo;ve also changed my note-taking apps/services a few times. These note-taking apps have also influenced the way I journal.&lt;/p&gt;
+&lt;p&gt;I currently use &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt; to manage my tasks, events, journal, notes, thoughts, etc. Given that I wanted to journal in org-more, I started searching for the best ways to go about it - to &amp;ldquo;streamline the process&amp;rdquo;, so to speak. Like, what would the headings be? Should I follow a template? Can I use a text expander for the template? Should I add tags for each heading in that template? I was even looking up the &lt;a href=&#34;https://www.reddit.com/r/Journaling&#34;&gt;/r/journaling&lt;/a&gt; subreddit to get some ideas.&lt;/p&gt;
+&lt;p&gt;But after spending some time on this, it just hit me - I should worry more about content than workflows. So, I just went ahead and freestyled it by putting in vague yet meaningful enough headings for each journal entry that either captures the task/event/feeling. And then I added tags to capture how I&amp;rsquo;m feeling. This took a lot of stress away from me and helped me focus on journaling instead of building a workflow.&lt;/p&gt;
+&lt;p&gt;This is just one example out of several where I spent too much time trying to find the right way to do something before actually doing it. What I realized from the above experience was to identify what is important to me. In the journaling example, what&amp;rsquo;s important is the content - writing down what I think, how I feel, rationalizing my thoughts when I&amp;rsquo;m anxious, etc. Everything else is secondary. As long as I make it extremely easy to accomplish this, I shouldn&amp;rsquo;t care about workflows. Because, workflows develop organically based on usage.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -52,7 +95,31 @@ https://untools.co</description>
       <pubDate>Sat, 09 Jan 2021 15:16:44 -0800</pubDate>
       
       <guid>/posts/whatsapp-privacy-policy-signal/</guid>
-      <description>I&amp;rsquo;ve been on Signal for a few years now, but it has mostly been crickets and tumbleweeds there because I only had a handful of contacts that were on Signal.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been on Signal for a few years now, but it has mostly been crickets and tumbleweeds there because I only had a handful of contacts that were on Signal. My main (and only) app for communication with friends and family was WhatsApp. I used to install Signal and a few days later I&amp;rsquo;d uninstall it because I didn&amp;rsquo;t really have many people to talk to on Signal. I wanted to keep it and at least use it as an SMS app, but with the amount of spam texts I get and the fact that it doesn&amp;rsquo;t have a feature to filter texts by keyword made me not use it as an SMS app either.&lt;/p&gt;
+&lt;h1 id=&#34;the-problem-with-new-platforms&#34;&gt;The problem with new platforms&lt;/h1&gt;
+&lt;p&gt;The main problem with newer platforms is the user base. If all your friends and family are not on the new platform (social media or messenger), then you really can&amp;rsquo;t use it. That&amp;rsquo;s what happened with me on Signal. It was a herculean task for me to convince people who cared very little about privacy to make them switch to Signal. The thing is, it ends up being a huge task for them too. They also have to convince their contacts to switch to Signal or else they&amp;rsquo;ll experience the same silence of having no one to talk to on that app. Some people are okay with using multiple messaging apps and I know a lot of people that don&amp;rsquo;t. I personally don&amp;rsquo;t enjoy it.&lt;/p&gt;
+&lt;h1 id=&#34;whatsapps-new-privacy-policy&#34;&gt;WhatsApp&amp;rsquo;s new privacy policy&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.whatsapp.com/legal/updates/privacy-policy/?lang=en&#34;&gt;WhatsApp&amp;rsquo;s new privacy policy&lt;/a&gt; that will take effect in Feb 2021 went viral and made enough people talk about it. The fact that there was no way to opt out was the final straw that broke the camel&amp;rsquo;s back. Even &lt;a href=&#34;https://twitter.com/elonmusk/status/1347165127036977153&#34;&gt;Elon Musk tweeted&lt;/a&gt; which ended up &lt;a href=&#34;https://twitter.com/signalapp/status/1347240006444675072&#34;&gt;putting way too much stress on Signal&amp;rsquo;s servers&lt;/a&gt; where there was a delay for new users in receiving verification codes. As much as downtimes are hated in tech services, this particular problem is actually good to have for any tech company.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d say this is a kind of blessing in disguise which gave a lot of people the final push to stop giving in to big tech companies to continue stealing data from customers. What I did realize was how easy and valuable it was to make people aware of the data collection practices.&lt;/p&gt;
+&lt;p&gt;If this privacy policy update had come in the form of an email that we usually get from other services, like &amp;ldquo;We have updated our privacy policy. Please click here to learn more.&amp;rdquo; I don&amp;rsquo;t think we would have taken it this seriously.&lt;/p&gt;
+&lt;h1 id=&#34;how-i-spread-awareness&#34;&gt;How I spread awareness&lt;/h1&gt;
+&lt;p&gt;WhatsApp made the job easier for me to spread awareness of their privacy and data collection nightmare.&lt;/p&gt;
+&lt;h2 id=&#34;1-update-my-whatsapp-status&#34;&gt;1. Update my WhatsApp status&lt;/h2&gt;
+&lt;p&gt;The first thing I did was to update my WhatsApp status to say &amp;ldquo;I&amp;rsquo;m deleting WhatsApp on 1/31. Find me on Signal&amp;rdquo;. This would give people a heads-up about my availability on WhatsApp and also tell them where to find me.&lt;/p&gt;
+&lt;h2 id=&#34;2-starting-conversations-about-privacy-with-people&#34;&gt;2. Starting conversations about privacy with people&lt;/h2&gt;
+&lt;p&gt;I ended up sharing two screenshots with the groups and people I interact with the most on WhatsApp. Once I shared them, it was abundantly clear to them that they had to ditch WhatsApp and most of them immediately hopped on to Signal.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img style=&#34;width:50%&#34; src=&#34;/images/whatsapp-privacy-policy-feb2021.jpeg&#34;/&gt;
+    &lt;figcaption&gt;WhatsApp Privacy Policy&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;/images/data-collection-messaging-apps.jpeg&#34;/&gt;
+    &lt;figcaption&gt;&lt;a href=&#34;https://www.forbes.com/sites/zakdoffman/2021/01/03/whatsapp-beaten-by-apples-new-imessage-update-for-iphone-users/?sh=191b47e36234&#34;&gt;Data collection by different apps&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;What I also did was to create Groups on Signal and send the group invite to respective groups in WhatsApp. It made the transition easier. Now the number of contacts in Signal is growing.&lt;/p&gt;
+&lt;h1 id=&#34;signal-is-the-future&#34;&gt;Signal is the future&lt;/h1&gt;
+&lt;p&gt;Signal paved the way and showed the world how apps can be made that wouldn&amp;rsquo;t profit off of your data. &lt;a href=&#34;https://www.reddit.com/r/technology/comments/kt91qk/signal_private_messenger_team_here_we_support_an&#34;&gt;Their Reddit AMA&lt;/a&gt; provides good insight into their values, their vision and a lot more about who they are and how they operate. I have donated to Signal and will continue to do so. I love the fact that they&amp;rsquo;re non-profit and open source; that&amp;rsquo;s a huge plus to me. It&amp;rsquo;s so peaceful stress-free to use an app or a service that we know has our best interests and wouldn&amp;rsquo;t make money off of our data. In the world where it seems as if privacy no longer exists, it&amp;rsquo;s great to see a very private and secure messaging app is growing to be so popular and it is on its way to become people&amp;rsquo;s primary mode of communication.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -61,7 +128,26 @@ https://untools.co</description>
       <pubDate>Tue, 05 Jan 2021 17:10:14 -0800</pubDate>
       
       <guid>/posts/ideas-need-sufficient-baketime/</guid>
-      <description>I&amp;rsquo;ve always been curious about learning new things. I&amp;rsquo;ve always consumed new information with great enthusiasm. I&amp;rsquo;d read book after book, blog post after blog post and listen to lot of podcasts and audiobooks.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve always been curious about learning new things. I&amp;rsquo;ve always consumed new information with great enthusiasm. I&amp;rsquo;d read book after book, blog post after blog post and listen to lot of podcasts and audiobooks. What ended up happening was I&amp;rsquo;d never really reflect on what I&amp;rsquo;ve read. So, after some time I&amp;rsquo;d have no recollection of the contents of any book. I used to be under the impression that the more I read, the more I learn and I was checking books off my list. Then I thought reading should really be about grasping the essence instead of trying to remember the nitty gritty details the author talks about in any book. All of this led to me passively consume information without giving any time for myself to reflect on what I&amp;rsquo;ve read.&lt;/p&gt;
+&lt;h1 id=&#34;dont-passively-consume-information&#34;&gt;Don&amp;rsquo;t passively consume information&lt;/h1&gt;
+&lt;p&gt;This is the mistake I made while I used to read a lot of books. When I get a book recommendation via one of the many sources - friends, blogposts, podcasts, goodreads, etc., I&amp;rsquo;d keep adding them to my to-read list on Goodreads. Then, I&amp;rsquo;d either get the audiobook or I&amp;rsquo;d get the Kindle ebook. And, I&amp;rsquo;d just read them one after another. I&amp;rsquo;d thoroughly enjoy reading them and while I&amp;rsquo;m doing that I&amp;rsquo;d feel like I&amp;rsquo;m learning something.&lt;/p&gt;
+&lt;p&gt;What happened later was that, when I&amp;rsquo;ll be talking to a friend I&amp;rsquo;d say something like,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;My friend&lt;/strong&gt;: *Talking about their experience with crows being a team and using a diversion tactic to take his fries one day*&lt;br&gt;
+&lt;strong&gt;Me&lt;/strong&gt;: &amp;ldquo;Hey, that reminds me, I read a book called Selfish Gene that explains the altruistic nature of crows. Richard Dawkins says in that book that crows are&amp;hellip; um&amp;hellip;&amp;rdquo;.&lt;br&gt;
+&lt;em&gt;*Silence*&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I just couldn&amp;rsquo;t explain it, because I retained almost nothing from that book. I kind of sort of know about the altruistic nature of crows, but I just couldn&amp;rsquo;t succinctly put it across. It infuriated me and I always wondered where I&amp;rsquo;m going wrong.&lt;/p&gt;
+&lt;p&gt;I listened to a podcast few months ago where &lt;a href=&#34;https://sive.rs&#34;&gt;Derek Sivers&lt;/a&gt; was interviewed where he said&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Learning doesn&amp;rsquo;t happen when you read, it happens when you reflect on what you&amp;rsquo;ve read&amp;rdquo;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This quote hit home with me. It made so much sense and I felt I wasted a lot of time just consuming information without really &amp;ldquo;consuming information&amp;rdquo;. Whatever I was reading was just useless.&lt;/p&gt;
+&lt;h1 id=&#34;ideas-need-baketime&#34;&gt;Ideas need baketime&lt;/h1&gt;
+&lt;p&gt;I changed my reading style from reading too much back to back, to reading little with breaks in between. Sometimes I&amp;rsquo;d read just a couple of pages and reflect on it for a few hours or a few days. The difference is night and day. Now it&amp;rsquo;s no longer about remembering the little details of whatever I read, but it&amp;rsquo;s about making connections between the different ideas I have in my mental model.&lt;/p&gt;
+&lt;p&gt;Where I found this to be most valuable is when I would do something that doesn&amp;rsquo;t require a lot of thought - like cooking, working out without headphones, cleaning my apartment, going for a run, that&amp;rsquo;s when I&amp;rsquo;d relect on whatever information I consumed and make connections. I&amp;rsquo;ve had several &amp;ldquo;Aha!&amp;rdquo; moments where I fit pieces together and develop a much better understanding.&lt;/p&gt;
+&lt;p&gt;In my opinion, the kind of reading for which you just have to grasp the essence is something that doesn&amp;rsquo;t require you to understand an idea deeply, make connections and possibly apply it to your life. An example of this would be reading the newspaper. You don&amp;rsquo;t have to understand deeply what happened in politics the previous day and reflect on them. However, when it comes to reading a book with lot of useful information, it becomes really valuable to understand the fundamentals. Reflecting upon ideas becomes one of the best tools in the box for succeeding in the learning process.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -70,7 +156,10 @@ https://untools.co</description>
       <pubDate>Sat, 02 Jan 2021 15:17:57 -0800</pubDate>
       
       <guid>/posts/exporting-google-photos/</guid>
-      <description>I recently purchased a Synology NAS and I started hosting a media server containing movies, TV shows and photos. I had stored all my photos in Google Photos for the past several years.</description>
+      <description>&lt;p&gt;I recently purchased a &lt;a href=&#34;https://www.synology.com/en-us/products/series/home&#34;&gt;Synology NAS&lt;/a&gt; and I started hosting a media server containing movies, TV shows and photos. I had stored all my photos in Google Photos for the past several years. But recently Google announced that &lt;a href=&#34;https://blog.google/products/photos/storage-changes&#34;&gt;it was going to charge for storing photos as they near the storage limit of 15GB&lt;/a&gt;. I knew of &lt;a href=&#34;https://takeout.google.com&#34;&gt;Google Takeout&lt;/a&gt; and I downloaded some 44 GB of photos which were packed in about 23 zip files.&lt;/p&gt;
+&lt;p&gt;I found that these zip files had lot of repetitive files, seemed like a lot of duplicates. I ended up extracting all of them to a single folder. And, I saw a lot of json files mixed in. When I searched online, I found couple of tools to get rid of them: &lt;a href=&#34;https://metadatafixer.com&#34;&gt;Metadata Fixer&lt;/a&gt; and &lt;a href=&#34;https://github.com/TheLastGimbus/GooglePhotosTakeoutHelper&#34;&gt;Google Photos Takeout Helper&lt;/a&gt;. These didn&amp;rsquo;t work well and I thought of writing my own tool to do the job for me.&lt;/p&gt;
+&lt;p&gt;I later came across a Reddit post where &lt;a href=&#34;https://www.reddit.com/r/googlephotos/comments/jyyg53/psa_i_found_an_alternative_to_google_takeout_for&#34;&gt;somebody posted an alternative for exporting Google Photos&lt;/a&gt;. The alternative is basically to select all the photos per year and download them via UI. This will not give us any json files. It just downloads the photos as is. This was perfect and worked for me.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -79,7 +168,34 @@ https://untools.co</description>
       <pubDate>Fri, 01 Jan 2021 20:30:59 -0800</pubDate>
       
       <guid>/posts/2020-year-in-review/</guid>
-      <description>2020 has been quite a year for all of us and I don&amp;rsquo;t want to get into the long list of things that have shook us this year.</description>
+      <description>&lt;p&gt;2020 has been quite a year for all of us and I don&amp;rsquo;t want to get into the long list of things that have shook us this year. We&amp;rsquo;re still resilient and stand strong even though we experience some of the most horrific events we&amp;rsquo;re thrown into. I&amp;rsquo;m grateful for being privileged enough in terms of health, career, etc. This year hasn&amp;rsquo;t been the best for pretty much anyone and the same goes for me. Having said that, like I do every year, here are some of the things I did more of, less of, some side quests and lessons learned along the way.&lt;/p&gt;
+&lt;h1 id=&#34;things-i-did-more-of&#34;&gt;Things I did more of&lt;/h1&gt;
+&lt;h2 id=&#34;self-hosting&#34;&gt;Self hosting&lt;/h2&gt;
+&lt;p&gt;This started out as a project for a few raspberry pis I had at home where I did a RAID-1 setup initially with NextCloud installed. However, I had to do a lot of heavy lifting in a lot of different areas, like configuring DDNS, setting up another raspberry pi as a mirror for data duplication, and other minor quirks I had along the way. Besides that, there were times when Nextcloud didn&amp;rsquo;t work the way it was supposed to. Like, I wasn&amp;rsquo;t seeing the &amp;lsquo;Sharing&amp;rsquo; tab for any of the files or folders. There was not a lot of help from the community either. Besides that, the raspberry pi I had installed it on was constantly running out of memory. I just couldn&amp;rsquo;t devote more time to it and fix all the quirks. Towards the end of 2020, I bought a Synology NAS DS220+ and I&amp;rsquo;ve been very happy with it.&lt;/p&gt;
+&lt;p&gt;The DS220+ did all the heavy lifting for me and the initial setup took less than 15 minutes. After that I just had to move my data to it. The DiskStation is definitely a superior and a much nicer product too. The fact that I have a great level of control into how my data is stored, shared and accessed while all the nitty gritty of the configuration is abstracted away has been a great experience. It&amp;rsquo;s a huge time saver and I could focus my time and energy on other projects.&lt;/p&gt;
+&lt;h2 id=&#34;chess&#34;&gt;Chess&lt;/h2&gt;
+&lt;p&gt;The quarantine prevented me from going out and that made me get into Chess. I spent many hours playing chess with my wife and got better at it. I also solved Chess puzzles on Lichess which I highly recommend if somebody is looking for good chess apps.&lt;/p&gt;
+&lt;h2 id=&#34;emacsorg-mode&#34;&gt;Emacs/org-mode&lt;/h2&gt;
+&lt;p&gt;I used org-mode before with Spacemacs and it was okay. The workflow was great when I was in front of my computer, but for &amp;ldquo;on the go&amp;rdquo;, I just couldn&amp;rsquo;t get a good workflow going. This made me disinterested in emacs and org-mode and I switched to a different solution - Notion. I then learned about Doom Emacs which in my opinion is way better than Spacemacs since Spacemacs was really slow and clunky when I used it. With Orgzly installed on my phone, Syncthing set up on my phone and my computer, I got a good system that I could work with. Every day I learn new things about Emacs either intentionally or accidentally and I&amp;rsquo;m loving every bit of it.&lt;/p&gt;
+&lt;h2 id=&#34;journaling&#34;&gt;Journaling&lt;/h2&gt;
+&lt;p&gt;I journaled every single day this entire year. There were days when I journaled more and did a lot of brain dumps and there were other days where I journaled very little. I&amp;rsquo;m glad to have developed this habit since it has helped me organize my thoughts, come to logical solutions whenever I&amp;rsquo;m preoccupied with things that bother me, or just write down my thoughts. IMO, it&amp;rsquo;s a very underrated habit and especially over time, you get a good ROI with journaling.&lt;/p&gt;
+&lt;h2 id=&#34;zettelkasten&#34;&gt;Zettelkasten&lt;/h2&gt;
+&lt;p&gt;I take notes extensively. I used to take notes whenever I read a book, but these days I find myself taking notes when I read blog posts or listen to podcasts too. What I stumbled upon recently was a new note-taking method called &lt;a href=&#34;https://en.wikipedia.org/wiki/Zettelkasten&#34;&gt;Zettelkasten&lt;/a&gt; (or slip-box) - a system developed by Niklas Luhmann. I write smaller notes where each note contains an idea instead of a book summary. These notes end up getting interconnected to other notes. This system has been working well so far. Let&amp;rsquo;s see where it takes me.&lt;/p&gt;
+&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;
+&lt;p&gt;I read few good books this year. I didn&amp;rsquo;t focus on reading more books, but instead focused on reading bits and pieces of different books and reflecting on those ideas. This has been extremely valuable to me compared to how I used to read books or listen to audiobooks. For example, I read a 4 page chapter (called &amp;ldquo;A sketch of good communication&amp;rdquo;) from a &lt;a href=&#34;https://www.lesswrong.com/books&#34;&gt;LessWrong book set&lt;/a&gt; (book name Epistemology) and reflected on it for couple of days which led me to few scenarios where was I guilty of bad communication in the past. The chapter is super interesting and is also available as a &lt;a href=&#34;https://www.lesswrong.com/posts/yeADMcScw8EW9yxpH/a-sketch-of-good-communication&#34;&gt;blogpost&lt;/a&gt; (as are all other chapters in the book set) if you&amp;rsquo;re interested.&lt;/p&gt;
+&lt;h1 id=&#34;things-i-did-less-of&#34;&gt;Things I did less of&lt;/h1&gt;
+&lt;h2 id=&#34;running&#34;&gt;Running&lt;/h2&gt;
+&lt;p&gt;The quarantine made us stay home and summer was mostly spent indoors. I did run a couple of times on a treadmill in our apartment gym, but that was closed too after a bit. I&amp;rsquo;m looking forward to running outside in 2021 once it gets warmer&lt;/p&gt;
+&lt;h2 id=&#34;working-out&#34;&gt;Working out&lt;/h2&gt;
+&lt;p&gt;I stopped doing bodyweight workouts too and I tend to have mostly focused on eating more, and gaining more weight (though that wasn&amp;rsquo;t part of the plan).&lt;/p&gt;
+&lt;h2 id=&#34;personal-projects&#34;&gt;Personal projects&lt;/h2&gt;
+&lt;p&gt;With the whole WFH situation, I ended up working way more than I did when I used to go to office. This made me so tired that it was extremely hard to get motivated to do personal projects.&lt;/p&gt;
+&lt;h1 id=&#34;side-quests&#34;&gt;Side Quests&lt;/h1&gt;
+&lt;h2 id=&#34;making-music&#34;&gt;Making music&lt;/h2&gt;
+&lt;p&gt;I recently discovered Groovepad and I really liked how easy it is to use that app and make music. As of this writing I made 3 tracks and I&amp;rsquo;m planning to put them up on Soundcloud and Spotify.&lt;/p&gt;
+&lt;h1 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h1&gt;
+&lt;p&gt;With everything that happened in 2020 and so much time being spent indoors, it made me reflect on a lot things. I&amp;rsquo;m extremely grateful to have good health, family, career and friends. It has made me appreciate life more and gave me some perspective. It&amp;rsquo;s easy to take things for granted and look the other way. But it takes a lot of strength and speaks to one&amp;rsquo;s character to stand up for the right thing and fight for it.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -88,8 +204,9 @@ https://untools.co</description>
       <pubDate>Mon, 21 Sep 2020 22:22:15 -0700</pubDate>
       
       <guid>/micro/cognitive-bias-cheat-sheet/</guid>
-      <description>Cognitive Bias Cheat Sheet:
-https://medium.com/better-humans/cognitive-bias-cheat-sheet-55a472476b18</description>
+      <description>&lt;p&gt;Cognitive Bias Cheat Sheet:&lt;br&gt;
+&lt;a href=&#34;https://medium.com/better-humans/cognitive-bias-cheat-sheet-55a472476b18&#34;&gt;https://medium.com/better-humans/cognitive-bias-cheat-sheet-55a472476b18&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -98,7 +215,41 @@ https://medium.com/better-humans/cognitive-bias-cheat-sheet-55a472476b18</descri
       <pubDate>Thu, 17 Sep 2020 21:32:00 -0700</pubDate>
       
       <guid>/posts/org-mode-smart-archive/</guid>
-      <description>So far, my workflow in OrgMode for managing tasks and events was to have one file called organize.org that contains top-level headings - Tasks, Events that contained respective items.</description>
+      <description>&lt;p&gt;So far, my workflow in &lt;a href=&#34;https://orgmode.org/&#34;&gt;OrgMode&lt;/a&gt; for managing tasks and events was to have one file called &lt;code&gt;organize.org&lt;/code&gt; that contains top-level headings - &lt;strong&gt;Tasks&lt;/strong&gt;, &lt;strong&gt;Events&lt;/strong&gt; that contained respective items. Once I finished those items, I&amp;rsquo;d move them to a different file called &lt;code&gt;archive.org&lt;/code&gt;. So, my &lt;code&gt;organize.org&lt;/code&gt; file looked something like this:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;organize.org&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt; * Tasks
+  * Task 1
+  * Task 2
+ * Events
+  * Event 1
+  * Event 2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Initially, I was directly archiving all the tasks/events that I completed, so my &lt;code&gt;archive.org&lt;/code&gt; became a dumping ground. A few weeks later I looked at my archive file and it was so hard to go look at it and separate them out, so I created similar top-level headings.&lt;/p&gt;
+&lt;p&gt;Now my &lt;code&gt;archive.org&lt;/code&gt; had &lt;strong&gt;Tasks&lt;/strong&gt; and &lt;strong&gt;Events&lt;/strong&gt; as the top-level headings and I would archive all the DONE tasks and events to their respective headings. This also felt a little tedious because each time I had to archive something, I had to select the specific file and heading. I could have used the archive feature that org-mode provides, but that creates a new file whenever I want to archive something from another file. I want to maintain just one file for archive and if I want to archive anything from any of the other files, they&amp;rsquo;ll all go to this one &lt;code&gt;archive.org&lt;/code&gt;. This is part of my PARA workflow.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;: By the way, I use Doom Emacs, so some of the keybindings I mention in this article will be specific to &lt;a href=&#34;https://github.com/hlissner/doom-emacs&#34;&gt;Doom Emacs&lt;/a&gt;. They may not work with &lt;a href=&#34;https://www.spacemacs.org/&#34;&gt;Spacemacs&lt;/a&gt; or &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34;&gt;Vanilla Emacs&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;What I figured out later was to have a &lt;code&gt;:PROPERTIES:&lt;/code&gt; drawer containing the location of the archive file &lt;em&gt;and&lt;/em&gt; the heading under which it can be archived to. And, I did this for all the headings where I usually archive stuff. Now that I&amp;rsquo;ve set this up, all I do is hit &lt;code&gt;SPC m A&lt;/code&gt; (or &lt;code&gt;M-x org-archive-subtree&lt;/code&gt;) and the item goes to the right location. And not just that, it also adds a &lt;code&gt;:PROPERTIES:&lt;/code&gt; drawer in the destination location with all the relevant details like where that heading came from, at what time the task was archived, etc.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;organize.org&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt; * Tasks
+   :PROPERTIES:
+   :ARCHIVE: ./archive.org::* Tasks
+   :END:
+ * Events
+   :PROPERTIES:
+   :ARCHIVE: ./archive.org::* Events
+   :END:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, if I have to look at all the things I&amp;rsquo;ve done and events I&amp;rsquo;ve attended over the past day/week/month/quarter/year, I just have to go to &lt;code&gt;archive.org&lt;/code&gt; and do a sparse tree search (&lt;code&gt;SPC m s s&lt;/code&gt; or &lt;code&gt;M-x org-sparse-tree&lt;/code&gt;) on that tree and I can slice and dice the data however I want. In case you want to know what properties get added in &lt;code&gt;archive.org&lt;/code&gt;, here&amp;rsquo;s a preview.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;archive.org&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt; * Tasks
+ ** DONE Task 1
+    CLOSED: [2020-09-12 Sat 11:51]
+    :PROPERTIES:
+    :ARCHIVE_TIME: 2020-09-12 Sat 11:52
+    :ARCHIVE_FILE: ~/Documents/org-mode/organize.org
+    :ARCHIVE_OLPATH: Tasks
+    :ARCHIVE_CATEGORY: organize
+    :ARCHIVE_TODO: DONE
+    :ARCHIVE_ITAGS: task
+    :END:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -107,8 +258,9 @@ https://medium.com/better-humans/cognitive-bias-cheat-sheet-55a472476b18</descri
       <pubDate>Sat, 12 Sep 2020 11:47:09 -0700</pubDate>
       
       <guid>/micro/internet-explained-first-principles/</guid>
-      <description>Internet explained from First Principles
-https://explained-from-first-principles.com/internet</description>
+      <description>&lt;p&gt;Internet explained from First Principles&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://explained-from-first-principles.com/internet&#34;&gt;https://explained-from-first-principles.com/internet&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -117,7 +269,9 @@ https://explained-from-first-principles.com/internet</description>
       <pubDate>Sat, 12 Sep 2020 11:24:11 -0700</pubDate>
       
       <guid>/micro/gordon-brander/</guid>
-      <description>Gordon Brander: Patterns - knowledge base containing ideas and connections http://gordonbrander.com/pattern</description>
+      <description>&lt;p&gt;Gordon Brander: Patterns  - knowledge base containing ideas and connections
+&lt;a href=&#34;http://gordonbrander.com/pattern&#34;&gt;http://gordonbrander.com/pattern&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -126,8 +280,12 @@ https://explained-from-first-principles.com/internet</description>
       <pubDate>Fri, 11 Sep 2020 22:26:59 -0700</pubDate>
       
       <guid>/micro/pkm/</guid>
-      <description>My new found interests: Personal Knowledge Management and Digital Gardens.
- https://logseq.com https://wiki.nikitavoloboev.xyz  </description>
+      <description>&lt;p&gt;My new found interests: Personal Knowledge Management and Digital Gardens.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://logseq.com&#34;&gt;https://logseq.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.nikitavoloboev.xyz&#34;&gt;https://wiki.nikitavoloboev.xyz&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -136,8 +294,9 @@ https://explained-from-first-principles.com/internet</description>
       <pubDate>Sat, 18 Jul 2020 11:53:42 -0700</pubDate>
       
       <guid>/micro/building-a-second-brain/</guid>
-      <description>Building a second brain: The illustrated notes
-https://maggieappleton.com/basb</description>
+      <description>&lt;p&gt;Building a second brain: The illustrated notes&lt;br&gt;
+&lt;a href=&#34;https://maggieappleton.com/basb&#34;&gt;https://maggieappleton.com/basb&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -146,7 +305,71 @@ https://maggieappleton.com/basb</description>
       <pubDate>Wed, 08 Jul 2020 21:03:07 -0700</pubDate>
       
       <guid>/posts/my-hugo-setup-part-3/</guid>
-      <description>This is the third installment of my Hugo Setup. In this post I explain how I added support for &amp;ldquo;series&amp;rdquo; in my blog and also provide links that can be used for further explorations.</description>
+      <description>&lt;p&gt;This is the third installment of my Hugo Setup. In this post I explain how I added support for &amp;ldquo;series&amp;rdquo; in my blog and also provide links that can be used for further explorations.&lt;/p&gt;
+&lt;p&gt;Also, this post is part of a &amp;ldquo;series&amp;rdquo; and explains about how to setup &amp;ldquo;series&amp;rdquo;. This is so meta!&lt;/p&gt;
+&lt;h2 id=&#34;what-is-series&#34;&gt;What is Series?&lt;/h2&gt;
+&lt;p&gt;Sometimes, we have a bunch of blog posts that are related and maybe continuous. Breaking down one big topic into multiple blog posts is the best way to explain the topic. This is where Series adds value. Series also helps keep track of where one is in the list of posts and can easily navigate to posts before or after the current post. This post has nothing to do with writing something differently, but rather presenting mutliple related posts in a more intuitive way.&lt;/p&gt;
+&lt;h2 id=&#34;how-is-it-different-from-adding-tags&#34;&gt;How is it different from adding tags?&lt;/h2&gt;
+&lt;p&gt;Tags are useful for categorizing similar topics. For example, there may be bunch of posts under the tag &amp;ldquo;productivity&amp;rdquo;, but they may all be stand-alone posts that can be read in any order. Whereas, having posts that need continuity will need something a little more sophisticated than tags.&lt;/p&gt;
+&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;I was deciding to implement this in my templates, but before doing that I searched around for easy, already existing implementations, and I did find some help in the Hugo community. I came across a &lt;a href=&#34;https://discourse.gohugo.io/t/creating-post-series/1115&#34;&gt;Hugo forum post&lt;/a&gt; where a user had a similar ask. The &lt;a href=&#34;https://npf.io/2014/08/making-it-a-series/&#34;&gt;link in the answer&lt;/a&gt; had everything I needed to add the &amp;ldquo;series&amp;rdquo; support for my blog.&lt;/p&gt;
+&lt;p&gt;Hugo supports Taxonomies where you can configure &lt;a href=&#34;https://gohugo.io/content-management/taxonomies/#configuring-taxonomies&#34;&gt;custom taxonomies&lt;/a&gt; and can be used everywhere on your blog. The first step is to add the &lt;code&gt;series&lt;/code&gt; taxonomy in your &lt;code&gt;config.toml&lt;/code&gt; file&lt;/p&gt;
+&lt;h3 id=&#34;step-1&#34;&gt;Step 1&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;config.toml&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;[taxonomies]
+	tag = &amp;#34;tags&amp;#34;
+	series = &amp;#34;series&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you have a &lt;code&gt;yaml&lt;/code&gt; file, change the syntax accordingly.&lt;/p&gt;
+&lt;h3 id=&#34;step-2&#34;&gt;Step 2&lt;/h3&gt;
+&lt;p&gt;Create a partial called &lt;code&gt;series_links.html&lt;/code&gt; at &lt;code&gt;/layouts/partials/series_links.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This will contain the code that is responsible for displaying links to other posts in the series.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;/layouts/partials/series_links.html&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;{{ if .Params.series }}
+    {{ $name := index .Params.series 0 }}
+    &amp;lt;hr/&amp;gt;
+    Other posts in this series:&amp;lt;/p&amp;gt;
+
+    {{ $name := $name | urlize }}
+    {{ $series := index .Site.Taxonomies.series $name }}
+    &amp;lt;ul class=&amp;#34;series&amp;#34;&amp;gt;
+    {{ range $series.Pages }}
+        &amp;lt;li&amp;gt;{{ .Date.Format &amp;#34;Jan 02, 2006&amp;#34; }} -
+        &amp;lt;a href=&amp;#34;{{.Permalink}}&amp;#34;&amp;gt;{{ .LinkTitle }}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    {{ end }}
+    &amp;lt;/ul&amp;gt;
+{{ end }}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I got the above code from: &lt;a href=&#34;https://npf.io/2014/08/making-it-a-series/&#34;&gt;https://npf.io/2014/08/making-it-a-series/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The explanation of what this means is explained better there, so I&amp;rsquo;m not going to reiterate the same thing here.&lt;/p&gt;
+&lt;h3 id=&#34;step-3&#34;&gt;Step 3&lt;/h3&gt;
+&lt;p&gt;Go to your &lt;code&gt;single.html&lt;/code&gt; which is the template that renders each of your blog posts.&lt;br&gt;
+Replace &lt;code&gt;{{ .Content }}&lt;/code&gt; with the code below&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;/layouts/_default/single.html&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;markdown&amp;#34;&lt;/span&gt;&amp;gt;
+			{{ if .Params.series }}
+  				{{ $name := index .Params.series 0 }}
+  				&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;p&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;series_top_page&amp;#34;&lt;/span&gt; style&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;font-weight:50; background-color:#333&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;&amp;gt;This post is part of the &amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt; href&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;{{.Site.BaseURL}}/series/{{$name | urlize}}&amp;#34;&lt;/span&gt;&amp;gt;{{$name}}&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt;&amp;gt; series.&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;p&lt;/span&gt;&amp;gt;
+			{{ end }}
+			{{ .Content }}
+			{{ partial &amp;#34;series_links.html&amp;#34; . }}
+&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;What this does is, before your main content it displays a banner stating that the post is part of a series (this banner doesn&amp;rsquo;t appear otherwise). This tells the reader right of the bat that there are more related posts they can check out and read. You can look at the banner at the top of this post to see what it looks like. All of this is done by the code that comes before the &lt;code&gt;{{ .Content }}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The code that comes after content, i.e. &lt;code&gt;{{ partial &amp;quot;series_links.html&amp;quot; . }}&lt;/code&gt; simply calls the &lt;code&gt;series_links.html&lt;/code&gt; partial we created in step 2 and injects it here, right after your post&amp;rsquo;s main content.&lt;/p&gt;
+&lt;h3 id=&#34;step-4&#34;&gt;Step 4&lt;/h3&gt;
+&lt;p&gt;Now for the final step, you&amp;rsquo;ll have to add front matter to your posts - the ones you want to make part of the series. That will look something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;---
+title: &amp;#34;My Hugo Setup&amp;#34;
+...
+series: [&amp;#34;hugo-setup&amp;#34;]
+tags:
+- tag1
+- tag2
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;other-explorations&#34;&gt;Other Explorations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I found &lt;a href=&#34;http://www.joesacher.com/blog/2017/08/03/implementing-series-in-hugo/&#34;&gt;an implementation&lt;/a&gt; which added &lt;a href=&#34;http://www.joesacher.com/blog/2017/08/27/converting-series-to-taxonomy/&#34;&gt;fancier links to posts in series&lt;/a&gt;, like keeping track of how many posts are in the series, adding next and previous links, etc. I had some trouble with that and I didn&amp;rsquo;t have the patience to debug and set it up. This piece of code got the job done for me. But feel free to explore that and tweak it to your needs.&lt;/li&gt;
+&lt;li&gt;I also stumbled upon &lt;a href=&#34;https://www.notion.so/My-Hugo-Setup-Part-3-04f1eeac0db4403a8cdfdc37b6714db9&#34;&gt;another implementation&lt;/a&gt; which did something similar. It&amp;rsquo;s worth checking that out.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -155,7 +378,19 @@ https://maggieappleton.com/basb</description>
       <pubDate>Sun, 05 Jul 2020 22:16:04 -0700</pubDate>
       
       <guid>/posts/my-hugo-setup-part-2/</guid>
-      <description>In my previous post, I explained all the visual tweaks I did to my Hugo blog theme so that I could get the pages I wanted in the format I liked the most.</description>
+      <description>&lt;p&gt;In my &lt;a href=&#34;https://rrajath.com/posts/my-hugo-setup/&#34;&gt;previous post&lt;/a&gt;, I explained all the visual tweaks I did to my Hugo blog theme so that I could get the pages I wanted in the format I liked the most. This post explains the publish part of it because I faced some issues doing that.&lt;/p&gt;
+&lt;p&gt;I was used to Jekyll&amp;rsquo;s way of doing things where it&amp;rsquo;s just one repository on GitHub and all I had to do was &lt;code&gt;git push&lt;/code&gt; and the blog would show up after about a minute. This means the repository contained both source and generated files. However, Hugo does things a little differently and I actually like it. There are several ways to deploy your Hugo website - using GitHub pages, GitLab, Netlify, etc. I chose GitHub pages since that&amp;rsquo;s what I&amp;rsquo;m most familiar with.&lt;/p&gt;
+&lt;p&gt;If you are going with GitHub&amp;rsquo;s User or Organization Pages, &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages&#34;&gt;Hugo&amp;rsquo;s recommendation&lt;/a&gt; is to split the source and generated files into two different repositories. The repository that the generated files go to will be the front for the website. Let me explain what I did in a little more detail.&lt;/p&gt;
+&lt;p&gt;Step 1: Create a GitHub repository. I called mine &amp;ldquo;blog&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Step 2: Create another GitHub repository called &lt;username&gt;.github.io. Mine is rrajath.github.io&lt;/p&gt;
+&lt;p&gt;Step 3: Do a &lt;code&gt;git clone&lt;/code&gt; of the &amp;ldquo;blog&amp;rdquo; repository you created on GitHub.&lt;/p&gt;
+&lt;p&gt;Step 4: Copy over your Hugo website on your local to the &amp;ldquo;blog&amp;rdquo; directory that you just cloned.&lt;/p&gt;
+&lt;p&gt;Step 5: Add a submodule using the command: &lt;code&gt;git submodule add -b master https://github.com/username/username.github.io public&lt;/code&gt;. This creates a git submodule that points to the &lt;code&gt;public&lt;/code&gt; directory in your Hugo website.&lt;/p&gt;
+&lt;p&gt;Step 5 is where I encountered the issue. The idea is to point the &lt;code&gt;public&lt;/code&gt; in your &amp;ldquo;blog&amp;rdquo; directory to a remote on GitHub by making it a submodule. The folder &lt;code&gt;public&lt;/code&gt; contains all the generated files. Once you create a post and run &lt;code&gt;hugo server&lt;/code&gt; to generate all the files, you have to do a &lt;code&gt;git push&lt;/code&gt; on both the &amp;ldquo;blog&amp;rdquo; directory and the &amp;ldquo;public&amp;rdquo; directory (which is a submodule pointing to &lt;code&gt;username.github.io&lt;/code&gt; repo on GitHub). And having the &lt;code&gt;public&lt;/code&gt; directory as part of the &lt;code&gt;.gitignore&lt;/code&gt; will exclude it from pushing its contents to the &amp;ldquo;blog&amp;rdquo; directory which is supposed to only contain the source files.&lt;/p&gt;
+&lt;p&gt;However, this was not happening. I tried reconfiguring the submodules, changing my .gitignore file and doing several other things, but what was generated by Hugo in the &lt;code&gt;public&lt;/code&gt; directory never got pushed to the remote repo; which means, my site never got updated even though I was updated the source files and things were working fine when I ran it on &lt;code&gt;localhost&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The way I solved this is by cloning the &lt;code&gt;username.github.io&lt;/code&gt; repo to &lt;em&gt;outside&lt;/em&gt; the &amp;ldquo;blog&amp;rdquo; directory. Then changing the script &lt;code&gt;deploy.sh&lt;/code&gt; mentioned &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages&#34;&gt;in the documentation&lt;/a&gt; to copy all the files from &lt;code&gt;public&lt;/code&gt; directory into the cloned directory, then committing and pushing the changes. The &lt;code&gt;public&lt;/code&gt; directory now doesn&amp;rsquo;t point to anything in the remote. Though this is slightly round about, it does the job and fixed my issue. It&amp;rsquo;s also a one time setup and I don&amp;rsquo;t have to touch it again.&lt;/p&gt;
+&lt;p&gt;All I do when I create a new post is, do a &lt;code&gt;git add&lt;/code&gt; and a &lt;code&gt;git commit&lt;/code&gt;. Then run &lt;code&gt;deploy.sh&lt;/code&gt; to copy the generated files to the right repository (&lt;code&gt;username.github.io&lt;/code&gt;) and then do a &lt;code&gt;git push&lt;/code&gt; on the &amp;ldquo;blog&amp;rdquo; directory to push the source files.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -164,7 +399,8 @@ https://maggieappleton.com/basb</description>
       <pubDate>Wed, 01 Jul 2020 22:55:45 -0700</pubDate>
       
       <guid>/micro/lights-and-shadows/</guid>
-      <description>Lights and Shadows: https://ciechanow.ski/lights-and-shadows</description>
+      <description>&lt;p&gt;Lights and Shadows: &lt;a href=&#34;https://ciechanow.ski/lights-and-shadows&#34;&gt;https://ciechanow.ski/lights-and-shadows&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -173,7 +409,53 @@ https://maggieappleton.com/basb</description>
       <pubDate>Mon, 29 Jun 2020 22:32:42 -0700</pubDate>
       
       <guid>/posts/my-hugo-setup/</guid>
-      <description>I recently moved my blog to Hugo and wrote a brief post about it. This post explains how I selected a theme and how I made the modifications I needed.</description>
+      <description>&lt;p&gt;I recently moved my blog to Hugo and &lt;a href=&#34;https://rrajath.com/posts/moving-to-hugo/&#34;&gt;wrote a brief post about it&lt;/a&gt;. This post explains how I selected a theme and how I made the modifications I needed.&lt;/p&gt;
+&lt;p&gt;I needed a minimal theme for my blog and after searching a bit, I found &lt;a href=&#34;https://themes.gohugo.io/ezhil/&#34;&gt;ezhil&lt;/a&gt;. This checked most of my boxes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;looks simple and minimal&lt;/li&gt;
+&lt;li&gt;configurable&lt;/li&gt;
+&lt;li&gt;feather icons for my socials&lt;/li&gt;
+&lt;li&gt;light/dark theme switch (nice to have)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I tried it out on my blog and it looked good. The nice thing about the light/dark theme switch is that when set to &amp;ldquo;auto&amp;rdquo; it depends on the device&amp;rsquo;s light or dark theme. For example, if the phone uses dark mode, the blog also uses dark mode.&lt;/p&gt;
+&lt;h2 id=&#34;custom-changes-to-my-theme&#34;&gt;Custom changes to my theme&lt;/h2&gt;
+&lt;p&gt;Although I liked the theme and it fit most of my needs, I had to make some changes to get tailored to my taste.&lt;/p&gt;
+&lt;h3 id=&#34;post-links-and-summaries-on-home-page&#34;&gt;Post links and summaries on home page&lt;/h3&gt;
+&lt;p&gt;The recent posts section (on the home page) was of the format:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&amp;lt;post_title&amp;gt; -- &amp;lt;summary&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This felt a little cluttered for two reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Both the title and the summary were on the same line next to each other&lt;/li&gt;
+&lt;li&gt;Title and summary were of the same font size&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I wanted the title to be a little bigger and have its own line, so I made the following changes to &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/index.html#L20-L29&#34;&gt;themes/ezhil/layouts/index.html&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;title u-url&amp;#34;&lt;/span&gt; href&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;{{ .RelPermalink }}&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;font&lt;/span&gt; size&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;+2&amp;#34;&lt;/span&gt;&amp;gt;{{.Title}}&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;font&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt;&amp;gt;
+		&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt;&amp;gt;
+		    &amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;span&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt;&amp;gt;
+		        {{ if isset .Params &amp;#34;description&amp;#34; }}
+            {{ .Description }}
+            {{ else }}
+            {{ .Summary }}&lt;span style=&#34;color:#cb4b16&#34;&gt;&amp;amp;hellip;&lt;/span&gt;
+            {{ end }}
+        &amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;span&lt;/span&gt;&amp;gt;
+    &amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Basically, add &lt;code&gt;&amp;lt;font size=&amp;quot;+2&amp;quot;&amp;gt;&lt;/code&gt; and put the &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; inside a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;added-reading-time&#34;&gt;Added reading time&lt;/h3&gt;
+&lt;p&gt;I remember Jekyll didn&amp;rsquo;t have a straight-forward way to add reading time to posts. Hugo gives this out of the box. I like having it for blog posts just to set the expectation of how long it takes to read the blog post before you dive into it. It can be vaguely estimated by just eye-balling or scrolling. But it&amp;rsquo;s nice to have reading time displayed at the top of the post.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/_default/single.html#L11&#34;&gt;themes/ezhil/layouts/_default/single.html&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;| {{ .ReadingTime }} min read
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Added the above text next to the publish date. I also added permalink to the publish date.&lt;/p&gt;
+&lt;h3 id=&#34;added-a-page-for-micro-posts&#34;&gt;Added a page for Micro Posts&lt;/h3&gt;
+&lt;p&gt;Blog posts are more formal and kinda long-form content which has a specific theme or intent behind them. I wanted to have a separate page for short thoughts (one or few lines) that don&amp;rsquo;t warrant for a full blog post. This can include things like sharing an image, a link, or just some quick thoughts. So, I added a page called &lt;a href=&#34;https://rrajath.com/micro/&#34;&gt;Micro&lt;/a&gt; and created my own template that is based off of  the standard list page, but a little different.&lt;/p&gt;
+&lt;p&gt;Take a look at &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/micro/list.html&#34;&gt;/themes/ezhil/layouts/micro/list.html&lt;/a&gt; to understand the customization.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I&amp;rsquo;ve removed the heading of the post for since I want this to be like a twitter feed.&lt;/li&gt;
+&lt;li&gt;Added a Permalink that takes you to the post page, in case one needs to link to the exact micro post.&lt;/li&gt;
+&lt;li&gt;Added horizontal lines to separate out each micro post&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;added-a-now-page&#34;&gt;Added a Now page&lt;/h3&gt;
+&lt;p&gt;This page captures what I&amp;rsquo;m doing right now. This includes a variety of tasks/activities/projects that I&amp;rsquo;m doing at the moment to give a sense of what I&amp;rsquo;m up to. This is &lt;a href=&#34;https://sivers.org/nowff&#34;&gt;inspired by Derek Sivers&lt;/a&gt;. The &lt;a href=&#34;https://rrajath.com/now/&#34;&gt;Now page&lt;/a&gt; layout is similar to the blog post page, &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/now/single.html&#34;&gt;except few changes&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -182,7 +464,12 @@ https://maggieappleton.com/basb</description>
       <pubDate>Thu, 25 Jun 2020 17:43:30 -0700</pubDate>
       
       <guid>/posts/moving-to-hugo/</guid>
-      <description>I&amp;rsquo;ve used Jekyll as a static site generator ever since I created this blog, which was in 2013. Before that, I had tried few other blogging platforms.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve used &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; as a static site generator ever since I created this blog, which was in 2013. Before that, I had &lt;a href=&#34;https://rrajath.com/posts/weekly-noise-1&#34;&gt;tried few other blogging platforms&lt;/a&gt;. Over the past few years when I irregularly updated my blog, I faced some friction with Jekyll. Every time I tried to make a new post and push to GitHub, Jekyll would complain about something that&amp;rsquo;s either deprecated or broken. And, I had to go fix that first and then make a blog post and push it. That was a minor annoyance mostly due to the fact that I hardly touched my blog and things got outdated. But what annoyed me more than anything is the slowness of Jekyll to build the site and start the server. It was taking a good 10 seconds for it to build the entire site (which consisted of less than 30 files) and serve it on localhost.&lt;/p&gt;
+&lt;p&gt;On the other hand, in the last few months I have been tinkering with few Raspberry Pis and started self-hosting few things. I&amp;rsquo;m not done self-hosting everything I wanted, so there will be more playing around and more learnings that come out of it. This gives me a good opportunity to write about what I learned during the process so that people (including myself) can benefit from it.&lt;/p&gt;
+&lt;p&gt;And finally, I recently stumbled upon the &lt;a href=&#34;https://indieweb.org/&#34;&gt;IndieWeb movement&lt;/a&gt; when I was checking out few &lt;a href=&#34;https://indieweb.social/about&#34;&gt;Mastodon instances&lt;/a&gt; and I got super intrigued about it. There was &lt;a href=&#34;https://indieweb.org/Hugo&#34;&gt;good enough support for Hugo&lt;/a&gt; in the IndieWeb community. More details about what got me into IndieWeb movement in an other post. I&amp;rsquo;ll also probably create a separate post about how I added IndieWeb support to my blog.&lt;/p&gt;
+&lt;p&gt;So, I decided to switch the static site generator to something better. I looked around, tried a few and finally settled on &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; for two main reasons - it&amp;rsquo;s fast and it has good community support.&lt;/p&gt;
+&lt;p&gt;Since the switch, I&amp;rsquo;ve tweaked the theme to suit my needs, and added few specific pages that I think are important. Let&amp;rsquo;s see where this takes me.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -191,8 +478,38 @@ https://maggieappleton.com/basb</description>
       <pubDate>Wed, 24 Jun 2020 22:54:37 -0700</pubDate>
       
       <guid>/now-archive/</guid>
-      <description>This page contains everything that was moved from the Now page
-May 30, 2021  Finished reading The Great Mental Models Vol.</description>
+      <description>&lt;p&gt;This page contains everything that was moved from the &lt;a href=&#34;https://rrajath.com/now/&#34;&gt;Now page&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;may-30-2021&#34;&gt;May 30, 2021&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Finished reading The Great Mental Models Vol. 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;jan-9-2021&#34;&gt;Jan 9, 2021&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding more blog posts&lt;/li&gt;
+&lt;li&gt;Configured some YASnippets on my Emacs&lt;/li&gt;
+&lt;li&gt;Added a bunch of dotfiles as literate configs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;oct-18-2020&#34;&gt;Oct 18, 2020&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Setting up a sustainable sync for my org files on my phone and laptop (since Orgzly is a bit of a pain when it comes to this)&lt;/li&gt;
+&lt;li&gt;Learning Emacs and org-mode. Loving it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;aug-29-2020&#34;&gt;Aug 29, 2020&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://acesounderglass.com/2020/06/10/what-to-write-down-when-youre-reading-to-learn/&#34;&gt;What to write down when you&amp;rsquo;re reading to learn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;jul-25-2020&#34;&gt;Jul 25, 2020&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://maggieappleton.com/basb/&#34;&gt;Building a second brain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Self-hosting my data using Nextcloud on my Raspberry Pi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;jun-24-2020&#34;&gt;Jun 24, 2020&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Moved my blog from Jekyll to Hugo and now customizing some templates&lt;/li&gt;
+&lt;li&gt;Indieweb integration&lt;/li&gt;
+&lt;li&gt;Self-hosting my data using Nextcloud on my Raspberry Pi&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

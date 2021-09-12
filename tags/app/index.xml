@@ -14,7 +14,52 @@
       <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>/posts/taskr/</guid>
-      <description>I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design.</description>
+      <description>&lt;p&gt;I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design. I was inspired by Material Design since it was launched, but never had the time to implement it in my hobby projects. Now I am trying to take baby steps every day and work on creating Android apps that mostly stick to the new Material Design.&lt;/p&gt;
+&lt;p&gt;I came up with the name Taskr because I couldn&amp;rsquo;t come up with anything better. I did think about many names but since this isn&amp;rsquo;t going anywhere near Play Store, I just stuck to the most unimaginative name possible. Yes, this is probably the simplest task management app that you can find. It&amp;rsquo;s so simple that all you can do is add/edit a task name and description, mark tasks as done and delete completed tasks. To make it a little more usable, I used SQLite database to persist data entered by
+the user.&lt;/p&gt;
+&lt;p&gt;This application uses no fragments, but just a couple of activities. Here&amp;rsquo;s how I designed the application.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;code&gt;TaskItem&lt;/code&gt; data class that holds information about each task and is used to translate cursor objects.&lt;/li&gt;
+&lt;li&gt;ArrayAdapter that spews out tasks from the TaskItem list.&lt;/li&gt;
+&lt;li&gt;A &lt;code&gt;DatabaseHelper&lt;/code&gt; class that is used to save the task items in an SQLite database.&lt;/li&gt;
+&lt;li&gt;A main list activity to display the list with a floating action button and an activity dialog to add/edit a task&lt;/li&gt;
+&lt;li&gt;A menu that has an option to clean up completed tasks.&lt;/li&gt;
+&lt;li&gt;A util class that is used to calculate time elapsed since the task was created and display appropriately.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To make things simpler, I have used couple of libraries.&lt;/p&gt;
+&lt;h3 id=&#34;lombok&#34;&gt;Lombok&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://projectlombok.org/&#34;&gt;Lombok&lt;/a&gt; helps you skip writing getters and setters for data objects by adding the &lt;code&gt;@Data&lt;/code&gt; annotation. This helps in keeping the code short, clean and readable. So the class would look something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;    &lt;span style=&#34;color:#268bd2&#34;&gt;@Data&lt;/span&gt;
+    &lt;span style=&#34;color:#268bd2&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;TaskItem&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#dc322f&#34;&gt;int&lt;/span&gt; id&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; String taskName&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; String taskDescription&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#dc322f&#34;&gt;long&lt;/span&gt; creationTime&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#dc322f&#34;&gt;boolean&lt;/span&gt; isTaskComplete&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#719e07&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This looks much cleaner than a class that is cluttered with getters and setters.&lt;/p&gt;
+&lt;h3 id=&#34;butterknife&#34;&gt;Butterknife&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://jakewharton.github.io/butterknife/&#34;&gt;Butterknife&lt;/a&gt; is another library that helps you inject views more easily with annotations. Adding the @InjectView annotation will automatically cast the corresponding view in your layout. So you no longer have to write things like&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;View view &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; inflater&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;inflate&lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;layout&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;layout_main&lt;span style=&#34;color:#719e07&#34;&gt;,&lt;/span&gt; container&lt;span style=&#34;color:#719e07&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;false&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;);&lt;/span&gt;
+etTaskName &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;EditText&lt;span style=&#34;color:#719e07&#34;&gt;)&lt;/span&gt; view&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;findViewById&lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;task_name_edit_text&lt;span style=&#34;color:#719e07&#34;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You instead write:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;@InjectView&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;task_name_edit_text&lt;span style=&#34;color:#719e07&#34;&gt;)&lt;/span&gt;
+EditText etTaskName&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;There are many more things that these libraries offer and I plan to use it in every Android project of mine.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problems I faced&lt;/strong&gt;:&lt;br&gt;
+I was finding it hard to keep the list up to date. Since I had my tasks in a List and I was using an instance of ArrayAdapter. It was hard to keep track of what was added to the list and what was deleted whenever the user interacted with the list. The main issue was when going from one activity to another and returning back to the main activity. Passing around intents with parcelable/serializable was a pain for a small app like this. And hitting database so often is not a great design.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution I used&lt;/strong&gt;:&lt;br&gt;
+I used a singleton to have a single copy of the task list which will be available to all activities in the app. So any add/update/remove operations performed on this list anywhere in the app will be reflected and is readily available (so the list will have the latest information), though in background I was writing the tasks to database. This mainly helped me avoid passing around intents back and forth.&lt;/p&gt;
+&lt;p&gt;It took me a few days to get this simple app done due to hectic work schedules. I guess I will get back to working on it and add some minor enhancements.&lt;/p&gt;
+&lt;h3 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h3&gt;
+&lt;p&gt;Here are some screenshots of my app:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/taskr_task_list.png&#34; alt=&#34;&#34;&gt;
+ 
+&lt;img src=&#34;/images/taskr_new_task.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The white background of the app blends into the white background of the page :(&lt;br&gt;
+I&amp;rsquo;ll have to change the theme sometime.&lt;/p&gt;
+&lt;p&gt;The project can be found on my GitHub page: &lt;a href=&#34;https://github.com/rrajath/taskr&#34;&gt;taskr&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>
