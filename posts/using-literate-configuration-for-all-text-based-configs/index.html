@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="me" href="https://github.com/rrajath">
+    <link rel="me" href="https://linkedin.com/in/rrajath">
+    <link rel="webmention" href="https://webmention.io/rrajath.com/webmention" />
+    <link rel="pingback" href="https://webmention.io/rrajath.com/xmlrpc" />
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+    <link rel="microsub" href="https://aperture.p3k.io/microsub/532" />
+    <link rel="micropub" href="https://blotpub-rrajath.herokuapp.com/micropub" />
+    <link rel="me" href="https://micro.blog/rrajath" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Using literate configuration for all text-based configs - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/rrajath_favicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Using literate configuration for all text-based configs" />
+<meta property="og:description" content="Has it ever happened to you that you look at your config (vim, tmux, whatever) after a while and see an obscure piece of code there that you have no recollection adding and what it&rsquo;s even doing?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/using-literate-configuration-for-all-text-based-configs/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-17T21:22:00-07:00" />
+<meta property="article:modified_time" content="2021-09-17T21:22:16-07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Using literate configuration for all text-based configs"/>
+<meta name="twitter:description" content="Has it ever happened to you that you look at your config (vim, tmux, whatever) after a while and see an obscure piece of code there that you have no recollection adding and what it&rsquo;s even doing?"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><link rel="stylesheet" type="text/css" href="/css/dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+
+<body>
+    <article class="h-entry">
+	<div class="container wrapper post e-content p-name">
+		<div class="header">
+	<base href="/">
+	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
+	<div class="site-description"><h2>random ramblings</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/rrajath" title="Github"><i data-feather="github"></i></a><a href="https://linkedin.com/in/rrajath" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/micro">Micro</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/now">Now</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Using literate configuration for all text-based configs</h1>
+            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="/posts/using-literate-configuration-for-all-text-based-configs/"><time class="dt-published">Sep 17, 2021</time></a>  | 4 min read</div> 
+		</div>
+
+		<div class="markdown">
+			
+			<p>Has it ever happened to you that you look at your config (vim, tmux, whatever) after a while and see an obscure piece of code there that you have no recollection adding and what it&rsquo;s even doing? This has happened to me so many times. So, what can we do about it? Add comments while adding new pieces of config? Couple of lines of comments are fine, but if you need more explanation than that, it just gets cluttered. If you want to add links, they are not clickable, unless you have an editor or terminal that can handle text links and make them clickable.</p>
+<p>So what can we do? What we <em>can</em> do is change that config to a literate configuration.</p>
+<h2 id="what-is-literate-configuration">What is Literate Configuration</h2>
+<p>Literate Configuration comes from the <a href="https://en.wikipedia.org/wiki/Literate%5Fprogramming">literate programming paradigm</a>. Simple put, you write your config like documentation where you&rsquo;d have code blocks interspersed within your config. You run a simple command to &ldquo;tangle&rdquo; these documentation-like files and the code blocks in them get evaluated and then written to a separate file (like an actual config file). And, tangling is a process of extracting source blocks in an org file into the location specified at the top of the org file or in the source block itself.</p>
+<p>Once you follow this, you will never touch the actual config. You basically write documentation for each part of your config and let it generate your config file with your code in it. Your application understands the file your literate config generates and you understand the file you write since it&rsquo;s well-documented.</p>
+<h2 id="so-why-literate-configuration-anyway">So, why literate configuration anyway?</h2>
+<p>Changing your configs to make them look like documentation sounds like a lot of work. But, there are many benefits to using a literate configuration:</p>
+<ul>
+<li><strong>Easy to understand</strong>. Thanks to the documentation surrounding the code snippets</li>
+<li><strong>Easy to share</strong>. People you share this with need no explanation as to what&rsquo;s in your config, your documentation takes care of that</li>
+<li><strong>Easy to maintain</strong>. You never touch the actual config, you only update this .org file and make it generate the actual source file</li>
+<li><strong>Easy to publish</strong>. If you want to publish your config online, it&rsquo;s super easy. GitHub, for example, natively supports org the same way it supports Markdown. So, these org files are rendered nicely, just as regular documentation.</li>
+</ul>
+<p>One of the issues I used to have with maintaining multiple dotfiles for my applications is that they&rsquo;re all in different places. If I have to check them all into a git repo, I&rsquo;d either have all of them in one location and create symlinks to them in the apps that use them, or use a program like <a href="https://www.gnu.org/software/stow">GNU Stow</a>.</p>
+<p>I didn&rsquo;t like either of these methods. Literate configuration solves this in the most elegant way. All you have to do is have your literate configs (org files) in a git repo (used for dotfiles) and set the tangle locations in each of these files to where each of the apps needs them. Once that is done, your dotfiles will only contain org files and all your apps will contain the config files they need.</p>
+<h2 id="how-to-build-a-literate-config">How to build a literate config?</h2>
+<p>Building a literate configuration needs just one prerequisite - Emacs, because we need a way to &ldquo;tangle&rdquo; the source blocks in the org files. Since Emacs ships with org mode and org babel, tangling is just a keybinding away. We only need two things in order to create a literate configuration: a source block and a tangle attribute. Here&rsquo;s an example to show how that&rsquo;s done.</p>
+<h3 id="example">Example</h3>
+<p>Enabling tangle in an org file can be done by specifying a tangle location at the top as part of the <code>#+PROPERTY</code> attribute, like this:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#+PROPERTY: header-args :tangle /path/to/file-name.extension
+</code></pre></div><p>Here&rsquo;s what a code block looks like in an org file.</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#+begin_src emacs-lisp
+  (setq foo &#34;bar&#34;)
+#+end_src
+</code></pre></div><p>You can write your documentation around these code blocks and hitting <code>C-c C-v t</code> (or invoking the function <code>org-babel-tangle</code>) at the top of your file would tangle them to the file specified in the <code>#+PROPERTY</code> attribute of your org file.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Using literate configuration for config files is great and I converted almost all my configs to literate configs. For reference, have a look at my <a href="https://github.com/rrajath/dotfiles/blob/master/.emacs.d/PrivateConfig.org">literate configuration for my Emacs setup</a>. Look at the source blocks to see actual configs. Use the &ldquo;Raw&rdquo; button on github notice line 2 where it says <code>:tangle ./private-config.el</code></p>
+
+			
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		</div>
+    </article>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script><p class="h-card vcard" style="display:none;">
+    <a style="text-decoration: none" href="https://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+    Rajath Ramakrishna</a>
+    <a rel="author">Rajath Ramakrishna</a>
+    <a class="p-nickname" rel="me">Rajath</a>
+    <a class="u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+    r.rajath@pm.me
+    </a>
+    <img class="u-photo" src="images/micro-post-photo.png" alt="" />
+</p>
+
+</body>
+</html>

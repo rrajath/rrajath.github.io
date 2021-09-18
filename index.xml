@@ -7,7 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 11 Sep 2021 21:48:00 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Sep 2021 21:22:00 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using literate configuration for all text-based configs</title>
+      <link>/posts/using-literate-configuration-for-all-text-based-configs/</link>
+      <pubDate>Fri, 17 Sep 2021 21:22:00 -0700</pubDate>
+      
+      <guid>/posts/using-literate-configuration-for-all-text-based-configs/</guid>
+      <description>&lt;p&gt;Has it ever happened to you that you look at your config (vim, tmux, whatever) after a while and see an obscure piece of code there that you have no recollection adding and what it&amp;rsquo;s even doing? This has happened to me so many times. So, what can we do about it? Add comments while adding new pieces of config? Couple of lines of comments are fine, but if you need more explanation than that, it just gets cluttered. If you want to add links, they are not clickable, unless you have an editor or terminal that can handle text links and make them clickable.&lt;/p&gt;
+&lt;p&gt;So what can we do? What we &lt;em&gt;can&lt;/em&gt; do is change that config to a literate configuration.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-literate-configuration&#34;&gt;What is Literate Configuration&lt;/h2&gt;
+&lt;p&gt;Literate Configuration comes from the &lt;a href=&#34;https://en.wikipedia.org/wiki/Literate%5Fprogramming&#34;&gt;literate programming paradigm&lt;/a&gt;. Simple put, you write your config like documentation where you&amp;rsquo;d have code blocks interspersed within your config. You run a simple command to &amp;ldquo;tangle&amp;rdquo; these documentation-like files and the code blocks in them get evaluated and then written to a separate file (like an actual config file). And, tangling is a process of extracting source blocks in an org file into the location specified at the top of the org file or in the source block itself.&lt;/p&gt;
+&lt;p&gt;Once you follow this, you will never touch the actual config. You basically write documentation for each part of your config and let it generate your config file with your code in it. Your application understands the file your literate config generates and you understand the file you write since it&amp;rsquo;s well-documented.&lt;/p&gt;
+&lt;h2 id=&#34;so-why-literate-configuration-anyway&#34;&gt;So, why literate configuration anyway?&lt;/h2&gt;
+&lt;p&gt;Changing your configs to make them look like documentation sounds like a lot of work. But, there are many benefits to using a literate configuration:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Easy to understand&lt;/strong&gt;. Thanks to the documentation surrounding the code snippets&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Easy to share&lt;/strong&gt;. People you share this with need no explanation as to what&amp;rsquo;s in your config, your documentation takes care of that&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Easy to maintain&lt;/strong&gt;. You never touch the actual config, you only update this .org file and make it generate the actual source file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Easy to publish&lt;/strong&gt;. If you want to publish your config online, it&amp;rsquo;s super easy. GitHub, for example, natively supports org the same way it supports Markdown. So, these org files are rendered nicely, just as regular documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One of the issues I used to have with maintaining multiple dotfiles for my applications is that they&amp;rsquo;re all in different places. If I have to check them all into a git repo, I&amp;rsquo;d either have all of them in one location and create symlinks to them in the apps that use them, or use a program like &lt;a href=&#34;https://www.gnu.org/software/stow&#34;&gt;GNU Stow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t like either of these methods. Literate configuration solves this in the most elegant way. All you have to do is have your literate configs (org files) in a git repo (used for dotfiles) and set the tangle locations in each of these files to where each of the apps needs them. Once that is done, your dotfiles will only contain org files and all your apps will contain the config files they need.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-build-a-literate-config&#34;&gt;How to build a literate config?&lt;/h2&gt;
+&lt;p&gt;Building a literate configuration needs just one prerequisite - Emacs, because we need a way to &amp;ldquo;tangle&amp;rdquo; the source blocks in the org files. Since Emacs ships with org mode and org babel, tangling is just a keybinding away. We only need two things in order to create a literate configuration: a source block and a tangle attribute. Here&amp;rsquo;s an example to show how that&amp;rsquo;s done.&lt;/p&gt;
+&lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
+&lt;p&gt;Enabling tangle in an org file can be done by specifying a tangle location at the top as part of the &lt;code&gt;#+PROPERTY&lt;/code&gt; attribute, like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;#+PROPERTY: header-args :tangle /path/to/file-name.extension
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here&amp;rsquo;s what a code block looks like in an org file.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;#+begin_src emacs-lisp
+  (setq foo &amp;#34;bar&amp;#34;)
+#+end_src
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can write your documentation around these code blocks and hitting &lt;code&gt;C-c C-v t&lt;/code&gt; (or invoking the function &lt;code&gt;org-babel-tangle&lt;/code&gt;) at the top of your file would tangle them to the file specified in the &lt;code&gt;#+PROPERTY&lt;/code&gt; attribute of your org file.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Using literate configuration for config files is great and I converted almost all my configs to literate configs. For reference, have a look at my &lt;a href=&#34;https://github.com/rrajath/dotfiles/blob/master/.emacs.d/PrivateConfig.org&#34;&gt;literate configuration for my Emacs setup&lt;/a&gt;. Look at the source blocks to see actual configs. Use the &amp;ldquo;Raw&amp;rdquo; button on github notice line 2 where it says &lt;code&gt;:tangle ./private-config.el&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>My experience with Emacs so far</title>
       <link>/posts/my-experience-with-emacs-so-far/</link>
@@ -469,46 +505,6 @@ tags:
 &lt;p&gt;And finally, I recently stumbled upon the &lt;a href=&#34;https://indieweb.org/&#34;&gt;IndieWeb movement&lt;/a&gt; when I was checking out few &lt;a href=&#34;https://indieweb.social/about&#34;&gt;Mastodon instances&lt;/a&gt; and I got super intrigued about it. There was &lt;a href=&#34;https://indieweb.org/Hugo&#34;&gt;good enough support for Hugo&lt;/a&gt; in the IndieWeb community. More details about what got me into IndieWeb movement in an other post. I&amp;rsquo;ll also probably create a separate post about how I added IndieWeb support to my blog.&lt;/p&gt;
 &lt;p&gt;So, I decided to switch the static site generator to something better. I looked around, tried a few and finally settled on &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; for two main reasons - it&amp;rsquo;s fast and it has good community support.&lt;/p&gt;
 &lt;p&gt;Since the switch, I&amp;rsquo;ve tweaked the theme to suit my needs, and added few specific pages that I think are important. Let&amp;rsquo;s see where this takes me.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Now Archive</title>
-      <link>/now-archive/</link>
-      <pubDate>Wed, 24 Jun 2020 22:54:37 -0700</pubDate>
-      
-      <guid>/now-archive/</guid>
-      <description>&lt;p&gt;This page contains everything that was moved from the &lt;a href=&#34;https://rrajath.com/now/&#34;&gt;Now page&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;may-30-2021&#34;&gt;May 30, 2021&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Finished reading The Great Mental Models Vol. 1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;jan-9-2021&#34;&gt;Jan 9, 2021&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Adding more blog posts&lt;/li&gt;
-&lt;li&gt;Configured some YASnippets on my Emacs&lt;/li&gt;
-&lt;li&gt;Added a bunch of dotfiles as literate configs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;oct-18-2020&#34;&gt;Oct 18, 2020&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Setting up a sustainable sync for my org files on my phone and laptop (since Orgzly is a bit of a pain when it comes to this)&lt;/li&gt;
-&lt;li&gt;Learning Emacs and org-mode. Loving it&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;aug-29-2020&#34;&gt;Aug 29, 2020&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://acesounderglass.com/2020/06/10/what-to-write-down-when-youre-reading-to-learn/&#34;&gt;What to write down when you&amp;rsquo;re reading to learn&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;jul-25-2020&#34;&gt;Jul 25, 2020&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://maggieappleton.com/basb/&#34;&gt;Building a second brain&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Self-hosting my data using Nextcloud on my Raspberry Pi&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;jun-24-2020&#34;&gt;Jun 24, 2020&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Moved my blog from Jekyll to Hugo and now customizing some templates&lt;/li&gt;
-&lt;li&gt;Indieweb integration&lt;/li&gt;
-&lt;li&gt;Self-hosting my data using Nextcloud on my Raspberry Pi&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
