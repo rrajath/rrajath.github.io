@@ -7,7 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 11 Sep 2021 21:48:00 -0700</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Sep 2021 21:22:00 -0700</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using literate configuration for all text-based configs</title>
+      <link>/posts/using-literate-configuration-for-all-text-based-configs/</link>
+      <pubDate>Fri, 17 Sep 2021 21:22:00 -0700</pubDate>
+      
+      <guid>/posts/using-literate-configuration-for-all-text-based-configs/</guid>
+      <description>&lt;p&gt;Has it ever happened to you that you look at your config (vim, tmux, whatever) after a while and see an obscure piece of code there that you have no recollection adding and what it&amp;rsquo;s even doing? This has happened to me so many times. So, what can we do about it? Add comments while adding new pieces of config? Couple of lines of comments are fine, but if you need more explanation than that, it just gets cluttered. If you want to add links, they are not clickable, unless you have an editor or terminal that can handle text links and make them clickable.&lt;/p&gt;
+&lt;p&gt;So what can we do? What we &lt;em&gt;can&lt;/em&gt; do is change that config to a literate configuration.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-literate-configuration&#34;&gt;What is Literate Configuration&lt;/h2&gt;
+&lt;p&gt;Literate Configuration comes from the &lt;a href=&#34;https://en.wikipedia.org/wiki/Literate%5Fprogramming&#34;&gt;literate programming paradigm&lt;/a&gt;. Simple put, you write your config like documentation where you&amp;rsquo;d have code blocks interspersed within your config. You run a simple command to &amp;ldquo;tangle&amp;rdquo; these documentation-like files and the code blocks in them get evaluated and then written to a separate file (like an actual config file). And, tangling is a process of extracting source blocks in an org file into the location specified at the top of the org file or in the source block itself.&lt;/p&gt;
+&lt;p&gt;Once you follow this, you will never touch the actual config. You basically write documentation for each part of your config and let it generate your config file with your code in it. Your application understands the file your literate config generates and you understand the file you write since it&amp;rsquo;s well-documented.&lt;/p&gt;
+&lt;h2 id=&#34;so-why-literate-configuration-anyway&#34;&gt;So, why literate configuration anyway?&lt;/h2&gt;
+&lt;p&gt;Changing your configs to make them look like documentation sounds like a lot of work. But, there are many benefits to using a literate configuration:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Easy to understand&lt;/strong&gt;. Thanks to the documentation surrounding the code snippets&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Easy to share&lt;/strong&gt;. People you share this with need no explanation as to what&amp;rsquo;s in your config, your documentation takes care of that&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Easy to maintain&lt;/strong&gt;. You never touch the actual config, you only update this .org file and make it generate the actual source file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Easy to publish&lt;/strong&gt;. If you want to publish your config online, it&amp;rsquo;s super easy. GitHub, for example, natively supports org the same way it supports Markdown. So, these org files are rendered nicely, just as regular documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One of the issues I used to have with maintaining multiple dotfiles for my applications is that they&amp;rsquo;re all in different places. If I have to check them all into a git repo, I&amp;rsquo;d either have all of them in one location and create symlinks to them in the apps that use them, or use a program like &lt;a href=&#34;https://www.gnu.org/software/stow&#34;&gt;GNU Stow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t like either of these methods. Literate configuration solves this in the most elegant way. All you have to do is have your literate configs (org files) in a git repo (used for dotfiles) and set the tangle locations in each of these files to where each of the apps needs them. Once that is done, your dotfiles will only contain org files and all your apps will contain the config files they need.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-build-a-literate-config&#34;&gt;How to build a literate config?&lt;/h2&gt;
+&lt;p&gt;Building a literate configuration needs just one prerequisite - Emacs, because we need a way to &amp;ldquo;tangle&amp;rdquo; the source blocks in the org files. Since Emacs ships with org mode and org babel, tangling is just a keybinding away. We only need two things in order to create a literate configuration: a source block and a tangle attribute. Here&amp;rsquo;s an example to show how that&amp;rsquo;s done.&lt;/p&gt;
+&lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
+&lt;p&gt;Enabling tangle in an org file can be done by specifying a tangle location at the top as part of the &lt;code&gt;#+PROPERTY&lt;/code&gt; attribute, like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;#+PROPERTY: header-args :tangle /path/to/file-name.extension
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here&amp;rsquo;s what a code block looks like in an org file.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;#+begin_src emacs-lisp
+  (setq foo &amp;#34;bar&amp;#34;)
+#+end_src
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can write your documentation around these code blocks and hitting &lt;code&gt;C-c C-v t&lt;/code&gt; (or invoking the function &lt;code&gt;org-babel-tangle&lt;/code&gt;) at the top of your file would tangle them to the file specified in the &lt;code&gt;#+PROPERTY&lt;/code&gt; attribute of your org file.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Using literate configuration for config files is great and I converted almost all my configs to literate configs. For reference, have a look at my &lt;a href=&#34;https://github.com/rrajath/dotfiles/blob/master/.emacs.d/PrivateConfig.org&#34;&gt;literate configuration for my Emacs setup&lt;/a&gt;. Look at the source blocks to see actual configs. Use the &amp;ldquo;Raw&amp;rdquo; button on github notice line 2 where it says &lt;code&gt;:tangle ./private-config.el&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>My experience with Emacs so far</title>
       <link>/posts/my-experience-with-emacs-so-far/</link>
@@ -679,60 +715,6 @@ know exactly how far away you are from your goal and you can work towards it.&lt
       
       <guid>/posts/mac-users-must-swap-caps-lock-and-ctrl-keys/</guid>
       <description>&lt;p&gt;I tell this to everyone I meet who uses a MacBook. I mean, come on. People who are used to using a Windows keyboard put their pinky on the bottom left key of the keyboard to reach for the control key, and it&amp;rsquo;s easy to reach too since the Ctrl key is pretty wide. But geniuses at Apple decided to use that key as the function key thus making us twist our wrists more so that our pinky can reach the control key. It&amp;rsquo;s so damn uncomfortable to do that all the time. But thankfully, Mac OSX has the feature to switch modifier keys. You can basically make any modifier key (Ctrl, Shift, Alt, Caps Lock) to behave as any other modifier key. And we use Ctrl more than Caps Lock; mainly programmers. Moreover I&amp;rsquo;ve seen so many people holding Shift to type out phrases in caps where they could have used Caps Lock key once and comfortably typed out the phrase (without holding Shift the whole time). So to fix all this and type comfortably, just swap Caps Lock and Ctrl and live in peace.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Taskr - the simplest task management app</title>
-      <link>/posts/taskr/</link>
-      <pubDate>Wed, 07 Jan 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/taskr/</guid>
-      <description>&lt;p&gt;I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design. I was inspired by Material Design since it was launched, but never had the time to implement it in my hobby projects. Now I am trying to take baby steps every day and work on creating Android apps that mostly stick to the new Material Design.&lt;/p&gt;
-&lt;p&gt;I came up with the name Taskr because I couldn&amp;rsquo;t come up with anything better. I did think about many names but since this isn&amp;rsquo;t going anywhere near Play Store, I just stuck to the most unimaginative name possible. Yes, this is probably the simplest task management app that you can find. It&amp;rsquo;s so simple that all you can do is add/edit a task name and description, mark tasks as done and delete completed tasks. To make it a little more usable, I used SQLite database to persist data entered by
-the user.&lt;/p&gt;
-&lt;p&gt;This application uses no fragments, but just a couple of activities. Here&amp;rsquo;s how I designed the application.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A &lt;code&gt;TaskItem&lt;/code&gt; data class that holds information about each task and is used to translate cursor objects.&lt;/li&gt;
-&lt;li&gt;ArrayAdapter that spews out tasks from the TaskItem list.&lt;/li&gt;
-&lt;li&gt;A &lt;code&gt;DatabaseHelper&lt;/code&gt; class that is used to save the task items in an SQLite database.&lt;/li&gt;
-&lt;li&gt;A main list activity to display the list with a floating action button and an activity dialog to add/edit a task&lt;/li&gt;
-&lt;li&gt;A menu that has an option to clean up completed tasks.&lt;/li&gt;
-&lt;li&gt;A util class that is used to calculate time elapsed since the task was created and display appropriately.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To make things simpler, I have used couple of libraries.&lt;/p&gt;
-&lt;h3 id=&#34;lombok&#34;&gt;Lombok&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;http://projectlombok.org/&#34;&gt;Lombok&lt;/a&gt; helps you skip writing getters and setters for data objects by adding the &lt;code&gt;@Data&lt;/code&gt; annotation. This helps in keeping the code short, clean and readable. So the class would look something like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;    &lt;span style=&#34;color:#268bd2&#34;&gt;@Data&lt;/span&gt;
-    &lt;span style=&#34;color:#268bd2&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;TaskItem&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#dc322f&#34;&gt;int&lt;/span&gt; id&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
-        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; String taskName&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
-        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; String taskDescription&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
-        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#dc322f&#34;&gt;long&lt;/span&gt; creationTime&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
-        &lt;span style=&#34;color:#268bd2&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#dc322f&#34;&gt;boolean&lt;/span&gt; isTaskComplete&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color:#719e07&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This looks much cleaner than a class that is cluttered with getters and setters.&lt;/p&gt;
-&lt;h3 id=&#34;butterknife&#34;&gt;Butterknife&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://jakewharton.github.io/butterknife/&#34;&gt;Butterknife&lt;/a&gt; is another library that helps you inject views more easily with annotations. Adding the @InjectView annotation will automatically cast the corresponding view in your layout. So you no longer have to write things like&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;View view &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; inflater&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;inflate&lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;layout&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;layout_main&lt;span style=&#34;color:#719e07&#34;&gt;,&lt;/span&gt; container&lt;span style=&#34;color:#719e07&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;false&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;);&lt;/span&gt;
-etTaskName &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;EditText&lt;span style=&#34;color:#719e07&#34;&gt;)&lt;/span&gt; view&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;findViewById&lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;task_name_edit_text&lt;span style=&#34;color:#719e07&#34;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;You instead write:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;@InjectView&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;id&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;task_name_edit_text&lt;span style=&#34;color:#719e07&#34;&gt;)&lt;/span&gt;
-EditText etTaskName&lt;span style=&#34;color:#719e07&#34;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;There are many more things that these libraries offer and I plan to use it in every Android project of mine.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problems I faced&lt;/strong&gt;:&lt;br&gt;
-I was finding it hard to keep the list up to date. Since I had my tasks in a List and I was using an instance of ArrayAdapter. It was hard to keep track of what was added to the list and what was deleted whenever the user interacted with the list. The main issue was when going from one activity to another and returning back to the main activity. Passing around intents with parcelable/serializable was a pain for a small app like this. And hitting database so often is not a great design.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Solution I used&lt;/strong&gt;:&lt;br&gt;
-I used a singleton to have a single copy of the task list which will be available to all activities in the app. So any add/update/remove operations performed on this list anywhere in the app will be reflected and is readily available (so the list will have the latest information), though in background I was writing the tasks to database. This mainly helped me avoid passing around intents back and forth.&lt;/p&gt;
-&lt;p&gt;It took me a few days to get this simple app done due to hectic work schedules. I guess I will get back to working on it and add some minor enhancements.&lt;/p&gt;
-&lt;h3 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h3&gt;
-&lt;p&gt;Here are some screenshots of my app:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/taskr_task_list.png&#34; alt=&#34;&#34;&gt;
- 
-&lt;img src=&#34;/images/taskr_new_task.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;The white background of the app blends into the white background of the page :(&lt;br&gt;
-I&amp;rsquo;ll have to change the theme sometime.&lt;/p&gt;
-&lt;p&gt;The project can be found on my GitHub page: &lt;a href=&#34;https://github.com/rrajath/taskr&#34;&gt;taskr&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
