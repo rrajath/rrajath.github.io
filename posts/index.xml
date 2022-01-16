@@ -7,7 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Fri, 17 Sep 2021 21:22:00 -0700</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jan 2022 11:32:00 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2021 - Year in Review</title>
+      <link>/posts/2021-year-in-review/</link>
+      <pubDate>Sun, 16 Jan 2022 11:32:00 -0800</pubDate>
+      
+      <guid>/posts/2021-year-in-review/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been doing this &amp;ldquo;Year in Review&amp;rdquo; for some time now and it helps me put things in perspective as to what I spent more time on, what I enjoyed, where I fell behind, etc. It&amp;rsquo;s a great exercise to do regularly and check in with yourself. So, here are the usual sections - what went well, what didn&amp;rsquo;t go well, side quests and lessons learned.&lt;/p&gt;
+&lt;h2 id=&#34;what-went-well&#34;&gt;What went well&lt;/h2&gt;
+&lt;h3 id=&#34;deleted-whatsapp&#34;&gt;Deleted WhatsApp&lt;/h3&gt;
+&lt;p&gt;This was another step in my journey of &amp;ldquo;caring more about privacy&amp;rdquo; and I also &lt;a href=&#34;./posts/whatsapp-privacy-policy-signal&#34;&gt;wrote a blog post about it&lt;/a&gt;. When WhatsApp introduced new terms and conditions to collect even more data than it already did, it motivated people to quit WhatsApp and move to Signal. I did too. I&amp;rsquo;m glad to not be part of all the groups with constant pings and I&amp;rsquo;m even more happy to be part of and in support of a product that actually cares about privacy.&lt;/p&gt;
+&lt;h3 id=&#34;home-automation&#34;&gt;Home Automation&lt;/h3&gt;
+&lt;p&gt;I bought a home in early 2021 and I wanted to change everything to my liking. The rented apartments I lived in wouldn&amp;rsquo;t let me change the switches or outlets (obviously) and owning a place gave me the freedom to turn my home into a smarthome. I used HomeAssistant as the hub with a USB stick that supports both ZWave and ZigBee protocols. I changed all the switches to smart switches that operate on ZWave, added a bunch of door sensors, motion sensors, time based automations, etc. Really enjoyed configuring and automating everything I could and I&amp;rsquo;m happy with the results.&lt;/p&gt;
+&lt;h3 id=&#34;journaling&#34;&gt;Journaling&lt;/h3&gt;
+&lt;p&gt;I took journaling more seriously in 2021. My initial approach to journaling was about building consistency. And to achieve consistency, I came up with process, structure and templates so that I could make it more &amp;ldquo;streamlined&amp;rdquo;. This led to journaling become a chore instead of an activity that needs to be performed mindfully. So, my journaling habit became more intentional and I was only doing it whenever I really wanted to write something down. This removed the stress of adding an entry every day. What I did force myself to do was to write weekly and monthly reviews which gave me good checkpoints on what went well, what didn&amp;rsquo;t go well and such.&lt;/p&gt;
+&lt;h3 id=&#34;built-my-own-emacs-config-from-scratch&#34;&gt;Built my own emacs config from scratch&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve been using Emacs for about 1.5 years now and for the first year I used Doom Emacs which gave me pretty much everything I wanted. I hardly added anything extra in my config. But after watching SystemCrafters videos, I decided to roll my own and that was an amazing experience. I learned so much about Emacs in 3 weeks than I did in more than a year. Though laziness is what prevented me initially to create my own config, I&amp;rsquo;m glad I did it. I now know exactly what my emacs does and where to look and what to tweak. Since I made this a literate configuration, the whole config is documented and I&amp;rsquo;ve uploaded it on GitHub. This also made me create literate config for other applications like zsh, vim, etc.&lt;/p&gt;
+&lt;h2 id=&#34;what-didn-t-go-well&#34;&gt;What didn&amp;rsquo;t go well&lt;/h2&gt;
+&lt;h3 id=&#34;health&#34;&gt;Health&lt;/h3&gt;
+&lt;p&gt;This includes both diet and fitness. I had pretty bad lower back issues, and I had to stop working out and get some physical therapy. That took a few months after which I started doing yoga which helped me immensely. I knew good posture and exercise were important, but I never realized how important they were until I had these issues.&lt;/p&gt;
+&lt;h3 id=&#34;making-notes&#34;&gt;Making Notes&lt;/h3&gt;
+&lt;p&gt;I used to make notes a lot when I consumed information via blog posts, podcasts, books or YouTube. I&amp;rsquo;ve been fiddling with Obsidian for a while now, but never got the time to create a workflow to take notes in an effective way. There were technological constraints like the app not being available on the phone initially and then not being easy enough to sync the notes, etc. This is something I want to think more about.&lt;/p&gt;
+&lt;h2 id=&#34;side-quests&#34;&gt;Side Quests&lt;/h2&gt;
+&lt;h3 id=&#34;picked-up-guitar--again&#34;&gt;Picked up guitar (again)&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve been playing guitar on and off for many years and I&amp;rsquo;ve only played acoustic guitar. I wanted to try an electric guitar and I finally got one. I&amp;rsquo;m really enjoying it, especially with the Spark Amp which I highly recommend.&lt;/p&gt;
+&lt;h3 id=&#34;cryptocurrency&#34;&gt;Cryptocurrency&lt;/h3&gt;
+&lt;p&gt;I was not so much into cryptocurrencies and blockchain, but lately I got interested in them and started exploring the technological side of it. I&amp;rsquo;ve been consuming lot of videos and podcasts about cryptocurrencies and NFTs. It&amp;rsquo;s been an interesting journey to say the least. I&amp;rsquo;ve been carving out time here and there to learn about it whenever I can.&lt;/p&gt;
+&lt;h3 id=&#34;awakening-from-the-meaning-crisis&#34;&gt;Awakening from the Meaning Crisis&lt;/h3&gt;
+&lt;p&gt;This is one of those serendipitous finds where one day I was checking the &lt;a href=&#34;https://reddit.com/r/InsightfulQuestions&#34;&gt;/r/InsightfulQuestions&lt;/a&gt; subreddit where one of the comments for a question (I don&amp;rsquo;t even remember the question) was a mention of a lecture series on YouTube called &lt;a href=&#34;https://www.youtube.com/watch?v=54l8_ewcOlY&amp;amp;list=PLND1JCRq8Vuh3f0P5qjrSdb5eC1ZfZwWJ&#34;&gt;Awakening from the Meaning Crisis&lt;/a&gt;. I&amp;rsquo;ve always been really interested in philosophy, anthropology, deep thoughts and thought experiments. So, just watching one episode of this got me hooked. Each episode is dense with information and it also makes you think a lot. I&amp;rsquo;ve been deeply enjoying this series and already made lot of notes and will continue to do so. I&amp;rsquo;ve also been taking it very slow and not binging on it because I want to give myself time to think and reflect on what I&amp;rsquo;ve consumed.&lt;/p&gt;
+&lt;h2 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h2&gt;
+&lt;h3 id=&#34;never-neglect-health&#34;&gt;Never neglect health&lt;/h3&gt;
+&lt;p&gt;Naval Ravikant said &amp;ldquo;Easy choices, hard life. Hard choices, easy life&amp;rdquo;, and it could not be more true. What I thought was maybe a couple of weeks of chilling - being lazy, ordering in, lying on the couch and watching YouTube ended up becoming a lifestyle. Easy choices made me put on weight, be out of shape and be slow and sluggish. Hard choices are to correct these and get back in shape. And this involves cooking at home most of the time, thinking about macros and being more conscious about what I consume, motivating myself to workout and be active. Getting back in shape is not linear. It&amp;rsquo;s harder and takes longer to get back in shape.&lt;/p&gt;
+&lt;h3 id=&#34;having-few-interests-is-better-than-having-many&#34;&gt;Having few interests is better than having many&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;m someone that&amp;rsquo;s very curious about things and I easily get hooked on to learning new things. This isn&amp;rsquo;t sustainable since my interests about stuff keep piling on and it either gets overwhelming or frustrating because I&amp;rsquo;m unable to give my attention to all of them. So, instead of having such varied interests, it&amp;rsquo;s better to have just 2-3 things that you can go deep on and spend more time, and drop the rest. These handful of interests would be more fulfilling than trying to hit too many targets.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Using literate configuration for all text-based configs</title>
       <link>/posts/using-literate-configuration-for-all-text-based-configs/</link>
@@ -705,16 +741,6 @@ need to work on it every day and keep practicing what you&amp;rsquo;re doing. Yo
 beautiful.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Review your goals often&lt;/strong&gt;. Never be lazy. Do something. Anything. Anything productive. It&amp;rsquo;s okay to chill out sometimes, but otherwise, it&amp;rsquo;s important to keep learning and making the best use of your time. Reviewing your goals on a timely basis helps you to stay on track and get shit done. Sometimes you may end up in a state where you feel like you&amp;rsquo;re doing something pretty much every day, but not really getting anywhere. By making your goals measurable and reviewing them regularly, you
 know exactly how far away you are from your goal and you can work towards it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Macbook users must swap Caps Lock and Ctrl Keys. Seriously!</title>
-      <link>/posts/mac-users-must-swap-caps-lock-and-ctrl-keys/</link>
-      <pubDate>Sat, 14 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/mac-users-must-swap-caps-lock-and-ctrl-keys/</guid>
-      <description>&lt;p&gt;I tell this to everyone I meet who uses a MacBook. I mean, come on. People who are used to using a Windows keyboard put their pinky on the bottom left key of the keyboard to reach for the control key, and it&amp;rsquo;s easy to reach too since the Ctrl key is pretty wide. But geniuses at Apple decided to use that key as the function key thus making us twist our wrists more so that our pinky can reach the control key. It&amp;rsquo;s so damn uncomfortable to do that all the time. But thankfully, Mac OSX has the feature to switch modifier keys. You can basically make any modifier key (Ctrl, Shift, Alt, Caps Lock) to behave as any other modifier key. And we use Ctrl more than Caps Lock; mainly programmers. Moreover I&amp;rsquo;ve seen so many people holding Shift to type out phrases in caps where they could have used Caps Lock key once and comfortably typed out the phrase (without holding Shift the whole time). So to fix all this and type comfortably, just swap Caps Lock and Ctrl and live in peace.&lt;/p&gt;
 </description>
     </item>
     
