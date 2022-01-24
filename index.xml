@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 16 Jan 2022 11:32:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jan 2022 21:58:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Replacing knee-jerk reactions with new learnings</title>
+      <link>/posts/replacing-knee-jerk-reactions-with-new-learnings/</link>
+      <pubDate>Sun, 23 Jan 2022 21:58:00 -0800</pubDate>
+      
+      <guid>/posts/replacing-knee-jerk-reactions-with-new-learnings/</guid>
+      <description>&lt;p&gt;Often times we come across a blog post, a portion of a book, a podcast, an interview, etc where an expert in a field is explaining something that is very counter-intuitive to us. This happens mostly because we have some strongly held beliefs about how the world works and those beliefs are challenged. This used to happen to me while I was growing up and my first reaction to this was usually, &amp;ldquo;That doesn&amp;rsquo;t make sense. He&amp;rsquo;s clearly wrong, because of &amp;lt;insert vaguely recollected poorly understood never researched supposed fact/anecdote here&amp;gt;&amp;rdquo;. It didn&amp;rsquo;t help me in any way. Some times it made me feel better about myself, but the net outcome of consuming that resource was zero at best, if not negative.&lt;/p&gt;
+&lt;p&gt;As I grew up, I started realizing and asking myself - &amp;ldquo;am I really challenging someone who has a PhD in this subject they&amp;rsquo;re discussing and has spent countless hours thinking about the topic where I&amp;rsquo;m going in to this with nothing more than a hunch on a subject I know nothing about?&amp;rdquo; It&amp;rsquo;s definitely possible that I&amp;rsquo;m right and they&amp;rsquo;re wrong, but it&amp;rsquo;s also highly unlikely.&lt;/p&gt;
+&lt;p&gt;Once I realized this I stopped having such knee-jerk reactions when I saw something I didn&amp;rsquo;t agree with initially. My first reaction now is always, &amp;ldquo;That&amp;rsquo;s interesting and doesn&amp;rsquo;t conform with my beliefs. What am I missing?&amp;rdquo; I prefer to err on the side of me being wrong and learning something from it and updating my beliefs rather than doubling down on something I was already believing in without confirming the validity of it.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s easy to dismiss something just because it doesn&amp;rsquo;t align with what we believe in, but it&amp;rsquo;s much more fruitful to learn about a different perspective and update our beliefs.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>2021 - Year in Review</title>
       <link>/posts/2021-year-in-review/</link>
@@ -113,7 +126,7 @@
 &lt;p&gt;I now use it as a file manager, terminal, taking notes, organizing my life, journaling, git client, a fully functional IDE with code completions and such, manage my work calendar, quick file edits, viewing and querying json files and blogging. This very post was written in Emacs and published using &lt;a href=&#34;https://ox-hugo.scripter.co&#34;&gt;ox-hugo&lt;/a&gt; - a package used for exporting org files to markdown files that Hugo understands.&lt;/p&gt;
 &lt;h2 id=&#34;obligatory-xkcd-comic-about-emacs&#34;&gt;Obligatory XKCD comic about emacs&lt;/h2&gt;
 &lt;p&gt;Now that I&amp;rsquo;ve said all this about emacs, I &lt;em&gt;have&lt;/em&gt; to use the obligatory xkcd comic about emacs:&lt;/p&gt;
-&lt;figure&gt;&lt;a href=&#34;/images/xkcd_emacs.png&#34;&gt;&lt;img src=&#34;/images/xkcd_emacs.png&#34;/&gt;&lt;/a&gt;
+&lt;figure&gt;&lt;a href=&#34;./images/xkcd_emacs.png&#34;&gt;&lt;img src=&#34;./images/xkcd_emacs.png&#34;/&gt;&lt;/a&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
@@ -181,11 +194,11 @@
 &lt;h2 id=&#34;2-starting-conversations-about-privacy-with-people&#34;&gt;2. Starting conversations about privacy with people&lt;/h2&gt;
 &lt;p&gt;I ended up sharing two screenshots with the groups and people I interact with the most on WhatsApp. Once I shared them, it was abundantly clear to them that they had to ditch WhatsApp and most of them immediately hopped on to Signal.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img style=&#34;width:50%&#34; src=&#34;/images/whatsapp-privacy-policy-feb2021.jpeg&#34;/&gt;
+    &lt;img style=&#34;width:50%&#34; src=&#34;./images/whatsapp-privacy-policy-feb2021.jpeg&#34;/&gt;
     &lt;figcaption&gt;WhatsApp Privacy Policy&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;figure&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;/images/data-collection-messaging-apps.jpeg&#34;/&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;./images/data-collection-messaging-apps.jpeg&#34;/&gt;
     &lt;figcaption&gt;&lt;a href=&#34;https://www.forbes.com/sites/zakdoffman/2021/01/03/whatsapp-beaten-by-apples-new-imessage-update-for-iphone-users/?sh=191b47e36234&#34;&gt;Data collection by different apps&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;What I also did was to create Groups on Signal and send the group invite to respective groups in WhatsApp. It made the transition easier. Now the number of contacts in Signal is growing.&lt;/p&gt;
@@ -472,61 +485,6 @@ tags:
       
       <guid>/micro/lights-and-shadows/</guid>
       <description>&lt;p&gt;Lights and Shadows: &lt;a href=&#34;https://ciechanow.ski/lights-and-shadows&#34;&gt;https://ciechanow.ski/lights-and-shadows&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My Hugo Setup</title>
-      <link>/posts/my-hugo-setup/</link>
-      <pubDate>Mon, 29 Jun 2020 22:32:42 -0700</pubDate>
-      
-      <guid>/posts/my-hugo-setup/</guid>
-      <description>&lt;p&gt;I recently moved my blog to Hugo and &lt;a href=&#34;https://rrajath.com/posts/moving-to-hugo/&#34;&gt;wrote a brief post about it&lt;/a&gt;. This post explains how I selected a theme and how I made the modifications I needed.&lt;/p&gt;
-&lt;p&gt;I needed a minimal theme for my blog and after searching a bit, I found &lt;a href=&#34;https://themes.gohugo.io/ezhil/&#34;&gt;ezhil&lt;/a&gt;. This checked most of my boxes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;looks simple and minimal&lt;/li&gt;
-&lt;li&gt;configurable&lt;/li&gt;
-&lt;li&gt;feather icons for my socials&lt;/li&gt;
-&lt;li&gt;light/dark theme switch (nice to have)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I tried it out on my blog and it looked good. The nice thing about the light/dark theme switch is that when set to &amp;ldquo;auto&amp;rdquo; it depends on the device&amp;rsquo;s light or dark theme. For example, if the phone uses dark mode, the blog also uses dark mode.&lt;/p&gt;
-&lt;h2 id=&#34;custom-changes-to-my-theme&#34;&gt;Custom changes to my theme&lt;/h2&gt;
-&lt;p&gt;Although I liked the theme and it fit most of my needs, I had to make some changes to get tailored to my taste.&lt;/p&gt;
-&lt;h3 id=&#34;post-links-and-summaries-on-home-page&#34;&gt;Post links and summaries on home page&lt;/h3&gt;
-&lt;p&gt;The recent posts section (on the home page) was of the format:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&amp;lt;post_title&amp;gt; -- &amp;lt;summary&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This felt a little cluttered for two reasons:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Both the title and the summary were on the same line next to each other&lt;/li&gt;
-&lt;li&gt;Title and summary were of the same font size&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I wanted the title to be a little bigger and have its own line, so I made the following changes to &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/index.html#L20-L29&#34;&gt;themes/ezhil/layouts/index.html&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;title u-url&amp;#34;&lt;/span&gt; href&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;{{ .RelPermalink }}&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;font&lt;/span&gt; size&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;+2&amp;#34;&lt;/span&gt;&amp;gt;{{.Title}}&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;font&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt;&amp;gt;
-		&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt;&amp;gt;
-		    &amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;span&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt;&amp;gt;
-		        {{ if isset .Params &amp;#34;description&amp;#34; }}
-            {{ .Description }}
-            {{ else }}
-            {{ .Summary }}&lt;span style=&#34;color:#cb4b16&#34;&gt;&amp;amp;hellip;&lt;/span&gt;
-            {{ end }}
-        &amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;span&lt;/span&gt;&amp;gt;
-    &amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Basically, add &lt;code&gt;&amp;lt;font size=&amp;quot;+2&amp;quot;&amp;gt;&lt;/code&gt; and put the &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; inside a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;added-reading-time&#34;&gt;Added reading time&lt;/h3&gt;
-&lt;p&gt;I remember Jekyll didn&amp;rsquo;t have a straight-forward way to add reading time to posts. Hugo gives this out of the box. I like having it for blog posts just to set the expectation of how long it takes to read the blog post before you dive into it. It can be vaguely estimated by just eye-balling or scrolling. But it&amp;rsquo;s nice to have reading time displayed at the top of the post.&lt;/p&gt;
-&lt;p&gt;In &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/_default/single.html#L11&#34;&gt;themes/ezhil/layouts/_default/single.html&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;| {{ .ReadingTime }} min read
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Added the above text next to the publish date. I also added permalink to the publish date.&lt;/p&gt;
-&lt;h3 id=&#34;added-a-page-for-micro-posts&#34;&gt;Added a page for Micro Posts&lt;/h3&gt;
-&lt;p&gt;Blog posts are more formal and kinda long-form content which has a specific theme or intent behind them. I wanted to have a separate page for short thoughts (one or few lines) that don&amp;rsquo;t warrant for a full blog post. This can include things like sharing an image, a link, or just some quick thoughts. So, I added a page called &lt;a href=&#34;https://rrajath.com/micro/&#34;&gt;Micro&lt;/a&gt; and created my own template that is based off of  the standard list page, but a little different.&lt;/p&gt;
-&lt;p&gt;Take a look at &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/micro/list.html&#34;&gt;/themes/ezhil/layouts/micro/list.html&lt;/a&gt; to understand the customization.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;I&amp;rsquo;ve removed the heading of the post for since I want this to be like a twitter feed.&lt;/li&gt;
-&lt;li&gt;Added a Permalink that takes you to the post page, in case one needs to link to the exact micro post.&lt;/li&gt;
-&lt;li&gt;Added horizontal lines to separate out each micro post&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;added-a-now-page&#34;&gt;Added a Now page&lt;/h3&gt;
-&lt;p&gt;This page captures what I&amp;rsquo;m doing right now. This includes a variety of tasks/activities/projects that I&amp;rsquo;m doing at the moment to give a sense of what I&amp;rsquo;m up to. This is &lt;a href=&#34;https://sivers.org/nowff&#34;&gt;inspired by Derek Sivers&lt;/a&gt;. The &lt;a href=&#34;https://rrajath.com/now/&#34;&gt;Now page&lt;/a&gt; layout is similar to the blog post page, &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/now/single.html&#34;&gt;except few changes&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

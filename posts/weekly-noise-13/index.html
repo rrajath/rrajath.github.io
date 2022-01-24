@@ -24,11 +24,11 @@
 <meta name="twitter:description" content="This week we implemented the Routing Algorithm. We considered each intersection as a checkpoint and made a graph out of the navigation paths and the corresponding intersection points among them."/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><link rel="stylesheet" type="text/css" href="/css/dark.css" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" /><link rel="stylesheet" type="text/css" href="css/dark.css" media="(prefers-color-scheme: dark)" />
 
 	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="js/main.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	</head>
 
@@ -36,8 +36,8 @@
     <article class="h-entry">
 	<div class="container wrapper post e-content p-name">
 		<div class="header">
-	<base href="/">
-	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
+	<base href="">
+	<h1 class="site-title"><a href="">Rajath Ramakrishna</a></h1>
 	<div class="site-description"><h2>random ramblings</h2><nav class="nav social">
 			<ul class="flat"><a href="https://github.com/rrajath" title="Github"><i data-feather="github"></i></a><a href="https://linkedin.com/in/rrajath" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
 		</nav>
@@ -47,27 +47,27 @@
 		<ul class="flat">
 			
 			<li>
-				<a href="/">Home</a>
+				<a href="../../">Home</a>
 			</li>
 			
 			<li>
-				<a href="/posts">All posts</a>
+				<a href="../../posts">All posts</a>
 			</li>
 			
 			<li>
-				<a href="/about">About</a>
+				<a href="../../about">About</a>
 			</li>
 			
 			<li>
-				<a href="/micro">Micro</a>
+				<a href="../../micro">Micro</a>
 			</li>
 			
 			<li>
-				<a href="/tags">Tags</a>
+				<a href="../../tags">Tags</a>
 			</li>
 			
 			<li>
-				<a href="/now">Now</a>
+				<a href="../../now">Now</a>
 			</li>
 			
 		</ul>
@@ -77,14 +77,14 @@
 
 		<div class="post-header">
 			<h1 class="title">Weekly Noise #13 - Routing Algorithm</h1>
-            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="/posts/weekly-noise-13/"><time class="dt-published">Apr 12, 2014</time></a>  | 2 min read</div> 
+            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="../../posts/weekly-noise-13/"><time class="dt-published">Apr 12, 2014</time></a>  | 2 min read</div> 
 		</div>
 
 		<div class="markdown">
 			
 			<p>This week we implemented the Routing Algorithm. We considered each intersection as a checkpoint and made a graph out of the navigation paths and the corresponding intersection points among them. Doing this helps us in finding out the best way to navigate to any parking slot. Most parking structures have uni-directional paths. That is, cars can go only in one direction. They pretty much don&rsquo;t have a choice in terms of choosing different ways to get to the destination parking slot. We used this
 to our advantage in our routing algorithm. The directed graph that we created had nodes as the intersections and edges as the navigation paths in which cars can move. Below is a good illustration of how we visualized our routing algorithm.</p>
-<p><img src="/images/routing-algorithm.png" alt="Routing Algorithm"></p>
+<p><img src="../../images/routing-algorithm.png" alt="Routing Algorithm"></p>
 <p>As you see in the figure, N, S, E, W, NE, SW refers to the direction in which a car can move upon reaching that intersection point. The edges have a fixed value so that it would be easy to calculate distances. The arrows shown in red are part of the navigation path. From the start point to the destination the path is along the checkpoints - N, W, W, SW and E. And the distances along the path are calculated accordingly. The starting point is fixed since the app starts when the car enters
 the lot. Once the user selects a parking slot, the route is calculated using the routing algorithm mentioned above. This should be giving the user a step by step navigation and voice alerts as and when he turns.</p>
 
@@ -97,9 +97,9 @@ the lot. Once the user selects a parking slot, the route is calculated using the
 					<nav class="nav tags">
 							<ul class="flat">
 								
-								<li><a class="p-category" href="/tags/weekly">weekly</a></li>
+								<li><a class="p-category" href="../../tags/weekly">weekly</a></li>
 								
-								<li><a class="p-category" href="/tags/noise">noise</a></li>
+								<li><a class="p-category" href="../../tags/noise">noise</a></li>
 								
 							</ul>
 					</nav>
