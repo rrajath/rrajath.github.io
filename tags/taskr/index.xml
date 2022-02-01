@@ -53,9 +53,9 @@ I used a singleton to have a single copy of the task list which will be availabl
 &lt;p&gt;It took me a few days to get this simple app done due to hectic work schedules. I guess I will get back to working on it and add some minor enhancements.&lt;/p&gt;
 &lt;h3 id=&#34;screenshots&#34;&gt;Screenshots&lt;/h3&gt;
 &lt;p&gt;Here are some screenshots of my app:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../../images/taskr_task_list.png&#34; alt=&#34;&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;/images/taskr_task_list.png&#34; alt=&#34;&#34;&gt;
  
-&lt;img src=&#34;../../images/taskr_new_task.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;/images/taskr_new_task.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The white background of the app blends into the white background of the page :(&lt;br&gt;
 I&amp;rsquo;ll have to change the theme sometime.&lt;/p&gt;
 &lt;p&gt;The project can be found on my GitHub page: &lt;a href=&#34;https://github.com/rrajath/taskr&#34;&gt;taskr&lt;/a&gt;&lt;/p&gt;
