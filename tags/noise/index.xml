@@ -69,7 +69,7 @@ to make a left turn or a right turn accordingly. Similarly, if the destination i
       <guid>/posts/weekly-noise-13/</guid>
       <description>&lt;p&gt;This week we implemented the Routing Algorithm. We considered each intersection as a checkpoint and made a graph out of the navigation paths and the corresponding intersection points among them. Doing this helps us in finding out the best way to navigate to any parking slot. Most parking structures have uni-directional paths. That is, cars can go only in one direction. They pretty much don&amp;rsquo;t have a choice in terms of choosing different ways to get to the destination parking slot. We used this
 to our advantage in our routing algorithm. The directed graph that we created had nodes as the intersections and edges as the navigation paths in which cars can move. Below is a good illustration of how we visualized our routing algorithm.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../../images/routing-algorithm.png&#34; alt=&#34;Routing Algorithm&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/routing-algorithm.png&#34; alt=&#34;Routing Algorithm&#34;&gt;&lt;/p&gt;
 &lt;p&gt;As you see in the figure, N, S, E, W, NE, SW refers to the direction in which a car can move upon reaching that intersection point. The edges have a fixed value so that it would be easy to calculate distances. The arrows shown in red are part of the navigation path. From the start point to the destination the path is along the checkpoints - N, W, W, SW and E. And the distances along the path are calculated accordingly. The starting point is fixed since the app starts when the car enters
 the lot. Once the user selects a parking slot, the route is calculated using the routing algorithm mentioned above. This should be giving the user a step by step navigation and voice alerts as and when he turns.&lt;/p&gt;
 </description>
@@ -94,7 +94,7 @@ the lot. Once the user selects a parking slot, the route is calculated using the
       <guid>/posts/weekly-noise-11/</guid>
       <description>&lt;p&gt;The online phase is where scans are made periodically and matched with the offline database to find the current location of the user. When a scan is made the set of fingerprints are captured and compared with existing data in the database. With Nearest Neighbour algorithm, we predict 3 closest matches as to where the user could be. Initially, we were searching the whole database to find the 3 closest matches, but later on we reduced our search space significantly by searching
 the current and the next 2 cells along the navigation path. If the database search yields a (or any) result, then the current location of the user will be updated to the yielded result. Else, we assume that there is no change in the user&amp;rsquo;s location. This way, the search happens every 2 seconds and the position is updated accordingly as and when the car moves inside the parking lot. To illustrate this approach, refer the figure below.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../../images/position-prediction.png&#34; alt=&#34;Position Prediction&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/position-prediction.png&#34; alt=&#34;Position Prediction&#34;&gt;&lt;/p&gt;
 &lt;p&gt;As you can see in the image, the green cells are the next 3 predicted cells on the navigation path, the blue cells are rest of the cells and the orange cells are the ramps in the middle of the parking that takes you to the next level of the parking structure. The worst case is when the search results yield nothing thus not changing the position of the car on the map. If the search results do yield something, the car moves forward.&lt;/p&gt;
 </description>
     </item>
@@ -208,7 +208,7 @@ the current and the next 2 cells along the navigation path. If the database sear
 &lt;/ul&gt;
 &lt;p&gt;In the offline phase, each cell along the navigation path is associated with a particular fingerprint and these fingerprints are recorded and stored in a database. The database will be used in future during the online phase in order to track the location of the user.&lt;/p&gt;
 &lt;p&gt;AS SHOWN IN THE FIGURE BELOW, the grid is divided into cells. ParkCells are the parking slots and NavCells are the cells along the navigation path. The offline phase is only about storing fingerprints at each navigation cell into a database.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../../images/grid-illustration.png&#34; alt=&#34;Grid Illustration&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/grid-illustration.png&#34; alt=&#34;Grid Illustration&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In the online phase, as the car enters the lot, the application is activated using GeoFencing technique. Once the application is activated, the user is shown the parking lot grid where he can choose a parking slot. When the user selects a parking slot, the neighboring navigation cell is selected as the destination point. We know the start point of the car since it is the entrance of the parking lot. We also continuously track the movement of the car using accelerometer and gyroscope. This technique combined with fingerprint matching will give an accurate location of the car and the car is routed from the start point to the destination point. This becomes a simple routing problem on a grid with predefined navigation path.&lt;/p&gt;
 &lt;h2 id=&#34;my-development-environment&#34;&gt;My Development Environment&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;IDE&lt;/strong&gt;: IntelliJ IDEA 13.0[Insert Link]&lt;br&gt;
@@ -278,7 +278,7 @@ the current and the next 2 cells along the navigation path. If the database sear
       <pubDate>Sun, 17 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>/posts/weekly-noise-2/</guid>
-      <description>&lt;p&gt;Last week I worked on the theme to modify few things which I have explained in the &lt;a href=&#34;../../my-theme-setup/&#34;&gt;My Theme Setup&lt;/a&gt; post. I added a Projects link in the Navbar at the top which I will be filling up with my hobby projects sometime soon. I was held up with a class project in one of the courses which ate up most of my time. But I did finish what I had planned to finish. I&amp;rsquo;ve also got my finals approaching in less than a month so my updates may not be significant. That being said, here are some tasks for next week:&lt;/p&gt;
+      <description>&lt;p&gt;Last week I worked on the theme to modify few things which I have explained in the &lt;a href=&#34;/my-theme-setup/&#34;&gt;My Theme Setup&lt;/a&gt; post. I added a Projects link in the Navbar at the top which I will be filling up with my hobby projects sometime soon. I was held up with a class project in one of the courses which ate up most of my time. But I did finish what I had planned to finish. I&amp;rsquo;ve also got my finals approaching in less than a month so my updates may not be significant. That being said, here are some tasks for next week:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Integrate Medium-style &amp;ldquo;time it takes to read the post&amp;rdquo; (I don&amp;rsquo;t know what it&amp;rsquo;s called) feature into posts.&lt;/li&gt;
 &lt;li&gt;Write about one of my hobby projects.&lt;/li&gt;

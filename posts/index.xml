@@ -145,7 +145,7 @@
 &lt;p&gt;I now use it as a file manager, terminal, taking notes, organizing my life, journaling, git client, a fully functional IDE with code completions and such, manage my work calendar, quick file edits, viewing and querying json files and blogging. This very post was written in Emacs and published using &lt;a href=&#34;https://ox-hugo.scripter.co&#34;&gt;ox-hugo&lt;/a&gt; - a package used for exporting org files to markdown files that Hugo understands.&lt;/p&gt;
 &lt;h2 id=&#34;obligatory-xkcd-comic-about-emacs&#34;&gt;Obligatory XKCD comic about emacs&lt;/h2&gt;
 &lt;p&gt;Now that I&amp;rsquo;ve said all this about emacs, I &lt;em&gt;have&lt;/em&gt; to use the obligatory xkcd comic about emacs:&lt;/p&gt;
-&lt;figure&gt;&lt;a href=&#34;../images/xkcd_emacs.png&#34;&gt;&lt;img src=&#34;../images/xkcd_emacs.png&#34;/&gt;&lt;/a&gt;
+&lt;figure&gt;&lt;a href=&#34;/images/xkcd_emacs.png&#34;&gt;&lt;img src=&#34;/images/xkcd_emacs.png&#34;/&gt;&lt;/a&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
@@ -202,11 +202,11 @@
 &lt;h2 id=&#34;2-starting-conversations-about-privacy-with-people&#34;&gt;2. Starting conversations about privacy with people&lt;/h2&gt;
 &lt;p&gt;I ended up sharing two screenshots with the groups and people I interact with the most on WhatsApp. Once I shared them, it was abundantly clear to them that they had to ditch WhatsApp and most of them immediately hopped on to Signal.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img style=&#34;width:50%&#34; src=&#34;../images/whatsapp-privacy-policy-feb2021.jpeg&#34;/&gt;
+    &lt;img style=&#34;width:50%&#34; src=&#34;/images/whatsapp-privacy-policy-feb2021.jpeg&#34;/&gt;
     &lt;figcaption&gt;WhatsApp Privacy Policy&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;figure&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;../images/data-collection-messaging-apps.jpeg&#34;/&gt;
+    &lt;img style=&#34;width:100%&#34; src=&#34;/images/data-collection-messaging-apps.jpeg&#34;/&gt;
     &lt;figcaption&gt;&lt;a href=&#34;https://www.forbes.com/sites/zakdoffman/2021/01/03/whatsapp-beaten-by-apples-new-imessage-update-for-iphone-users/?sh=191b47e36234&#34;&gt;Data collection by different apps&lt;/a&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;What I also did was to create Groups on Signal and send the group invite to respective groups in WhatsApp. It made the transition easier. Now the number of contacts in Signal is growing.&lt;/p&gt;
@@ -679,10 +679,10 @@ another SIM card and share your temporary number with your friends when you&amp;
 phone, nothing. I wake up and it&amp;rsquo;s gone, no data. I tried turning it off and on again, switching to airplane mode and back, switching off and on the international roaming, and also turning off the phone and turning it on again. Nothing worked. I called up customer service and they asked me to do everything I already did and it didn&amp;rsquo;t help. They weren&amp;rsquo;t able to figure it out either. It just didn&amp;rsquo;t work until I came back to US. I could still make and receive calls though. The biggest problem was none of the messages anybody sent to me on WhatsApp or Hangouts reached me and they couldn&amp;rsquo;t call me since mine was an international number and it would cost them about 8-10 times more than a regular local call. I also couldn&amp;rsquo;t use Uber/Maps, which sucked.&lt;/p&gt;
 &lt;h2 id=&#34;other-hiccups&#34;&gt;Other hiccups?&lt;/h2&gt;
 &lt;p&gt;I didn&amp;rsquo;t really have any other problems with Project Fi. Call quality is great, plans are cheap and customizable and no issues with data (at least in the US). But sometimes my phone searches for network when enter my apartment lobby and also sometimes after hanging up. I added a screenshot of that below. It&amp;rsquo;s no biggie, but it never happened to me with my previous carrier.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../images/project-fi-network-search.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/project-fi-network-search.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;a-sweet-surprise&#34;&gt;A sweet surprise&lt;/h2&gt;
 &lt;p&gt;When I came back from India, a package was waiting for me. A package sent by Google. And it was a LEGO kit to create a phone stand or docking station or other fun things. I had &lt;a href=&#34;http://www.androidpolice.com/2015/11/25/googles-project-fi-sending-out-awesome-lego-kits-to-some-subscribers/&#34;&gt;read on AndroidPolice&lt;/a&gt; that Google was giving away Lego kits to some subscribers of Project Fi. I never expected I&amp;rsquo;d get it. So I opened it and built my own docking station. Check it out ;)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../images/project-fi-lego-kit.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/project-fi-lego-kit.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;I like it. I like the plan and the idea of refunding for unused data, I liked the smooth transition from existing carrier to Project Fi, I like the beautiful app they have to manage accounts, track data usage, view bills and past statements and do so much more and I love the LEGO kit :D I&amp;rsquo;ll stick to it until something stops working unexpectedly (like how my data stopped working for no reason when I was in India). I hope they enable higher data speeds outside US sometime soon.&lt;/p&gt;
 </description>
