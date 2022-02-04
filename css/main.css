@@ -2,8 +2,8 @@ body {
     font-family: "ubuntu", sans-serif;
     font-weight: 400;
     color: #333;
-    line-height: 1.6;
-    font-size: 16px;
+    line-height: 1.8;
+    font-size: 20px;
 }
 
 a, a:hover {
@@ -282,7 +282,7 @@ pre code {
 .recent-posts .posts .post .meta,
 .post .post-header .meta,
 .list .posts .post .meta {
-    font-size: 0.725rem;
+    font-size: 1rem;
     color: #999;
     margin-bottom: 4px;
 }
