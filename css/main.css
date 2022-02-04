@@ -193,6 +193,7 @@ ul {
 .highlight {
     background: 0 0;
     background-color: #FAFAFA;
+		border-radius: 10px;
 }
 
 pre code {
