@@ -9,6 +9,93 @@
     <copyright>© Copyright notice</copyright>
     <lastBuildDate>Mon, 24 Jan 2022 22:45:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Now</title>
+      <link>/now/</link>
+      <pubDate>Sun, 26 Jun 2022 13:24:16 -0700</pubDate>
+      
+      <guid>/now/</guid>
+      <description>&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Code-Language-Computer-Developer-Practices-ebook/dp/B00JDMPOK2&#34;&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Effective-TypeScript-Specific-Ways-Improve-ebook/dp/B07Z8HRZZ3&#34;&gt;Effective TypeScript&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;watching&#34;&gt;Watching&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=54l8_ewcOlY&amp;amp;list=PLND1JCRq8Vuh3f0P5qjrSdb5eC1ZfZwWJ&#34;&gt;Awakening from the Meaning Crisis&lt;/a&gt; (12 episodes in)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Building split ergo mech keyboards (built a corne choc, a microdox bud mx and a 3x5 cantor so far)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;health&#34;&gt;Health&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Working out&lt;/li&gt;
+&lt;li&gt;Meditating&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learning&#34;&gt;Learning&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;NextJs&lt;/li&gt;
+&lt;li&gt;Building keyboards, soldering, debugging&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;visit-the-now-archive-to-check-out-things-that-used-to-be-on-this-page&#34;&gt;Visit the &lt;a href=&#34;/now-archive&#34;&gt;Now Archive&lt;/a&gt; to check out things that used to be on this page&lt;/h4&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Now Archive</title>
+      <link>/now-archive/</link>
+      <pubDate>Sun, 26 Jun 2022 13:23:06 -0700</pubDate>
+      
+      <guid>/now-archive/</guid>
+      <description>&lt;p&gt;This page contains everything that was moved from the &lt;a href=&#34;https://rrajath.com/now/&#34;&gt;Now page&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;jun-26-2022&#34;&gt;Jun 26, 2022&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/The-Three-Body-Problem-audiobook/dp/B00P00QPPY&#34;&gt;The Three-Body Problem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Masters-Doom-Created-Transformed-Culture-ebook/dp/B000FBFNL0&#34;&gt;Masters of Doom&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Good-They-Cant-Ignore-You-ebook/dp/B0076DDBJ6&#34;&gt;So Good They Can&amp;rsquo;t Ignore You&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/12-Week-Year-Others-Months/dp/1118509234&#34;&gt;The 12 Week Year&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;jan-23-2022&#34;&gt;Jan 23, 2022&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/4948826-sum?ac=1&amp;amp;from_search=true&amp;amp;qid=4nUZPNXCOw&amp;amp;rank=1&#34;&gt;Sum: Forty Tales from the Afterlives&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;may-30-2021&#34;&gt;May 30, 2021&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Finished reading The Great Mental Models Vol. 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;jan-9-2021&#34;&gt;Jan 9, 2021&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding more blog posts&lt;/li&gt;
+&lt;li&gt;Configured some YASnippets on my Emacs&lt;/li&gt;
+&lt;li&gt;Added a bunch of dotfiles as literate configs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;oct-18-2020&#34;&gt;Oct 18, 2020&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Setting up a sustainable sync for my org files on my phone and laptop
+(since Orgzly is a bit of a pain when it comes to this)&lt;/li&gt;
+&lt;li&gt;Learning Emacs and org-mode. Loving it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;aug-29-2020&#34;&gt;Aug 29, 2020&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://acesounderglass.com/2020/06/10/what-to-write-down-when-youre-reading-to-learn/&#34;&gt;What to write down when you&amp;rsquo;re reading to learn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;jul-25-2020&#34;&gt;Jul 25, 2020&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://maggieappleton.com/basb/&#34;&gt;Building a second brain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Self-hosting my data using Nextcloud on my Raspberry Pi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;jun-24-2020&#34;&gt;Jun 24, 2020&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Moved my blog from Jekyll to Hugo and now customizing some templates&lt;/li&gt;
+&lt;li&gt;Indieweb integration&lt;/li&gt;
+&lt;li&gt;Self-hosting my data using Nextcloud on my Raspberry Pi&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Don&#39;t break the chain - hard mode</title>
       <link>/posts/dont-break-the-chain-hard-mode/</link>
       <pubDate>Mon, 24 Jan 2022 22:45:00 -0800</pubDate>
@@ -400,100 +487,6 @@
       <guid>/micro/building-a-second-brain/</guid>
       <description>&lt;p&gt;Building a second brain: The illustrated notes&lt;br&gt;
 &lt;a href=&#34;https://maggieappleton.com/basb&#34;&gt;https://maggieappleton.com/basb&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My Hugo Setup Part 3</title>
-      <link>/posts/my-hugo-setup-part-3/</link>
-      <pubDate>Wed, 08 Jul 2020 21:03:07 -0700</pubDate>
-      
-      <guid>/posts/my-hugo-setup-part-3/</guid>
-      <description>&lt;p&gt;This is the third installment of my Hugo Setup. In this post I explain how I added support for &amp;ldquo;series&amp;rdquo; in my blog and also provide links that can be used for further explorations.&lt;/p&gt;
-&lt;p&gt;Also, this post is part of a &amp;ldquo;series&amp;rdquo; and explains about how to setup &amp;ldquo;series&amp;rdquo;. This is so meta!&lt;/p&gt;
-&lt;h2 id=&#34;what-is-series&#34;&gt;What is Series?&lt;/h2&gt;
-&lt;p&gt;Sometimes, we have a bunch of blog posts that are related and maybe continuous. Breaking down one big topic into multiple blog posts is the best way to explain the topic. This is where Series adds value. Series also helps keep track of where one is in the list of posts and can easily navigate to posts before or after the current post. This post has nothing to do with writing something differently, but rather presenting mutliple related posts in a more intuitive way.&lt;/p&gt;
-&lt;h2 id=&#34;how-is-it-different-from-adding-tags&#34;&gt;How is it different from adding tags?&lt;/h2&gt;
-&lt;p&gt;Tags are useful for categorizing similar topics. For example, there may be bunch of posts under the tag &amp;ldquo;productivity&amp;rdquo;, but they may all be stand-alone posts that can be read in any order. Whereas, having posts that need continuity will need something a little more sophisticated than tags.&lt;/p&gt;
-&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
-&lt;p&gt;I was deciding to implement this in my templates, but before doing that I searched around for easy, already existing implementations, and I did find some help in the Hugo community. I came across a &lt;a href=&#34;https://discourse.gohugo.io/t/creating-post-series/1115&#34;&gt;Hugo forum post&lt;/a&gt; where a user had a similar ask. The &lt;a href=&#34;https://npf.io/2014/08/making-it-a-series/&#34;&gt;link in the answer&lt;/a&gt; had everything I needed to add the &amp;ldquo;series&amp;rdquo; support for my blog.&lt;/p&gt;
-&lt;p&gt;Hugo supports Taxonomies where you can configure &lt;a href=&#34;https://gohugo.io/content-management/taxonomies/#configuring-taxonomies&#34;&gt;custom taxonomies&lt;/a&gt; and can be used everywhere on your blog. The first step is to add the &lt;code&gt;series&lt;/code&gt; taxonomy in your &lt;code&gt;config.toml&lt;/code&gt; file&lt;/p&gt;
-&lt;h3 id=&#34;step-1&#34;&gt;Step 1&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;config.toml&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;[taxonomies]
-	tag = &amp;#34;tags&amp;#34;
-	series = &amp;#34;series&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you have a &lt;code&gt;yaml&lt;/code&gt; file, change the syntax accordingly.&lt;/p&gt;
-&lt;h3 id=&#34;step-2&#34;&gt;Step 2&lt;/h3&gt;
-&lt;p&gt;Create a partial called &lt;code&gt;series_links.html&lt;/code&gt; at &lt;code&gt;/layouts/partials/series_links.html&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;This will contain the code that is responsible for displaying links to other posts in the series.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;/layouts/partials/series_links.html&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;{{ if .Params.series }}
-    {{ $name := index .Params.series 0 }}
-    &amp;lt;hr/&amp;gt;
-    Other posts in this series:&amp;lt;/p&amp;gt;
-
-    {{ $name := $name | urlize }}
-    {{ $series := index .Site.Taxonomies.series $name }}
-    &amp;lt;ul class=&amp;#34;series&amp;#34;&amp;gt;
-    {{ range $series.Pages }}
-        &amp;lt;li&amp;gt;{{ .Date.Format &amp;#34;Jan 02, 2006&amp;#34; }} -
-        &amp;lt;a href=&amp;#34;{{.Permalink}}&amp;#34;&amp;gt;{{ .LinkTitle }}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-    {{ end }}
-    &amp;lt;/ul&amp;gt;
-{{ end }}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I got the above code from: &lt;a href=&#34;https://npf.io/2014/08/making-it-a-series/&#34;&gt;https://npf.io/2014/08/making-it-a-series/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The explanation of what this means is explained better there, so I&amp;rsquo;m not going to reiterate the same thing here.&lt;/p&gt;
-&lt;h3 id=&#34;step-3&#34;&gt;Step 3&lt;/h3&gt;
-&lt;p&gt;Go to your &lt;code&gt;single.html&lt;/code&gt; which is the template that renders each of your blog posts.&lt;br&gt;
-Replace &lt;code&gt;{{ .Content }}&lt;/code&gt; with the code below&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;/layouts/_default/single.html&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;markdown&amp;#34;&lt;/span&gt;&amp;gt;
-			{{ if .Params.series }}
-  				{{ $name := index .Params.series 0 }}
-  				&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;p&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;series_top_page&amp;#34;&lt;/span&gt; style&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;font-weight:50; background-color:#333&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;&amp;gt;This post is part of the &amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt; href&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;{{.Site.BaseURL}}/series/{{$name | urlize}}&amp;#34;&lt;/span&gt;&amp;gt;{{$name}}&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt;&amp;gt; series.&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;p&lt;/span&gt;&amp;gt;
-			{{ end }}
-			{{ .Content }}
-			{{ partial &amp;#34;series_links.html&amp;#34; . }}
-&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;What this does is, before your main content it displays a banner stating that the post is part of a series (this banner doesn&amp;rsquo;t appear otherwise). This tells the reader right of the bat that there are more related posts they can check out and read. You can look at the banner at the top of this post to see what it looks like. All of this is done by the code that comes before the &lt;code&gt;{{ .Content }}&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;The code that comes after content, i.e. &lt;code&gt;{{ partial &amp;quot;series_links.html&amp;quot; . }}&lt;/code&gt; simply calls the &lt;code&gt;series_links.html&lt;/code&gt; partial we created in step 2 and injects it here, right after your post&amp;rsquo;s main content.&lt;/p&gt;
-&lt;h3 id=&#34;step-4&#34;&gt;Step 4&lt;/h3&gt;
-&lt;p&gt;Now for the final step, you&amp;rsquo;ll have to add front matter to your posts - the ones you want to make part of the series. That will look something like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;---
-title: &amp;#34;My Hugo Setup&amp;#34;
-...
-series: [&amp;#34;hugo-setup&amp;#34;]
-tags:
-- tag1
-- tag2
----
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;other-explorations&#34;&gt;Other Explorations&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;I found &lt;a href=&#34;http://www.joesacher.com/blog/2017/08/03/implementing-series-in-hugo/&#34;&gt;an implementation&lt;/a&gt; which added &lt;a href=&#34;http://www.joesacher.com/blog/2017/08/27/converting-series-to-taxonomy/&#34;&gt;fancier links to posts in series&lt;/a&gt;, like keeping track of how many posts are in the series, adding next and previous links, etc. I had some trouble with that and I didn&amp;rsquo;t have the patience to debug and set it up. This piece of code got the job done for me. But feel free to explore that and tweak it to your needs.&lt;/li&gt;
-&lt;li&gt;I also stumbled upon &lt;a href=&#34;https://www.notion.so/My-Hugo-Setup-Part-3-04f1eeac0db4403a8cdfdc37b6714db9&#34;&gt;another implementation&lt;/a&gt; which did something similar. It&amp;rsquo;s worth checking that out.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My Hugo Setup Part 2</title>
-      <link>/posts/my-hugo-setup-part-2/</link>
-      <pubDate>Sun, 05 Jul 2020 22:16:04 -0700</pubDate>
-      
-      <guid>/posts/my-hugo-setup-part-2/</guid>
-      <description>&lt;p&gt;In my &lt;a href=&#34;https://rrajath.com/posts/my-hugo-setup/&#34;&gt;previous post&lt;/a&gt;, I explained all the visual tweaks I did to my Hugo blog theme so that I could get the pages I wanted in the format I liked the most. This post explains the publish part of it because I faced some issues doing that.&lt;/p&gt;
-&lt;p&gt;I was used to Jekyll&amp;rsquo;s way of doing things where it&amp;rsquo;s just one repository on GitHub and all I had to do was &lt;code&gt;git push&lt;/code&gt; and the blog would show up after about a minute. This means the repository contained both source and generated files. However, Hugo does things a little differently and I actually like it. There are several ways to deploy your Hugo website - using GitHub pages, GitLab, Netlify, etc. I chose GitHub pages since that&amp;rsquo;s what I&amp;rsquo;m most familiar with.&lt;/p&gt;
-&lt;p&gt;If you are going with GitHub&amp;rsquo;s User or Organization Pages, &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages&#34;&gt;Hugo&amp;rsquo;s recommendation&lt;/a&gt; is to split the source and generated files into two different repositories. The repository that the generated files go to will be the front for the website. Let me explain what I did in a little more detail.&lt;/p&gt;
-&lt;p&gt;Step 1: Create a GitHub repository. I called mine &amp;ldquo;blog&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;Step 2: Create another GitHub repository called &lt;username&gt;.github.io. Mine is rrajath.github.io&lt;/p&gt;
-&lt;p&gt;Step 3: Do a &lt;code&gt;git clone&lt;/code&gt; of the &amp;ldquo;blog&amp;rdquo; repository you created on GitHub.&lt;/p&gt;
-&lt;p&gt;Step 4: Copy over your Hugo website on your local to the &amp;ldquo;blog&amp;rdquo; directory that you just cloned.&lt;/p&gt;
-&lt;p&gt;Step 5: Add a submodule using the command: &lt;code&gt;git submodule add -b master https://github.com/username/username.github.io public&lt;/code&gt;. This creates a git submodule that points to the &lt;code&gt;public&lt;/code&gt; directory in your Hugo website.&lt;/p&gt;
-&lt;p&gt;Step 5 is where I encountered the issue. The idea is to point the &lt;code&gt;public&lt;/code&gt; in your &amp;ldquo;blog&amp;rdquo; directory to a remote on GitHub by making it a submodule. The folder &lt;code&gt;public&lt;/code&gt; contains all the generated files. Once you create a post and run &lt;code&gt;hugo server&lt;/code&gt; to generate all the files, you have to do a &lt;code&gt;git push&lt;/code&gt; on both the &amp;ldquo;blog&amp;rdquo; directory and the &amp;ldquo;public&amp;rdquo; directory (which is a submodule pointing to &lt;code&gt;username.github.io&lt;/code&gt; repo on GitHub). And having the &lt;code&gt;public&lt;/code&gt; directory as part of the &lt;code&gt;.gitignore&lt;/code&gt; will exclude it from pushing its contents to the &amp;ldquo;blog&amp;rdquo; directory which is supposed to only contain the source files.&lt;/p&gt;
-&lt;p&gt;However, this was not happening. I tried reconfiguring the submodules, changing my .gitignore file and doing several other things, but what was generated by Hugo in the &lt;code&gt;public&lt;/code&gt; directory never got pushed to the remote repo; which means, my site never got updated even though I was updated the source files and things were working fine when I ran it on &lt;code&gt;localhost&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The way I solved this is by cloning the &lt;code&gt;username.github.io&lt;/code&gt; repo to &lt;em&gt;outside&lt;/em&gt; the &amp;ldquo;blog&amp;rdquo; directory. Then changing the script &lt;code&gt;deploy.sh&lt;/code&gt; mentioned &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages&#34;&gt;in the documentation&lt;/a&gt; to copy all the files from &lt;code&gt;public&lt;/code&gt; directory into the cloned directory, then committing and pushing the changes. The &lt;code&gt;public&lt;/code&gt; directory now doesn&amp;rsquo;t point to anything in the remote. Though this is slightly round about, it does the job and fixed my issue. It&amp;rsquo;s also a one time setup and I don&amp;rsquo;t have to touch it again.&lt;/p&gt;
-&lt;p&gt;All I do when I create a new post is, do a &lt;code&gt;git add&lt;/code&gt; and a &lt;code&gt;git commit&lt;/code&gt;. Then run &lt;code&gt;deploy.sh&lt;/code&gt; to copy the generated files to the right repository (&lt;code&gt;username.github.io&lt;/code&gt;) and then do a &lt;code&gt;git push&lt;/code&gt; on the &amp;ldquo;blog&amp;rdquo; directory to push the source files.&lt;/p&gt;
 </description>
     </item>
     
