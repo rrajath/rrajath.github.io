@@ -7,7 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 24 Jan 2022 22:45:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Aug 2022 19:06:00 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Write emails from bottom to top</title>
+      <link>/posts/write-emails-from-bottom-to-top/</link>
+      <pubDate>Sun, 14 Aug 2022 19:06:00 -0700</pubDate>
+      
+      <guid>/posts/write-emails-from-bottom-to-top/</guid>
+      <description>&lt;p&gt;In the years I&amp;rsquo;ve composed emails, I was initially finding it a little hard to go through the top-down steps of adding people in the To field, CC field and coming up with the subject line. There were two problems with this workflow:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It broke my flow for composing an email&lt;/strong&gt;
+I&amp;rsquo;d have a vague idea of how to express my thoughts into words and that flow was broken by filling out these fields.
+&lt;strong&gt;I used to be trigger happy in sending the email&lt;/strong&gt;.
+In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt+Enter&lt;/code&gt;) is the keyboard shortcut for sending email. I&amp;rsquo;d be so used to hitting these that I&amp;rsquo;d sometimes hit them in the middle of the email. This was particularly a problem when I was using IntelliJ IDEs quite heavily. Because, &lt;code&gt;Option+Enter&lt;/code&gt; in an IntelliJ IDE would insert the currently suggested hint.&lt;/p&gt;
+&lt;p&gt;So, I figured out a simple fix for this: Write emails from bottom to top. Basically, do the following in order:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Write the body of the email first and you get all your thoughts out.&lt;/li&gt;
+&lt;li&gt;Then fill the subject line which is now easier to summarize.&lt;/li&gt;
+&lt;li&gt;Add people in To and CC fields.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The best part about this workflow is, hitting &lt;code&gt;Option+Enter&lt;/code&gt; at any point during the process (except once you start filling the To/CC fields) would do nothing, because there&amp;rsquo;s nobody to send the email to. This turned out to be super useful hack that I have been using ever since and has worked out really well.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Now</title>
       <link>/now/</link>
@@ -482,17 +503,6 @@
 &lt;li&gt;&lt;a href=&#34;https://logseq.com&#34;&gt;https://logseq.com&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://wiki.nikitavoloboev.xyz&#34;&gt;https://wiki.nikitavoloboev.xyz&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Building a Second Brain</title>
-      <link>/micro/building-a-second-brain/</link>
-      <pubDate>Sat, 18 Jul 2020 11:53:42 -0700</pubDate>
-      
-      <guid>/micro/building-a-second-brain/</guid>
-      <description>&lt;p&gt;Building a second brain: The illustrated notes&lt;br&gt;
-&lt;a href=&#34;https://maggieappleton.com/basb&#34;&gt;https://maggieappleton.com/basb&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
