@@ -196,8 +196,9 @@ ul {
 		border-radius: 10px;
 }
 
-pre code {
+code {
   display: inline-block;
+	color: darkseagreen;
 }
   
 
