@@ -9,70 +9,17 @@
     <copyright>© Copyright notice</copyright>
     <lastBuildDate>Sun, 14 Aug 2022 19:06:00 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Write emails from bottom to top</title>
-      <link>/posts/write-emails-from-bottom-to-top/</link>
-      <pubDate>Sun, 14 Aug 2022 19:06:00 -0700</pubDate>
-      
-      <guid>/posts/write-emails-from-bottom-to-top/</guid>
-      <description>&lt;p&gt;In the years I&amp;rsquo;ve composed emails, I was initially finding it a little hard to go through the top-down steps of adding people in the To field, CC field and coming up with the subject line. There were two problems with this workflow:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;It broke my flow for composing an email&lt;/strong&gt;
-I&amp;rsquo;d have a vague idea of how to express my thoughts into words and that flow was broken by filling out these fields.
-&lt;strong&gt;I used to be trigger happy in sending the email&lt;/strong&gt;.
-In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt+Enter&lt;/code&gt;) is the keyboard shortcut for sending email. I&amp;rsquo;d be so used to hitting these that I&amp;rsquo;d sometimes hit them in the middle of the email. This was particularly a problem when I was using IntelliJ IDEs quite heavily. Because, &lt;code&gt;Option+Enter&lt;/code&gt; in an IntelliJ IDE would insert the currently suggested hint.&lt;/p&gt;
-&lt;p&gt;So, I figured out a simple fix for this: Write emails from bottom to top. Basically, do the following in order:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Write the body of the email first and you get all your thoughts out.&lt;/li&gt;
-&lt;li&gt;Then fill the subject line which is now easier to summarize.&lt;/li&gt;
-&lt;li&gt;Add people in To and CC fields.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The best part about this workflow is, hitting &lt;code&gt;Option+Enter&lt;/code&gt; at any point during the process (except once you start filling the To/CC fields) would do nothing, because there&amp;rsquo;s nobody to send the email to. This turned out to be super useful hack that I have been using ever since and has worked out really well.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Now</title>
-      <link>/now/</link>
-      <pubDate>Sun, 31 Jul 2022 23:34:00 -0700</pubDate>
-      
-      <guid>/now/</guid>
-      <description>&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Code-Language-Computer-Developer-Practices-ebook/dp/B00JDMPOK2&#34;&gt;Code&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Flow-Psychology-Experience-Perennial-Classics/dp/0061339202&#34;&gt;Flow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Effective-TypeScript-Specific-Ways-Improve-ebook/dp/B07Z8HRZZ3&#34;&gt;Effective TypeScript&lt;/a&gt; (on hold)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://a.co/d/8G4c6OO&#34;&gt;Clean Architecture&lt;/a&gt; (on hold)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;watching&#34;&gt;Watching&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=54l8_ewcOlY&amp;amp;list=PLND1JCRq8Vuh3f0P5qjrSdb5eC1ZfZwWJ&#34;&gt;Awakening from the Meaning Crisis&lt;/a&gt; (12 episodes in)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Building split ergo mech keyboards (built a corne choc, a microdox bud mx and a 3x5 cantor so far)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;health&#34;&gt;Health&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Working out&lt;/li&gt;
-&lt;li&gt;Meditating&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;learning&#34;&gt;Learning&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;NextJs&lt;/li&gt;
-&lt;li&gt;Building keyboards, soldering, debugging&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h4 id=&#34;this-is-a-now-page-based-on-the-concept-by-derek-sivers-dot-visit-nownownow-dot-com-for-more-inspiration-dot-visit-the-now-archive-to-check-out-things-that-used-to-be-on-this-page&#34;&gt;This is a Now page, based on the &lt;a href=&#34;https://sivers.org/nowff&#34;&gt;concept by Derek Sivers&lt;/a&gt;. Visit &lt;a href=&#34;https://nownownow.com&#34;&gt;nownownow.com&lt;/a&gt; for more inspiration. Visit the &lt;a href=&#34;/now-archive&#34;&gt;Now Archive&lt;/a&gt; to check out things that used to be on this page&lt;/h4&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Now Archive</title>
       <link>/now-archive/</link>
-      <pubDate>Sun, 31 Jul 2022 23:33:38 -0700</pubDate>
+      <pubDate>Mon, 05 Sep 2022 21:51:51 -0700</pubDate>
       
       <guid>/now-archive/</guid>
       <description>&lt;p&gt;This page contains everything that was moved from the &lt;a href=&#34;https://rrajath.com/now/&#34;&gt;Now page&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
+&lt;h2 id=&#34;sep-5-2022&#34;&gt;Sep 5, 2022&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Flow-Psychology-Experience-Perennial-Classics/dp/0061339202&#34;&gt;Flow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;jul-31-2022&#34;&gt;Jul 31, 2022&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.amazon.com/dp/B09LVVN9L3/ref=cm_sw_r_cp_api_ADKEAC3M8TS8DNTXXCEN&#34;&gt;Building a Second Brain&lt;/a&gt;&lt;/li&gt;
@@ -119,6 +66,63 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
 &lt;li&gt;Indieweb integration&lt;/li&gt;
 &lt;li&gt;Self-hosting my data using Nextcloud on my Raspberry Pi&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Now</title>
+      <link>/now/</link>
+      <pubDate>Mon, 05 Sep 2022 21:51:34 -0700</pubDate>
+      
+      <guid>/now/</guid>
+      <description>&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Code-Language-Computer-Developer-Practices-ebook/dp/B00JDMPOK2&#34;&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/dp/B08XTNHRR5&#34;&gt;Immune&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/dp/B098PGCSXT/ref=cm_sw_r_cp_api_5GVD160NQV7KHC41TVXT&#34;&gt;Self-Sovereign Identity&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;watching&#34;&gt;Watching&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=54l8_ewcOlY&amp;amp;list=PLND1JCRq8Vuh3f0P5qjrSdb5eC1ZfZwWJ&#34;&gt;Awakening from the Meaning Crisis&lt;/a&gt; (16 episodes in)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Building split ergo mech keyboards (built a corne choc, a microdox bud mx and a 3x5 cantor so far)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;health&#34;&gt;Health&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Working out&lt;/li&gt;
+&lt;li&gt;Running&lt;/li&gt;
+&lt;li&gt;Meditating&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learning&#34;&gt;Learning&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;NextJs&lt;/li&gt;
+&lt;li&gt;Building keyboards, soldering, debugging&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;this-is-a-now-page-based-on-the-concept-by-derek-sivers-dot-visit-nownownow-dot-com-for-more-inspiration-dot-visit-the-now-archive-to-check-out-things-that-used-to-be-on-this-page&#34;&gt;This is a Now page, based on the &lt;a href=&#34;https://sivers.org/nowff&#34;&gt;concept by Derek Sivers&lt;/a&gt;. Visit &lt;a href=&#34;https://nownownow.com&#34;&gt;nownownow.com&lt;/a&gt; for more inspiration. Visit the &lt;a href=&#34;/now-archive&#34;&gt;Now Archive&lt;/a&gt; to check out things that used to be on this page&lt;/h4&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Write emails from bottom to top</title>
+      <link>/posts/write-emails-from-bottom-to-top/</link>
+      <pubDate>Sun, 14 Aug 2022 19:06:00 -0700</pubDate>
+      
+      <guid>/posts/write-emails-from-bottom-to-top/</guid>
+      <description>&lt;p&gt;In the years I&amp;rsquo;ve composed emails, I was initially finding it a little hard to go through the top-down steps of adding people in the To field, CC field and coming up with the subject line. There were two problems with this workflow:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It broke my flow for composing an email&lt;/strong&gt;
+I&amp;rsquo;d have a vague idea of how to express my thoughts into words and that flow was broken by filling out these fields.
+&lt;strong&gt;I used to be trigger happy in sending the email&lt;/strong&gt;.
+In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt+Enter&lt;/code&gt;) is the keyboard shortcut for sending email. I&amp;rsquo;d be so used to hitting these that I&amp;rsquo;d sometimes hit them in the middle of the email. This was particularly a problem when I was using IntelliJ IDEs quite heavily. Because, &lt;code&gt;Option+Enter&lt;/code&gt; in an IntelliJ IDE would insert the currently suggested hint.&lt;/p&gt;
+&lt;p&gt;So, I figured out a simple fix for this: Write emails from bottom to top. Basically, do the following in order:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Write the body of the email first and you get all your thoughts out.&lt;/li&gt;
+&lt;li&gt;Then fill the subject line which is now easier to summarize.&lt;/li&gt;
+&lt;li&gt;Add people in To and CC fields.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The best part about this workflow is, hitting &lt;code&gt;Option+Enter&lt;/code&gt; at any point during the process (except once you start filling the To/CC fields) would do nothing, because there&amp;rsquo;s nobody to send the email to. This turned out to be super useful hack that I have been using ever since and has worked out really well.&lt;/p&gt;
 </description>
     </item>
     
