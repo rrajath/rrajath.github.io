@@ -7,7 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 05 Sep 2022 22:56:00 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Oct 2022 17:11:00 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>It depends…</title>
+      <link>/posts/it-depends/</link>
+      <pubDate>Sat, 01 Oct 2022 17:11:00 -0700</pubDate>
+      
+      <guid>/posts/it-depends/</guid>
+      <description>&lt;p&gt;Last year I went to physical therapy because I had severe lower back pain. It turned out the pain was mostly because of bad posture. As I was visiting the physical therapy place regularly, I started describing to the therapist how I sit on the couch, how I sit at a table and what my overall posture is during these times.&lt;/p&gt;
+&lt;p&gt;I would ask questions like &amp;ldquo;I sit with my back straight at my desk, and for my legs I use a soft foot stool. Does that help with the posture&amp;rdquo;. And he&amp;rsquo;d say, &amp;ldquo;Well, it depends&amp;hellip;&amp;rdquo;
+Then I would ask a question like, &amp;ldquo;I sometimes sit cross-legged on the sofa and I find that to be very comfortable. Would this affect my back in the long run?&amp;rdquo;. He&amp;rsquo;d again say, &amp;ldquo;Well, it depends&amp;hellip;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Pretty much all his answers started with &amp;ldquo;it depends&amp;hellip;&amp;rdquo; and then a caveat. At first I was annoyed that I never got direct answers and I hated any answer that started with &amp;ldquo;it depends&amp;hellip;&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;I later realized that I just wasn&amp;rsquo;t asking the right questions. Most of the time, the answers to many questions are not straight-forward, so it&amp;rsquo;s hard to get concrete answers. Take losing weight, for example. Asking questions like &amp;ldquo;Can I do X to lose weight?&amp;rdquo; will never get you a clear cut answer, because there are so many variables involved - like food, portions, exercise, sleep, stress, and many other factors. This is why there&amp;rsquo;s a plethora of information out there and people generally feel overwhelmed by it all. Our brains don&amp;rsquo;t deal very well with overwhelming amount of information. So, it tries to look for shortcuts and simple explanations. We also get into this habit of looking for specific information without understanding the overall picture. And many times, given the overall picture, the answer we get may not be the right one.&lt;/p&gt;
+&lt;p&gt;Back to my story, I realized I wasn&amp;rsquo;t asking good questions and I was also taking similar mental shortcuts. What I should have asked was questions like, &amp;ldquo;what muscles get worked while sitting?&amp;rdquo;, &amp;ldquo;what&amp;rsquo;s the best way to strengthen those muscles?&amp;rdquo;, &amp;ldquo;how do muscles perform while being sedentary vs. while doing a physical activity?&amp;rdquo;. These and may be few other questions would have helped me get closer to the answer I was looking for.&lt;/p&gt;
+&lt;p&gt;What I learned from this experience was to keep an eye out for answers that start with &amp;ldquo;It depends&amp;hellip;&amp;rdquo;. That&amp;rsquo;s a good signal that my question must be refined and that may be I should approach it in a different way.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>My beorg to blog workflow</title>
       <link>/posts/my-beorg-to-blog-workflow/</link>
@@ -36,72 +52,72 @@
 &lt;a href=&#34;/images/beorg_blog_post_template.png&#34;&gt;&lt;img src=&#34;/images/beorg_blog_post_template.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;generating-hugo-post-filename&#34;&gt;Generating Hugo post filename&lt;/h3&gt;
 &lt;p&gt;This is a code snippet that is required for generating the filename for the blog post. This function parses the post title and creates a filename that ends with a &amp;lsquo;.md&amp;rsquo; extension.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;	(&lt;span style=&#34;color:#b58900&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;rr/extract-hugo-post-file-name&lt;/span&gt; ()
-		&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;Create a filename out of blog post&amp;#39;s title.
-&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;This method is expected to be executed on a TODO heading on a an
-&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;org file containing blog posts that would be exported using
-&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;ox-hugo. Running this interactive command would set an org
-&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;property called EXPORT_FILE_NAME that is required by ox-hugo to
-&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;generate a Hugo-friendly markdown file in the location specified
-&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;in HUGO_BASE_DIR property.&amp;#34;&lt;/span&gt;
-		(&lt;span style=&#34;color:#b58900&#34;&gt;interactive&lt;/span&gt;)
-		(&lt;span style=&#34;color:#b58900&#34;&gt;setq-local&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;title-line&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;thing-at-point&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#39;line&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;t&lt;/span&gt;))
-		(&lt;span style=&#34;color:#b58900&#34;&gt;unless&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;not&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;string-match&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;TODO &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;title-line&lt;/span&gt;))
-			(&lt;span style=&#34;color:#b58900&#34;&gt;let*&lt;/span&gt; ((&lt;span style=&#34;color:#268bd2&#34;&gt;lines&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;split-string&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;title-line&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;TODO &amp;#34;&lt;/span&gt;))
-						 (&lt;span style=&#34;color:#268bd2&#34;&gt;blog-post-title&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;nth&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;lines&lt;/span&gt;))
-						 (&lt;span style=&#34;color:#268bd2&#34;&gt;file-name&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;replace-regexp-in-string&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;_+&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;-&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;replace-regexp-in-string&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;\\W&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;_&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;string-trim&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;downcase&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;blog-post-title&lt;/span&gt;)))))
-						 (&lt;span style=&#34;color:#268bd2&#34;&gt;blog-post-file-name&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;concat&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;file-name&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;.md&amp;#34;&lt;/span&gt;)))
-				(&lt;span style=&#34;color:#268bd2&#34;&gt;org-set-property&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;EXPORT_FILE_NAME&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;blog-post-file-name&lt;/span&gt;))))
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is an interactive function and I run it by hitting &lt;code&gt;M-x&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	(&lt;span style=&#34;color:#b58900&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;rr/extract-hugo-post-file-name&lt;/span&gt; ()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;Create a filename out of blog post&amp;#39;s title.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;This method is expected to be executed on a TODO heading on a an
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;org file containing blog posts that would be exported using
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;ox-hugo. Running this interactive command would set an org
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;property called EXPORT_FILE_NAME that is required by ox-hugo to
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;generate a Hugo-friendly markdown file in the location specified
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;in HUGO_BASE_DIR property.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		(&lt;span style=&#34;color:#b58900&#34;&gt;interactive&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		(&lt;span style=&#34;color:#b58900&#34;&gt;setq-local&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;title-line&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;thing-at-point&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#39;line&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;t&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		(&lt;span style=&#34;color:#b58900&#34;&gt;unless&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;not&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;string-match&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;TODO &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;title-line&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			(&lt;span style=&#34;color:#b58900&#34;&gt;let*&lt;/span&gt; ((&lt;span style=&#34;color:#268bd2&#34;&gt;lines&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;split-string&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;title-line&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;TODO &amp;#34;&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;						 (&lt;span style=&#34;color:#268bd2&#34;&gt;blog-post-title&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;nth&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;lines&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;						 (&lt;span style=&#34;color:#268bd2&#34;&gt;file-name&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;replace-regexp-in-string&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;_+&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;-&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;replace-regexp-in-string&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;\\W&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;_&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;string-trim&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;downcase&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;blog-post-title&lt;/span&gt;)))))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;						 (&lt;span style=&#34;color:#268bd2&#34;&gt;blog-post-file-name&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;concat&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;file-name&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;.md&amp;#34;&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;				(&lt;span style=&#34;color:#268bd2&#34;&gt;org-set-property&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;EXPORT_FILE_NAME&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;blog-post-file-name&lt;/span&gt;))))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is an interactive function and I run it by hitting &lt;code&gt;M-x&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;turn-on-auto-export-mode-when-i-visit-blog-dot-org&#34;&gt;Turn on auto-export-mode when I visit blog.org&lt;/h3&gt;
 &lt;p&gt;All my blog posts are saved in an org file called blog.org. Whenever I open this file, &lt;code&gt;org-hugo-auto-export-mode&lt;/code&gt; is turned on.&lt;/p&gt;
 &lt;p&gt;The minor mode &lt;code&gt;org-hugo-auto-export-mode&lt;/code&gt; enables auto export hugo posts on saving. However, this minor mode is disabled by default. It doesn&amp;rsquo;t make sense to have this turned on globally. So, the following piece of code enables the minor mode only when the buffer is &lt;code&gt;blog.org&lt;/code&gt;.
 Found the code in a &lt;a href=&#34;https://stackoverflow.com/a/39652226&#34;&gt;stack overflow post&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#b58900&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;rr/enable-hugo-auto-export-mode&lt;/span&gt; ()
-	(&lt;span style=&#34;color:#b58900&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;equal&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;buffer-name&lt;/span&gt;) &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;blog.org&amp;#34;&lt;/span&gt;)
-			(&lt;span style=&#34;color:#268bd2&#34;&gt;org-hugo-auto-export-mode&lt;/span&gt;)))
-
-(&lt;span style=&#34;color:#268bd2&#34;&gt;add-hook&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#39;find-file-hook&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#39;rr/enable-hugo-auto-export-mode&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;With this mode enabled, every time I hit save, any edited post gets exported to a Hugo-compatible markdown and saved to the right location specified in both the header of the file as well as the &lt;code&gt;EXPORT_FILE_NAME&lt;/code&gt; property.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#b58900&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;rr/enable-hugo-auto-export-mode&lt;/span&gt; ()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	(&lt;span style=&#34;color:#b58900&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;equal&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;buffer-name&lt;/span&gt;) &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;blog.org&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			(&lt;span style=&#34;color:#268bd2&#34;&gt;org-hugo-auto-export-mode&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;add-hook&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#39;find-file-hook&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#39;rr/enable-hugo-auto-export-mode&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;With this mode enabled, every time I hit save, any edited post gets exported to a Hugo-compatible markdown and saved to the right location specified in both the header of the file as well as the &lt;code&gt;EXPORT_FILE_NAME&lt;/code&gt; property.&lt;/p&gt;
 &lt;h3 id=&#34;deploy-dot-sh-script&#34;&gt;deploy.sh script&lt;/h3&gt;
 &lt;p&gt;Once the post is ready to be published, the blog post must be committed to the current repository and pushed. Since I&amp;rsquo;m also hosting the blog on GitHub using GitHub Pages, there&amp;rsquo;s an additional repository to which I have to copy the public directory generated in this code repository. Then those files must be committed and pushed as well. All of this is done using script called &lt;code&gt;deploy.sh&lt;/code&gt; that needs to be run once. Here&amp;rsquo;s the script.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#719e07&#34;&gt;#!/bin/sh
-&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;&lt;/span&gt;
-&lt;span style=&#34;color:#586e75&#34;&gt;# If a command fails then the deploy stops&lt;/span&gt;
-&lt;span style=&#34;color:#b58900&#34;&gt;set&lt;/span&gt; -e
-
-&lt;span style=&#34;color:#b58900&#34;&gt;printf&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;\033[0;32mDeploying updates to GitHub...\033[0m\n&amp;#34;&lt;/span&gt;
-
-&lt;span style=&#34;color:#586e75&#34;&gt;# Build the project.&lt;/span&gt;
-hugo -t ezhil &lt;span style=&#34;color:#586e75&#34;&gt;# if using a theme, replace with `hugo -t &amp;lt;YOURTHEME&amp;gt;`&lt;/span&gt;
-
-&lt;span style=&#34;color:#586e75&#34;&gt;# git push committed changes in existing folder&lt;/span&gt;
-git push origin master
-
-&lt;span style=&#34;color:#586e75&#34;&gt;# Copy public folder to the repo outside the submodule&lt;/span&gt;
-&lt;span style=&#34;color:#586e75&#34;&gt;# The issue is, submodule does not get updated when running this script either because of incorrect setup&lt;/span&gt;
-&lt;span style=&#34;color:#586e75&#34;&gt;# or maybe because public is part of gitignore and the remote points to blog.git instead of rrajath.github.io.git.&lt;/span&gt;
-&lt;span style=&#34;color:#586e75&#34;&gt;# In order to make this script work properly, the public folder that is generated is copied to the repo outside&lt;/span&gt;
-&lt;span style=&#34;color:#586e75&#34;&gt;# this folder and then committed and pushed&lt;/span&gt;
-cp -r public/* ../rrajath.github.io
-
-&lt;span style=&#34;color:#586e75&#34;&gt;# Go To Public folder&lt;/span&gt;
-&lt;span style=&#34;color:#b58900&#34;&gt;cd&lt;/span&gt; ../rrajath.github.io
-
-&lt;span style=&#34;color:#586e75&#34;&gt;# Add changes to git.&lt;/span&gt;
-git add -A
-
-&lt;span style=&#34;color:#586e75&#34;&gt;# Commit changes.&lt;/span&gt;
-&lt;span style=&#34;color:#268bd2&#34;&gt;msg&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;rebuilding site &lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;$(&lt;/span&gt;date&lt;span style=&#34;color:#719e07&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;[&lt;/span&gt; -n &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;$*&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#719e07&#34;&gt;then&lt;/span&gt;
-	&lt;span style=&#34;color:#268bd2&#34;&gt;msg&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;$*&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;span style=&#34;color:#719e07&#34;&gt;fi&lt;/span&gt;
-git commit -m &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;$msg&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;
-
-&lt;span style=&#34;color:#586e75&#34;&gt;# Push source and build repos.&lt;/span&gt;
-git push origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;#!/bin/sh
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#586e75&#34;&gt;# If a command fails then the deploy stops&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#b58900&#34;&gt;set&lt;/span&gt; -e
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#b58900&#34;&gt;printf&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;\033[0;32mDeploying updates to GitHub...\033[0m\n&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#586e75&#34;&gt;# Build the project.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo -t ezhil &lt;span style=&#34;color:#586e75&#34;&gt;# if using a theme, replace with `hugo -t &amp;lt;YOURTHEME&amp;gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#586e75&#34;&gt;# git push committed changes in existing folder&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push origin master
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#586e75&#34;&gt;# Copy public folder to the repo outside the submodule&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#586e75&#34;&gt;# The issue is, submodule does not get updated when running this script either because of incorrect setup&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#586e75&#34;&gt;# or maybe because public is part of gitignore and the remote points to blog.git instead of rrajath.github.io.git.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#586e75&#34;&gt;# In order to make this script work properly, the public folder that is generated is copied to the repo outside&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#586e75&#34;&gt;# this folder and then committed and pushed&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp -r public/* ../rrajath.github.io
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#586e75&#34;&gt;# Go To Public folder&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#b58900&#34;&gt;cd&lt;/span&gt; ../rrajath.github.io
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#586e75&#34;&gt;# Add changes to git.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add -A
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#586e75&#34;&gt;# Commit changes.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;msg&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;rebuilding site &lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;$(&lt;/span&gt;date&lt;span style=&#34;color:#719e07&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;[&lt;/span&gt; -n &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;$*&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#719e07&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#268bd2&#34;&gt;msg&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;$*&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;$msg&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#586e75&#34;&gt;# Push source and build repos.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push origin master
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;This seems like a lot of work, but it&amp;rsquo;s not. All of this works beautifully and it&amp;rsquo;s a one-time setup. The satisfaction of coming up with a system that is tailored to work exactly to my needs feels great.&lt;/p&gt;
 &lt;p&gt;Also, workflows are hard to explain using text or in a blog post. There are quite a lot of moving parts and different parts of the workflow need different pre-requisites. When all of them are aligned, it works smoothly.&lt;/p&gt;
 </description>
@@ -318,12 +334,12 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
 &lt;p&gt;Building a literate configuration needs just one prerequisite - Emacs, because we need a way to &amp;ldquo;tangle&amp;rdquo; the source blocks in the org files. Since Emacs ships with org mode and org babel, tangling is just a keybinding away. We only need two things in order to create a literate configuration: a source block and a tangle attribute. Here&amp;rsquo;s an example to show how that&amp;rsquo;s done.&lt;/p&gt;
 &lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
 &lt;p&gt;Enabling tangle in an org file can be done by specifying a tangle location at the top as part of the &lt;code&gt;#+PROPERTY&lt;/code&gt; attribute, like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;#+PROPERTY: header-args :tangle /path/to/file-name.extension
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here&amp;rsquo;s what a code block looks like in an org file.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;#+begin_src emacs-lisp
-  (setq foo &amp;#34;bar&amp;#34;)
-#+end_src
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can write your documentation around these code blocks and hitting &lt;code&gt;C-c C-v t&lt;/code&gt; (or invoking the function &lt;code&gt;org-babel-tangle&lt;/code&gt;) at the top of your file would tangle them to the file specified in the &lt;code&gt;#+PROPERTY&lt;/code&gt; attribute of your org file.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#+PROPERTY: header-args :tangle /path/to/file-name.extension
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here&amp;rsquo;s what a code block looks like in an org file.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#+begin_src emacs-lisp
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (setq foo &amp;#34;bar&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#+end_src
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can write your documentation around these code blocks and hitting &lt;code&gt;C-c C-v t&lt;/code&gt; (or invoking the function &lt;code&gt;org-babel-tangle&lt;/code&gt;) at the top of your file would tangle them to the file specified in the &lt;code&gt;#+PROPERTY&lt;/code&gt; attribute of your org file.&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Using literate configuration for config files is great and I converted almost all my configs to literate configs. For reference, have a look at my &lt;a href=&#34;https://github.com/rrajath/dotfiles/blob/master/.emacs.d/PrivateConfig.org&#34;&gt;literate configuration for my Emacs setup&lt;/a&gt;. Look at the source blocks to see actual configs. Use the &amp;ldquo;Raw&amp;rdquo; button on github notice line 2 where it says &lt;code&gt;:tangle ./private-config.el&lt;/code&gt;&lt;/p&gt;
 </description>
@@ -538,39 +554,39 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
       <guid>/posts/org-mode-smart-archive/</guid>
       <description>&lt;p&gt;So far, my workflow in &lt;a href=&#34;https://orgmode.org/&#34;&gt;OrgMode&lt;/a&gt; for managing tasks and events was to have one file called &lt;code&gt;organize.org&lt;/code&gt; that contains top-level headings - &lt;strong&gt;Tasks&lt;/strong&gt;, &lt;strong&gt;Events&lt;/strong&gt; that contained respective items. Once I finished those items, I&amp;rsquo;d move them to a different file called &lt;code&gt;archive.org&lt;/code&gt;. So, my &lt;code&gt;organize.org&lt;/code&gt; file looked something like this:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;code&gt;organize.org&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt; * Tasks
-  * Task 1
-  * Task 2
- * Events
-  * Event 1
-  * Event 2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Initially, I was directly archiving all the tasks/events that I completed, so my &lt;code&gt;archive.org&lt;/code&gt; became a dumping ground. A few weeks later I looked at my archive file and it was so hard to go look at it and separate them out, so I created similar top-level headings.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; * Tasks
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  * Task 1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  * Task 2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; * Events
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  * Event 1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  * Event 2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Initially, I was directly archiving all the tasks/events that I completed, so my &lt;code&gt;archive.org&lt;/code&gt; became a dumping ground. A few weeks later I looked at my archive file and it was so hard to go look at it and separate them out, so I created similar top-level headings.&lt;/p&gt;
 &lt;p&gt;Now my &lt;code&gt;archive.org&lt;/code&gt; had &lt;strong&gt;Tasks&lt;/strong&gt; and &lt;strong&gt;Events&lt;/strong&gt; as the top-level headings and I would archive all the DONE tasks and events to their respective headings. This also felt a little tedious because each time I had to archive something, I had to select the specific file and heading. I could have used the archive feature that org-mode provides, but that creates a new file whenever I want to archive something from another file. I want to maintain just one file for archive and if I want to archive anything from any of the other files, they&amp;rsquo;ll all go to this one &lt;code&gt;archive.org&lt;/code&gt;. This is part of my PARA workflow.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;: By the way, I use Doom Emacs, so some of the keybindings I mention in this article will be specific to &lt;a href=&#34;https://github.com/hlissner/doom-emacs&#34;&gt;Doom Emacs&lt;/a&gt;. They may not work with &lt;a href=&#34;https://www.spacemacs.org/&#34;&gt;Spacemacs&lt;/a&gt; or &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34;&gt;Vanilla Emacs&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;What I figured out later was to have a &lt;code&gt;:PROPERTIES:&lt;/code&gt; drawer containing the location of the archive file &lt;em&gt;and&lt;/em&gt; the heading under which it can be archived to. And, I did this for all the headings where I usually archive stuff. Now that I&amp;rsquo;ve set this up, all I do is hit &lt;code&gt;SPC m A&lt;/code&gt; (or &lt;code&gt;M-x org-archive-subtree&lt;/code&gt;) and the item goes to the right location. And not just that, it also adds a &lt;code&gt;:PROPERTIES:&lt;/code&gt; drawer in the destination location with all the relevant details like where that heading came from, at what time the task was archived, etc.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;code&gt;organize.org&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt; * Tasks
-   :PROPERTIES:
-   :ARCHIVE: ./archive.org::* Tasks
-   :END:
- * Events
-   :PROPERTIES:
-   :ARCHIVE: ./archive.org::* Events
-   :END:
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, if I have to look at all the things I&amp;rsquo;ve done and events I&amp;rsquo;ve attended over the past day/week/month/quarter/year, I just have to go to &lt;code&gt;archive.org&lt;/code&gt; and do a sparse tree search (&lt;code&gt;SPC m s s&lt;/code&gt; or &lt;code&gt;M-x org-sparse-tree&lt;/code&gt;) on that tree and I can slice and dice the data however I want. In case you want to know what properties get added in &lt;code&gt;archive.org&lt;/code&gt;, here&amp;rsquo;s a preview.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; * Tasks
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   :PROPERTIES:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   :ARCHIVE: ./archive.org::* Tasks
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   :END:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; * Events
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   :PROPERTIES:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   :ARCHIVE: ./archive.org::* Events
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   :END:
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, if I have to look at all the things I&amp;rsquo;ve done and events I&amp;rsquo;ve attended over the past day/week/month/quarter/year, I just have to go to &lt;code&gt;archive.org&lt;/code&gt; and do a sparse tree search (&lt;code&gt;SPC m s s&lt;/code&gt; or &lt;code&gt;M-x org-sparse-tree&lt;/code&gt;) on that tree and I can slice and dice the data however I want. In case you want to know what properties get added in &lt;code&gt;archive.org&lt;/code&gt;, here&amp;rsquo;s a preview.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;code&gt;archive.org&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt; * Tasks
- ** DONE Task 1
-    CLOSED: [2020-09-12 Sat 11:51]
-    :PROPERTIES:
-    :ARCHIVE_TIME: 2020-09-12 Sat 11:52
-    :ARCHIVE_FILE: ~/Documents/org-mode/organize.org
-    :ARCHIVE_OLPATH: Tasks
-    :ARCHIVE_CATEGORY: organize
-    :ARCHIVE_TODO: DONE
-    :ARCHIVE_ITAGS: task
-    :END:
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; * Tasks
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ** DONE Task 1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    CLOSED: [2020-09-12 Sat 11:51]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :PROPERTIES:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :ARCHIVE_TIME: 2020-09-12 Sat 11:52
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :ARCHIVE_FILE: ~/Documents/org-mode/organize.org
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :ARCHIVE_OLPATH: Tasks
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :ARCHIVE_CATEGORY: organize
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :ARCHIVE_TODO: DONE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :ARCHIVE_ITAGS: task
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :END:
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -581,17 +597,6 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
       <guid>/micro/internet-explained-first-principles/</guid>
       <description>&lt;p&gt;Internet explained from First Principles&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://explained-from-first-principles.com/internet&#34;&gt;https://explained-from-first-principles.com/internet&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Gordon Brander</title>
-      <link>/micro/gordon-brander/</link>
-      <pubDate>Sat, 12 Sep 2020 11:24:11 -0700</pubDate>
-      
-      <guid>/micro/gordon-brander/</guid>
-      <description>&lt;p&gt;Gordon Brander: Patterns  - knowledge base containing ideas and connections
-&lt;a href=&#34;http://gordonbrander.com/pattern&#34;&gt;http://gordonbrander.com/pattern&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

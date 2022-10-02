@@ -84,39 +84,39 @@
 			
 			<p>So far, my workflow in <a href="https://orgmode.org/">OrgMode</a> for managing tasks and events was to have one file called <code>organize.org</code> that contains top-level headings - <strong>Tasks</strong>, <strong>Events</strong> that contained respective items. Once I finished those items, I&rsquo;d move them to a different file called <code>archive.org</code>. So, my <code>organize.org</code> file looked something like this:</p>
 <p><strong><code>organize.org</code></strong></p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"> * Tasks
-  * Task 1
-  * Task 2
- * Events
-  * Event 1
-  * Event 2
-</code></pre></div><p>Initially, I was directly archiving all the tasks/events that I completed, so my <code>archive.org</code> became a dumping ground. A few weeks later I looked at my archive file and it was so hard to go look at it and separate them out, so I created similar top-level headings.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span> * Tasks
+</span></span><span style="display:flex;"><span>  * Task 1
+</span></span><span style="display:flex;"><span>  * Task 2
+</span></span><span style="display:flex;"><span> * Events
+</span></span><span style="display:flex;"><span>  * Event 1
+</span></span><span style="display:flex;"><span>  * Event 2
+</span></span></code></pre></div><p>Initially, I was directly archiving all the tasks/events that I completed, so my <code>archive.org</code> became a dumping ground. A few weeks later I looked at my archive file and it was so hard to go look at it and separate them out, so I created similar top-level headings.</p>
 <p>Now my <code>archive.org</code> had <strong>Tasks</strong> and <strong>Events</strong> as the top-level headings and I would archive all the DONE tasks and events to their respective headings. This also felt a little tedious because each time I had to archive something, I had to select the specific file and heading. I could have used the archive feature that org-mode provides, but that creates a new file whenever I want to archive something from another file. I want to maintain just one file for archive and if I want to archive anything from any of the other files, they&rsquo;ll all go to this one <code>archive.org</code>. This is part of my PARA workflow.</p>
 <p><em><strong>Note</strong>: By the way, I use Doom Emacs, so some of the keybindings I mention in this article will be specific to <a href="https://github.com/hlissner/doom-emacs">Doom Emacs</a>. They may not work with <a href="https://www.spacemacs.org/">Spacemacs</a> or <a href="https://www.gnu.org/software/emacs/">Vanilla Emacs</a>.</em></p>
 <p>What I figured out later was to have a <code>:PROPERTIES:</code> drawer containing the location of the archive file <em>and</em> the heading under which it can be archived to. And, I did this for all the headings where I usually archive stuff. Now that I&rsquo;ve set this up, all I do is hit <code>SPC m A</code> (or <code>M-x org-archive-subtree</code>) and the item goes to the right location. And not just that, it also adds a <code>:PROPERTIES:</code> drawer in the destination location with all the relevant details like where that heading came from, at what time the task was archived, etc.</p>
 <p><strong><code>organize.org</code></strong></p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"> * Tasks
-   :PROPERTIES:
-   :ARCHIVE: ./archive.org::* Tasks
-   :END:
- * Events
-   :PROPERTIES:
-   :ARCHIVE: ./archive.org::* Events
-   :END:
-</code></pre></div><p>Now, if I have to look at all the things I&rsquo;ve done and events I&rsquo;ve attended over the past day/week/month/quarter/year, I just have to go to <code>archive.org</code> and do a sparse tree search (<code>SPC m s s</code> or <code>M-x org-sparse-tree</code>) on that tree and I can slice and dice the data however I want. In case you want to know what properties get added in <code>archive.org</code>, here&rsquo;s a preview.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span> * Tasks
+</span></span><span style="display:flex;"><span>   :PROPERTIES:
+</span></span><span style="display:flex;"><span>   :ARCHIVE: ./archive.org::* Tasks
+</span></span><span style="display:flex;"><span>   :END:
+</span></span><span style="display:flex;"><span> * Events
+</span></span><span style="display:flex;"><span>   :PROPERTIES:
+</span></span><span style="display:flex;"><span>   :ARCHIVE: ./archive.org::* Events
+</span></span><span style="display:flex;"><span>   :END:
+</span></span></code></pre></div><p>Now, if I have to look at all the things I&rsquo;ve done and events I&rsquo;ve attended over the past day/week/month/quarter/year, I just have to go to <code>archive.org</code> and do a sparse tree search (<code>SPC m s s</code> or <code>M-x org-sparse-tree</code>) on that tree and I can slice and dice the data however I want. In case you want to know what properties get added in <code>archive.org</code>, here&rsquo;s a preview.</p>
 <p><strong><code>archive.org</code></strong></p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"> * Tasks
- ** DONE Task 1
-    CLOSED: [2020-09-12 Sat 11:51]
-    :PROPERTIES:
-    :ARCHIVE_TIME: 2020-09-12 Sat 11:52
-    :ARCHIVE_FILE: ~/Documents/org-mode/organize.org
-    :ARCHIVE_OLPATH: Tasks
-    :ARCHIVE_CATEGORY: organize
-    :ARCHIVE_TODO: DONE
-    :ARCHIVE_ITAGS: task
-    :END:
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span> * Tasks
+</span></span><span style="display:flex;"><span> ** DONE Task 1
+</span></span><span style="display:flex;"><span>    CLOSED: [2020-09-12 Sat 11:51]
+</span></span><span style="display:flex;"><span>    :PROPERTIES:
+</span></span><span style="display:flex;"><span>    :ARCHIVE_TIME: 2020-09-12 Sat 11:52
+</span></span><span style="display:flex;"><span>    :ARCHIVE_FILE: ~/Documents/org-mode/organize.org
+</span></span><span style="display:flex;"><span>    :ARCHIVE_OLPATH: Tasks
+</span></span><span style="display:flex;"><span>    :ARCHIVE_CATEGORY: organize
+</span></span><span style="display:flex;"><span>    :ARCHIVE_TODO: DONE
+</span></span><span style="display:flex;"><span>    :ARCHIVE_ITAGS: task
+</span></span><span style="display:flex;"><span>    :END:
+</span></span></code></pre></div>
 			
 		</div>
 

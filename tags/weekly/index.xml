@@ -306,21 +306,21 @@ the current and the next 2 cells along the navigation path. If the database sear
 &lt;h3 id=&#34;along-came-github-pageshttppagesgithubcom&#34;&gt;Along came &lt;a href=&#34;http://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;I stumbled upon &lt;a href=&#34;http://sirupsen.com/the-switch-to-github-pages/&#34;&gt;this page&lt;/a&gt; which hinted me to take a peek at GitHub pages and I was impressed. I checked out &lt;a href=&#34;http://jekyllbootstrap.com&#34;&gt;Jekyll&lt;/a&gt; and it seemed perfect and exactly what I wanted. All I had to do was, fork the repo and push my posts to GitHub. As simple as that.&lt;/p&gt;
 &lt;p&gt;Posts can be created in markdown. A simple rake command generates the boilerplate stuff to get you started.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;rake post title&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#39;A new blog post&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rake post title&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#39;A new blog post&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The above command is all that is needed to create a new post. It fills up the new file with headers which has some important information that looks something like this.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;---
-layout: post  
-title: &amp;#34;Weekly Noise #1&amp;#34;  
-description: &amp;#34;Moving to GitHub pages&amp;#34;  
-category: &amp;#34;weekly-noise&amp;#34;  
-tags: [weekly, noise]
----
-&amp;lt;Write your blog post here&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Once you&amp;rsquo;re done writing a post, you just have to add, commit and push&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;git add .
-git commit
-git push origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And Voila! You&amp;rsquo;re done. :)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;layout: post  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title: &amp;#34;Weekly Noise #1&amp;#34;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;description: &amp;#34;Moving to GitHub pages&amp;#34;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;category: &amp;#34;weekly-noise&amp;#34;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tags: [weekly, noise]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;Write your blog post here&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Once you&amp;rsquo;re done writing a post, you just have to add, commit and push&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git push origin master
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And Voila! You&amp;rsquo;re done. :)&lt;/p&gt;
 &lt;p&gt;GitHub Pages is so simple and fast. It doesn&amp;rsquo;t need a database, the so-called admin panel is just a YAML config file. And the best part is, the whole blog is in your control. &lt;em&gt;You&lt;/em&gt; have the freedom to change anything and everything.&lt;/p&gt;
 &lt;p&gt;I spent the week customizing the blog and pushing my changes to the repo. There are still couple of changes that I should be doing. But most of the blog layout and plugins are in place. Here&amp;rsquo;s the target for next week:&lt;/p&gt;
 &lt;ul&gt;
