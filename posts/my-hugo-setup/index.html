@@ -99,29 +99,29 @@
 <p>Although I liked the theme and it fit most of my needs, I had to make some changes to get tailored to my taste.</p>
 <h3 id="post-links-and-summaries-on-home-page">Post links and summaries on home page</h3>
 <p>The recent posts section (on the home page) was of the format:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&lt;post_title&gt; -- &lt;summary&gt;
-</code></pre></div><p>This felt a little cluttered for two reasons:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>&lt;post_title&gt; -- &lt;summary&gt;
+</span></span></code></pre></div><p>This felt a little cluttered for two reasons:</p>
 <ol>
 <li>Both the title and the summary were on the same line next to each other</li>
 <li>Title and summary were of the same font size</li>
 </ol>
 <p>I wanted the title to be a little bigger and have its own line, so I made the following changes to <a href="https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/index.html#L20-L29">themes/ezhil/layouts/index.html</a>:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#268bd2">a</span> class<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;title u-url&#34;</span> href<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;{{ .RelPermalink }}&#34;</span>&gt;&lt;<span style="color:#268bd2">font</span> size<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;+2&#34;</span>&gt;{{.Title}}&lt;/<span style="color:#268bd2">font</span>&gt;&lt;/<span style="color:#268bd2">a</span>&gt;
-		&lt;<span style="color:#268bd2">div</span>&gt;
-		    &lt;<span style="color:#268bd2">span</span> class<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;description&#34;</span>&gt;
-		        {{ if isset .Params &#34;description&#34; }}
-            {{ .Description }}
-            {{ else }}
-            {{ .Summary }}<span style="color:#cb4b16">&amp;hellip;</span>
-            {{ end }}
-        &lt;/<span style="color:#268bd2">span</span>&gt;
-    &lt;/<span style="color:#268bd2">div</span>&gt;
-</code></pre></div><p>Basically, add <code>&lt;font size=&quot;+2&quot;&gt;</code> and put the <code>&lt;span&gt;</code> inside a <code>&lt;div&gt;</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#268bd2">a</span> class<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;title u-url&#34;</span> href<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;{{ .RelPermalink }}&#34;</span>&gt;&lt;<span style="color:#268bd2">font</span> size<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;+2&#34;</span>&gt;{{.Title}}&lt;/<span style="color:#268bd2">font</span>&gt;&lt;/<span style="color:#268bd2">a</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;<span style="color:#268bd2">div</span>&gt;
+</span></span><span style="display:flex;"><span>		    &lt;<span style="color:#268bd2">span</span> class<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;description&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		        {{ if isset .Params &#34;description&#34; }}
+</span></span><span style="display:flex;"><span>            {{ .Description }}
+</span></span><span style="display:flex;"><span>            {{ else }}
+</span></span><span style="display:flex;"><span>            {{ .Summary }}<span style="color:#cb4b16">&amp;hellip;</span>
+</span></span><span style="display:flex;"><span>            {{ end }}
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#268bd2">span</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#268bd2">div</span>&gt;
+</span></span></code></pre></div><p>Basically, add <code>&lt;font size=&quot;+2&quot;&gt;</code> and put the <code>&lt;span&gt;</code> inside a <code>&lt;div&gt;</code></p>
 <h3 id="added-reading-time">Added reading time</h3>
 <p>I remember Jekyll didn&rsquo;t have a straight-forward way to add reading time to posts. Hugo gives this out of the box. I like having it for blog posts just to set the expectation of how long it takes to read the blog post before you dive into it. It can be vaguely estimated by just eye-balling or scrolling. But it&rsquo;s nice to have reading time displayed at the top of the post.</p>
 <p>In <a href="https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/_default/single.html#L11">themes/ezhil/layouts/_default/single.html</a>:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">| {{ .ReadingTime }} min read
-</code></pre></div><p>Added the above text next to the publish date. I also added permalink to the publish date.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>| {{ .ReadingTime }} min read
+</span></span></code></pre></div><p>Added the above text next to the publish date. I also added permalink to the publish date.</p>
 <h3 id="added-a-page-for-micro-posts">Added a page for Micro Posts</h3>
 <p>Blog posts are more formal and kinda long-form content which has a specific theme or intent behind them. I wanted to have a separate page for short thoughts (one or few lines) that don&rsquo;t warrant for a full blog post. This can include things like sharing an image, a link, or just some quick thoughts. So, I added a page called <a href="https://rrajath.com/micro/">Micro</a> and created my own template that is based off of  the standard list page, but a little different.</p>
 <p>Take a look at <a href="https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/micro/list.html">/themes/ezhil/layouts/micro/list.html</a> to understand the customization.</p>

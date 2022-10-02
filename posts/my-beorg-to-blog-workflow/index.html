@@ -106,72 +106,72 @@ Alright. This needs some explaining and prerequisites."/>
 <a href="/images/beorg_blog_post_template.png"><img src="/images/beorg_blog_post_template.png" alt=""></a></p>
 <h3 id="generating-hugo-post-filename">Generating Hugo post filename</h3>
 <p>This is a code snippet that is required for generating the filename for the blog post. This function parses the post title and creates a filename that ends with a &lsquo;.md&rsquo; extension.</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">	(<span style="color:#b58900">defun</span> <span style="color:#268bd2">rr/extract-hugo-post-file-name</span> ()
-		<span style="color:#2aa198">&#34;Create a filename out of blog post&#39;s title.
-</span><span style="color:#2aa198">
-</span><span style="color:#2aa198">This method is expected to be executed on a TODO heading on a an
-</span><span style="color:#2aa198">org file containing blog posts that would be exported using
-</span><span style="color:#2aa198">ox-hugo. Running this interactive command would set an org
-</span><span style="color:#2aa198">property called EXPORT_FILE_NAME that is required by ox-hugo to
-</span><span style="color:#2aa198">generate a Hugo-friendly markdown file in the location specified
-</span><span style="color:#2aa198">in HUGO_BASE_DIR property.&#34;</span>
-		(<span style="color:#b58900">interactive</span>)
-		(<span style="color:#b58900">setq-local</span> <span style="color:#268bd2">title-line</span> (<span style="color:#268bd2">thing-at-point</span> <span style="color:#2aa198">&#39;line</span> <span style="color:#cb4b16">t</span>))
-		(<span style="color:#b58900">unless</span> (<span style="color:#268bd2">not</span> (<span style="color:#268bd2">string-match</span> <span style="color:#2aa198">&#34;TODO &#34;</span> <span style="color:#268bd2">title-line</span>))
-			(<span style="color:#b58900">let*</span> ((<span style="color:#268bd2">lines</span> (<span style="color:#268bd2">split-string</span> <span style="color:#268bd2">title-line</span> <span style="color:#2aa198">&#34;TODO &#34;</span>))
-						 (<span style="color:#268bd2">blog-post-title</span> (<span style="color:#268bd2">nth</span> <span style="color:#2aa198">1</span> <span style="color:#268bd2">lines</span>))
-						 (<span style="color:#268bd2">file-name</span> (<span style="color:#268bd2">replace-regexp-in-string</span> <span style="color:#2aa198">&#34;_+&#34;</span> <span style="color:#2aa198">&#34;-&#34;</span> (<span style="color:#268bd2">replace-regexp-in-string</span> <span style="color:#2aa198">&#34;\\W&#34;</span> <span style="color:#2aa198">&#34;_&#34;</span> (<span style="color:#268bd2">string-trim</span> (<span style="color:#268bd2">downcase</span> <span style="color:#268bd2">blog-post-title</span>)))))
-						 (<span style="color:#268bd2">blog-post-file-name</span> (<span style="color:#268bd2">concat</span> <span style="color:#268bd2">file-name</span> <span style="color:#2aa198">&#34;.md&#34;</span>)))
-				(<span style="color:#268bd2">org-set-property</span> <span style="color:#2aa198">&#34;EXPORT_FILE_NAME&#34;</span> <span style="color:#268bd2">blog-post-file-name</span>))))
-</code></pre></div><p>This is an interactive function and I run it by hitting <code>M-x</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>	(<span style="color:#b58900">defun</span> <span style="color:#268bd2">rr/extract-hugo-post-file-name</span> ()
+</span></span><span style="display:flex;"><span>		<span style="color:#2aa198">&#34;Create a filename out of blog post&#39;s title.
+</span></span></span><span style="display:flex;"><span><span style="color:#2aa198">
+</span></span></span><span style="display:flex;"><span><span style="color:#2aa198">This method is expected to be executed on a TODO heading on a an
+</span></span></span><span style="display:flex;"><span><span style="color:#2aa198">org file containing blog posts that would be exported using
+</span></span></span><span style="display:flex;"><span><span style="color:#2aa198">ox-hugo. Running this interactive command would set an org
+</span></span></span><span style="display:flex;"><span><span style="color:#2aa198">property called EXPORT_FILE_NAME that is required by ox-hugo to
+</span></span></span><span style="display:flex;"><span><span style="color:#2aa198">generate a Hugo-friendly markdown file in the location specified
+</span></span></span><span style="display:flex;"><span><span style="color:#2aa198">in HUGO_BASE_DIR property.&#34;</span>
+</span></span><span style="display:flex;"><span>		(<span style="color:#b58900">interactive</span>)
+</span></span><span style="display:flex;"><span>		(<span style="color:#b58900">setq-local</span> <span style="color:#268bd2">title-line</span> (<span style="color:#268bd2">thing-at-point</span> <span style="color:#2aa198">&#39;line</span> <span style="color:#cb4b16">t</span>))
+</span></span><span style="display:flex;"><span>		(<span style="color:#b58900">unless</span> (<span style="color:#268bd2">not</span> (<span style="color:#268bd2">string-match</span> <span style="color:#2aa198">&#34;TODO &#34;</span> <span style="color:#268bd2">title-line</span>))
+</span></span><span style="display:flex;"><span>			(<span style="color:#b58900">let*</span> ((<span style="color:#268bd2">lines</span> (<span style="color:#268bd2">split-string</span> <span style="color:#268bd2">title-line</span> <span style="color:#2aa198">&#34;TODO &#34;</span>))
+</span></span><span style="display:flex;"><span>						 (<span style="color:#268bd2">blog-post-title</span> (<span style="color:#268bd2">nth</span> <span style="color:#2aa198">1</span> <span style="color:#268bd2">lines</span>))
+</span></span><span style="display:flex;"><span>						 (<span style="color:#268bd2">file-name</span> (<span style="color:#268bd2">replace-regexp-in-string</span> <span style="color:#2aa198">&#34;_+&#34;</span> <span style="color:#2aa198">&#34;-&#34;</span> (<span style="color:#268bd2">replace-regexp-in-string</span> <span style="color:#2aa198">&#34;\\W&#34;</span> <span style="color:#2aa198">&#34;_&#34;</span> (<span style="color:#268bd2">string-trim</span> (<span style="color:#268bd2">downcase</span> <span style="color:#268bd2">blog-post-title</span>)))))
+</span></span><span style="display:flex;"><span>						 (<span style="color:#268bd2">blog-post-file-name</span> (<span style="color:#268bd2">concat</span> <span style="color:#268bd2">file-name</span> <span style="color:#2aa198">&#34;.md&#34;</span>)))
+</span></span><span style="display:flex;"><span>				(<span style="color:#268bd2">org-set-property</span> <span style="color:#2aa198">&#34;EXPORT_FILE_NAME&#34;</span> <span style="color:#268bd2">blog-post-file-name</span>))))
+</span></span></code></pre></div><p>This is an interactive function and I run it by hitting <code>M-x</code>.</p>
 <h3 id="turn-on-auto-export-mode-when-i-visit-blog-dot-org">Turn on auto-export-mode when I visit blog.org</h3>
 <p>All my blog posts are saved in an org file called blog.org. Whenever I open this file, <code>org-hugo-auto-export-mode</code> is turned on.</p>
 <p>The minor mode <code>org-hugo-auto-export-mode</code> enables auto export hugo posts on saving. However, this minor mode is disabled by default. It doesn&rsquo;t make sense to have this turned on globally. So, the following piece of code enables the minor mode only when the buffer is <code>blog.org</code>.
 Found the code in a <a href="https://stackoverflow.com/a/39652226">stack overflow post</a>.</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#b58900">defun</span> <span style="color:#268bd2">rr/enable-hugo-auto-export-mode</span> ()
-	(<span style="color:#b58900">if</span> (<span style="color:#268bd2">equal</span> (<span style="color:#268bd2">buffer-name</span>) <span style="color:#2aa198">&#34;blog.org&#34;</span>)
-			(<span style="color:#268bd2">org-hugo-auto-export-mode</span>)))
-
-(<span style="color:#268bd2">add-hook</span> <span style="color:#2aa198">&#39;find-file-hook</span> <span style="color:#2aa198">&#39;rr/enable-hugo-auto-export-mode</span>)
-</code></pre></div><p>With this mode enabled, every time I hit save, any edited post gets exported to a Hugo-compatible markdown and saved to the right location specified in both the header of the file as well as the <code>EXPORT_FILE_NAME</code> property.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#b58900">defun</span> <span style="color:#268bd2">rr/enable-hugo-auto-export-mode</span> ()
+</span></span><span style="display:flex;"><span>	(<span style="color:#b58900">if</span> (<span style="color:#268bd2">equal</span> (<span style="color:#268bd2">buffer-name</span>) <span style="color:#2aa198">&#34;blog.org&#34;</span>)
+</span></span><span style="display:flex;"><span>			(<span style="color:#268bd2">org-hugo-auto-export-mode</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#268bd2">add-hook</span> <span style="color:#2aa198">&#39;find-file-hook</span> <span style="color:#2aa198">&#39;rr/enable-hugo-auto-export-mode</span>)
+</span></span></code></pre></div><p>With this mode enabled, every time I hit save, any edited post gets exported to a Hugo-compatible markdown and saved to the right location specified in both the header of the file as well as the <code>EXPORT_FILE_NAME</code> property.</p>
 <h3 id="deploy-dot-sh-script">deploy.sh script</h3>
 <p>Once the post is ready to be published, the blog post must be committed to the current repository and pushed. Since I&rsquo;m also hosting the blog on GitHub using GitHub Pages, there&rsquo;s an additional repository to which I have to copy the public directory generated in this code repository. Then those files must be committed and pushed as well. All of this is done using script called <code>deploy.sh</code> that needs to be run once. Here&rsquo;s the script.</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#719e07">#!/bin/sh
-</span><span style="color:#719e07"></span>
-<span style="color:#586e75"># If a command fails then the deploy stops</span>
-<span style="color:#b58900">set</span> -e
-
-<span style="color:#b58900">printf</span> <span style="color:#2aa198">&#34;\033[0;32mDeploying updates to GitHub...\033[0m\n&#34;</span>
-
-<span style="color:#586e75"># Build the project.</span>
-hugo -t ezhil <span style="color:#586e75"># if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`</span>
-
-<span style="color:#586e75"># git push committed changes in existing folder</span>
-git push origin master
-
-<span style="color:#586e75"># Copy public folder to the repo outside the submodule</span>
-<span style="color:#586e75"># The issue is, submodule does not get updated when running this script either because of incorrect setup</span>
-<span style="color:#586e75"># or maybe because public is part of gitignore and the remote points to blog.git instead of rrajath.github.io.git.</span>
-<span style="color:#586e75"># In order to make this script work properly, the public folder that is generated is copied to the repo outside</span>
-<span style="color:#586e75"># this folder and then committed and pushed</span>
-cp -r public/* ../rrajath.github.io
-
-<span style="color:#586e75"># Go To Public folder</span>
-<span style="color:#b58900">cd</span> ../rrajath.github.io
-
-<span style="color:#586e75"># Add changes to git.</span>
-git add -A
-
-<span style="color:#586e75"># Commit changes.</span>
-<span style="color:#268bd2">msg</span><span style="color:#719e07">=</span><span style="color:#2aa198">&#34;rebuilding site </span><span style="color:#719e07">$(</span>date<span style="color:#719e07">)</span><span style="color:#2aa198">&#34;</span>
-<span style="color:#719e07">if</span> <span style="color:#719e07">[</span> -n <span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$*</span><span style="color:#2aa198">&#34;</span> <span style="color:#719e07">]</span>; <span style="color:#719e07">then</span>
-	<span style="color:#268bd2">msg</span><span style="color:#719e07">=</span><span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$*</span><span style="color:#2aa198">&#34;</span>
-<span style="color:#719e07">fi</span>
-git commit -m <span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$msg</span><span style="color:#2aa198">&#34;</span>
-
-<span style="color:#586e75"># Push source and build repos.</span>
-git push origin master
-</code></pre></div><h2 id="conclusion">Conclusion</h2>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#719e07">#!/bin/sh
+</span></span></span><span style="display:flex;"><span><span style="color:#719e07"></span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75"># If a command fails then the deploy stops</span>
+</span></span><span style="display:flex;"><span><span style="color:#b58900">set</span> -e
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#b58900">printf</span> <span style="color:#2aa198">&#34;\033[0;32mDeploying updates to GitHub...\033[0m\n&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75"># Build the project.</span>
+</span></span><span style="display:flex;"><span>hugo -t ezhil <span style="color:#586e75"># if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75"># git push committed changes in existing folder</span>
+</span></span><span style="display:flex;"><span>git push origin master
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75"># Copy public folder to the repo outside the submodule</span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75"># The issue is, submodule does not get updated when running this script either because of incorrect setup</span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75"># or maybe because public is part of gitignore and the remote points to blog.git instead of rrajath.github.io.git.</span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75"># In order to make this script work properly, the public folder that is generated is copied to the repo outside</span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75"># this folder and then committed and pushed</span>
+</span></span><span style="display:flex;"><span>cp -r public/* ../rrajath.github.io
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75"># Go To Public folder</span>
+</span></span><span style="display:flex;"><span><span style="color:#b58900">cd</span> ../rrajath.github.io
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75"># Add changes to git.</span>
+</span></span><span style="display:flex;"><span>git add -A
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75"># Commit changes.</span>
+</span></span><span style="display:flex;"><span><span style="color:#268bd2">msg</span><span style="color:#719e07">=</span><span style="color:#2aa198">&#34;rebuilding site </span><span style="color:#719e07">$(</span>date<span style="color:#719e07">)</span><span style="color:#2aa198">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">if</span> <span style="color:#719e07">[</span> -n <span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$*</span><span style="color:#2aa198">&#34;</span> <span style="color:#719e07">]</span>; <span style="color:#719e07">then</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#268bd2">msg</span><span style="color:#719e07">=</span><span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$*</span><span style="color:#2aa198">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">fi</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$msg</span><span style="color:#2aa198">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75"># Push source and build repos.</span>
+</span></span><span style="display:flex;"><span>git push origin master
+</span></span></code></pre></div><h2 id="conclusion">Conclusion</h2>
 <p>This seems like a lot of work, but it&rsquo;s not. All of this works beautifully and it&rsquo;s a one-time setup. The satisfaction of coming up with a system that is tailored to work exactly to my needs feels great.</p>
 <p>Also, workflows are hard to explain using text or in a blog post. There are quite a lot of moving parts and different parts of the workflow need different pre-requisites. When all of them are aligned, it works smoothly.</p>
 

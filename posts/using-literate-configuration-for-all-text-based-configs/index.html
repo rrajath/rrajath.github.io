@@ -101,12 +101,12 @@
 <p>Building a literate configuration needs just one prerequisite - Emacs, because we need a way to &ldquo;tangle&rdquo; the source blocks in the org files. Since Emacs ships with org mode and org babel, tangling is just a keybinding away. We only need two things in order to create a literate configuration: a source block and a tangle attribute. Here&rsquo;s an example to show how that&rsquo;s done.</p>
 <h3 id="example">Example</h3>
 <p>Enabling tangle in an org file can be done by specifying a tangle location at the top as part of the <code>#+PROPERTY</code> attribute, like this:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#+PROPERTY: header-args :tangle /path/to/file-name.extension
-</code></pre></div><p>Here&rsquo;s what a code block looks like in an org file.</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#+begin_src emacs-lisp
-  (setq foo &#34;bar&#34;)
-#+end_src
-</code></pre></div><p>You can write your documentation around these code blocks and hitting <code>C-c C-v t</code> (or invoking the function <code>org-babel-tangle</code>) at the top of your file would tangle them to the file specified in the <code>#+PROPERTY</code> attribute of your org file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>#+PROPERTY: header-args :tangle /path/to/file-name.extension
+</span></span></code></pre></div><p>Here&rsquo;s what a code block looks like in an org file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>#+begin_src emacs-lisp
+</span></span><span style="display:flex;"><span>  (setq foo &#34;bar&#34;)
+</span></span><span style="display:flex;"><span>#+end_src
+</span></span></code></pre></div><p>You can write your documentation around these code blocks and hitting <code>C-c C-v t</code> (or invoking the function <code>org-babel-tangle</code>) at the top of your file would tangle them to the file specified in the <code>#+PROPERTY</code> attribute of your org file.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Using literate configuration for config files is great and I converted almost all my configs to literate configs. For reference, have a look at my <a href="https://github.com/rrajath/dotfiles/blob/master/.emacs.d/PrivateConfig.org">literate configuration for my Emacs setup</a>. Look at the source blocks to see actual configs. Use the &ldquo;Raw&rdquo; button on github notice line 2 where it says <code>:tangle ./private-config.el</code></p>
 

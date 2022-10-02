@@ -25,55 +25,55 @@
 &lt;p&gt;Hugo supports Taxonomies where you can configure &lt;a href=&#34;https://gohugo.io/content-management/taxonomies/#configuring-taxonomies&#34;&gt;custom taxonomies&lt;/a&gt; and can be used everywhere on your blog. The first step is to add the &lt;code&gt;series&lt;/code&gt; taxonomy in your &lt;code&gt;config.toml&lt;/code&gt; file&lt;/p&gt;
 &lt;h3 id=&#34;step-1&#34;&gt;Step 1&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;config.toml&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;[taxonomies]
-	tag = &amp;#34;tags&amp;#34;
-	series = &amp;#34;series&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you have a &lt;code&gt;yaml&lt;/code&gt; file, change the syntax accordingly.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[taxonomies]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	tag = &amp;#34;tags&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	series = &amp;#34;series&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you have a &lt;code&gt;yaml&lt;/code&gt; file, change the syntax accordingly.&lt;/p&gt;
 &lt;h3 id=&#34;step-2&#34;&gt;Step 2&lt;/h3&gt;
 &lt;p&gt;Create a partial called &lt;code&gt;series_links.html&lt;/code&gt; at &lt;code&gt;/layouts/partials/series_links.html&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;This will contain the code that is responsible for displaying links to other posts in the series.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;/layouts/partials/series_links.html&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;{{ if .Params.series }}
-    {{ $name := index .Params.series 0 }}
-    &amp;lt;hr/&amp;gt;
-    Other posts in this series:&amp;lt;/p&amp;gt;
-
-    {{ $name := $name | urlize }}
-    {{ $series := index .Site.Taxonomies.series $name }}
-    &amp;lt;ul class=&amp;#34;series&amp;#34;&amp;gt;
-    {{ range $series.Pages }}
-        &amp;lt;li&amp;gt;{{ .Date.Format &amp;#34;Jan 02, 2006&amp;#34; }} -
-        &amp;lt;a href=&amp;#34;{{.Permalink}}&amp;#34;&amp;gt;{{ .LinkTitle }}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-    {{ end }}
-    &amp;lt;/ul&amp;gt;
-{{ end }}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I got the above code from: &lt;a href=&#34;https://npf.io/2014/08/making-it-a-series/&#34;&gt;https://npf.io/2014/08/making-it-a-series/&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ if .Params.series }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {{ $name := index .Params.series 0 }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;hr/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    Other posts in this series:&amp;lt;/p&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {{ $name := $name | urlize }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {{ $series := index .Site.Taxonomies.series $name }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;ul class=&amp;#34;series&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {{ range $series.Pages }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;li&amp;gt;{{ .Date.Format &amp;#34;Jan 02, 2006&amp;#34; }} -
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;a href=&amp;#34;{{.Permalink}}&amp;#34;&amp;gt;{{ .LinkTitle }}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {{ end }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;/ul&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ end }}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I got the above code from: &lt;a href=&#34;https://npf.io/2014/08/making-it-a-series/&#34;&gt;https://npf.io/2014/08/making-it-a-series/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The explanation of what this means is explained better there, so I&amp;rsquo;m not going to reiterate the same thing here.&lt;/p&gt;
 &lt;h3 id=&#34;step-3&#34;&gt;Step 3&lt;/h3&gt;
 &lt;p&gt;Go to your &lt;code&gt;single.html&lt;/code&gt; which is the template that renders each of your blog posts.&lt;br&gt;
 Replace &lt;code&gt;{{ .Content }}&lt;/code&gt; with the code below&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;/layouts/_default/single.html&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;markdown&amp;#34;&lt;/span&gt;&amp;gt;
-			{{ if .Params.series }}
-  				{{ $name := index .Params.series 0 }}
-  				&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;p&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;series_top_page&amp;#34;&lt;/span&gt; style&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;font-weight:50; background-color:#333&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;&amp;gt;This post is part of the &amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt; href&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;{{.Site.BaseURL}}/series/{{$name | urlize}}&amp;#34;&lt;/span&gt;&amp;gt;{{$name}}&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt;&amp;gt; series.&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;p&lt;/span&gt;&amp;gt;
-			{{ end }}
-			{{ .Content }}
-			{{ partial &amp;#34;series_links.html&amp;#34; . }}
-&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;What this does is, before your main content it displays a banner stating that the post is part of a series (this banner doesn&amp;rsquo;t appear otherwise). This tells the reader right of the bat that there are more related posts they can check out and read. You can look at the banner at the top of this post to see what it looks like. All of this is done by the code that comes before the &lt;code&gt;{{ .Content }}&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;markdown&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			{{ if .Params.series }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  				{{ $name := index .Params.series 0 }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  				&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;p&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;series_top_page&amp;#34;&lt;/span&gt; style&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;font-weight:50; background-color:#333&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;&amp;gt;This post is part of the &amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt; href&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;{{.Site.BaseURL}}/series/{{$name | urlize}}&amp;#34;&lt;/span&gt;&amp;gt;{{$name}}&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt;&amp;gt; series.&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;p&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			{{ end }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			{{ .Content }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			{{ partial &amp;#34;series_links.html&amp;#34; . }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;What this does is, before your main content it displays a banner stating that the post is part of a series (this banner doesn&amp;rsquo;t appear otherwise). This tells the reader right of the bat that there are more related posts they can check out and read. You can look at the banner at the top of this post to see what it looks like. All of this is done by the code that comes before the &lt;code&gt;{{ .Content }}&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;The code that comes after content, i.e. &lt;code&gt;{{ partial &amp;quot;series_links.html&amp;quot; . }}&lt;/code&gt; simply calls the &lt;code&gt;series_links.html&lt;/code&gt; partial we created in step 2 and injects it here, right after your post&amp;rsquo;s main content.&lt;/p&gt;
 &lt;h3 id=&#34;step-4&#34;&gt;Step 4&lt;/h3&gt;
 &lt;p&gt;Now for the final step, you&amp;rsquo;ll have to add front matter to your posts - the ones you want to make part of the series. That will look something like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;---
-title: &amp;#34;My Hugo Setup&amp;#34;
-...
-series: [&amp;#34;hugo-setup&amp;#34;]
-tags:
-- tag1
-- tag2
----
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;other-explorations&#34;&gt;Other Explorations&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title: &amp;#34;My Hugo Setup&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;series: [&amp;#34;hugo-setup&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tags:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- tag1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;- tag2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;other-explorations&#34;&gt;Other Explorations&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;I found &lt;a href=&#34;http://www.joesacher.com/blog/2017/08/03/implementing-series-in-hugo/&#34;&gt;an implementation&lt;/a&gt; which added &lt;a href=&#34;http://www.joesacher.com/blog/2017/08/27/converting-series-to-taxonomy/&#34;&gt;fancier links to posts in series&lt;/a&gt;, like keeping track of how many posts are in the series, adding next and previous links, etc. I had some trouble with that and I didn&amp;rsquo;t have the patience to debug and set it up. This piece of code got the job done for me. But feel free to explore that and tweak it to your needs.&lt;/li&gt;
 &lt;li&gt;I also stumbled upon &lt;a href=&#34;https://www.notion.so/My-Hugo-Setup-Part-3-04f1eeac0db4403a8cdfdc37b6714db9&#34;&gt;another implementation&lt;/a&gt; which did something similar. It&amp;rsquo;s worth checking that out.&lt;/li&gt;
@@ -121,29 +121,29 @@ tags:
 &lt;p&gt;Although I liked the theme and it fit most of my needs, I had to make some changes to get tailored to my taste.&lt;/p&gt;
 &lt;h3 id=&#34;post-links-and-summaries-on-home-page&#34;&gt;Post links and summaries on home page&lt;/h3&gt;
 &lt;p&gt;The recent posts section (on the home page) was of the format:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&amp;lt;post_title&amp;gt; -- &amp;lt;summary&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This felt a little cluttered for two reasons:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;post_title&amp;gt; -- &amp;lt;summary&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This felt a little cluttered for two reasons:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Both the title and the summary were on the same line next to each other&lt;/li&gt;
 &lt;li&gt;Title and summary were of the same font size&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;I wanted the title to be a little bigger and have its own line, so I made the following changes to &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/index.html#L20-L29&#34;&gt;themes/ezhil/layouts/index.html&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;title u-url&amp;#34;&lt;/span&gt; href&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;{{ .RelPermalink }}&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;font&lt;/span&gt; size&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;+2&amp;#34;&lt;/span&gt;&amp;gt;{{.Title}}&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;font&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt;&amp;gt;
-		&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt;&amp;gt;
-		    &amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;span&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt;&amp;gt;
-		        {{ if isset .Params &amp;#34;description&amp;#34; }}
-            {{ .Description }}
-            {{ else }}
-            {{ .Summary }}&lt;span style=&#34;color:#cb4b16&#34;&gt;&amp;amp;hellip;&lt;/span&gt;
-            {{ end }}
-        &amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;span&lt;/span&gt;&amp;gt;
-    &amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Basically, add &lt;code&gt;&amp;lt;font size=&amp;quot;+2&amp;quot;&amp;gt;&lt;/code&gt; and put the &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; inside a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;title u-url&amp;#34;&lt;/span&gt; href&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;{{ .RelPermalink }}&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;font&lt;/span&gt; size&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;+2&amp;#34;&lt;/span&gt;&amp;gt;{{.Title}}&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;font&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;a&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		    &amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;span&lt;/span&gt; class&lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		        {{ if isset .Params &amp;#34;description&amp;#34; }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            {{ .Description }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            {{ else }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            {{ .Summary }}&lt;span style=&#34;color:#cb4b16&#34;&gt;&amp;amp;hellip;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            {{ end }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;span&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;/&lt;span style=&#34;color:#268bd2&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Basically, add &lt;code&gt;&amp;lt;font size=&amp;quot;+2&amp;quot;&amp;gt;&lt;/code&gt; and put the &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; inside a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;added-reading-time&#34;&gt;Added reading time&lt;/h3&gt;
 &lt;p&gt;I remember Jekyll didn&amp;rsquo;t have a straight-forward way to add reading time to posts. Hugo gives this out of the box. I like having it for blog posts just to set the expectation of how long it takes to read the blog post before you dive into it. It can be vaguely estimated by just eye-balling or scrolling. But it&amp;rsquo;s nice to have reading time displayed at the top of the post.&lt;/p&gt;
 &lt;p&gt;In &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/_default/single.html#L11&#34;&gt;themes/ezhil/layouts/_default/single.html&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;| {{ .ReadingTime }} min read
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Added the above text next to the publish date. I also added permalink to the publish date.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| {{ .ReadingTime }} min read
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Added the above text next to the publish date. I also added permalink to the publish date.&lt;/p&gt;
 &lt;h3 id=&#34;added-a-page-for-micro-posts&#34;&gt;Added a page for Micro Posts&lt;/h3&gt;
 &lt;p&gt;Blog posts are more formal and kinda long-form content which has a specific theme or intent behind them. I wanted to have a separate page for short thoughts (one or few lines) that don&amp;rsquo;t warrant for a full blog post. This can include things like sharing an image, a link, or just some quick thoughts. So, I added a page called &lt;a href=&#34;https://rrajath.com/micro/&#34;&gt;Micro&lt;/a&gt; and created my own template that is based off of  the standard list page, but a little different.&lt;/p&gt;
 &lt;p&gt;Take a look at &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/micro/list.html&#34;&gt;/themes/ezhil/layouts/micro/list.html&lt;/a&gt; to understand the customization.&lt;/p&gt;

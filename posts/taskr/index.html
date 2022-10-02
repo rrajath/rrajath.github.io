@@ -16,7 +16,7 @@
 <meta property="og:description" content="I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/taskr/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2015-01-07T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2015-01-07T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-06-22T23:10:26-07:00" />
 
 <meta name="twitter:card" content="summary"/>
@@ -97,22 +97,22 @@ the user.</p>
 <p>To make things simpler, I have used couple of libraries.</p>
 <h3 id="lombok">Lombok</h3>
 <p><a href="http://projectlombok.org/">Lombok</a> helps you skip writing getters and setters for data objects by adding the <code>@Data</code> annotation. This helps in keeping the code short, clean and readable. So the class would look something like this:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#268bd2">@Data</span>
-    <span style="color:#268bd2">public</span> <span style="color:#268bd2">class</span> <span style="color:#268bd2">TaskItem</span> <span style="color:#719e07">{</span>
-        <span style="color:#268bd2">private</span> <span style="color:#dc322f">int</span> id<span style="color:#719e07">;</span>
-        <span style="color:#268bd2">private</span> String taskName<span style="color:#719e07">;</span>
-        <span style="color:#268bd2">private</span> String taskDescription<span style="color:#719e07">;</span>
-        <span style="color:#268bd2">private</span> <span style="color:#dc322f">long</span> creationTime<span style="color:#719e07">;</span>
-        <span style="color:#268bd2">private</span> <span style="color:#dc322f">boolean</span> isTaskComplete<span style="color:#719e07">;</span>
-    <span style="color:#719e07">}</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>    <span style="color:#268bd2">@Data</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#268bd2">public</span> <span style="color:#268bd2">class</span> <span style="color:#268bd2">TaskItem</span> <span style="color:#719e07">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">private</span> <span style="color:#dc322f">int</span> id<span style="color:#719e07">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">private</span> String taskName<span style="color:#719e07">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">private</span> String taskDescription<span style="color:#719e07">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">private</span> <span style="color:#dc322f">long</span> creationTime<span style="color:#719e07">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">private</span> <span style="color:#dc322f">boolean</span> isTaskComplete<span style="color:#719e07">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#719e07">}</span></span></span></code></pre></div>
 <p>This looks much cleaner than a class that is cluttered with getters and setters.</p>
 <h3 id="butterknife">Butterknife</h3>
 <p><a href="https://jakewharton.github.io/butterknife/">Butterknife</a> is another library that helps you inject views more easily with annotations. Adding the @InjectView annotation will automatically cast the corresponding view in your layout. So you no longer have to write things like</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">View view <span style="color:#719e07">=</span> inflater<span style="color:#719e07">.</span>inflate<span style="color:#719e07">(</span>R<span style="color:#719e07">.</span>layout<span style="color:#719e07">.</span>layout_main<span style="color:#719e07">,</span> container<span style="color:#719e07">,</span> <span style="color:#cb4b16">false</span><span style="color:#719e07">);</span>
-etTaskName <span style="color:#719e07">=</span> <span style="color:#719e07">(</span>EditText<span style="color:#719e07">)</span> view<span style="color:#719e07">.</span>findViewById<span style="color:#719e07">(</span>R<span style="color:#719e07">.</span>id<span style="color:#719e07">.</span>task_name_edit_text<span style="color:#719e07">);</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>View view <span style="color:#719e07">=</span> inflater<span style="color:#719e07">.</span>inflate<span style="color:#719e07">(</span>R<span style="color:#719e07">.</span>layout<span style="color:#719e07">.</span>layout_main<span style="color:#719e07">,</span> container<span style="color:#719e07">,</span> <span style="color:#cb4b16">false</span><span style="color:#719e07">);</span>
+</span></span><span style="display:flex;"><span>etTaskName <span style="color:#719e07">=</span> <span style="color:#719e07">(</span>EditText<span style="color:#719e07">)</span> view<span style="color:#719e07">.</span>findViewById<span style="color:#719e07">(</span>R<span style="color:#719e07">.</span>id<span style="color:#719e07">.</span>task_name_edit_text<span style="color:#719e07">);</span></span></span></code></pre></div>
 <p>You instead write:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#268bd2">@InjectView</span><span style="color:#719e07">(</span>R<span style="color:#719e07">.</span>id<span style="color:#719e07">.</span>task_name_edit_text<span style="color:#719e07">)</span>
-EditText etTaskName<span style="color:#719e07">;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#268bd2">@InjectView</span><span style="color:#719e07">(</span>R<span style="color:#719e07">.</span>id<span style="color:#719e07">.</span>task_name_edit_text<span style="color:#719e07">)</span>
+</span></span><span style="display:flex;"><span>EditText etTaskName<span style="color:#719e07">;</span></span></span></code></pre></div>
 <p>There are many more things that these libraries offer and I plan to use it in every Android project of mine.</p>
 <p><strong>Problems I faced</strong>:<br>
 I was finding it hard to keep the list up to date. Since I had my tasks in a List and I was using an instance of ArrayAdapter. It was hard to keep track of what was added to the list and what was deleted whenever the user interacted with the list. The main issue was when going from one activity to another and returning back to the main activity. Passing around intents with parcelable/serializable was a pain for a small app like this. And hitting database so often is not a great design.</p>

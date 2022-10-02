@@ -97,55 +97,55 @@
 <p>Hugo supports Taxonomies where you can configure <a href="https://gohugo.io/content-management/taxonomies/#configuring-taxonomies">custom taxonomies</a> and can be used everywhere on your blog. The first step is to add the <code>series</code> taxonomy in your <code>config.toml</code> file</p>
 <h3 id="step-1">Step 1</h3>
 <p><strong>config.toml</strong></p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">[taxonomies]
-	tag = &#34;tags&#34;
-	series = &#34;series&#34;
-</code></pre></div><p>If you have a <code>yaml</code> file, change the syntax accordingly.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[taxonomies]
+</span></span><span style="display:flex;"><span>	tag = &#34;tags&#34;
+</span></span><span style="display:flex;"><span>	series = &#34;series&#34;
+</span></span></code></pre></div><p>If you have a <code>yaml</code> file, change the syntax accordingly.</p>
 <h3 id="step-2">Step 2</h3>
 <p>Create a partial called <code>series_links.html</code> at <code>/layouts/partials/series_links.html</code></p>
 <p>This will contain the code that is responsible for displaying links to other posts in the series.</p>
 <p><strong>/layouts/partials/series_links.html</strong></p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">{{ if .Params.series }}
-    {{ $name := index .Params.series 0 }}
-    &lt;hr/&gt;
-    Other posts in this series:&lt;/p&gt;
-
-    {{ $name := $name | urlize }}
-    {{ $series := index .Site.Taxonomies.series $name }}
-    &lt;ul class=&#34;series&#34;&gt;
-    {{ range $series.Pages }}
-        &lt;li&gt;{{ .Date.Format &#34;Jan 02, 2006&#34; }} -
-        &lt;a href=&#34;{{.Permalink}}&#34;&gt;{{ .LinkTitle }}&lt;/a&gt;&lt;/li&gt;
-    {{ end }}
-    &lt;/ul&gt;
-{{ end }}
-</code></pre></div><p>I got the above code from: <a href="https://npf.io/2014/08/making-it-a-series/">https://npf.io/2014/08/making-it-a-series/</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>{{ if .Params.series }}
+</span></span><span style="display:flex;"><span>    {{ $name := index .Params.series 0 }}
+</span></span><span style="display:flex;"><span>    &lt;hr/&gt;
+</span></span><span style="display:flex;"><span>    Other posts in this series:&lt;/p&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    {{ $name := $name | urlize }}
+</span></span><span style="display:flex;"><span>    {{ $series := index .Site.Taxonomies.series $name }}
+</span></span><span style="display:flex;"><span>    &lt;ul class=&#34;series&#34;&gt;
+</span></span><span style="display:flex;"><span>    {{ range $series.Pages }}
+</span></span><span style="display:flex;"><span>        &lt;li&gt;{{ .Date.Format &#34;Jan 02, 2006&#34; }} -
+</span></span><span style="display:flex;"><span>        &lt;a href=&#34;{{.Permalink}}&#34;&gt;{{ .LinkTitle }}&lt;/a&gt;&lt;/li&gt;
+</span></span><span style="display:flex;"><span>    {{ end }}
+</span></span><span style="display:flex;"><span>    &lt;/ul&gt;
+</span></span><span style="display:flex;"><span>{{ end }}
+</span></span></code></pre></div><p>I got the above code from: <a href="https://npf.io/2014/08/making-it-a-series/">https://npf.io/2014/08/making-it-a-series/</a></p>
 <p>The explanation of what this means is explained better there, so I&rsquo;m not going to reiterate the same thing here.</p>
 <h3 id="step-3">Step 3</h3>
 <p>Go to your <code>single.html</code> which is the template that renders each of your blog posts.<br>
 Replace <code>{{ .Content }}</code> with the code below</p>
 <p><strong>/layouts/_default/single.html</strong></p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#268bd2">div</span> class<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;markdown&#34;</span>&gt;
-			{{ if .Params.series }}
-  				{{ $name := index .Params.series 0 }}
-  				&lt;<span style="color:#268bd2">p</span> class<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;series_top_page&#34;</span> style<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;font-weight:50; background-color:#333&#34;</span>&gt;&lt;<span style="color:#268bd2">i</span>&gt;This post is part of the &lt;<span style="color:#268bd2">a</span> href<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;{{.Site.BaseURL}}/series/{{$name | urlize}}&#34;</span>&gt;{{$name}}&lt;/<span style="color:#268bd2">a</span>&gt; series.&lt;/<span style="color:#268bd2">i</span>&gt;&lt;/<span style="color:#268bd2">p</span>&gt;
-			{{ end }}
-			{{ .Content }}
-			{{ partial &#34;series_links.html&#34; . }}
-&lt;/<span style="color:#268bd2">div</span>&gt;
-</code></pre></div><p>What this does is, before your main content it displays a banner stating that the post is part of a series (this banner doesn&rsquo;t appear otherwise). This tells the reader right of the bat that there are more related posts they can check out and read. You can look at the banner at the top of this post to see what it looks like. All of this is done by the code that comes before the <code>{{ .Content }}</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#268bd2">div</span> class<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;markdown&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>			{{ if .Params.series }}
+</span></span><span style="display:flex;"><span>  				{{ $name := index .Params.series 0 }}
+</span></span><span style="display:flex;"><span>  				&lt;<span style="color:#268bd2">p</span> class<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;series_top_page&#34;</span> style<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;font-weight:50; background-color:#333&#34;</span>&gt;&lt;<span style="color:#268bd2">i</span>&gt;This post is part of the &lt;<span style="color:#268bd2">a</span> href<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;{{.Site.BaseURL}}/series/{{$name | urlize}}&#34;</span>&gt;{{$name}}&lt;/<span style="color:#268bd2">a</span>&gt; series.&lt;/<span style="color:#268bd2">i</span>&gt;&lt;/<span style="color:#268bd2">p</span>&gt;
+</span></span><span style="display:flex;"><span>			{{ end }}
+</span></span><span style="display:flex;"><span>			{{ .Content }}
+</span></span><span style="display:flex;"><span>			{{ partial &#34;series_links.html&#34; . }}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#268bd2">div</span>&gt;
+</span></span></code></pre></div><p>What this does is, before your main content it displays a banner stating that the post is part of a series (this banner doesn&rsquo;t appear otherwise). This tells the reader right of the bat that there are more related posts they can check out and read. You can look at the banner at the top of this post to see what it looks like. All of this is done by the code that comes before the <code>{{ .Content }}</code></p>
 <p>The code that comes after content, i.e. <code>{{ partial &quot;series_links.html&quot; . }}</code> simply calls the <code>series_links.html</code> partial we created in step 2 and injects it here, right after your post&rsquo;s main content.</p>
 <h3 id="step-4">Step 4</h3>
 <p>Now for the final step, you&rsquo;ll have to add front matter to your posts - the ones you want to make part of the series. That will look something like this:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">---
-title: &#34;My Hugo Setup&#34;
-...
-series: [&#34;hugo-setup&#34;]
-tags:
-- tag1
-- tag2
----
-</code></pre></div><h2 id="other-explorations">Other Explorations</h2>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: &#34;My Hugo Setup&#34;
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>series: [&#34;hugo-setup&#34;]
+</span></span><span style="display:flex;"><span>tags:
+</span></span><span style="display:flex;"><span>- tag1
+</span></span><span style="display:flex;"><span>- tag2
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><h2 id="other-explorations">Other Explorations</h2>
 <ul>
 <li>I found <a href="http://www.joesacher.com/blog/2017/08/03/implementing-series-in-hugo/">an implementation</a> which added <a href="http://www.joesacher.com/blog/2017/08/27/converting-series-to-taxonomy/">fancier links to posts in series</a>, like keeping track of how many posts are in the series, adding next and previous links, etc. I had some trouble with that and I didn&rsquo;t have the patience to debug and set it up. This piece of code got the job done for me. But feel free to explore that and tweak it to your needs.</li>
 <li>I also stumbled upon <a href="https://www.notion.so/My-Hugo-Setup-Part-3-04f1eeac0db4403a8cdfdc37b6714db9">another implementation</a> which did something similar. It&rsquo;s worth checking that out.</li>
