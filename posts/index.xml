@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 01 Oct 2022 17:11:00 -0700</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Nov 2022 23:29:00 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I enjoy doing boring, repetitive, mundane tasks</title>
+      <link>/posts/i-enjoy-doing-boring-repetitive-mundane-tasks/</link>
+      <pubDate>Fri, 11 Nov 2022 23:29:00 -0800</pubDate>
+      
+      <guid>/posts/i-enjoy-doing-boring-repetitive-mundane-tasks/</guid>
+      <description>&lt;p&gt;The title of this post seems kinda oxymoronic. Enjoyment and boredom seem to be opposites, so to speak. If we&amp;rsquo;re bored, that means we&amp;rsquo;re not stimulated and that means we&amp;rsquo;re not enjoying whatever it is we&amp;rsquo;re doing (or not doing).&lt;/p&gt;
+&lt;p&gt;Most people I know hate doing mundane repetitive tasks or chores like cleaning, folding clothes, etc. I particularly like them. Not because I enjoy doing them. But because that&amp;rsquo;s where a lot of my thoughts and ideas form connections. I&amp;rsquo;ve had a lot of epiphanies and aha moments during these times.&lt;/p&gt;
+&lt;p&gt;For the longest time, I didn&amp;rsquo;t connect the dots of what motivated me to actually &lt;em&gt;do&lt;/em&gt; &amp;ldquo;boring and repetitive&amp;rdquo; chores. I just did them. And when there was a choice between who in the household wanted to do the boring repetitive task, I always stepped up. After a while, I started viewing that as a negative since I thought seeking to do such boring chores meant I rather prefer doing those tasks than doing something more creative and stimulating. And that somehow by doing so, I was underachieving.&lt;/p&gt;
+&lt;p&gt;However, I later realized that my mind starts wandering and inevitably starts thinking about things I read recently, a situation that happened to me recently or a recent conversation I had. A lot of times, my mind wanders into a problem at work I&amp;rsquo;d be struggling to solve. And amidst the cleaning or doing the dishes, or folding clothes, I&amp;rsquo;d suddenly find answers. This has happened so many times that I started enjoying such tasks. The main reason being, it gives my mind a break from the distraction in front of me.&lt;/p&gt;
+&lt;p&gt;I constantly jump from one task to the next. Sometimes I try to multi-task, and fail miserably. I&amp;rsquo;d be working on some piece of code at the end of my workday and as soon as I&amp;rsquo;m done, I&amp;rsquo;d go to the living room to watch some TV, or play a game, or read a book, or check Reddit. Once I&amp;rsquo;m done with that task, I&amp;rsquo;d switch to another one immediately. I don&amp;rsquo;t take breaks in between. I just keep hopping. This keeps my mind occupied and it&amp;rsquo;s always in consumption mode. My mind never gets a break, it never gets some rest to process what it consumed. It continuously consumes.&lt;/p&gt;
+&lt;p&gt;Doing chores forces our mind to disconnect from distractions and just do something &amp;ldquo;mindlessly&amp;rdquo;. Those tasks are so &amp;ldquo;boring&amp;rdquo; that the brain is not required to apply logic, creativity, critical thinking or any of that. It is now free and this is when it starts to process what it consumed earlier. Connections are made, epiphanies are had, magic happens. These are the kind of feelings I long for. That moment when you figure something out. When you spend a lot of time and struggle to understand a concept, and then it finally hits you and everything makes sense. That&amp;rsquo;s extremely satisfying.&lt;/p&gt;
+&lt;p&gt;If you think about it, it&amp;rsquo;s a win-win-win.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Win 1&lt;/strong&gt;: you actually finish the chore. So the dishes are now clean, or the clothes are folded. Thanks to you.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Win 2&lt;/strong&gt;: you had epiphanies, made connections, formed ideas, cultivated opinions. You grew.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Win 3&lt;/strong&gt;: you &lt;em&gt;actually&lt;/em&gt; enjoyed doing something that&amp;rsquo;s very mundane. We seek satisfaction in what we do and what we did here is take something that most people don&amp;rsquo;t find any satisfaction doing, and turned it into a superpower.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, yeah. Just because a task is boring, doesn&amp;rsquo;t mean that it&amp;rsquo;s not worth doing. You can get a lot out of it and make your day-to-day experiences enjoyable.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>It depends…</title>
       <link>/posts/it-depends/</link>
@@ -630,55 +652,6 @@ Replace &lt;code&gt;{{ .Content }}&lt;/code&gt; with the code below&lt;/p&gt;
 &lt;p&gt;And finally, I recently stumbled upon the &lt;a href=&#34;https://indieweb.org/&#34;&gt;IndieWeb movement&lt;/a&gt; when I was checking out few &lt;a href=&#34;https://indieweb.social/about&#34;&gt;Mastodon instances&lt;/a&gt; and I got super intrigued about it. There was &lt;a href=&#34;https://indieweb.org/Hugo&#34;&gt;good enough support for Hugo&lt;/a&gt; in the IndieWeb community. More details about what got me into IndieWeb movement in an other post. I&amp;rsquo;ll also probably create a separate post about how I added IndieWeb support to my blog.&lt;/p&gt;
 &lt;p&gt;So, I decided to switch the static site generator to something better. I looked around, tried a few and finally settled on &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; for two main reasons - it&amp;rsquo;s fast and it has good community support.&lt;/p&gt;
 &lt;p&gt;Since the switch, I&amp;rsquo;ve tweaked the theme to suit my needs, and added few specific pages that I think are important. Let&amp;rsquo;s see where this takes me.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2019 in Review</title>
-      <link>/posts/2019-year-in-review/</link>
-      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/2019-year-in-review/</guid>
-      <description>&lt;p&gt;Another year done, and like always time flies by quicker and quicker every year. 2019 has been quite eventful in a few aspects and I took some time to reflect on how things went. This time I categorized my activities and personal growth into 3 sections - things I did more of, things I did less of, things I explored. Let&amp;rsquo;s begin!&lt;/p&gt;
-&lt;h1 id=&#34;things-i-did-more-of&#34;&gt;Things I did more of&lt;/h1&gt;
-&lt;h2 id=&#34;running&#34;&gt;Running&lt;/h2&gt;
-&lt;p&gt;I was faster (compared to last year) in almost all my races in 2019. I also participated in more races and set a few PRs.&lt;/p&gt;
-&lt;h3 id=&#34;stats&#34;&gt;Stats&lt;/h3&gt;
-&lt;p&gt;All in for Autism 10K - 53m 33s&lt;/p&gt;
-&lt;p&gt;Mother&amp;rsquo;s Day Half - 1h 57m&lt;/p&gt;
-&lt;p&gt;The Big Run 5K (trail run) - 29m 1s&lt;/p&gt;
-&lt;p&gt;Evergreen Half - 1h 53m&lt;/p&gt;
-&lt;p&gt;Craft Classic Half - 1h 49m&lt;/p&gt;
-&lt;p&gt;Iron Horse Half - 1h 42m&lt;/p&gt;
-&lt;p&gt;Fly 5K - 25m 46s&lt;/p&gt;
-&lt;p&gt;Snohomish 10K - 51m 51s&lt;/p&gt;
-&lt;p&gt;Snohomish River Run Full - 3h 56m&lt;/p&gt;
-&lt;p&gt;I started off with the 10K in April with no training and I&amp;rsquo;m happy to see that my time only improved from then on. There was a time when I was running half marathons every couple of weeks and it got a little exhausting. But it feels great to look back and see all the races I&amp;rsquo;ve done.&lt;/p&gt;
-&lt;h3 id=&#34;marathon&#34;&gt;Marathon&lt;/h3&gt;
-&lt;p&gt;The full marathon gets a special mention because the training was fun and the race, even more so. In 2018, I did my first full marathon and the training was quite brutal - mostly because I didn&amp;rsquo;t know what to expect. And, I got first hand experience of what mile 18 feels like in a full marathon. But in 2019, I knew how the training would be, I knew how to prep and how to recover, when to push myself and when to take it easy. I used &lt;a href=&#34;https://www.halhigdon.com/training-programs/marathon-training/intermediate-1-marathon&#34;&gt;Hal Higdon&amp;rsquo;s Intermediate 1 training plan&lt;/a&gt; and made my own modifications to it. Overall, I improved and set a PR.&lt;/p&gt;
-&lt;h2 id=&#34;traveling&#34;&gt;Traveling&lt;/h2&gt;
-&lt;p&gt;I did some traveling in 2019 with a few road trips - one in Oregon, couple in Washington, and few hikes around Seattle. I also visited Los Angeles. The most amazing and memorable one was the 4-day Inca Trail hike to Machu Picchu which was a birthday gift from my wife. Highly recommend going there and doing the 4-day hike, it&amp;rsquo;s totally worth it. Also, a shout out to &lt;a href=&#34;https://www.alpacaexpeditions.com&#34;&gt;Alpaca Expeditions&lt;/a&gt; for their awesome crew that helped us with the hike, food, camps, etc.&lt;/p&gt;
-&lt;h1 id=&#34;things-i-did-less-of&#34;&gt;Things I did less of&lt;/h1&gt;
-&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;
-&lt;p&gt;I fell off on the reading habit and ended up reading only about 14 books (compared to 24 in 2018). This is something I want to get back into.&lt;/p&gt;
-&lt;h2 id=&#34;working-out&#34;&gt;Working out&lt;/h2&gt;
-&lt;p&gt;I hardly worked out last year and thanks to my training for marathon, I just didn&amp;rsquo;t have the time or energy to work out at all. When I wasn&amp;rsquo;t training for my marathon, I was just plain lazy.&lt;/p&gt;
-&lt;h2 id=&#34;bouldering&#34;&gt;Bouldering&lt;/h2&gt;
-&lt;p&gt;This fell off also because of my marathon training. I used to be regular and climb twice a week. But it just wasn&amp;rsquo;t feasible.&lt;/p&gt;
-&lt;h1 id=&#34;things-i-explored-aka-side-quests&#34;&gt;Things I explored (aka Side Quests)&lt;/h1&gt;
-&lt;h2 id=&#34;snowboarding&#34;&gt;Snowboarding&lt;/h2&gt;
-&lt;p&gt;I picked up snowboarding in early 2019, thanks to my wife. I fell in love with it. I wasn&amp;rsquo;t super interested in winter activities before, but after giving snowboarding a try I was always looking forward to driving to a nearby mountain and keep getting better at snowboarding. I&amp;rsquo;ll be doing more of that this year for sure.&lt;/p&gt;
-&lt;h2 id=&#34;self-hosting&#34;&gt;Self Hosting&lt;/h2&gt;
-&lt;p&gt;I stumbled upon self hosting recently and it looked very appealing to me. The fact that I could just use Raspberry Pis to self host few things is what made me more inclined towards trying it out and playing with it. I see privacy concerns with storing my data on Google servers or with any other big corporations. I&amp;rsquo;d rather be in charge of my own data. So, I decided to slowly move things off of cloud services that I&amp;rsquo;m currently using and host my own data. I already set up a private cloud server and it&amp;rsquo;s working like a charm. I got to learn lot of new technologies and it&amp;rsquo;s been fun tinkering with Raspberry Pis.&lt;/p&gt;
-&lt;h2 id=&#34;learning-new-things&#34;&gt;Learning new things&lt;/h2&gt;
-&lt;p&gt;In my journey of learning to self host, I stumbled upon Docker, Traefik, Ansible, Prometheus, Grafana and I&amp;rsquo;ve been keen on learning these new technologies. I&amp;rsquo;ve also learnt a lot about networking, DNS, dynamic DNS, VPN, etc. I&amp;rsquo;ve spent many hours playing around with these, failing, learning and redoing a lot of the setup. It&amp;rsquo;s a fun exercise which will continue this year as I get better at hosting a robust system with everything I need.&lt;/p&gt;
-&lt;h2 id=&#34;indie-web&#34;&gt;Indie Web&lt;/h2&gt;
-&lt;p&gt;I stopped using social media platforms like Facebook, Twitter, Instagram few years ago. I knew about what Mastodon was in principle about a year ago, but never really got around to exploring it much. But towards the end of 2019, I checked out few instances in Mastodon and started exploring. I really liked the idea of instances that are built on certain set of principles and people adhering to it, and federating with other instances. I&amp;rsquo;ve only started with Mastodon, but I&amp;rsquo;ll soon be exploring Pixelfed, Pleroma and the likes.&lt;/p&gt;
-&lt;h1 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h1&gt;
-&lt;h2 id=&#34;you-cant-do-everything&#34;&gt;You can&amp;rsquo;t do &lt;em&gt;everything&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;Here&amp;rsquo;s how my brain works. I find something interesting, I want to learn more about it. But I also don&amp;rsquo;t want to give up on all the things I&amp;rsquo;m already doing. I fall short on some of the things (because it&amp;rsquo;s not realistic to master everything, given the limited number of hours in a day). I get disappointed that I&amp;rsquo;m not doing enough. I&amp;rsquo;ve been doing this for years, even though I know that it doesn&amp;rsquo;t make sense. What I should constantly remind myself is that I can&amp;rsquo;t do (or master) &lt;em&gt;everything&lt;/em&gt;. I should identify core areas where I want to grow and then focus all my energy on that. I should still explore things, and some of them may grow into something bigger and more important for my personal growth. But I must always acknowledge the fact that there is only limited amount of time and I must use it wisely.&lt;/p&gt;
-&lt;h2 id=&#34;less-consumption-more-creation&#34;&gt;Less consumption, more creation&lt;/h2&gt;
-&lt;p&gt;What I didn&amp;rsquo;t do more of is work on side projects, or create more. Even though, I don&amp;rsquo;t use social media, I still check a lot of blogs and stuff myself with information. It&amp;rsquo;s exhausting. Every time I have couple of minutes free on my hand, I check my phone and try to read a blog post. I have to practice to sit still, not touch my phone and not look at any screen. I used to meditate regularly and it definitely helps with being mindful about what we do. This is something I really want to do this year.&lt;/p&gt;
 </description>
     </item>
     
