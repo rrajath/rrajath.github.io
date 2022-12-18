@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Fri, 11 Nov 2022 23:29:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Dec 2022 18:29:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Colored Kindle Highlights</title>
+      <link>/posts/colored-kindle-highlights/</link>
+      <pubDate>Sat, 17 Dec 2022 18:29:00 -0800</pubDate>
+      
+      <guid>/posts/colored-kindle-highlights/</guid>
+      <description>&lt;p&gt;A coworker of mine runs a bi-weekly tech book club where a bunch of people get together, read a couple of chapters of the ongoing tech book (like Clean Code) beforehand and discuss in the meeting how that can be applied in our existing codebase.&lt;/p&gt;
+&lt;p&gt;Since he runs the meeting while sharing his screen, as he goes through the pages of the chapter, he shows his highlights that he thinks are good talking points for the meeting.&lt;/p&gt;
+&lt;p&gt;I noticed that there were different colored highlights: blue, red and yellow. When asked about it, he mentioned that each color represents something:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Blue&lt;/strong&gt;: when he agrees with the author&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Red&lt;/strong&gt;: when he disagrees with the author&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Yellow&lt;/strong&gt;: when he thinks he needs to do more research on that topic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I think this convention is really good. This not only works for tech books, but also non-fiction. I&amp;rsquo;m certainly going to apply them going forward to all the tech and non-fiction books I read.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>I enjoy doing boring, repetitive, mundane tasks</title>
       <link>/posts/i-enjoy-doing-boring-repetitive-mundane-tasks/</link>
@@ -566,49 +584,6 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
       <description>&lt;p&gt;Cognitive Bias Cheat Sheet:&lt;br&gt;
 &lt;a href=&#34;https://medium.com/better-humans/cognitive-bias-cheat-sheet-55a472476b18&#34;&gt;https://medium.com/better-humans/cognitive-bias-cheat-sheet-55a472476b18&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>OrgMode Smart Archive</title>
-      <link>/posts/org-mode-smart-archive/</link>
-      <pubDate>Thu, 17 Sep 2020 21:32:00 -0700</pubDate>
-      
-      <guid>/posts/org-mode-smart-archive/</guid>
-      <description>&lt;p&gt;So far, my workflow in &lt;a href=&#34;https://orgmode.org/&#34;&gt;OrgMode&lt;/a&gt; for managing tasks and events was to have one file called &lt;code&gt;organize.org&lt;/code&gt; that contains top-level headings - &lt;strong&gt;Tasks&lt;/strong&gt;, &lt;strong&gt;Events&lt;/strong&gt; that contained respective items. Once I finished those items, I&amp;rsquo;d move them to a different file called &lt;code&gt;archive.org&lt;/code&gt;. So, my &lt;code&gt;organize.org&lt;/code&gt; file looked something like this:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;organize.org&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; * Tasks
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  * Task 1
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  * Task 2
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; * Events
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  * Event 1
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  * Event 2
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Initially, I was directly archiving all the tasks/events that I completed, so my &lt;code&gt;archive.org&lt;/code&gt; became a dumping ground. A few weeks later I looked at my archive file and it was so hard to go look at it and separate them out, so I created similar top-level headings.&lt;/p&gt;
-&lt;p&gt;Now my &lt;code&gt;archive.org&lt;/code&gt; had &lt;strong&gt;Tasks&lt;/strong&gt; and &lt;strong&gt;Events&lt;/strong&gt; as the top-level headings and I would archive all the DONE tasks and events to their respective headings. This also felt a little tedious because each time I had to archive something, I had to select the specific file and heading. I could have used the archive feature that org-mode provides, but that creates a new file whenever I want to archive something from another file. I want to maintain just one file for archive and if I want to archive anything from any of the other files, they&amp;rsquo;ll all go to this one &lt;code&gt;archive.org&lt;/code&gt;. This is part of my PARA workflow.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Note&lt;/strong&gt;: By the way, I use Doom Emacs, so some of the keybindings I mention in this article will be specific to &lt;a href=&#34;https://github.com/hlissner/doom-emacs&#34;&gt;Doom Emacs&lt;/a&gt;. They may not work with &lt;a href=&#34;https://www.spacemacs.org/&#34;&gt;Spacemacs&lt;/a&gt; or &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34;&gt;Vanilla Emacs&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;What I figured out later was to have a &lt;code&gt;:PROPERTIES:&lt;/code&gt; drawer containing the location of the archive file &lt;em&gt;and&lt;/em&gt; the heading under which it can be archived to. And, I did this for all the headings where I usually archive stuff. Now that I&amp;rsquo;ve set this up, all I do is hit &lt;code&gt;SPC m A&lt;/code&gt; (or &lt;code&gt;M-x org-archive-subtree&lt;/code&gt;) and the item goes to the right location. And not just that, it also adds a &lt;code&gt;:PROPERTIES:&lt;/code&gt; drawer in the destination location with all the relevant details like where that heading came from, at what time the task was archived, etc.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;organize.org&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; * Tasks
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   :PROPERTIES:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   :ARCHIVE: ./archive.org::* Tasks
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   :END:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; * Events
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   :PROPERTIES:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   :ARCHIVE: ./archive.org::* Events
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   :END:
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, if I have to look at all the things I&amp;rsquo;ve done and events I&amp;rsquo;ve attended over the past day/week/month/quarter/year, I just have to go to &lt;code&gt;archive.org&lt;/code&gt; and do a sparse tree search (&lt;code&gt;SPC m s s&lt;/code&gt; or &lt;code&gt;M-x org-sparse-tree&lt;/code&gt;) on that tree and I can slice and dice the data however I want. In case you want to know what properties get added in &lt;code&gt;archive.org&lt;/code&gt;, here&amp;rsquo;s a preview.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;archive.org&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; * Tasks
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ** DONE Task 1
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    CLOSED: [2020-09-12 Sat 11:51]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :PROPERTIES:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :ARCHIVE_TIME: 2020-09-12 Sat 11:52
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :ARCHIVE_FILE: ~/Documents/org-mode/organize.org
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :ARCHIVE_OLPATH: Tasks
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :ARCHIVE_CATEGORY: organize
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :ARCHIVE_TODO: DONE
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :ARCHIVE_ITAGS: task
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    :END:
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
   </channel>

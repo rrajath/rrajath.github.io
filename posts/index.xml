@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Fri, 11 Nov 2022 23:29:00 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Dec 2022 18:29:00 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Colored Kindle Highlights</title>
+      <link>/posts/colored-kindle-highlights/</link>
+      <pubDate>Sat, 17 Dec 2022 18:29:00 -0800</pubDate>
+      
+      <guid>/posts/colored-kindle-highlights/</guid>
+      <description>&lt;p&gt;A coworker of mine runs a bi-weekly tech book club where a bunch of people get together, read a couple of chapters of the ongoing tech book (like Clean Code) beforehand and discuss in the meeting how that can be applied in our existing codebase.&lt;/p&gt;
+&lt;p&gt;Since he runs the meeting while sharing his screen, as he goes through the pages of the chapter, he shows his highlights that he thinks are good talking points for the meeting.&lt;/p&gt;
+&lt;p&gt;I noticed that there were different colored highlights: blue, red and yellow. When asked about it, he mentioned that each color represents something:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Blue&lt;/strong&gt;: when he agrees with the author&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Red&lt;/strong&gt;: when he disagrees with the author&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Yellow&lt;/strong&gt;: when he thinks he needs to do more research on that topic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I think this convention is really good. This not only works for tech books, but also non-fiction. I&amp;rsquo;m certainly going to apply them going forward to all the tech and non-fiction books I read.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>I enjoy doing boring, repetitive, mundane tasks</title>
       <link>/posts/i-enjoy-doing-boring-repetitive-mundane-tasks/</link>
@@ -638,20 +656,6 @@ Replace &lt;code&gt;{{ .Content }}&lt;/code&gt; with the code below&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;added-a-now-page&#34;&gt;Added a Now page&lt;/h3&gt;
 &lt;p&gt;This page captures what I&amp;rsquo;m doing right now. This includes a variety of tasks/activities/projects that I&amp;rsquo;m doing at the moment to give a sense of what I&amp;rsquo;m up to. This is &lt;a href=&#34;https://sivers.org/nowff&#34;&gt;inspired by Derek Sivers&lt;/a&gt;. The &lt;a href=&#34;https://rrajath.com/now/&#34;&gt;Now page&lt;/a&gt; layout is similar to the blog post page, &lt;a href=&#34;https://github.com/rrajath/blog/blob/master/themes/ezhil/layouts/now/single.html&#34;&gt;except few changes&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Moving to Hugo</title>
-      <link>/posts/moving-to-hugo/</link>
-      <pubDate>Thu, 25 Jun 2020 17:43:30 -0700</pubDate>
-      
-      <guid>/posts/moving-to-hugo/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve used &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; as a static site generator ever since I created this blog, which was in 2013. Before that, I had &lt;a href=&#34;https://rrajath.com/posts/weekly-noise-1&#34;&gt;tried few other blogging platforms&lt;/a&gt;. Over the past few years when I irregularly updated my blog, I faced some friction with Jekyll. Every time I tried to make a new post and push to GitHub, Jekyll would complain about something that&amp;rsquo;s either deprecated or broken. And, I had to go fix that first and then make a blog post and push it. That was a minor annoyance mostly due to the fact that I hardly touched my blog and things got outdated. But what annoyed me more than anything is the slowness of Jekyll to build the site and start the server. It was taking a good 10 seconds for it to build the entire site (which consisted of less than 30 files) and serve it on localhost.&lt;/p&gt;
-&lt;p&gt;On the other hand, in the last few months I have been tinkering with few Raspberry Pis and started self-hosting few things. I&amp;rsquo;m not done self-hosting everything I wanted, so there will be more playing around and more learnings that come out of it. This gives me a good opportunity to write about what I learned during the process so that people (including myself) can benefit from it.&lt;/p&gt;
-&lt;p&gt;And finally, I recently stumbled upon the &lt;a href=&#34;https://indieweb.org/&#34;&gt;IndieWeb movement&lt;/a&gt; when I was checking out few &lt;a href=&#34;https://indieweb.social/about&#34;&gt;Mastodon instances&lt;/a&gt; and I got super intrigued about it. There was &lt;a href=&#34;https://indieweb.org/Hugo&#34;&gt;good enough support for Hugo&lt;/a&gt; in the IndieWeb community. More details about what got me into IndieWeb movement in an other post. I&amp;rsquo;ll also probably create a separate post about how I added IndieWeb support to my blog.&lt;/p&gt;
-&lt;p&gt;So, I decided to switch the static site generator to something better. I looked around, tried a few and finally settled on &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; for two main reasons - it&amp;rsquo;s fast and it has good community support.&lt;/p&gt;
-&lt;p&gt;Since the switch, I&amp;rsquo;ve tweaked the theme to suit my needs, and added few specific pages that I think are important. Let&amp;rsquo;s see where this takes me.&lt;/p&gt;
 </description>
     </item>
     
