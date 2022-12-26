@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 17 Dec 2022 18:29:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Dec 2022 23:10:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring Helix Editor</title>
+      <link>/posts/exploring-helix-editor/</link>
+      <pubDate>Sun, 25 Dec 2022 23:10:00 -0800</pubDate>
+      
+      <guid>/posts/exploring-helix-editor/</guid>
+      <description>&lt;p&gt;A few weeks ago, my coworker was talking about &lt;a href=&#34;https://helix-editor.com&#34;&gt;Helix Editor&lt;/a&gt;. I&amp;rsquo;m generally fascinated by CLI tools, so I decided to check it out.&lt;/p&gt;
+&lt;p&gt;As soon as I tried it I was super impressed with how many features were packed in it. Tree-Sitter, Language Servers, multiple selections and many more. I have been struggling the past few months to get a good IDE experience set up on Emacs and every time I try, it falls short by just a little bit and I end up switching back to VS Code. I remember doing tons of different customizations, trying out several packages and their individual settings just so that all those packages play along together very well. But it only got me to about 90% of what I like. I&amp;rsquo;d run into all kinds of weird issues every now and then and it would take my focus away from the task at hand.&lt;/p&gt;
+&lt;p&gt;Helix on the other hand required almost zero config. Pretty much every single default it came with was intuitive. It supports so many languages, and with tree-sitter integration things are a lot smoother and faster while editing code. But the thing I was most impressed with was the speed. I&amp;rsquo;ve never seen that level of speed and responsiveness from any editor. Not Emacs, not VSCode, definitely not IntelliJ. I tried opening a few random projects and tried editing the code a little bit and the experience was awesome. Everything, from auto-complete to opening overlay menus, filtering files from a list of hundreds, even narrowing down commands from the command palette was very smooth.&lt;/p&gt;
+&lt;p&gt;Helix also deviates from vim and has its own keybindings (inspired by Kakoune). Being a long time vim user, I hated them at first, but then I really understood why things are done differently and I totally agree with it. Vim has a &amp;ldquo;do first, select later&amp;rdquo; kind of navigation which is not super efficient. With vim you first specify that you want to change or delete something and then you specify what you want to do the operation on. For example, &lt;code&gt;c2w&lt;/code&gt; will delete the next two words from the cursor&amp;rsquo;s position and change the cursor to insert mode. If you go wrong in specifying how many words (in this instance), you&amp;rsquo;ll have to undo and start over. Helix follows a &amp;ldquo;select first, do later&amp;rdquo; approach which is great. Once you&amp;rsquo;re happy with the selection, you can do whatever you want with it. To do the above operation in Helix, I&amp;rsquo;d have to do &lt;code&gt;v2wc&lt;/code&gt;. There&amp;rsquo;s one more keystroke here, but it&amp;rsquo;s a lot more intuitive and I make fewer mistakes.&lt;/p&gt;
+&lt;p&gt;There were a couple of things I really wanted in Helix - a tab bar so that I can see the open files (this was recently added and is now available), a tree explorer as a sidebar or an overlay (this was recently merged and should be available soon), and a way to automatically reload a file if that file was changed outside of Helix.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve really been enjoying Helix. I love the thriving community and the effort that goes into fixing bugs and adding features. I&amp;rsquo;m still learning the keybindings and how to efficiently navigate in the file. I&amp;rsquo;d recommend it to everyone to at least give it a try.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Colored Kindle Highlights</title>
       <link>/posts/colored-kindle-highlights/</link>
@@ -572,17 +587,6 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
 &lt;p&gt;I recently discovered Groovepad and I really liked how easy it is to use that app and make music. As of this writing I made 3 tracks and I&amp;rsquo;m planning to put them up on Soundcloud and Spotify.&lt;/p&gt;
 &lt;h1 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h1&gt;
 &lt;p&gt;With everything that happened in 2020 and so much time being spent indoors, it made me reflect on a lot things. I&amp;rsquo;m extremely grateful to have good health, family, career and friends. It has made me appreciate life more and gave me some perspective. It&amp;rsquo;s easy to take things for granted and look the other way. But it takes a lot of strength and speaks to one&amp;rsquo;s character to stand up for the right thing and fight for it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Cognitive Bias Cheat Sheet</title>
-      <link>/micro/cognitive-bias-cheat-sheet/</link>
-      <pubDate>Mon, 21 Sep 2020 22:22:15 -0700</pubDate>
-      
-      <guid>/micro/cognitive-bias-cheat-sheet/</guid>
-      <description>&lt;p&gt;Cognitive Bias Cheat Sheet:&lt;br&gt;
-&lt;a href=&#34;https://medium.com/better-humans/cognitive-bias-cheat-sheet-55a472476b18&#34;&gt;https://medium.com/better-humans/cognitive-bias-cheat-sheet-55a472476b18&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
