@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,200&display=swap" rel="stylesheet"> 
+    <link rel="me" href="https://github.com/rrajath">
+    <link rel="me" href="https://linkedin.com/in/rrajath">
+    <link rel="webmention" href="https://webmention.io/rrajath.com/webmention" />
+    <link rel="pingback" href="https://webmention.io/rrajath.com/xmlrpc" />
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+    <link rel="microsub" href="https://aperture.p3k.io/microsub/532" />
+    <link rel="micropub" href="https://blotpub-rrajath.herokuapp.com/micropub" />
+    <link rel="me" href="https://micro.blog/rrajath" />
+		<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Exploring Helix Editor - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/rrajath_favicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Exploring Helix Editor" />
+<meta property="og:description" content="A few weeks ago, my coworker was talking about Helix Editor. I&rsquo;m generally fascinated by CLI tools, so I decided to check it out." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/exploring-helix-editor/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-25T23:10:00-08:00" />
+<meta property="article:modified_time" content="2022-12-25T23:10:41-08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Exploring Helix Editor"/>
+<meta name="twitter:description" content="A few weeks ago, my coworker was talking about Helix Editor. I&rsquo;m generally fascinated by CLI tools, so I decided to check it out."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><link rel="stylesheet" type="text/css" href="/css/dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+
+<body>
+    <article class="h-entry">
+	<div class="container wrapper post e-content p-name">
+		<div class="header">
+	<base href="/">
+	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/rrajath" title="Github"><i data-feather="github"></i></a><a href="https://linkedin.com/in/rrajath" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/micro">Micro</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/now">Now</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Exploring Helix Editor</h1>
+            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="/posts/exploring-helix-editor/"><time class="dt-published">Dec 25, 2022</time></a>  | 3 min read</div> 
+		</div>
+
+		<div class="markdown">
+			
+			<p>A few weeks ago, my coworker was talking about <a href="https://helix-editor.com">Helix Editor</a>. I&rsquo;m generally fascinated by CLI tools, so I decided to check it out.</p>
+<p>As soon as I tried it I was super impressed with how many features were packed in it. Tree-Sitter, Language Servers, multiple selections and many more. I have been struggling the past few months to get a good IDE experience set up on Emacs and every time I try, it falls short by just a little bit and I end up switching back to VS Code. I remember doing tons of different customizations, trying out several packages and their individual settings just so that all those packages play along together very well. But it only got me to about 90% of what I like. I&rsquo;d run into all kinds of weird issues every now and then and it would take my focus away from the task at hand.</p>
+<p>Helix on the other hand required almost zero config. Pretty much every single default it came with was intuitive. It supports so many languages, and with tree-sitter integration things are a lot smoother and faster while editing code. But the thing I was most impressed with was the speed. I&rsquo;ve never seen that level of speed and responsiveness from any editor. Not Emacs, not VSCode, definitely not IntelliJ. I tried opening a few random projects and tried editing the code a little bit and the experience was awesome. Everything, from auto-complete to opening overlay menus, filtering files from a list of hundreds, even narrowing down commands from the command palette was very smooth.</p>
+<p>Helix also deviates from vim and has its own keybindings (inspired by Kakoune). Being a long time vim user, I hated them at first, but then I really understood why things are done differently and I totally agree with it. Vim has a &ldquo;do first, select later&rdquo; kind of navigation which is not super efficient. With vim you first specify that you want to change or delete something and then you specify what you want to do the operation on. For example, <code>c2w</code> will delete the next two words from the cursor&rsquo;s position and change the cursor to insert mode. If you go wrong in specifying how many words (in this instance), you&rsquo;ll have to undo and start over. Helix follows a &ldquo;select first, do later&rdquo; approach which is great. Once you&rsquo;re happy with the selection, you can do whatever you want with it. To do the above operation in Helix, I&rsquo;d have to do <code>v2wc</code>. There&rsquo;s one more keystroke here, but it&rsquo;s a lot more intuitive and I make fewer mistakes.</p>
+<p>There were a couple of things I really wanted in Helix - a tab bar so that I can see the open files (this was recently added and is now available), a tree explorer as a sidebar or an overlay (this was recently merged and should be available soon), and a way to automatically reload a file if that file was changed outside of Helix.</p>
+<p>I&rsquo;ve really been enjoying Helix. I love the thriving community and the effort that goes into fixing bugs and adding features. I&rsquo;m still learning the keybindings and how to efficiently navigate in the file. I&rsquo;d recommend it to everyone to at least give it a try.</p>
+
+			
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div>
+		</div>
+    </article>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a> | <a href="https://emacs.ch/@rrajath" rel="me">Follow me on Mastodon!</a></div>
+	</nav>
+</div>
+
+
+
+<script>feather.replace()</script><p class="h-card vcard" style="display:none;">
+    <a style="text-decoration: none" href="https://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+    Rajath Ramakrishna</a>
+    <a rel="author">Rajath Ramakrishna</a>
+    <a class="p-nickname" rel="me">Rajath</a>
+    <a class="u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+    r.rajath@pm.me
+    </a>
+    <img class="u-photo" src="images/micro-post-photo.png" alt="" />
+</p>
+
+</body>
+</html>
