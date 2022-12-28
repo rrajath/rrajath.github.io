@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 25 Dec 2022 23:10:00 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Dec 2022 22:43:00 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clickbaits are here to stay</title>
+      <link>/posts/clickbaits-are-here-to-stay/</link>
+      <pubDate>Tue, 27 Dec 2022 22:43:00 -0800</pubDate>
+      
+      <guid>/posts/clickbaits-are-here-to-stay/</guid>
+      <description>&lt;p&gt;More than a decade ago I came across BuzzFeed articles like &amp;ldquo;10 things you didn&amp;rsquo;t know about the Illuminati, number 7 will surprise you&amp;rdquo; for the first time. At the time, I didn&amp;rsquo;t even know they were called clickbait. This reminded me of the tabloids I saw near checkout lines in grocery stores. Every time I&amp;rsquo;d see one of those magazines, I used to think, &amp;ldquo;This is beyond ridiculous. Who reads this stuff?&amp;rdquo;. In my mind, I used to categorize tabloids as the lowest form of &amp;ldquo;news&amp;rdquo; and just a desperate attempt to get peoples&amp;rsquo; attention to buy those magazines, and in my opinion that&amp;rsquo;s still the case.&lt;/p&gt;
+&lt;p&gt;But when I started seeing more and more clickbaits online, I started becoming infuriated because now they were everywhere. I was seeing the equivalent of tabloid headlines in most of the websites I used to visit and it felt like there was no escaping them. I initially thought only sites like BuzzFeed and similar ones would be so desperate for attention and clicks, and real news sites wouldn&amp;rsquo;t need clickbaits.&lt;/p&gt;
+&lt;p&gt;I was wrong. I started seeing them even on websites like HackerNews or AndroidPolice. It was annoying me so much that I didn&amp;rsquo;t click those links on purpose, even though I knew it had information that I was looking for. It was my way of &amp;ldquo;vote with your clicks&amp;rdquo;. And then, it was all over YouTube too. The channels I subscribe to - Red Delta Project, Veritasium, etc. that have nothing to do with gossip or sensational news, but instead make educational content were also filled with titles that were very clickbait-y.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t like it, and I was hoping this was just a fad that would pass. I thought it would be one of those things where companies would jump on just to be part of whatever trend was going on and then drop it when it&amp;rsquo;s no longer &amp;ldquo;cool&amp;rdquo;. But at the back of my mind, I was thinking that clickbaits are only growing because they work. People click such links and clicks is what a service primarily measures (among other things) the popularity of its article.&lt;/p&gt;
+&lt;p&gt;I recently saw a video on Veritasium titled &lt;a href=&#34;https://www.youtube.com/watch?v=S2xHZPH5Sng&#34;&gt;Clickbait Is Unreasonably Effective&lt;/a&gt;. This hit home with me. If people tend to click on clickbait articles, then there &lt;em&gt;will&lt;/em&gt; be more clickbait articles. This is one thing if a blog contains a bunch of such articles. But if a serivce like YouTube takes uploaded videos and ranks them, and happens to find clickbait-y videos perform better, it&amp;rsquo;ll just rank those videos higher. And if I&amp;rsquo;m a YouTube content creator, and I want to stay in the game, I&amp;rsquo;d have to play the same game. As much as I hate clickbait, I&amp;rsquo;d still have to add a clickbait title, a clickbait thumbnail and a clickbait caption in the thumbnail. And not to forget a corny facial expression on the thumbnail.&lt;/p&gt;
+&lt;p&gt;What I saw in the above video did put things into perspective as to why clickbait even exists and why everybody seems to be using it more and more. I still cringe when I see such titles. What scares me even more is, a lot of times any title I try to come up with for a blog post that I write, I start feeling like it&amp;rsquo;s clickbait-y. I spend more time thinking about how to not make the title sound very clickbait-y. Or how to make the title sound as least clickbait-y as possible. Sometimes I fail. But I still try.&lt;/p&gt;
+&lt;p&gt;I guess what I&amp;rsquo;m trying to say are two things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Whether anybody likes it or not, I think clickbaits will continue ot exist and thrive as long as clicks (or click-through rate) is used as one of the dominant metrics. That&amp;rsquo;s just the world we live in now.&lt;/li&gt;
+&lt;li&gt;I try my best to come up with titles that are not clickbait-sounding. I&amp;rsquo;d rather want the reader to not be interested to read my blogpost after looking at the headline than cringe hard at the headline.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
     <item>
       <title>Exploring Helix Editor</title>
       <link>/posts/exploring-helix-editor/</link>
@@ -595,27 +615,6 @@ Replace &lt;code&gt;{{ .Content }}&lt;/code&gt; with the code below&lt;/p&gt;
 &lt;li&gt;I found &lt;a href=&#34;http://www.joesacher.com/blog/2017/08/03/implementing-series-in-hugo/&#34;&gt;an implementation&lt;/a&gt; which added &lt;a href=&#34;http://www.joesacher.com/blog/2017/08/27/converting-series-to-taxonomy/&#34;&gt;fancier links to posts in series&lt;/a&gt;, like keeping track of how many posts are in the series, adding next and previous links, etc. I had some trouble with that and I didn&amp;rsquo;t have the patience to debug and set it up. This piece of code got the job done for me. But feel free to explore that and tweak it to your needs.&lt;/li&gt;
 &lt;li&gt;I also stumbled upon &lt;a href=&#34;https://www.notion.so/My-Hugo-Setup-Part-3-04f1eeac0db4403a8cdfdc37b6714db9&#34;&gt;another implementation&lt;/a&gt; which did something similar. It&amp;rsquo;s worth checking that out.&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My Hugo Setup Part 2</title>
-      <link>/posts/my-hugo-setup-part-2/</link>
-      <pubDate>Sun, 05 Jul 2020 22:16:04 -0700</pubDate>
-      
-      <guid>/posts/my-hugo-setup-part-2/</guid>
-      <description>&lt;p&gt;In my &lt;a href=&#34;https://rrajath.com/posts/my-hugo-setup/&#34;&gt;previous post&lt;/a&gt;, I explained all the visual tweaks I did to my Hugo blog theme so that I could get the pages I wanted in the format I liked the most. This post explains the publish part of it because I faced some issues doing that.&lt;/p&gt;
-&lt;p&gt;I was used to Jekyll&amp;rsquo;s way of doing things where it&amp;rsquo;s just one repository on GitHub and all I had to do was &lt;code&gt;git push&lt;/code&gt; and the blog would show up after about a minute. This means the repository contained both source and generated files. However, Hugo does things a little differently and I actually like it. There are several ways to deploy your Hugo website - using GitHub pages, GitLab, Netlify, etc. I chose GitHub pages since that&amp;rsquo;s what I&amp;rsquo;m most familiar with.&lt;/p&gt;
-&lt;p&gt;If you are going with GitHub&amp;rsquo;s User or Organization Pages, &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages&#34;&gt;Hugo&amp;rsquo;s recommendation&lt;/a&gt; is to split the source and generated files into two different repositories. The repository that the generated files go to will be the front for the website. Let me explain what I did in a little more detail.&lt;/p&gt;
-&lt;p&gt;Step 1: Create a GitHub repository. I called mine &amp;ldquo;blog&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;Step 2: Create another GitHub repository called &lt;username&gt;.github.io. Mine is rrajath.github.io&lt;/p&gt;
-&lt;p&gt;Step 3: Do a &lt;code&gt;git clone&lt;/code&gt; of the &amp;ldquo;blog&amp;rdquo; repository you created on GitHub.&lt;/p&gt;
-&lt;p&gt;Step 4: Copy over your Hugo website on your local to the &amp;ldquo;blog&amp;rdquo; directory that you just cloned.&lt;/p&gt;
-&lt;p&gt;Step 5: Add a submodule using the command: &lt;code&gt;git submodule add -b master https://github.com/username/username.github.io public&lt;/code&gt;. This creates a git submodule that points to the &lt;code&gt;public&lt;/code&gt; directory in your Hugo website.&lt;/p&gt;
-&lt;p&gt;Step 5 is where I encountered the issue. The idea is to point the &lt;code&gt;public&lt;/code&gt; in your &amp;ldquo;blog&amp;rdquo; directory to a remote on GitHub by making it a submodule. The folder &lt;code&gt;public&lt;/code&gt; contains all the generated files. Once you create a post and run &lt;code&gt;hugo server&lt;/code&gt; to generate all the files, you have to do a &lt;code&gt;git push&lt;/code&gt; on both the &amp;ldquo;blog&amp;rdquo; directory and the &amp;ldquo;public&amp;rdquo; directory (which is a submodule pointing to &lt;code&gt;username.github.io&lt;/code&gt; repo on GitHub). And having the &lt;code&gt;public&lt;/code&gt; directory as part of the &lt;code&gt;.gitignore&lt;/code&gt; will exclude it from pushing its contents to the &amp;ldquo;blog&amp;rdquo; directory which is supposed to only contain the source files.&lt;/p&gt;
-&lt;p&gt;However, this was not happening. I tried reconfiguring the submodules, changing my .gitignore file and doing several other things, but what was generated by Hugo in the &lt;code&gt;public&lt;/code&gt; directory never got pushed to the remote repo; which means, my site never got updated even though I was updated the source files and things were working fine when I ran it on &lt;code&gt;localhost&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The way I solved this is by cloning the &lt;code&gt;username.github.io&lt;/code&gt; repo to &lt;em&gt;outside&lt;/em&gt; the &amp;ldquo;blog&amp;rdquo; directory. Then changing the script &lt;code&gt;deploy.sh&lt;/code&gt; mentioned &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/#github-user-or-organization-pages&#34;&gt;in the documentation&lt;/a&gt; to copy all the files from &lt;code&gt;public&lt;/code&gt; directory into the cloned directory, then committing and pushing the changes. The &lt;code&gt;public&lt;/code&gt; directory now doesn&amp;rsquo;t point to anything in the remote. Though this is slightly round about, it does the job and fixed my issue. It&amp;rsquo;s also a one time setup and I don&amp;rsquo;t have to touch it again.&lt;/p&gt;
-&lt;p&gt;All I do when I create a new post is, do a &lt;code&gt;git add&lt;/code&gt; and a &lt;code&gt;git commit&lt;/code&gt;. Then run &lt;code&gt;deploy.sh&lt;/code&gt; to copy the generated files to the right repository (&lt;code&gt;username.github.io&lt;/code&gt;) and then do a &lt;code&gt;git push&lt;/code&gt; on the &amp;ldquo;blog&amp;rdquo; directory to push the source files.&lt;/p&gt;
 </description>
     </item>
     

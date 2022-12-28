@@ -2,14 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/exploring-helix-editor/</loc>
-    <lastmod>2022-12-25T23:10:41-08:00</lastmod>
+    <loc>/tags/clickbait/</loc>
+    <lastmod>2022-12-27T22:43:11-08:00</lastmod>
+  </url><url>
+    <loc>/posts/clickbaits-are-here-to-stay/</loc>
+    <lastmod>2022-12-27T22:43:11-08:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2022-12-25T23:10:41-08:00</lastmod>
+    <lastmod>2022-12-27T22:43:11-08:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2022-12-25T23:10:41-08:00</lastmod>
+    <lastmod>2022-12-27T22:43:11-08:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2022-12-27T22:43:11-08:00</lastmod>
+  </url><url>
+    <loc>/posts/exploring-helix-editor/</loc>
+    <lastmod>2022-12-25T23:13:04-08:00</lastmod>
   </url><url>
     <loc>/posts/colored-kindle-highlights/</loc>
     <lastmod>2022-12-17T18:29:08-08:00</lastmod>
@@ -69,9 +78,6 @@
     <lastmod>2022-12-15T19:15:20-08:00</lastmod>
   </url><url>
     <loc>/tags/productivity/</loc>
-    <lastmod>2022-12-15T19:15:20-08:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2022-12-15T19:15:20-08:00</lastmod>
   </url><url>
     <loc>/posts/on-analysis-paralysis/</loc>
