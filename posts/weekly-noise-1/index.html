@@ -37,7 +37,7 @@
 
 <body>
     <article class="h-entry">
-	<div class="container wrapper post e-content p-name">
+	<div class="container wrapper post e-content p-name dark" data-pagefind-body>
 		<div class="header">
 	<base href="/">
 	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
@@ -73,14 +73,22 @@
 				<a href="/now">Now</a>
 			</li>
 			
+			<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+			<script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+			<div id="search"></div>
+			<script>
+				window.addEventListener('DOMContentLoaded', (event) => {
+						new PagefindUI({ element: "#search" });
+				});
+			</script>
 		</ul>
 	</nav>
 </div>
 
 
 		<div class="post-header">
-			<h1 class="title">Weekly Noise #1 - Moving to GitHub Pages</h1>
-            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="/posts/weekly-noise-1/"><time class="dt-published">Nov 9, 2013</time></a>  | 4 min read</div> 
+			<h1 class="title" data-pagefind-meta="title">Weekly Noise #1 - Moving to GitHub Pages</h1>
+            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="/posts/weekly-noise-1/"><time class="dt-published" data-pagefind-meta="date">Nov 9, 2013</time></a>  | 4 min read</div> 
 		</div>
 
 		<div class="markdown">

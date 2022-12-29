@@ -73,6 +73,14 @@
 				<a href="/now">Now</a>
 			</li>
 			
+			<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+			<script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+			<div id="search"></div>
+			<script>
+				window.addEventListener('DOMContentLoaded', (event) => {
+						new PagefindUI({ element: "#search" });
+				});
+			</script>
 		</ul>
 	</nav>
 </div>
@@ -88,6 +96,17 @@
 		<div class="posts">
             
             
+			<div class="post">
+                <div class="meta u-url">Sep 11, 2020</div>
+                <p>My new found interests: Personal Knowledge Management and Digital Gardens.</p>
+<ul>
+<li><a href="https://logseq.com">https://logseq.com</a></li>
+<li><a href="https://wiki.nikitavoloboev.xyz">https://wiki.nikitavoloboev.xyz</a></li>
+</ul>
+
+                <div align=right><a href="/micro/pkm/">Permalink</a></div>
+                <hr>
+			</div>
 			<div class="post">
                 <div class="meta u-url">Jul 18, 2020</div>
                 <p>Building a second brain: The illustrated notes<br>
@@ -119,13 +138,6 @@
                 <div align=right><a href="/micro/crazy-brains/">Permalink</a></div>
                 <hr>
 			</div>
-			<div class="post">
-                <div class="meta u-url">Jun 22, 2020</div>
-                <p>First micro post. Planning to use this for short thoughts and sharing/saving interesting links I come across</p>
-
-                <div align=right><a href="/micro/first-post/">Permalink</a></div>
-                <hr>
-			</div>
 
 <ul class="pagination">
 	<li class="page-item page-prev">
@@ -134,6 +146,8 @@
 	
 	</li>
 	<li class="page-item page-next">
+	
+    <a href="/micro/page/3/" class="page-link" aria-label="Next"><span aria-hidden="true">Next page →</span></a>
 	
 	</li>
 </ul>
