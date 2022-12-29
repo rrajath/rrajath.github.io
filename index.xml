@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Tue, 27 Dec 2022 22:43:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Dec 2022 22:48:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Futurepedia</title>
+      <link>/micro/futurepedia/</link>
+      <pubDate>Tue, 27 Dec 2022 22:48:00 -0800</pubDate>
+      
+      <guid>/micro/futurepedia/</guid>
+      <description>&lt;p&gt;Directory of AI tools containing free/freemium/paid services&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.futurepedia.io&#34;&gt;https://www.futurepedia.io&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Clickbaits are here to stay</title>
       <link>/posts/clickbaits-are-here-to-stay/</link>
@@ -559,18 +570,6 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
 &lt;p&gt;I changed my reading style from reading too much back to back, to reading little with breaks in between. Sometimes I&amp;rsquo;d read just a couple of pages and reflect on it for a few hours or a few days. The difference is night and day. Now it&amp;rsquo;s no longer about remembering the little details of whatever I read, but it&amp;rsquo;s about making connections between the different ideas I have in my mental model.&lt;/p&gt;
 &lt;p&gt;Where I found this to be most valuable is when I would do something that doesn&amp;rsquo;t require a lot of thought - like cooking, working out without headphones, cleaning my apartment, going for a run, that&amp;rsquo;s when I&amp;rsquo;d relect on whatever information I consumed and make connections. I&amp;rsquo;ve had several &amp;ldquo;Aha!&amp;rdquo; moments where I fit pieces together and develop a much better understanding.&lt;/p&gt;
 &lt;p&gt;In my opinion, the kind of reading for which you just have to grasp the essence is something that doesn&amp;rsquo;t require you to understand an idea deeply, make connections and possibly apply it to your life. An example of this would be reading the newspaper. You don&amp;rsquo;t have to understand deeply what happened in politics the previous day and reflect on them. However, when it comes to reading a book with lot of useful information, it becomes really valuable to understand the fundamentals. Reflecting upon ideas becomes one of the best tools in the box for succeeding in the learning process.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Exporting Google Photos</title>
-      <link>/posts/exporting-google-photos/</link>
-      <pubDate>Sat, 02 Jan 2021 15:17:57 -0800</pubDate>
-      
-      <guid>/posts/exporting-google-photos/</guid>
-      <description>&lt;p&gt;I recently purchased a &lt;a href=&#34;https://www.synology.com/en-us/products/series/home&#34;&gt;Synology NAS&lt;/a&gt; and I started hosting a media server containing movies, TV shows and photos. I had stored all my photos in Google Photos for the past several years. But recently Google announced that &lt;a href=&#34;https://blog.google/products/photos/storage-changes&#34;&gt;it was going to charge for storing photos as they near the storage limit of 15GB&lt;/a&gt;. I knew of &lt;a href=&#34;https://takeout.google.com&#34;&gt;Google Takeout&lt;/a&gt; and I downloaded some 44 GB of photos which were packed in about 23 zip files.&lt;/p&gt;
-&lt;p&gt;I found that these zip files had lot of repetitive files, seemed like a lot of duplicates. I ended up extracting all of them to a single folder. And, I saw a lot of json files mixed in. When I searched online, I found couple of tools to get rid of them: &lt;a href=&#34;https://metadatafixer.com&#34;&gt;Metadata Fixer&lt;/a&gt; and &lt;a href=&#34;https://github.com/TheLastGimbus/GooglePhotosTakeoutHelper&#34;&gt;Google Photos Takeout Helper&lt;/a&gt;. These didn&amp;rsquo;t work well and I thought of writing my own tool to do the job for me.&lt;/p&gt;
-&lt;p&gt;I later came across a Reddit post where &lt;a href=&#34;https://www.reddit.com/r/googlephotos/comments/jyyg53/psa_i_found_an_alternative_to_google_takeout_for&#34;&gt;somebody posted an alternative for exporting Google Photos&lt;/a&gt;. The alternative is basically to select all the photos per year and download them via UI. This will not give us any json files. It just downloads the photos as is. This was perfect and worked for me.&lt;/p&gt;
 </description>
     </item>
     

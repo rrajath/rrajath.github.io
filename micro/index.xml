@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 11 Sep 2021 19:35:00 -0700</lastBuildDate><atom:link href="/micro/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Dec 2022 22:48:00 -0800</lastBuildDate><atom:link href="/micro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Futurepedia</title>
+      <link>/micro/futurepedia/</link>
+      <pubDate>Tue, 27 Dec 2022 22:48:00 -0800</pubDate>
+      
+      <guid>/micro/futurepedia/</guid>
+      <description>&lt;p&gt;Directory of AI tools containing free/freemium/paid services&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.futurepedia.io&#34;&gt;https://www.futurepedia.io&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Untools</title>
       <link>/micro/untools-tools-for-better-thinking/</link>

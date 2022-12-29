@@ -39,7 +39,7 @@ https://logseq.com https://wiki.nikitavoloboev.xyz "/>
 
 <body>
     <article class="h-entry">
-	<div class="container wrapper post e-content p-name">
+	<div class="container wrapper post e-content p-name" data-pagefind-body>
 		<div class="header">
 	<base href="/">
 	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
@@ -75,6 +75,14 @@ https://logseq.com https://wiki.nikitavoloboev.xyz "/>
 				<a href="/now">Now</a>
 			</li>
 			
+			<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+			<script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+			<div id="search"></div>
+			<script>
+				window.addEventListener('DOMContentLoaded', (event) => {
+						new PagefindUI({ element: "#search" });
+				});
+			</script>
 		</ul>
 	</nav>
 </div>
@@ -82,7 +90,7 @@ https://logseq.com https://wiki.nikitavoloboev.xyz "/>
 
 		<div class="post-header">
 			<h1 class="title">Pkm</h1>
-            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="/micro/pkm/"><time class="dt-published">Sep 11, 2020</time></a></div> 
+            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="/micro/pkm/"><time class="dt-published" data-pagefind-meta="date">Sep 11, 2020</time></a></div> 
 		</div>
 
 		<div class="markdown">
