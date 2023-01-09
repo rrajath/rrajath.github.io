@@ -7,7 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 08 Jan 2023 18:23:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Jan 2023 13:25:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Make Helix use your workspace prettier config</title>
+      <link>/posts/make-helix-use-your-workspace-prettier-config/</link>
+      <pubDate>Mon, 09 Jan 2023 13:25:00 -0800</pubDate>
+      
+      <guid>/posts/make-helix-use-your-workspace-prettier-config/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been &lt;a href=&#34;https://rrajath.com/posts/exploring-helix-editor/&#34;&gt;trying out Helix Editor&lt;/a&gt; recently and loving it. I wanted to see if it could be my primary IDE and one thing I wish it did was format the file on save. By this, I don’t just mean fixing indentation, but also applying eslint fixes and running prettier. And I wanted this formatting to be applied based on the rules defined for that package. For example, I was in a nodejs workspace with typescript files and a prettier config that had rules like &lt;code&gt;singleQuote&lt;/code&gt;, &lt;code&gt;trailingComma&lt;/code&gt;, etc.&lt;/p&gt;
+&lt;p&gt;I tried a few prettier configs on the web for Helix and &lt;a href=&#34;https://github.com/helix-editor/helix/wiki/External-binary-formatter-configuration#prettier&#34;&gt;none of them worked&lt;/a&gt;. This post is to document what &lt;em&gt;did&lt;/em&gt; work so that the next time I run into the same situation I don&amp;rsquo;t start from scratch and end up trying a bunch of things to no avail.&lt;/p&gt;
+&lt;p&gt;So, here&amp;rsquo;s what worked. I found this &lt;a href=&#34;https://github.com/helix-editor/helix/discussions/3198#discussioncomment-3324876&#34;&gt;line of code as a comment on one of the GitHub issues&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;formatter &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; { command &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;npx&amp;#34;&lt;/span&gt;, args &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;prettier&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;--parser&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;typescript&amp;#34;&lt;/span&gt;] }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This fixed the prettier issue for me and now any double quotes in the file are converted to single quotes. Any semi-colons that were missed at the end of statements get automatically added, just like how it’s configured in the prettier config for the project.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>2022 - Year in Review</title>
       <link>/posts/2022-year-in-review/</link>
@@ -559,39 +573,6 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
 &lt;p&gt;I currently use &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt; to manage my tasks, events, journal, notes, thoughts, etc. Given that I wanted to journal in org-more, I started searching for the best ways to go about it - to &amp;ldquo;streamline the process&amp;rdquo;, so to speak. Like, what would the headings be? Should I follow a template? Can I use a text expander for the template? Should I add tags for each heading in that template? I was even looking up the &lt;a href=&#34;https://www.reddit.com/r/Journaling&#34;&gt;/r/journaling&lt;/a&gt; subreddit to get some ideas.&lt;/p&gt;
 &lt;p&gt;But after spending some time on this, it just hit me - I should worry more about content than workflows. So, I just went ahead and freestyled it by putting in vague yet meaningful enough headings for each journal entry that either captures the task/event/feeling. And then I added tags to capture how I&amp;rsquo;m feeling. This took a lot of stress away from me and helped me focus on journaling instead of building a workflow.&lt;/p&gt;
 &lt;p&gt;This is just one example out of several where I spent too much time trying to find the right way to do something before actually doing it. What I realized from the above experience was to identify what is important to me. In the journaling example, what&amp;rsquo;s important is the content - writing down what I think, how I feel, rationalizing my thoughts when I&amp;rsquo;m anxious, etc. Everything else is secondary. As long as I make it extremely easy to accomplish this, I shouldn&amp;rsquo;t care about workflows. Because, workflows develop organically based on usage.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>WhatsApp 0:1 Signal</title>
-      <link>/posts/whatsapp-privacy-policy-signal/</link>
-      <pubDate>Sat, 09 Jan 2021 15:16:44 -0800</pubDate>
-      
-      <guid>/posts/whatsapp-privacy-policy-signal/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been on Signal for a few years now, but it has mostly been crickets and tumbleweeds there because I only had a handful of contacts that were on Signal. My main (and only) app for communication with friends and family was WhatsApp. I used to install Signal and a few days later I&amp;rsquo;d uninstall it because I didn&amp;rsquo;t really have many people to talk to on Signal. I wanted to keep it and at least use it as an SMS app, but with the amount of spam texts I get and the fact that it doesn&amp;rsquo;t have a feature to filter texts by keyword made me not use it as an SMS app either.&lt;/p&gt;
-&lt;h1 id=&#34;the-problem-with-new-platforms&#34;&gt;The problem with new platforms&lt;/h1&gt;
-&lt;p&gt;The main problem with newer platforms is the user base. If all your friends and family are not on the new platform (social media or messenger), then you really can&amp;rsquo;t use it. That&amp;rsquo;s what happened with me on Signal. It was a herculean task for me to convince people who cared very little about privacy to make them switch to Signal. The thing is, it ends up being a huge task for them too. They also have to convince their contacts to switch to Signal or else they&amp;rsquo;ll experience the same silence of having no one to talk to on that app. Some people are okay with using multiple messaging apps and I know a lot of people that don&amp;rsquo;t. I personally don&amp;rsquo;t enjoy it.&lt;/p&gt;
-&lt;h1 id=&#34;whatsapps-new-privacy-policy&#34;&gt;WhatsApp&amp;rsquo;s new privacy policy&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.whatsapp.com/legal/updates/privacy-policy/?lang=en&#34;&gt;WhatsApp&amp;rsquo;s new privacy policy&lt;/a&gt; that will take effect in Feb 2021 went viral and made enough people talk about it. The fact that there was no way to opt out was the final straw that broke the camel&amp;rsquo;s back. Even &lt;a href=&#34;https://twitter.com/elonmusk/status/1347165127036977153&#34;&gt;Elon Musk tweeted&lt;/a&gt; which ended up &lt;a href=&#34;https://twitter.com/signalapp/status/1347240006444675072&#34;&gt;putting way too much stress on Signal&amp;rsquo;s servers&lt;/a&gt; where there was a delay for new users in receiving verification codes. As much as downtimes are hated in tech services, this particular problem is actually good to have for any tech company.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;d say this is a kind of blessing in disguise which gave a lot of people the final push to stop giving in to big tech companies to continue stealing data from customers. What I did realize was how easy and valuable it was to make people aware of the data collection practices.&lt;/p&gt;
-&lt;p&gt;If this privacy policy update had come in the form of an email that we usually get from other services, like &amp;ldquo;We have updated our privacy policy. Please click here to learn more.&amp;rdquo; I don&amp;rsquo;t think we would have taken it this seriously.&lt;/p&gt;
-&lt;h1 id=&#34;how-i-spread-awareness&#34;&gt;How I spread awareness&lt;/h1&gt;
-&lt;p&gt;WhatsApp made the job easier for me to spread awareness of their privacy and data collection nightmare.&lt;/p&gt;
-&lt;h2 id=&#34;1-update-my-whatsapp-status&#34;&gt;1. Update my WhatsApp status&lt;/h2&gt;
-&lt;p&gt;The first thing I did was to update my WhatsApp status to say &amp;ldquo;I&amp;rsquo;m deleting WhatsApp on 1/31. Find me on Signal&amp;rdquo;. This would give people a heads-up about my availability on WhatsApp and also tell them where to find me.&lt;/p&gt;
-&lt;h2 id=&#34;2-starting-conversations-about-privacy-with-people&#34;&gt;2. Starting conversations about privacy with people&lt;/h2&gt;
-&lt;p&gt;I ended up sharing two screenshots with the groups and people I interact with the most on WhatsApp. Once I shared them, it was abundantly clear to them that they had to ditch WhatsApp and most of them immediately hopped on to Signal.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img style=&#34;width:50%&#34; src=&#34;/images/whatsapp-privacy-policy-feb2021.jpeg&#34;/&gt;
-    &lt;figcaption&gt;WhatsApp Privacy Policy&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;figure&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;/images/data-collection-messaging-apps.jpeg&#34;/&gt;
-    &lt;figcaption&gt;&lt;a href=&#34;https://www.forbes.com/sites/zakdoffman/2021/01/03/whatsapp-beaten-by-apples-new-imessage-update-for-iphone-users/?sh=191b47e36234&#34;&gt;Data collection by different apps&lt;/a&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;What I also did was to create Groups on Signal and send the group invite to respective groups in WhatsApp. It made the transition easier. Now the number of contacts in Signal is growing.&lt;/p&gt;
-&lt;h1 id=&#34;signal-is-the-future&#34;&gt;Signal is the future&lt;/h1&gt;
-&lt;p&gt;Signal paved the way and showed the world how apps can be made that wouldn&amp;rsquo;t profit off of your data. &lt;a href=&#34;https://www.reddit.com/r/technology/comments/kt91qk/signal_private_messenger_team_here_we_support_an&#34;&gt;Their Reddit AMA&lt;/a&gt; provides good insight into their values, their vision and a lot more about who they are and how they operate. I have donated to Signal and will continue to do so. I love the fact that they&amp;rsquo;re non-profit and open source; that&amp;rsquo;s a huge plus to me. It&amp;rsquo;s so peaceful stress-free to use an app or a service that we know has our best interests and wouldn&amp;rsquo;t make money off of our data. In the world where it seems as if privacy no longer exists, it&amp;rsquo;s great to see a very private and secure messaging app is growing to be so popular and it is on its way to become people&amp;rsquo;s primary mode of communication.&lt;/p&gt;
 </description>
     </item>
     
