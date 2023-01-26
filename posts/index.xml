@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 09 Jan 2023 13:25:00 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jan 2023 22:56:00 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Switching between qwerty and colemak</title>
+      <link>/posts/switching-between-qwerty-and-colemak/</link>
+      <pubDate>Wed, 25 Jan 2023 22:56:00 -0800</pubDate>
+      
+      <guid>/posts/switching-between-qwerty-and-colemak/</guid>
+      <description>&lt;p&gt;Early last year, I had some pain and discomfort in my wrists, so I decided to switch to a split keyboard. I went down an &lt;a href=&#34;https://reddit.com/r/ErgoMechKeyboards&#34;&gt;/r/ErgoMechKeyboards&lt;/a&gt; rabbit hole and ended up getting a &lt;a href=&#34;https://www.zsa.io/moonlander&#34;&gt;Moonlander Mark I&lt;/a&gt;. Around the same time, I also found that a lot of people use Colemak as the keyboard layout and that QWERTY is actually very inefficient. And down another rabbit hole I went.&lt;/p&gt;
+&lt;p&gt;After doing a lot more research, I decided to go all in with both split keyboard &lt;em&gt;and&lt;/em&gt; new layout at the same time. From what I read, it apparently helps with muscle memory when transition to split keyboard + the new layout is done at the same time. Also, I picked Colemak because, it was one of the most popular for all-round typing - both coding and general typing (in English). I didn’t want to try out a bunch of layouts before deciding on one since doing so was going impact my productivity at work.&lt;/p&gt;
+&lt;p&gt;Since I quickly wanted to ramp up and get better speeds with Colemak, I stopped using QWERTY completely. As my speeds improved, I was no longer able to type in QWERTY on my laptop keyboard. As I typed, I was hitting wrong keys all the time and I would immediately stop and get my split keyboard that was configured for Colemak. Now this became a little cumbersome since everywhere I went I had to take my keyboard with me.&lt;/p&gt;
+&lt;p&gt;One day, I pushed through the wrong key presses and forced myself to type in QWERTY for some 10-15 minutes and I got much better at it. Turns out, the human brain is quite capable ot handling this kind of drastic change. Once I got some confidence in this switch, I now regularly switch between QWERTY and Colemak and I type fast in both. My Colemak speeds are still not great, but it’s getter better.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Make Helix use your workspace prettier config</title>
       <link>/posts/make-helix-use-your-workspace-prettier-config/</link>
@@ -527,42 +540,6 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
       <description>&lt;p&gt;I recently purchased a &lt;a href=&#34;https://www.synology.com/en-us/products/series/home&#34;&gt;Synology NAS&lt;/a&gt; and I started hosting a media server containing movies, TV shows and photos. I had stored all my photos in Google Photos for the past several years. But recently Google announced that &lt;a href=&#34;https://blog.google/products/photos/storage-changes&#34;&gt;it was going to charge for storing photos as they near the storage limit of 15GB&lt;/a&gt;. I knew of &lt;a href=&#34;https://takeout.google.com&#34;&gt;Google Takeout&lt;/a&gt; and I downloaded some 44 GB of photos which were packed in about 23 zip files.&lt;/p&gt;
 &lt;p&gt;I found that these zip files had lot of repetitive files, seemed like a lot of duplicates. I ended up extracting all of them to a single folder. And, I saw a lot of json files mixed in. When I searched online, I found couple of tools to get rid of them: &lt;a href=&#34;https://metadatafixer.com&#34;&gt;Metadata Fixer&lt;/a&gt; and &lt;a href=&#34;https://github.com/TheLastGimbus/GooglePhotosTakeoutHelper&#34;&gt;Google Photos Takeout Helper&lt;/a&gt;. These didn&amp;rsquo;t work well and I thought of writing my own tool to do the job for me.&lt;/p&gt;
 &lt;p&gt;I later came across a Reddit post where &lt;a href=&#34;https://www.reddit.com/r/googlephotos/comments/jyyg53/psa_i_found_an_alternative_to_google_takeout_for&#34;&gt;somebody posted an alternative for exporting Google Photos&lt;/a&gt;. The alternative is basically to select all the photos per year and download them via UI. This will not give us any json files. It just downloads the photos as is. This was perfect and worked for me.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2020 - Year in Review</title>
-      <link>/posts/2020-year-in-review/</link>
-      <pubDate>Fri, 01 Jan 2021 20:30:59 -0800</pubDate>
-      
-      <guid>/posts/2020-year-in-review/</guid>
-      <description>&lt;p&gt;2020 has been quite a year for all of us and I don&amp;rsquo;t want to get into the long list of things that have shook us this year. We&amp;rsquo;re still resilient and stand strong even though we experience some of the most horrific events we&amp;rsquo;re thrown into. I&amp;rsquo;m grateful for being privileged enough in terms of health, career, etc. This year hasn&amp;rsquo;t been the best for pretty much anyone and the same goes for me. Having said that, like I do every year, here are some of the things I did more of, less of, some side quests and lessons learned along the way.&lt;/p&gt;
-&lt;h1 id=&#34;things-i-did-more-of&#34;&gt;Things I did more of&lt;/h1&gt;
-&lt;h2 id=&#34;self-hosting&#34;&gt;Self hosting&lt;/h2&gt;
-&lt;p&gt;This started out as a project for a few raspberry pis I had at home where I did a RAID-1 setup initially with NextCloud installed. However, I had to do a lot of heavy lifting in a lot of different areas, like configuring DDNS, setting up another raspberry pi as a mirror for data duplication, and other minor quirks I had along the way. Besides that, there were times when Nextcloud didn&amp;rsquo;t work the way it was supposed to. Like, I wasn&amp;rsquo;t seeing the &amp;lsquo;Sharing&amp;rsquo; tab for any of the files or folders. There was not a lot of help from the community either. Besides that, the raspberry pi I had installed it on was constantly running out of memory. I just couldn&amp;rsquo;t devote more time to it and fix all the quirks. Towards the end of 2020, I bought a Synology NAS DS220+ and I&amp;rsquo;ve been very happy with it.&lt;/p&gt;
-&lt;p&gt;The DS220+ did all the heavy lifting for me and the initial setup took less than 15 minutes. After that I just had to move my data to it. The DiskStation is definitely a superior and a much nicer product too. The fact that I have a great level of control into how my data is stored, shared and accessed while all the nitty gritty of the configuration is abstracted away has been a great experience. It&amp;rsquo;s a huge time saver and I could focus my time and energy on other projects.&lt;/p&gt;
-&lt;h2 id=&#34;chess&#34;&gt;Chess&lt;/h2&gt;
-&lt;p&gt;The quarantine prevented me from going out and that made me get into Chess. I spent many hours playing chess with my wife and got better at it. I also solved Chess puzzles on Lichess which I highly recommend if somebody is looking for good chess apps.&lt;/p&gt;
-&lt;h2 id=&#34;emacsorg-mode&#34;&gt;Emacs/org-mode&lt;/h2&gt;
-&lt;p&gt;I used org-mode before with Spacemacs and it was okay. The workflow was great when I was in front of my computer, but for &amp;ldquo;on the go&amp;rdquo;, I just couldn&amp;rsquo;t get a good workflow going. This made me disinterested in emacs and org-mode and I switched to a different solution - Notion. I then learned about Doom Emacs which in my opinion is way better than Spacemacs since Spacemacs was really slow and clunky when I used it. With Orgzly installed on my phone, Syncthing set up on my phone and my computer, I got a good system that I could work with. Every day I learn new things about Emacs either intentionally or accidentally and I&amp;rsquo;m loving every bit of it.&lt;/p&gt;
-&lt;h2 id=&#34;journaling&#34;&gt;Journaling&lt;/h2&gt;
-&lt;p&gt;I journaled every single day this entire year. There were days when I journaled more and did a lot of brain dumps and there were other days where I journaled very little. I&amp;rsquo;m glad to have developed this habit since it has helped me organize my thoughts, come to logical solutions whenever I&amp;rsquo;m preoccupied with things that bother me, or just write down my thoughts. IMO, it&amp;rsquo;s a very underrated habit and especially over time, you get a good ROI with journaling.&lt;/p&gt;
-&lt;h2 id=&#34;zettelkasten&#34;&gt;Zettelkasten&lt;/h2&gt;
-&lt;p&gt;I take notes extensively. I used to take notes whenever I read a book, but these days I find myself taking notes when I read blog posts or listen to podcasts too. What I stumbled upon recently was a new note-taking method called &lt;a href=&#34;https://en.wikipedia.org/wiki/Zettelkasten&#34;&gt;Zettelkasten&lt;/a&gt; (or slip-box) - a system developed by Niklas Luhmann. I write smaller notes where each note contains an idea instead of a book summary. These notes end up getting interconnected to other notes. This system has been working well so far. Let&amp;rsquo;s see where it takes me.&lt;/p&gt;
-&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;
-&lt;p&gt;I read few good books this year. I didn&amp;rsquo;t focus on reading more books, but instead focused on reading bits and pieces of different books and reflecting on those ideas. This has been extremely valuable to me compared to how I used to read books or listen to audiobooks. For example, I read a 4 page chapter (called &amp;ldquo;A sketch of good communication&amp;rdquo;) from a &lt;a href=&#34;https://www.lesswrong.com/books&#34;&gt;LessWrong book set&lt;/a&gt; (book name Epistemology) and reflected on it for couple of days which led me to few scenarios where was I guilty of bad communication in the past. The chapter is super interesting and is also available as a &lt;a href=&#34;https://www.lesswrong.com/posts/yeADMcScw8EW9yxpH/a-sketch-of-good-communication&#34;&gt;blogpost&lt;/a&gt; (as are all other chapters in the book set) if you&amp;rsquo;re interested.&lt;/p&gt;
-&lt;h1 id=&#34;things-i-did-less-of&#34;&gt;Things I did less of&lt;/h1&gt;
-&lt;h2 id=&#34;running&#34;&gt;Running&lt;/h2&gt;
-&lt;p&gt;The quarantine made us stay home and summer was mostly spent indoors. I did run a couple of times on a treadmill in our apartment gym, but that was closed too after a bit. I&amp;rsquo;m looking forward to running outside in 2021 once it gets warmer&lt;/p&gt;
-&lt;h2 id=&#34;working-out&#34;&gt;Working out&lt;/h2&gt;
-&lt;p&gt;I stopped doing bodyweight workouts too and I tend to have mostly focused on eating more, and gaining more weight (though that wasn&amp;rsquo;t part of the plan).&lt;/p&gt;
-&lt;h2 id=&#34;personal-projects&#34;&gt;Personal projects&lt;/h2&gt;
-&lt;p&gt;With the whole WFH situation, I ended up working way more than I did when I used to go to office. This made me so tired that it was extremely hard to get motivated to do personal projects.&lt;/p&gt;
-&lt;h1 id=&#34;side-quests&#34;&gt;Side Quests&lt;/h1&gt;
-&lt;h2 id=&#34;making-music&#34;&gt;Making music&lt;/h2&gt;
-&lt;p&gt;I recently discovered Groovepad and I really liked how easy it is to use that app and make music. As of this writing I made 3 tracks and I&amp;rsquo;m planning to put them up on Soundcloud and Spotify.&lt;/p&gt;
-&lt;h1 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h1&gt;
-&lt;p&gt;With everything that happened in 2020 and so much time being spent indoors, it made me reflect on a lot things. I&amp;rsquo;m extremely grateful to have good health, family, career and friends. It has made me appreciate life more and gave me some perspective. It&amp;rsquo;s easy to take things for granted and look the other way. But it takes a lot of strength and speaks to one&amp;rsquo;s character to stand up for the right thing and fight for it.&lt;/p&gt;
 </description>
     </item>
     

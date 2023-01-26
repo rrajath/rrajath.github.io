@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 09 Jan 2023 13:25:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jan 2023 22:56:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Switching between qwerty and colemak</title>
+      <link>/posts/switching-between-qwerty-and-colemak/</link>
+      <pubDate>Wed, 25 Jan 2023 22:56:00 -0800</pubDate>
+      
+      <guid>/posts/switching-between-qwerty-and-colemak/</guid>
+      <description>&lt;p&gt;Early last year, I had some pain and discomfort in my wrists, so I decided to switch to a split keyboard. I went down an &lt;a href=&#34;https://reddit.com/r/ErgoMechKeyboards&#34;&gt;/r/ErgoMechKeyboards&lt;/a&gt; rabbit hole and ended up getting a &lt;a href=&#34;https://www.zsa.io/moonlander&#34;&gt;Moonlander Mark I&lt;/a&gt;. Around the same time, I also found that a lot of people use Colemak as the keyboard layout and that QWERTY is actually very inefficient. And down another rabbit hole I went.&lt;/p&gt;
+&lt;p&gt;After doing a lot more research, I decided to go all in with both split keyboard &lt;em&gt;and&lt;/em&gt; new layout at the same time. From what I read, it apparently helps with muscle memory when transition to split keyboard + the new layout is done at the same time. Also, I picked Colemak because, it was one of the most popular for all-round typing - both coding and general typing (in English). I didn’t want to try out a bunch of layouts before deciding on one since doing so was going impact my productivity at work.&lt;/p&gt;
+&lt;p&gt;Since I quickly wanted to ramp up and get better speeds with Colemak, I stopped using QWERTY completely. As my speeds improved, I was no longer able to type in QWERTY on my laptop keyboard. As I typed, I was hitting wrong keys all the time and I would immediately stop and get my split keyboard that was configured for Colemak. Now this became a little cumbersome since everywhere I went I had to take my keyboard with me.&lt;/p&gt;
+&lt;p&gt;One day, I pushed through the wrong key presses and forced myself to type in QWERTY for some 10-15 minutes and I got much better at it. Turns out, the human brain is quite capable ot handling this kind of drastic change. Once I got some confidence in this switch, I now regularly switch between QWERTY and Colemak and I type fast in both. My Colemak speeds are still not great, but it’s getter better.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Make Helix use your workspace prettier config</title>
       <link>/posts/make-helix-use-your-workspace-prettier-config/</link>
@@ -559,20 +572,6 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
 &lt;li&gt;&lt;code&gt;Target&lt;/code&gt; searches for a heading called &lt;code&gt;Target&lt;/code&gt;. If not found, it&amp;rsquo;ll ask to create one&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;*Target&lt;/code&gt; points to a heading called Target&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>On Analysis Paralysis</title>
-      <link>/posts/on-analysis-paralysis/</link>
-      <pubDate>Sun, 30 May 2021 17:44:42 -0700</pubDate>
-      
-      <guid>/posts/on-analysis-paralysis/</guid>
-      <description>&lt;p&gt;I have often gotten stuck in analysis paralysis mode where I constantly look for the right way to solve a problem and end up spending way too much time on it than actually solving the problem. A lot of times what happens is the activity of searching for the right way to do something itself takes so much time and energy that I&amp;rsquo;d develop an aversion to the actual activity. Or I&amp;rsquo;d not feel the same level of enthusiasm with which I started.&lt;/p&gt;
-&lt;p&gt;A recent example for this was when I was thinking about the right way to journal. I&amp;rsquo;ve been journaling on and off the past few years and I&amp;rsquo;ve also changed my note-taking apps/services a few times. These note-taking apps have also influenced the way I journal.&lt;/p&gt;
-&lt;p&gt;I currently use &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt; to manage my tasks, events, journal, notes, thoughts, etc. Given that I wanted to journal in org-more, I started searching for the best ways to go about it - to &amp;ldquo;streamline the process&amp;rdquo;, so to speak. Like, what would the headings be? Should I follow a template? Can I use a text expander for the template? Should I add tags for each heading in that template? I was even looking up the &lt;a href=&#34;https://www.reddit.com/r/Journaling&#34;&gt;/r/journaling&lt;/a&gt; subreddit to get some ideas.&lt;/p&gt;
-&lt;p&gt;But after spending some time on this, it just hit me - I should worry more about content than workflows. So, I just went ahead and freestyled it by putting in vague yet meaningful enough headings for each journal entry that either captures the task/event/feeling. And then I added tags to capture how I&amp;rsquo;m feeling. This took a lot of stress away from me and helped me focus on journaling instead of building a workflow.&lt;/p&gt;
-&lt;p&gt;This is just one example out of several where I spent too much time trying to find the right way to do something before actually doing it. What I realized from the above experience was to identify what is important to me. In the journaling example, what&amp;rsquo;s important is the content - writing down what I think, how I feel, rationalizing my thoughts when I&amp;rsquo;m anxious, etc. Everything else is secondary. As long as I make it extremely easy to accomplish this, I shouldn&amp;rsquo;t care about workflows. Because, workflows develop organically based on usage.&lt;/p&gt;
 </description>
     </item>
     
