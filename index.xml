@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 25 Jan 2023 22:56:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Jan 2023 20:59:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The pointlessness of a Mac Dockbar</title>
+      <link>/posts/the-pointlessness-of-a-mac-dockbar/</link>
+      <pubDate>Sat, 28 Jan 2023 20:59:00 -0800</pubDate>
+      
+      <guid>/posts/the-pointlessness-of-a-mac-dockbar/</guid>
+      <description>&lt;p&gt;One of the things that was initially unique to Mac was the dockbar. I remember the first time I used a Mac, I was quite fascinated by it. I liked the zoom-in effect as I hovered my mouse over each item on it.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;/images/MacDockbar.png&#34;/&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;A fresh install of MacOS (or OSX back in the day) comes with a persistent dockbar at the bottom taking up a good chunk of the screen real estate. So, even when you maximize any app, it won’t take up the full screen because of the dockbar sitting at the bottom..&lt;/p&gt;
+&lt;p&gt;After a few days of using it, I started getting pretty annoyed with it and I turned on auto-hide. That only solved the problem partially. Every time I moved my mouse to the bottom of the screen, even for a moment, it popped up, disrupting my flow. More than 90-95% of the time, they were all misfires.&lt;/p&gt;
+&lt;p&gt;So, I ended up setting a delay on the dockbar to 3 seconds so that it doesn’t keep popping up when my mouse accidentally moves to the bottom edge of the screen. Instead, if the mouse stayed at the bottom for 3 seconds, only then it would popup. This made things better, but not great.&lt;/p&gt;
+&lt;p&gt;The whole time, I questioned, what was the point of a dockbar anyway? I feel like it’s more eye candy and gimmicky than useful. If anything, it gets in the way more than it helps. I never understand why some people depend on it and actually use it. It’s so much slower to use the dockbar. Here’s why: You already know which app you want to open. If it’s already open, you hit &lt;code&gt;Cmd+Tab&lt;/code&gt; and just switch to it. If it’s not open, you hit &lt;code&gt;Cmd+Space&lt;/code&gt; to invoke Spotlight and type a few characters of the app you want to open and you just switch to it.&lt;/p&gt;
+&lt;p&gt;Let’s say you’re using just your trackpad and your hand is not close to the keyboard. If you want to switch to another app with just your trackpad, doing an Exposé gesture is much better and easier than scanning the Dockbar for it. With Exposé, you get window previews which make it a lot easier to select from. Dockbar has so much fluff in it with all the apps that are statically present in it that it takes longer to sift through them and find the app you’re looking for.&lt;/p&gt;
+&lt;p&gt;I guess the only use of a Dockbar is when one is looking for an app but they don’t know its name, they only know what it looks like. Other than that, I don’t see a reason to use Dockbar. I would definitely recommend getting rid of it or at least setting an autohide delay of a few seconds. To do that, run this command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;defaults write com.apple.Dock autohide-delay -float &lt;span style=&#34;color:#2aa198&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; killall Dock
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
     <item>
       <title>Switching between qwerty and colemak</title>
       <link>/posts/switching-between-qwerty-and-colemak/</link>
@@ -557,21 +577,6 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
       <guid>/micro/untools-tools-for-better-thinking/</guid>
       <description>&lt;p&gt;Untools - Tools for better thinking&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://untools.co&#34;&gt;https://untools.co&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>OrgMode Tips and Tricks</title>
-      <link>/posts/orgmode-tips-tricks/</link>
-      <pubDate>Wed, 04 Aug 2021 11:10:00 -0700</pubDate>
-      
-      <guid>/posts/orgmode-tips-tricks/</guid>
-      <description>&lt;h2 id=&#34;add-a-link-to-headings-in-other-org-files&#34;&gt;Add a link to headings in other org files&lt;/h2&gt;
-&lt;p&gt;Use &lt;code&gt;file:~/path/to/file.org::Target&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Target&lt;/code&gt; searches for a heading called &lt;code&gt;Target&lt;/code&gt;. If not found, it&amp;rsquo;ll ask to create one&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;*Target&lt;/code&gt; points to a heading called Target&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
