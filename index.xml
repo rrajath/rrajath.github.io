@@ -7,7 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 28 Jan 2023 20:59:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Feb 2023 23:17:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raycast - My new favorite MacOS app</title>
+      <link>/posts/raycast-my-new-favorite-macos-app/</link>
+      <pubDate>Thu, 02 Feb 2023 23:17:00 -0800</pubDate>
+      
+      <guid>/posts/raycast-my-new-favorite-macos-app/</guid>
+      <description>&lt;p&gt;I’ve been an &lt;a href=&#34;https://www.alfredapp.com/&#34;&gt;Alfred&lt;/a&gt; user for many many years and I’m also a Mega Supporter with a lifetime license. It provides so much value to me on a daily basis that it’s become one of the apps I install first when I set up a new laptop. I’ve used quite a few workflows an Alfred, I was using it as a clipboard manager, I had tons of dynamic snippets stored in them. I was doing everything with Alfred.&lt;/p&gt;
+&lt;p&gt;This was the case until recently. I stumbled upon &lt;a href=&#34;https://www.raycast.com/&#34;&gt;Raycast&lt;/a&gt; about a month ago and I absolutely fell in love with it. The look and feel of it itself blew me away from the get-go. And once I checked out their store and the thousands of plugins they had, I was even more intrigued. I started looking at how I can replace my Alfred setup with Raycast and what I realized was, I was not only able to recreate my Alfred setup, but also do much more.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;/images/RaycastScreenshot.png&#34;/&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Raycast not only replaced Alfred, but also a bunch of other apps I used to depend on to be productive.
+Here’s that list of apps/websites that Raycast replaced:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://rectangleapp.com/&#34;&gt;Rectangle&lt;/a&gt;: I was using this for window management and moving things around. Raycast has several window configurtions available out of the box.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://apps.apple.com/us/app/amphetamine/id937984704?mt=12&#34;&gt;Amphetamine&lt;/a&gt;: I was using this to keep my mac awake. The &lt;a href=&#34;https://www.raycast.com/mooxl/coffee&#34;&gt;Coffee plugin&lt;/a&gt; on Raycast does this. No need for another app.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://apps.apple.com/us/app/horo-timer-for-menu-bar/id1437226581?mt=12&#34;&gt;Horo Timer&lt;/a&gt;: I was using this as a pomodoro timer. Raycast has the &lt;a href=&#34;https://www.raycast.com/asubbotin/pomodoro&#34;&gt;Pomodoro plugin&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://news.ycombinator.com/&#34;&gt;HackerNews&lt;/a&gt;: I was visiting hacker news a lot, but now thanks to Raycast’s &lt;a href=&#34;https://www.raycast.com/thomas/hacker-news&#34;&gt;HackerNews plugin&lt;/a&gt;, I can see the post right inside Raycast.&lt;/li&gt;
+&lt;li&gt;Searching Jira boards/projects/issues: Can be done directly from Raycast with the &lt;a href=&#34;https://www.raycast.com/emanguy/jira-search-self-hosted&#34;&gt;Jira Self-Hosted plugin&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Calculator, unit conversion, currency conversion, dictionary lookup, file search, and all the utilities are handled really well by Raycast.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;One of the nice things about Raycast is the way it holds the context. For example, if you invoke Raycast and perform an operation after which you close Raycast and proceed with your life, if you open Raycast again in the next few minutes (configurable), you can pick up where you left off instead of starting over. This is so intuitive and makes me feel great to use it.&lt;/p&gt;
+&lt;p&gt;The other cool thing I really dig is the agenda feature in Raycast. I’ve pinned Agenda to the top of my Raycast results so that when I hit &lt;code&gt;Cmd+Space&lt;/code&gt; to invoke Raycast, I just have to hit &lt;code&gt;Enter&lt;/code&gt; and it’ll take me to the agenda. And since I have Google Meet integration, I can just hit Enter again which will directly take me to the current meeting. This has been a life-saver. Just a couple of keystrokes and I’m in the meeting. You can also configure it to show the title of the meeting in the menu bar just a few minutes before the meeting starts and it sticks around until the meeting ends. This gives a nice indicator/reminder about the upcoming/ongoing meeting.&lt;/p&gt;
+&lt;p&gt;Not just this, Raycast’s developer documentation is really good. If there isn’t an extension for a use case you’re looking for, you can easily create one by referring to the documentation. Everything is very straight-forward and the devs are friendly and super helpful.&lt;/p&gt;
+&lt;p&gt;This is just scratching the surface. The full set of features that Raycast offers is immense and takes way more than a blog post to explain. I recommend checking it out first hand.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>The pointlessness of the Mac Dockbar</title>
       <link>/posts/the-pointlessness-of-the-mac-dockbar/</link>
@@ -566,17 +594,6 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
 
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;If you have never tried Emacs before, I highly recommend you try it. It has a steep learning curve, but it&amp;rsquo;s totally worth it. The more you learn about it, the more appreciation you&amp;rsquo;d have. If you&amp;rsquo;re an absolute beginner, Doom Emacs is a great place to start. However, once you have familiarized yourself with Emacs via Doom Emacs, I encourage you to build your own config. This would ensure you&amp;rsquo;ll know exactly what&amp;rsquo;s going on in your config and it&amp;rsquo;s compeltely in your control. Your emacs will be truly personalized to your liking.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Untools</title>
-      <link>/micro/untools-tools-for-better-thinking/</link>
-      <pubDate>Sat, 11 Sep 2021 19:35:00 -0700</pubDate>
-      
-      <guid>/micro/untools-tools-for-better-thinking/</guid>
-      <description>&lt;p&gt;Untools - Tools for better thinking&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://untools.co&#34;&gt;https://untools.co&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
