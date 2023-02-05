@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 02 Feb 2023 23:17:00 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Feb 2023 10:32:00 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Every day is a Knapsack problem</title>
+      <link>/posts/every-day-is-a-knapsack-problem/</link>
+      <pubDate>Sun, 05 Feb 2023 10:32:00 -0800</pubDate>
+      
+      <guid>/posts/every-day-is-a-knapsack-problem/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Knapsack_problem&#34;&gt;Knapsack problem&lt;/a&gt;, for those who don’t know, is an optimization problem that is encountered in several fields like computer science, investing, decision-making, etc. When defined in an abstract sense, the problem is to select a set of items each with a certain weight and value from a larger set such that the total weight does not exceed the volume of a sack. The problem is to optimize for the highest value that can be obtained through different combinations of the items. This can be done via several algorithms like greedy, dynamic programming, etc.&lt;/p&gt;
+&lt;p&gt;This is such a common problem in everyday life that we encounter is almost on a daily basis and lot of times we don’t even realize it. We just don’t name it as a knapsack problem. For example, a rock band that has a 1-hour time slot to play a bunch of songs must decide how many songs can they fit in that slot in order to provide the best experience possible. The 1-hour slot is a knapsack. Each song has a certain weight (duration) and value (popularity/crowd favorite/something else). A band can have one or more albums and the total number of songs in their arsenal far exceeds the 1-hour limit. With each song having a different value, they must choose a small set of songs very wisely so that they give the audience the best experience possible. This is one of the examples from the book &lt;a href=&#34;https://www.amazon.com/Algorithms-Live-Computer-Science-Decisions/dp/1627790365&#34;&gt;Algorithms to Live By&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The knapsack problem I deal with on a daily basis is one of prioritization of tasks. There are a lot of things I want to get done - tasks I have to do at work, chores I have to do at home, work on a personal project and other one-off tasks I want to accomplish all in one day. I generally experience &lt;a href=&#34;https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect&#34;&gt;Dunning-Kruger effect&lt;/a&gt; where I over-estimate how much I can get done in a day but this happens only towards the end of the day and it becomes more of a realization of poor planning. However, whenever I stop and think about the day as a Knapsack Problem, prioritization becomes much clearer. The number of available hours in a day is the limit (sack), each task (item) has a certain value (in terms of urgency, importance or what I get back in return) and there are more tasks than I can fit in one day. Visualizing each day as a knapsack problem helps put things in perspective that there’s only so much I can do in a day that I must make the most out of it.&lt;/p&gt;
+&lt;p&gt;Once this is understood at a micro level at one day at a time, this can also be applied for longer time scales. But we are very inaccurate when it comes to forecasting far into the future. There are too many variables at play and we can’t predict with good enough accuracy as to what we can fit in the longer time scale &lt;em&gt;and&lt;/em&gt; if it holds up until the end of that time scale. We &lt;em&gt;can&lt;/em&gt;, to some extent, do this with bigger tasks like having to proritize a course we want to take that lasts a few months alongside a marathon we want to prep for, and a few other things we want to accomplish. But on a smaller timescale like a day, this works great.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Raycast - My new favorite MacOS app</title>
       <link>/posts/raycast-my-new-favorite-macos-app/</link>
@@ -515,39 +528,6 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
 &lt;p&gt;I currently use &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt; to manage my tasks, events, journal, notes, thoughts, etc. Given that I wanted to journal in org-more, I started searching for the best ways to go about it - to &amp;ldquo;streamline the process&amp;rdquo;, so to speak. Like, what would the headings be? Should I follow a template? Can I use a text expander for the template? Should I add tags for each heading in that template? I was even looking up the &lt;a href=&#34;https://www.reddit.com/r/Journaling&#34;&gt;/r/journaling&lt;/a&gt; subreddit to get some ideas.&lt;/p&gt;
 &lt;p&gt;But after spending some time on this, it just hit me - I should worry more about content than workflows. So, I just went ahead and freestyled it by putting in vague yet meaningful enough headings for each journal entry that either captures the task/event/feeling. And then I added tags to capture how I&amp;rsquo;m feeling. This took a lot of stress away from me and helped me focus on journaling instead of building a workflow.&lt;/p&gt;
 &lt;p&gt;This is just one example out of several where I spent too much time trying to find the right way to do something before actually doing it. What I realized from the above experience was to identify what is important to me. In the journaling example, what&amp;rsquo;s important is the content - writing down what I think, how I feel, rationalizing my thoughts when I&amp;rsquo;m anxious, etc. Everything else is secondary. As long as I make it extremely easy to accomplish this, I shouldn&amp;rsquo;t care about workflows. Because, workflows develop organically based on usage.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>WhatsApp 0:1 Signal</title>
-      <link>/posts/whatsapp-privacy-policy-signal/</link>
-      <pubDate>Sat, 09 Jan 2021 15:16:44 -0800</pubDate>
-      
-      <guid>/posts/whatsapp-privacy-policy-signal/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been on Signal for a few years now, but it has mostly been crickets and tumbleweeds there because I only had a handful of contacts that were on Signal. My main (and only) app for communication with friends and family was WhatsApp. I used to install Signal and a few days later I&amp;rsquo;d uninstall it because I didn&amp;rsquo;t really have many people to talk to on Signal. I wanted to keep it and at least use it as an SMS app, but with the amount of spam texts I get and the fact that it doesn&amp;rsquo;t have a feature to filter texts by keyword made me not use it as an SMS app either.&lt;/p&gt;
-&lt;h1 id=&#34;the-problem-with-new-platforms&#34;&gt;The problem with new platforms&lt;/h1&gt;
-&lt;p&gt;The main problem with newer platforms is the user base. If all your friends and family are not on the new platform (social media or messenger), then you really can&amp;rsquo;t use it. That&amp;rsquo;s what happened with me on Signal. It was a herculean task for me to convince people who cared very little about privacy to make them switch to Signal. The thing is, it ends up being a huge task for them too. They also have to convince their contacts to switch to Signal or else they&amp;rsquo;ll experience the same silence of having no one to talk to on that app. Some people are okay with using multiple messaging apps and I know a lot of people that don&amp;rsquo;t. I personally don&amp;rsquo;t enjoy it.&lt;/p&gt;
-&lt;h1 id=&#34;whatsapps-new-privacy-policy&#34;&gt;WhatsApp&amp;rsquo;s new privacy policy&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.whatsapp.com/legal/updates/privacy-policy/?lang=en&#34;&gt;WhatsApp&amp;rsquo;s new privacy policy&lt;/a&gt; that will take effect in Feb 2021 went viral and made enough people talk about it. The fact that there was no way to opt out was the final straw that broke the camel&amp;rsquo;s back. Even &lt;a href=&#34;https://twitter.com/elonmusk/status/1347165127036977153&#34;&gt;Elon Musk tweeted&lt;/a&gt; which ended up &lt;a href=&#34;https://twitter.com/signalapp/status/1347240006444675072&#34;&gt;putting way too much stress on Signal&amp;rsquo;s servers&lt;/a&gt; where there was a delay for new users in receiving verification codes. As much as downtimes are hated in tech services, this particular problem is actually good to have for any tech company.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;d say this is a kind of blessing in disguise which gave a lot of people the final push to stop giving in to big tech companies to continue stealing data from customers. What I did realize was how easy and valuable it was to make people aware of the data collection practices.&lt;/p&gt;
-&lt;p&gt;If this privacy policy update had come in the form of an email that we usually get from other services, like &amp;ldquo;We have updated our privacy policy. Please click here to learn more.&amp;rdquo; I don&amp;rsquo;t think we would have taken it this seriously.&lt;/p&gt;
-&lt;h1 id=&#34;how-i-spread-awareness&#34;&gt;How I spread awareness&lt;/h1&gt;
-&lt;p&gt;WhatsApp made the job easier for me to spread awareness of their privacy and data collection nightmare.&lt;/p&gt;
-&lt;h2 id=&#34;1-update-my-whatsapp-status&#34;&gt;1. Update my WhatsApp status&lt;/h2&gt;
-&lt;p&gt;The first thing I did was to update my WhatsApp status to say &amp;ldquo;I&amp;rsquo;m deleting WhatsApp on 1/31. Find me on Signal&amp;rdquo;. This would give people a heads-up about my availability on WhatsApp and also tell them where to find me.&lt;/p&gt;
-&lt;h2 id=&#34;2-starting-conversations-about-privacy-with-people&#34;&gt;2. Starting conversations about privacy with people&lt;/h2&gt;
-&lt;p&gt;I ended up sharing two screenshots with the groups and people I interact with the most on WhatsApp. Once I shared them, it was abundantly clear to them that they had to ditch WhatsApp and most of them immediately hopped on to Signal.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img style=&#34;width:50%&#34; src=&#34;/images/whatsapp-privacy-policy-feb2021.jpeg&#34;/&gt;
-    &lt;figcaption&gt;WhatsApp Privacy Policy&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;figure&gt;
-    &lt;img style=&#34;width:100%&#34; src=&#34;/images/data-collection-messaging-apps.jpeg&#34;/&gt;
-    &lt;figcaption&gt;&lt;a href=&#34;https://www.forbes.com/sites/zakdoffman/2021/01/03/whatsapp-beaten-by-apples-new-imessage-update-for-iphone-users/?sh=191b47e36234&#34;&gt;Data collection by different apps&lt;/a&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;What I also did was to create Groups on Signal and send the group invite to respective groups in WhatsApp. It made the transition easier. Now the number of contacts in Signal is growing.&lt;/p&gt;
-&lt;h1 id=&#34;signal-is-the-future&#34;&gt;Signal is the future&lt;/h1&gt;
-&lt;p&gt;Signal paved the way and showed the world how apps can be made that wouldn&amp;rsquo;t profit off of your data. &lt;a href=&#34;https://www.reddit.com/r/technology/comments/kt91qk/signal_private_messenger_team_here_we_support_an&#34;&gt;Their Reddit AMA&lt;/a&gt; provides good insight into their values, their vision and a lot more about who they are and how they operate. I have donated to Signal and will continue to do so. I love the fact that they&amp;rsquo;re non-profit and open source; that&amp;rsquo;s a huge plus to me. It&amp;rsquo;s so peaceful stress-free to use an app or a service that we know has our best interests and wouldn&amp;rsquo;t make money off of our data. In the world where it seems as if privacy no longer exists, it&amp;rsquo;s great to see a very private and secure messaging app is growing to be so popular and it is on its way to become people&amp;rsquo;s primary mode of communication.&lt;/p&gt;
 </description>
     </item>
     

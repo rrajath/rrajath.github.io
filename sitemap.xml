@@ -2,14 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/posts/every-day-is-a-knapsack-problem/</loc>
+    <lastmod>2023-02-05T10:32:45-08:00</lastmod>
+  </url><url>
     <loc>/posts/</loc>
-    <lastmod>2023-02-02T23:17:51-08:00</lastmod>
+    <lastmod>2023-02-05T10:33:22-08:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2023-02-02T23:17:51-08:00</lastmod>
+    <lastmod>2023-02-05T10:33:22-08:00</lastmod>
   </url><url>
     <loc>/posts/raycast-my-new-favorite-macos-app/</loc>
-    <lastmod>2023-02-02T23:17:51-08:00</lastmod>
+    <lastmod>2023-02-05T10:33:22-08:00</lastmod>
   </url><url>
     <loc>/tags/rant/</loc>
     <lastmod>2023-01-28T23:39:49-08:00</lastmod>
