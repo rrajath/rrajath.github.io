@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 05 Feb 2023 10:32:00 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Feb 2023 22:19:00 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Constraint relaxation as a mental model</title>
+      <link>/posts/constraint-relaxation-as-a-mental-model/</link>
+      <pubDate>Tue, 07 Feb 2023 22:19:00 -0800</pubDate>
+      
+      <guid>/posts/constraint-relaxation-as-a-mental-model/</guid>
+      <description>&lt;p&gt;Like my &lt;a href=&#34;http://localhost:1313/posts/every-day-is-a-knapsack-problem&#34;&gt;previous post about knapsack problem&lt;/a&gt;, constraint relaxation is another mental model I read about in book &lt;a href=&#34;https://www.amazon.com/Algorithms-Live-Computer-Science-Decisions/dp/1627790365&#34;&gt;Algorithms to Live By&lt;/a&gt;. When I read it, I again felt the same way I did for the knapsack problem - it’s common and we do it all the time.&lt;/p&gt;
+&lt;p&gt;Constraint relaxation is when you encounter a problem that seems complex enough (think too many constraints) that you feel a little overwhelmed to tackle it head on. So, instead you decide to tackle a smaller/simpler version of the problem. Once you figure out how to do that, you add more and more complexities (or constraints) until you get to the original problem statement.&lt;/p&gt;
+&lt;p&gt;A simple example is when you’re trying to implement a feature or a business logic that is complex for which you have to learn something new, you usually implement a smaller/simpler version of it (thereby relaxing constraints) and then work your way forward.&lt;/p&gt;
+&lt;p&gt;Where this has helped me is sometimes I get stuck thinking about the problem at hand and after a while I remind myself to relax the constraints and start making progress. Again, it’s something we do automatically a lot of times. But having it as a mental model that we can pull out whenever we get stuck really does come in handy.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Every day is a Knapsack problem</title>
       <link>/posts/every-day-is-a-knapsack-problem/</link>
@@ -514,20 +527,6 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
 &lt;li&gt;&lt;code&gt;Target&lt;/code&gt; searches for a heading called &lt;code&gt;Target&lt;/code&gt;. If not found, it&amp;rsquo;ll ask to create one&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;*Target&lt;/code&gt; points to a heading called Target&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>On Analysis Paralysis</title>
-      <link>/posts/on-analysis-paralysis/</link>
-      <pubDate>Sun, 30 May 2021 17:44:42 -0700</pubDate>
-      
-      <guid>/posts/on-analysis-paralysis/</guid>
-      <description>&lt;p&gt;I have often gotten stuck in analysis paralysis mode where I constantly look for the right way to solve a problem and end up spending way too much time on it than actually solving the problem. A lot of times what happens is the activity of searching for the right way to do something itself takes so much time and energy that I&amp;rsquo;d develop an aversion to the actual activity. Or I&amp;rsquo;d not feel the same level of enthusiasm with which I started.&lt;/p&gt;
-&lt;p&gt;A recent example for this was when I was thinking about the right way to journal. I&amp;rsquo;ve been journaling on and off the past few years and I&amp;rsquo;ve also changed my note-taking apps/services a few times. These note-taking apps have also influenced the way I journal.&lt;/p&gt;
-&lt;p&gt;I currently use &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt; to manage my tasks, events, journal, notes, thoughts, etc. Given that I wanted to journal in org-more, I started searching for the best ways to go about it - to &amp;ldquo;streamline the process&amp;rdquo;, so to speak. Like, what would the headings be? Should I follow a template? Can I use a text expander for the template? Should I add tags for each heading in that template? I was even looking up the &lt;a href=&#34;https://www.reddit.com/r/Journaling&#34;&gt;/r/journaling&lt;/a&gt; subreddit to get some ideas.&lt;/p&gt;
-&lt;p&gt;But after spending some time on this, it just hit me - I should worry more about content than workflows. So, I just went ahead and freestyled it by putting in vague yet meaningful enough headings for each journal entry that either captures the task/event/feeling. And then I added tags to capture how I&amp;rsquo;m feeling. This took a lot of stress away from me and helped me focus on journaling instead of building a workflow.&lt;/p&gt;
-&lt;p&gt;This is just one example out of several where I spent too much time trying to find the right way to do something before actually doing it. What I realized from the above experience was to identify what is important to me. In the journaling example, what&amp;rsquo;s important is the content - writing down what I think, how I feel, rationalizing my thoughts when I&amp;rsquo;m anxious, etc. Everything else is secondary. As long as I make it extremely easy to accomplish this, I shouldn&amp;rsquo;t care about workflows. Because, workflows develop organically based on usage.&lt;/p&gt;
 </description>
     </item>
     

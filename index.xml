@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 05 Feb 2023 10:32:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Feb 2023 22:19:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Constraint relaxation as a mental model</title>
+      <link>/posts/constraint-relaxation-as-a-mental-model/</link>
+      <pubDate>Tue, 07 Feb 2023 22:19:00 -0800</pubDate>
+      
+      <guid>/posts/constraint-relaxation-as-a-mental-model/</guid>
+      <description>&lt;p&gt;Like my &lt;a href=&#34;http://localhost:1313/posts/every-day-is-a-knapsack-problem&#34;&gt;previous post about knapsack problem&lt;/a&gt;, constraint relaxation is another mental model I read about in book &lt;a href=&#34;https://www.amazon.com/Algorithms-Live-Computer-Science-Decisions/dp/1627790365&#34;&gt;Algorithms to Live By&lt;/a&gt;. When I read it, I again felt the same way I did for the knapsack problem - it’s common and we do it all the time.&lt;/p&gt;
+&lt;p&gt;Constraint relaxation is when you encounter a problem that seems complex enough (think too many constraints) that you feel a little overwhelmed to tackle it head on. So, instead you decide to tackle a smaller/simpler version of the problem. Once you figure out how to do that, you add more and more complexities (or constraints) until you get to the original problem statement.&lt;/p&gt;
+&lt;p&gt;A simple example is when you’re trying to implement a feature or a business logic that is complex for which you have to learn something new, you usually implement a smaller/simpler version of it (thereby relaxing constraints) and then work your way forward.&lt;/p&gt;
+&lt;p&gt;Where this has helped me is sometimes I get stuck thinking about the problem at hand and after a while I remind myself to relax the constraints and start making progress. Again, it’s something we do automatically a lot of times. But having it as a mental model that we can pull out whenever we get stuck really does come in handy.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Every day is a Knapsack problem</title>
       <link>/posts/every-day-is-a-knapsack-problem/</link>
@@ -530,42 +543,6 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
 &lt;p&gt;Naval Ravikant said &amp;ldquo;Easy choices, hard life. Hard choices, easy life&amp;rdquo;, and it could not be more true. What I thought was maybe a couple of weeks of chilling - being lazy, ordering in, lying on the couch and watching YouTube ended up becoming a lifestyle. Easy choices made me put on weight, be out of shape and be slow and sluggish. Hard choices are to correct these and get back in shape. And this involves cooking at home most of the time, thinking about macros and being more conscious about what I consume, motivating myself to workout and be active. Getting back in shape is not linear. It&amp;rsquo;s harder and takes longer to get back in shape.&lt;/p&gt;
 &lt;h3 id=&#34;having-few-interests-is-better-than-having-many&#34;&gt;Having few interests is better than having many&lt;/h3&gt;
 &lt;p&gt;I&amp;rsquo;m someone that&amp;rsquo;s very curious about things and I easily get hooked on to learning new things. This isn&amp;rsquo;t sustainable since my interests about stuff keep piling on and it either gets overwhelming or frustrating because I&amp;rsquo;m unable to give my attention to all of them. So, instead of having such varied interests, it&amp;rsquo;s better to have just 2-3 things that you can go deep on and spend more time, and drop the rest. These handful of interests would be more fulfilling than trying to hit too many targets.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Using literate configuration for all text-based configs</title>
-      <link>/posts/using-literate-configuration-for-all-text-based-configs/</link>
-      <pubDate>Fri, 17 Sep 2021 21:22:00 -0700</pubDate>
-      
-      <guid>/posts/using-literate-configuration-for-all-text-based-configs/</guid>
-      <description>&lt;p&gt;Has it ever happened to you that you look at your config (vim, tmux, whatever) after a while and see an obscure piece of code there that you have no recollection adding and what it&amp;rsquo;s even doing? This has happened to me so many times. So, what can we do about it? Add comments while adding new pieces of config? Couple of lines of comments are fine, but if you need more explanation than that, it just gets cluttered. If you want to add links, they are not clickable, unless you have an editor or terminal that can handle text links and make them clickable.&lt;/p&gt;
-&lt;p&gt;So what can we do? What we &lt;em&gt;can&lt;/em&gt; do is change that config to a literate configuration.&lt;/p&gt;
-&lt;h2 id=&#34;what-is-literate-configuration&#34;&gt;What is Literate Configuration&lt;/h2&gt;
-&lt;p&gt;Literate Configuration comes from the &lt;a href=&#34;https://en.wikipedia.org/wiki/Literate%5Fprogramming&#34;&gt;literate programming paradigm&lt;/a&gt;. Simple put, you write your config like documentation where you&amp;rsquo;d have code blocks interspersed within your config. You run a simple command to &amp;ldquo;tangle&amp;rdquo; these documentation-like files and the code blocks in them get evaluated and then written to a separate file (like an actual config file). And, tangling is a process of extracting source blocks in an org file into the location specified at the top of the org file or in the source block itself.&lt;/p&gt;
-&lt;p&gt;Once you follow this, you will never touch the actual config. You basically write documentation for each part of your config and let it generate your config file with your code in it. Your application understands the file your literate config generates and you understand the file you write since it&amp;rsquo;s well-documented.&lt;/p&gt;
-&lt;h2 id=&#34;so-why-literate-configuration-anyway&#34;&gt;So, why literate configuration anyway?&lt;/h2&gt;
-&lt;p&gt;Changing your configs to make them look like documentation sounds like a lot of work. But, there are many benefits to using a literate configuration:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Easy to understand&lt;/strong&gt;. Thanks to the documentation surrounding the code snippets&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Easy to share&lt;/strong&gt;. People you share this with need no explanation as to what&amp;rsquo;s in your config, your documentation takes care of that&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Easy to maintain&lt;/strong&gt;. You never touch the actual config, you only update this .org file and make it generate the actual source file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Easy to publish&lt;/strong&gt;. If you want to publish your config online, it&amp;rsquo;s super easy. GitHub, for example, natively supports org the same way it supports Markdown. So, these org files are rendered nicely, just as regular documentation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;One of the issues I used to have with maintaining multiple dotfiles for my applications is that they&amp;rsquo;re all in different places. If I have to check them all into a git repo, I&amp;rsquo;d either have all of them in one location and create symlinks to them in the apps that use them, or use a program like &lt;a href=&#34;https://www.gnu.org/software/stow&#34;&gt;GNU Stow&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I didn&amp;rsquo;t like either of these methods. Literate configuration solves this in the most elegant way. All you have to do is have your literate configs (org files) in a git repo (used for dotfiles) and set the tangle locations in each of these files to where each of the apps needs them. Once that is done, your dotfiles will only contain org files and all your apps will contain the config files they need.&lt;/p&gt;
-&lt;h2 id=&#34;how-to-build-a-literate-config&#34;&gt;How to build a literate config?&lt;/h2&gt;
-&lt;p&gt;Building a literate configuration needs just one prerequisite - Emacs, because we need a way to &amp;ldquo;tangle&amp;rdquo; the source blocks in the org files. Since Emacs ships with org mode and org babel, tangling is just a keybinding away. We only need two things in order to create a literate configuration: a source block and a tangle attribute. Here&amp;rsquo;s an example to show how that&amp;rsquo;s done.&lt;/p&gt;
-&lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
-&lt;p&gt;Enabling tangle in an org file can be done by specifying a tangle location at the top as part of the &lt;code&gt;#+PROPERTY&lt;/code&gt; attribute, like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#+PROPERTY: header-args :tangle /path/to/file-name.extension
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here&amp;rsquo;s what a code block looks like in an org file.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#+begin_src emacs-lisp
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (setq foo &amp;#34;bar&amp;#34;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#+end_src
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can write your documentation around these code blocks and hitting &lt;code&gt;C-c C-v t&lt;/code&gt; (or invoking the function &lt;code&gt;org-babel-tangle&lt;/code&gt;) at the top of your file would tangle them to the file specified in the &lt;code&gt;#+PROPERTY&lt;/code&gt; attribute of your org file.&lt;/p&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Using literate configuration for config files is great and I converted almost all my configs to literate configs. For reference, have a look at my &lt;a href=&#34;https://github.com/rrajath/dotfiles/blob/master/.emacs.d/PrivateConfig.org&#34;&gt;literate configuration for my Emacs setup&lt;/a&gt;. Look at the source blocks to see actual configs. Use the &amp;ldquo;Raw&amp;rdquo; button on github notice line 2 where it says &lt;code&gt;:tangle ./private-config.el&lt;/code&gt;&lt;/p&gt;
 </description>
     </item>
     
