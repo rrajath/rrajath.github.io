@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 15 Feb 2023 00:38:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Feb 2023 20:42:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ditching Evil for Meow</title>
+      <link>/posts/ditching-evil-for-meow/</link>
+      <pubDate>Sat, 25 Feb 2023 20:42:00 -0800</pubDate>
+      
+      <guid>/posts/ditching-evil-for-meow/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been a vim user for as long as I can remember. I like vim so much that I try to incorporate vim keybindings wherever I can. Like, using &lt;a href=&#34;https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en&#34;&gt;Vimium extension&lt;/a&gt; in Firefox/Chrome, &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=vscodevim.vim&#34;&gt;vim extention in IntelliJ/VSCode&lt;/a&gt;, &lt;a href=&#34;https://github.com/emacs-evil/evil&#34;&gt;evil mode in Emacs&lt;/a&gt;, etc.&lt;/p&gt;
+&lt;p&gt;I recently &lt;a href=&#34;https://rrajath.com/posts/exploring-helix-editor/&#34;&gt;stumbled upon Helix Editor&lt;/a&gt; which made me rethink vim’s way of navigation. Helix was so much more intuitive for me in terms of selection-&amp;gt;action paradigm instead of vim’s action-&amp;gt;selection. I liked Helix so much that I started using it as an IDE. Even though I had good muscle memory of vim keybindings, I decided to spend some time and learn Helix’s keybindings.&lt;/p&gt;
+&lt;p&gt;As I started using Helix more and more, I wanted to have a consistent experience in the two text editors I use the most - Helix (for IDE) and Emacs (for organizing my life). So, I wanted to get rid of Evil on Emacs since it was confusing me quite a lot. So, I started looking for packages that resembled Helix way of navigation and &lt;a href=&#34;https://github.com/meow-edit/meow&#34;&gt;Meow&lt;/a&gt; is the one that closely matched it. I did try couple of packages like &lt;a href=&#34;https://github.com/jyp/boon&#34;&gt;boon&lt;/a&gt; and &lt;a href=&#34;http://xahlee.info/emacs/misc/xah-fly-keys.html&#34;&gt;xah-fly-keys&lt;/a&gt; and found Meow to be the closest to what I was looking for in terms of ease of use and customizability.&lt;/p&gt;
+&lt;p&gt;I’m pleasantly surprised with Meow and how configurable it is and I got used to it real quick. I had to do a few customizations to get it to work to my liking, but that’ll be a different post altogether. But for those that like the Helix/Kakoune way of navigating and want to have the same in Emacs, Meow is a great choice.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>StoicQuotes - My first Raycast extension</title>
       <link>/posts/stoicquotes-my-first-raycast-extension/</link>
@@ -532,19 +545,6 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
 &lt;/ol&gt;
 &lt;p&gt;The nice thing about this is, for newer habits you get a &amp;ldquo;headstart&amp;rdquo; with a chain that&amp;rsquo;s long enough already. But the flipside is, it&amp;rsquo;s much harder to skip any of the habits you&amp;rsquo;re tracking because it resets everything. So, it kind of is anxiety-inducing.&lt;/p&gt;
 &lt;p&gt;I tried this once and I stacked about 4 habits over the course of 5-6 months and it worked surprisingly well. I want to try it again sometime soon.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Replacing knee-jerk reactions with new learnings</title>
-      <link>/posts/replacing-knee-jerk-reactions-with-new-learnings/</link>
-      <pubDate>Sun, 23 Jan 2022 21:58:00 -0800</pubDate>
-      
-      <guid>/posts/replacing-knee-jerk-reactions-with-new-learnings/</guid>
-      <description>&lt;p&gt;Often times we come across a blog post, a portion of a book, a podcast, an interview, etc where an expert in a field is explaining something that is very counter-intuitive to us. This happens mostly because we have some strongly held beliefs about how the world works and those beliefs are challenged. This used to happen to me while I was growing up and my first reaction to this was usually, &amp;ldquo;That doesn&amp;rsquo;t make sense. He&amp;rsquo;s clearly wrong, because of &amp;lt;insert vaguely recollected poorly understood never researched supposed fact/anecdote here&amp;gt;&amp;rdquo;. It didn&amp;rsquo;t help me in any way. Some times it made me feel better about myself, but the net outcome of consuming that resource was zero at best, if not negative.&lt;/p&gt;
-&lt;p&gt;As I grew up, I started realizing and asking myself - &amp;ldquo;am I really challenging someone who has a PhD in this subject they&amp;rsquo;re discussing and has spent countless hours thinking about the topic where I&amp;rsquo;m going in to this with nothing more than a hunch on a subject I know nothing about?&amp;rdquo; It&amp;rsquo;s definitely possible that I&amp;rsquo;m right and they&amp;rsquo;re wrong, but it&amp;rsquo;s also highly unlikely.&lt;/p&gt;
-&lt;p&gt;Once I realized this I stopped having such knee-jerk reactions when I saw something I didn&amp;rsquo;t agree with initially. My first reaction now is always, &amp;ldquo;That&amp;rsquo;s interesting and doesn&amp;rsquo;t conform with my beliefs. What am I missing?&amp;rdquo; I prefer to err on the side of me being wrong and learning something from it and updating my beliefs rather than doubling down on something I was already believing in without confirming the validity of it.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s easy to dismiss something just because it doesn&amp;rsquo;t align with what we believe in, but it&amp;rsquo;s much more fruitful to learn about a different perspective and update our beliefs.&lt;/p&gt;
 </description>
     </item>
     
