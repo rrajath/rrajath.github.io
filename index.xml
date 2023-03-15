@@ -7,7 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 25 Feb 2023 20:42:00 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Mar 2023 23:42:00 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Muscle memory is surprisingly malleable</title>
+      <link>/posts/muscle-memory-is-surprisingly-malleable/</link>
+      <pubDate>Tue, 14 Mar 2023 23:42:00 -0700</pubDate>
+      
+      <guid>/posts/muscle-memory-is-surprisingly-malleable/</guid>
+      <description>&lt;p&gt;I recently read &lt;a href=&#34;https://www.reddit.com/r/HelixEditor/comments/11n9bag/is_it_worth_it/&#34;&gt;a reddit post on /r/HelixEditor&lt;/a&gt; where a user was asking if it was worth switching to Helix since they’d been a long time vim user. This is just one post, but there are many people who asked same or similar questions. This is a common question that I’ve seen asked in many subreddits and other communities. I’ve also faced this kind of a dilemma in the past myself.&lt;/p&gt;
+&lt;p&gt;The crux of the problem is that we use a tool for many years and develop a muscle memory. A new tool comes along that’s attractive enough for us to try it. We are then hesitant to switch to it because of the switching cost - the time and effort it takes to learn the new tool (and potentially unlearn, to some extent, what we previously learned), and the opportunity cost of not using the tool we’ve been most familiar with.&lt;/p&gt;
+&lt;p&gt;Let’s take vim and helix as examples, I’ve been a vim user for more than a decade and I’ve developed muscle memory to do several operations. This is emphasized by using vim plugins in other apps like web browsers, IDEs, text editors, etc. When I stumbled upon Helix, I was so intrigued by the selection-&amp;gt;action paradigm that I really wanted to give it a go knowing full well that it’s going to mess me up in two places during this transition - both Helix (because I’ll be hitting vim keybindings) and in vim (because I’ll be hitting Helix keybindings).&lt;/p&gt;
+&lt;p&gt;I really liked Helix and I wanted to switch to using it full time. &lt;a href=&#34;https://rrajath.com/posts/exploring-helix-editor/&#34;&gt;I explored Helix&lt;/a&gt;, &lt;a href=&#34;https://rrajath.com/posts/make-helix-use-your-workspace-prettier-config/&#34;&gt;made it my default IDE&lt;/a&gt;, even &lt;a href=&#34;https://rrajath.com/posts/ditching-evil-for-meow/&#34;&gt;changed Emacs to mimic Helix&lt;/a&gt; as much as possible. What I found after I used Helix for a few weeks was that, my muscle memory adapted to using Helix. When I do have to ssh into a remote host and open files and edit them, I &lt;em&gt;have&lt;/em&gt; to use vim. I don’t have a choice to use Helix (especially for quick edits on ephemeral remote hosts). But as soon as I opened vim, all my muscle memory of vim comes back to me and I’m just as fast in vim as I was in Helix. Do I make a few mistakes here and there? Sure, yeah, I do. But if I give myself a few minutes and power through couple of misfires, I’ll be cruising.&lt;/p&gt;
+&lt;p&gt;Another example is switching between qwerty and colemak. I see many questions on keyboard subreddits where people ask if switching to colemak is worth it. People also ask if switching from a row-staggered keyboard to a columnar split keyboard worth it. And if they lose muscle memory. I went through this phase and I gotta say, it was painful initially. I swtiched from row-staggered qwerty to columnar split colemak-dh and did it cold turkey. It took me a while to get to decent typing speed with colemak that I couldn’t type on my laptop anymore. I had to take my split keyboard everywhere I went.&lt;/p&gt;
+&lt;p&gt;However, I gave myself a couple of days to type on my laptop again and I did make a few mistakes. But I regained all the muscle memory I thought I had lost. It all came back and I was back to my original speed while I typed on my laptop. Now &lt;a href=&#34;https://rrajath.com/posts/switching-between-qwerty-and-colemak/&#34;&gt;I frequently switch between qwerty and colemak&lt;/a&gt; and I don’t find any issues doing so. My mind &lt;em&gt;knows&lt;/em&gt; which key to press on which keyboard.&lt;/p&gt;
+&lt;p&gt;There are examples like these everywhere. Nintendo and Playstation controllers. Android and iOS. Windows/Linux/Mac. We see it everywhere. I feel we really underestimate how malleable our muscle memory is and we overthink about whether or not to switch to something completely different. Our brains know how to transition between different systems and is very efficient at it. It pulls the right set of muscle memory routines that’s needed for the task. We spend more time thinking whether or not to take a leap instead of just going for it.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Ditching Evil for Meow</title>
       <link>/posts/ditching-evil-for-meow/</link>
@@ -527,25 +543,6 @@ In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt
 &lt;li&gt;Add people in To and CC fields.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The best part about this workflow is, hitting &lt;code&gt;Option+Enter&lt;/code&gt; at any point during the process (except once you start filling the To/CC fields) would do nothing, because there&amp;rsquo;s nobody to send the email to. This turned out to be super useful hack that I have been using ever since and has worked out really well.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Don&#39;t break the chain - hard mode</title>
-      <link>/posts/dont-break-the-chain-hard-mode/</link>
-      <pubDate>Mon, 24 Jan 2022 22:45:00 -0800</pubDate>
-      
-      <guid>/posts/dont-break-the-chain-hard-mode/</guid>
-      <description>&lt;p&gt;The basic concept of &lt;a href=&#34;http://dontbreakthechain.com&#34;&gt;Don&amp;rsquo;t Break The Chain&lt;/a&gt; is to do an activity every day so as to &amp;ldquo;not break the chain&amp;rdquo;. This is a method that enforces consistency. This is helpful to make habits stick, provide visual feedback on the progress on a daily basis and motivates us to keep going.&lt;/p&gt;
-&lt;p&gt;I came up with a slight modification to this method which I call &amp;ldquo;Don&amp;rsquo;t Break the Chain - hard mode&amp;rdquo;. This is how it works:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;You start with one habit that you want to do every day and you start marking your calendar. For example, read a few pages in a book every day&lt;/li&gt;
-&lt;li&gt;You do this for a few days and keep marking the calendar. The chain starts getting longer and longer.&lt;/li&gt;
-&lt;li&gt;Now you want to add another habit like &amp;ldquo;Meditate for 10 minutes every day&amp;rdquo;. Instead of creating a new chain, you just continue the existing chain.&lt;/li&gt;
-&lt;li&gt;Keep adding habits like these along the way while maintaining just one chain. If you miss &lt;strong&gt;any&lt;/strong&gt; of the habits, the whole chain resets and you have to start over.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The nice thing about this is, for newer habits you get a &amp;ldquo;headstart&amp;rdquo; with a chain that&amp;rsquo;s long enough already. But the flipside is, it&amp;rsquo;s much harder to skip any of the habits you&amp;rsquo;re tracking because it resets everything. So, it kind of is anxiety-inducing.&lt;/p&gt;
-&lt;p&gt;I tried this once and I stacked about 4 habits over the course of 5-6 months and it worked surprisingly well. I want to try it again sometime soon.&lt;/p&gt;
 </description>
     </item>
     
