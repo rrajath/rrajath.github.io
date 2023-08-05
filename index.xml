@@ -7,7 +7,44 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Tue, 14 Mar 2023 23:42:00 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Aug 2023 10:30:00 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My favorite YouTube update</title>
+      <link>/posts/my-favorite-youtube-update/</link>
+      <pubDate>Sat, 05 Aug 2023 10:30:00 -0700</pubDate>
+      
+      <guid>/posts/my-favorite-youtube-update/</guid>
+      <description>&lt;p&gt;A few days ago I visited YouTube and saw this:
+&lt;img src=&#34;/images/YoutubeWatchHistory.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For many years, I turned off my YouTube watch history to avoid getting distracted by the recommendations that appeared on my homepage. As a result, my homepage was quite boring and contained only a few videos from my subscriptions and a few popular videos in general. Nothing was personalized. Although I still found myself clicking on a few of those videos every now and then, it had drastically reduced from when I had the watch history turned on.&lt;/p&gt;
+&lt;p&gt;Recently, YouTube updated its platform and now forces me to turn on the watch history in order to show any video recommendations at all. Surprisingly, this is my favorite update yet. Now when I visit YouTube, it&amp;rsquo;s always a blank screen and I can never get distracted or go down YouTube rabbit holes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My information overload stats</title>
+      <link>/posts/my-information-overload-stats/</link>
+      <pubDate>Fri, 05 May 2023 20:49:00 -0700</pubDate>
+      
+      <guid>/posts/my-information-overload-stats/</guid>
+      <description>&lt;p&gt;I’m no stranger to consuming information on my phone, computer, iPad, etc. I consume them in various forms - text (with newsletters, RSS feeds, read it later services), audio (with podcasts) and video (YouTube). I quit social media several years ago and I’ve always felt good that I don’t spend hours and hours scrolling through my feed on websites like Facebook, Instagram, etc. And my YouTube subscriptions are most educational anyway.&lt;/p&gt;
+&lt;p&gt;Lately I’ve been feeling that even though the content I consume are all something constructive and something I can learn about, it’s been too much for me to handle. So, I’m making this post just to take a snapshot of what I call the Informational Overload Snapshot at this moment in time in order to understand how much of content I’m subscribed to, how much I’m actually reading/watching/listening to, how much value I’m getting out of all this.&lt;/p&gt;
+&lt;p&gt;So, here is my Information Overload Snapshot:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Newsletters&lt;/strong&gt;: I’m subscribed to about 20-25 newsletters and I have a total of 2000+ unread newsletters in my email. It doesn’t really tempt me to go and read it all. There’s no way I can do that anyway. It’s something I pick and choose whenever I want to read something - like &lt;a href=&#34;https://hackernewsletter.com/&#34;&gt;HackerNewsLetter&lt;/a&gt;, &lt;a href=&#34;https://bytes.dev/&#34;&gt;Bytes&lt;/a&gt;, &lt;a href=&#34;https://fs.blog/newsletter/&#34;&gt;Farnam Street&lt;/a&gt;, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Podcasts&lt;/strong&gt;: subscribed to 33 in total. There are some I listen to as soon as an episode comes out. There are some that have so many episodes that I pick and choose what I want to listen to. There are some I hardly ever listen to, but still keep them around so that I get to it at some point, and I never listen to any of the episodes in them.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RSS Feeds&lt;/strong&gt;: Not a lot, about a dozen subscriptions. LessWrong is one of the big ones because of the high number of posts that get submitted there. What I end up doing is, every few days I go and mark all posts on LessWrong as ’read’. So, excluding LessWrong on average I’d have about 60-80 unread posts in my RSS feed. Every time I think of unsubscribing from this RSS feed, I find some post that I get a lot of value from when I skim through it and I just end up keeping it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://hq.getmatter.com/&#34;&gt;Matter&lt;/a&gt;&lt;/strong&gt;: This is a read-it-later app that I’ve been using for some time and whenever I come across long articles that are interesting, I put it in here for later. I don’t have a lot here, about 26 articles but they’re all long articles. Each of them take several minutes to read.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reddit&lt;/strong&gt;: most of my subscriptions to subreddits are something that serve my curiosity. They all depend on my current interests. I’m not subscribed to fun subreddits like &lt;a href=&#34;https://reddit.com/r/funny&#34;&gt;/r/funny&lt;/a&gt;, &lt;a href=&#34;https://reddit.com/r/Unexpected&#34;&gt;/r/Unexpected&lt;/a&gt;, etc. But rather to subreddits like &lt;a href=&#34;https://reddit.com/r/ExplainLikeImFive&#34;&gt;/r/ExplainLikeImFive&lt;/a&gt;, &lt;a href=&#34;https://reddit.com/r/AskScience&#34;&gt;/r/AskScience&lt;/a&gt;, &lt;a href=&#34;https://www.reddit.com/r/emacs&#34;&gt;/r/emacs&lt;/a&gt;, &lt;a href=&#34;https://www.reddit.com/r/fishshell&#34;&gt;/r/fishshell&lt;/a&gt;, &lt;a href=&#34;https://reddit.com/r/ErgoMechKeyboards&#34;&gt;/r/ErgoMechKeyboards&lt;/a&gt;, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mastodon&lt;/strong&gt;: mostly used for informational purposes. I’m part of an emacs instance, fosstodon and indieweb instances. No time-wasters, really. No &amp;ldquo;fun&amp;rdquo; instances.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;YouTube&lt;/strong&gt;: I’m subscribed to about 20+ channels and about half of them post regular updates. And almost all of them are educational content or something that I’m interested in.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Open tabs in my browsers&lt;/strong&gt;: Yeah, I said browsers because I’m including what I use on my laptop, phone and iPad. My phone has about 50+ open tabs. My laptop has less than a dozen open tabs. My iPad has about the same number.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HackerNews&lt;/strong&gt;: I rarely use HackerNews since I’m subscribed to the newsletter. But every now and then I do go to Hackernews out of boredom.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This will be the first part of my exercise to start cutting down on stuff I consume. My future posts will (hopefully) capture some cutbacks, unsubscribes, deletions and letting go of things.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Muscle memory is surprisingly malleable</title>
       <link>/posts/muscle-memory-is-surprisingly-malleable/</link>
@@ -486,63 +523,6 @@ Found the code in a &lt;a href=&#34;https://stackoverflow.com/a/39652226&#34;&gt
 &lt;li&gt;Indieweb integration&lt;/li&gt;
 &lt;li&gt;Self-hosting my data using Nextcloud on my Raspberry Pi&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Now</title>
-      <link>/now/</link>
-      <pubDate>Mon, 05 Sep 2022 21:51:34 -0700</pubDate>
-      
-      <guid>/now/</guid>
-      <description>&lt;h2 id=&#34;reading&#34;&gt;Reading&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Code-Language-Computer-Developer-Practices-ebook/dp/B00JDMPOK2&#34;&gt;Code&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/dp/B08XTNHRR5&#34;&gt;Immune&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/dp/B098PGCSXT/ref=cm_sw_r_cp_api_5GVD160NQV7KHC41TVXT&#34;&gt;Self-Sovereign Identity&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;watching&#34;&gt;Watching&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=54l8_ewcOlY&amp;amp;list=PLND1JCRq8Vuh3f0P5qjrSdb5eC1ZfZwWJ&#34;&gt;Awakening from the Meaning Crisis&lt;/a&gt; (16 episodes in)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Building split ergo mech keyboards (built a corne choc, a microdox bud mx and a 3x5 cantor so far)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;health&#34;&gt;Health&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Working out&lt;/li&gt;
-&lt;li&gt;Running&lt;/li&gt;
-&lt;li&gt;Meditating&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;learning&#34;&gt;Learning&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;NextJs&lt;/li&gt;
-&lt;li&gt;Building keyboards, soldering, debugging&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h4 id=&#34;this-is-a-now-page-based-on-the-concept-by-derek-sivers-dot-visit-nownownow-dot-com-for-more-inspiration-dot-visit-the-now-archive-to-check-out-things-that-used-to-be-on-this-page&#34;&gt;This is a Now page, based on the &lt;a href=&#34;https://sivers.org/nowff&#34;&gt;concept by Derek Sivers&lt;/a&gt;. Visit &lt;a href=&#34;https://nownownow.com&#34;&gt;nownownow.com&lt;/a&gt; for more inspiration. Visit the &lt;a href=&#34;/now-archive&#34;&gt;Now Archive&lt;/a&gt; to check out things that used to be on this page&lt;/h4&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Write emails from bottom to top</title>
-      <link>/posts/write-emails-from-bottom-to-top/</link>
-      <pubDate>Sun, 14 Aug 2022 19:06:00 -0700</pubDate>
-      
-      <guid>/posts/write-emails-from-bottom-to-top/</guid>
-      <description>&lt;p&gt;In the years I&amp;rsquo;ve composed emails, I was initially finding it a little hard to go through the top-down steps of adding people in the To field, CC field and coming up with the subject line. There were two problems with this workflow:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;It broke my flow for composing an email&lt;/strong&gt;
-I&amp;rsquo;d have a vague idea of how to express my thoughts into words and that flow was broken by filling out these fields.
-&lt;strong&gt;I used to be trigger happy in sending the email&lt;/strong&gt;.
-In most email clients, &lt;code&gt;Option+Enter&lt;/code&gt; (or &lt;code&gt;Alt+Enter&lt;/code&gt;) is the keyboard shortcut for sending email. I&amp;rsquo;d be so used to hitting these that I&amp;rsquo;d sometimes hit them in the middle of the email. This was particularly a problem when I was using IntelliJ IDEs quite heavily. Because, &lt;code&gt;Option+Enter&lt;/code&gt; in an IntelliJ IDE would insert the currently suggested hint.&lt;/p&gt;
-&lt;p&gt;So, I figured out a simple fix for this: Write emails from bottom to top. Basically, do the following in order:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Write the body of the email first and you get all your thoughts out.&lt;/li&gt;
-&lt;li&gt;Then fill the subject line which is now easier to summarize.&lt;/li&gt;
-&lt;li&gt;Add people in To and CC fields.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The best part about this workflow is, hitting &lt;code&gt;Option+Enter&lt;/code&gt; at any point during the process (except once you start filling the To/CC fields) would do nothing, because there&amp;rsquo;s nobody to send the email to. This turned out to be super useful hack that I have been using ever since and has worked out really well.&lt;/p&gt;
 </description>
     </item>
     
