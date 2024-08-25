@@ -15,16 +15,22 @@
     <link rel="me" href="https://micro.blog/rrajath" />
 		<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Taskr - the simplest task management app - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/rrajath_favicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content="Taskr - the simplest task management app" />
-<meta property="og:description" content="I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/taskr/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2015-01-07T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-12-15T19:15:20-08:00" />
+	<meta property="og:url" content="/posts/taskr/">
+  <meta property="og:site_name" content="Rajath Ramakrishna">
+  <meta property="og:title" content="Taskr - the simplest task management app">
+  <meta property="og:description" content="I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2015-01-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-12-15T19:15:20-08:00">
+    <meta property="article:tag" content="Taskr">
+    <meta property="article:tag" content="Android">
+    <meta property="article:tag" content="App">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Taskr - the simplest task management app"/>
-<meta name="twitter:description" content="I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Taskr - the simplest task management app">
+  <meta name="twitter:description" content="I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design.">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
@@ -35,10 +41,11 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	</head>
 
+
 <body>
-    <article class="h-entry">
-	<div class="container wrapper post e-content p-name dark" data-pagefind-body>
-		<div class="header">
+	<article class="h-entry">
+		<div class="container wrapper post e-content p-name dark" data-pagefind-body>
+			<div class="header">
 	<base href="/">
 	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
 	<div class="site-description"><nav class="nav social">
@@ -85,14 +92,16 @@
 	</nav>
 </div>
 
-		<div class="post-header">
-			<h1 class="title" data-pagefind-meta="title">Taskr - the simplest task management app</h1>
-            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="/posts/taskr/"><time class="dt-published" data-pagefind-meta="date">Jan 7, 2015</time></a>  | 4 min read</div> 
-		</div>
+			<div class="post-header">
+				<h1 class="title" data-pagefind-meta="title">Taskr - the simplest task management app</h1>
+				<div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication"
+						href="/posts/taskr/"><time class="dt-published" data-pagefind-meta="date">Jan 7, 2015</time></a> | 4
+					min read</div>
+			</div>
 
-		<div class="markdown">
-			
-			<p>I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design. I was inspired by Material Design since it was launched, but never had the time to implement it in my hobby projects. Now I am trying to take baby steps every day and work on creating Android apps that mostly stick to the new Material Design.</p>
+			<div class="markdown">
+				
+				<p>I started off 2015 by making an Android app. I created a very simple todo list app called Taskr. This was mainly to brush up my Android skills and get my hands dirty while digging into Material Design. I was inspired by Material Design since it was launched, but never had the time to implement it in my hobby projects. Now I am trying to take baby steps every day and work on creating Android apps that mostly stick to the new Material Design.</p>
 <p>I came up with the name Taskr because I couldn&rsquo;t come up with anything better. I did think about many names but since this isn&rsquo;t going anywhere near Play Store, I just stuck to the most unimaginative name possible. Yes, this is probably the simplest task management app that you can find. It&rsquo;s so simple that all you can do is add/edit a task name and description, mark tasks as done and delete completed tasks. To make it a little more usable, I used SQLite database to persist data entered by
 the user.</p>
 <p>This application uses no fragments, but just a couple of activities. Here&rsquo;s how I designed the application.</p>
@@ -108,21 +117,21 @@ the user.</p>
 <h3 id="lombok">Lombok</h3>
 <p><a href="http://projectlombok.org/">Lombok</a> helps you skip writing getters and setters for data objects by adding the <code>@Data</code> annotation. This helps in keeping the code short, clean and readable. So the class would look something like this:</p>
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>    <span style="color:#268bd2">@Data</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#268bd2">public</span> <span style="color:#268bd2">class</span> <span style="color:#268bd2">TaskItem</span> <span style="color:#719e07">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">private</span> <span style="color:#dc322f">int</span> id<span style="color:#719e07">;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">private</span> String taskName<span style="color:#719e07">;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">private</span> String taskDescription<span style="color:#719e07">;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">private</span> <span style="color:#dc322f">long</span> creationTime<span style="color:#719e07">;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">private</span> <span style="color:#dc322f">boolean</span> isTaskComplete<span style="color:#719e07">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#719e07">}</span></span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>    <span style="color:#268bd2">public</span> <span style="color:#268bd2">class</span> <span style="color:#268bd2">TaskItem</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">private</span> <span style="color:#dc322f">int</span> id;
+</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">private</span> String taskName;
+</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">private</span> String taskDescription;
+</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">private</span> <span style="color:#dc322f">long</span> creationTime;
+</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">private</span> <span style="color:#dc322f">boolean</span> isTaskComplete;
+</span></span><span style="display:flex;"><span>    }</span></span></code></pre></div>
 <p>This looks much cleaner than a class that is cluttered with getters and setters.</p>
 <h3 id="butterknife">Butterknife</h3>
 <p><a href="https://jakewharton.github.io/butterknife/">Butterknife</a> is another library that helps you inject views more easily with annotations. Adding the @InjectView annotation will automatically cast the corresponding view in your layout. So you no longer have to write things like</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>View view <span style="color:#719e07">=</span> inflater<span style="color:#719e07">.</span>inflate<span style="color:#719e07">(</span>R<span style="color:#719e07">.</span>layout<span style="color:#719e07">.</span>layout_main<span style="color:#719e07">,</span> container<span style="color:#719e07">,</span> <span style="color:#cb4b16">false</span><span style="color:#719e07">);</span>
-</span></span><span style="display:flex;"><span>etTaskName <span style="color:#719e07">=</span> <span style="color:#719e07">(</span>EditText<span style="color:#719e07">)</span> view<span style="color:#719e07">.</span>findViewById<span style="color:#719e07">(</span>R<span style="color:#719e07">.</span>id<span style="color:#719e07">.</span>task_name_edit_text<span style="color:#719e07">);</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>View view <span style="color:#719e07">=</span> inflater.inflate(R.layout.layout_main, container, <span style="color:#cb4b16">false</span>);
+</span></span><span style="display:flex;"><span>etTaskName <span style="color:#719e07">=</span> (EditText) view.findViewById(R.id.task_name_edit_text);</span></span></code></pre></div>
 <p>You instead write:</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#268bd2">@InjectView</span><span style="color:#719e07">(</span>R<span style="color:#719e07">.</span>id<span style="color:#719e07">.</span>task_name_edit_text<span style="color:#719e07">)</span>
-</span></span><span style="display:flex;"><span>EditText etTaskName<span style="color:#719e07">;</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#268bd2">@InjectView</span>(R.id.task_name_edit_text)
+</span></span><span style="display:flex;"><span>EditText etTaskName;</span></span></code></pre></div>
 <p>There are many more things that these libraries offer and I plan to use it in every Android project of mine.</p>
 <p><strong>Problems I faced</strong>:<br>
 I was finding it hard to keep the list up to date. Since I had my tasks in a List and I was using an instance of ArrayAdapter. It was hard to keep track of what was added to the list and what was deleted whenever the user interacted with the list. The main issue was when going from one activity to another and returning back to the main activity. Passing around intents with parcelable/serializable was a pain for a small app like this. And hitting database so often is not a great design.</p>
@@ -138,46 +147,47 @@ I used a singleton to have a single copy of the task list which will be availabl
 I&rsquo;ll have to change the theme sometime.</p>
 <p>The project can be found on my GitHub page: <a href="https://github.com/rrajath/taskr">taskr</a></p>
 
-			
-		</div>
+				
+			</div>
 
-		<div class="post-tags">
-			
+			<div class="post-tags">
 				
-					<nav class="nav tags">
-							<ul class="flat">
-								
-								<li><a class="p-category" href="/tags/taskr">taskr</a></li>
-								
-								<li><a class="p-category" href="/tags/android">android</a></li>
-								
-								<li><a class="p-category" href="/tags/app">app</a></li>
-								
-							</ul>
-					</nav>
 				
-			
-		</div>
-		</div>
-    </article>
+				<nav class="nav tags">
+					<ul class="flat">
+						
+						<li><a class="p-category" href="/%20/tags/taskr">taskr</a></li>
+						
+						<li><a class="p-category" href="/%20/tags/android">android</a></li>
+						
+						<li><a class="p-category" href="/%20/tags/app">app</a></li>
+						
+					</ul>
+				</nav>
+				
+				
+			</div>
+			</div>
+	</article>
 	<div class="footer wrapper">
 	<nav class="nav">
-		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a> | <a href="https://emacs.ch/@rrajath" rel="me">Follow me on Mastodon!</a></div>
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> |
+			Built with <a href="https://gohugo.io">Hugo</a> | <a href="https://emacs.ch/@rrajath" rel="me">Follow me on
+				Mastodon!</a></div>
 	</nav>
 </div>
 
 
-
 <script>feather.replace()</script><p class="h-card vcard" style="display:none;">
-    <a style="text-decoration: none" href="https://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
-    Rajath Ramakrishna</a>
-    <a rel="author">Rajath Ramakrishna</a>
-    <a class="p-nickname" rel="me">Rajath</a>
-    <a class="u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
-    r.rajath@pm.me
-    </a>
-    <img class="u-photo" src="images/micro-post-photo.png" alt="" />
+	<a style="text-decoration: none" href="https://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+		Rajath Ramakrishna</a>
+	<a rel="author">Rajath Ramakrishna</a>
+	<a class="p-nickname" rel="me">Rajath</a>
+	<a class="u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+		r.rajath@pm.me
+	</a>
+	<img class="u-photo" src="images/micro-post-photo.png" alt="" />
 </p>
-
 </body>
+
 </html>

@@ -15,16 +15,19 @@
     <link rel="me" href="https://micro.blog/rrajath" />
 		<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Every day is a Knapsack problem - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/rrajath_favicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content="Every day is a Knapsack problem" />
-<meta property="og:description" content="Knapsack problem, for those who don’t know, is an optimization problem that is encountered in several fields like computer science, investing, decision-making, etc." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/every-day-is-a-knapsack-problem/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-02-05T10:32:00-08:00" />
-<meta property="article:modified_time" content="2023-02-05T10:32:45-08:00" />
+	<meta property="og:url" content="/posts/every-day-is-a-knapsack-problem/">
+  <meta property="og:site_name" content="Rajath Ramakrishna">
+  <meta property="og:title" content="Every day is a Knapsack problem">
+  <meta property="og:description" content="Knapsack problem, for those who don’t know, is an optimization problem that is encountered in several fields like computer science, investing, decision-making, etc.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-02-05T10:32:00-08:00">
+    <meta property="article:modified_time" content="2023-02-05T10:32:45-08:00">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Every day is a Knapsack problem"/>
-<meta name="twitter:description" content="Knapsack problem, for those who don’t know, is an optimization problem that is encountered in several fields like computer science, investing, decision-making, etc."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Every day is a Knapsack problem">
+  <meta name="twitter:description" content="Knapsack problem, for those who don’t know, is an optimization problem that is encountered in several fields like computer science, investing, decision-making, etc.">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
@@ -35,10 +38,11 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	</head>
 
+
 <body>
-    <article class="h-entry">
-	<div class="container wrapper post e-content p-name dark" data-pagefind-body>
-		<div class="header">
+	<article class="h-entry">
+		<div class="container wrapper post e-content p-name dark" data-pagefind-body>
+			<div class="header">
 	<base href="/">
 	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
 	<div class="site-description"><nav class="nav social">
@@ -85,46 +89,49 @@
 	</nav>
 </div>
 
-		<div class="post-header">
-			<h1 class="title" data-pagefind-meta="title">Every day is a Knapsack problem</h1>
-            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="/posts/every-day-is-a-knapsack-problem/"><time class="dt-published" data-pagefind-meta="date">Feb 5, 2023</time></a>  | 3 min read</div> 
-		</div>
+			<div class="post-header">
+				<h1 class="title" data-pagefind-meta="title">Every day is a Knapsack problem</h1>
+				<div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication"
+						href="/posts/every-day-is-a-knapsack-problem/"><time class="dt-published" data-pagefind-meta="date">Feb 5, 2023</time></a> | 3
+					min read</div>
+			</div>
 
-		<div class="markdown">
-			
-			<p><a href="https://en.wikipedia.org/wiki/Knapsack_problem">Knapsack problem</a>, for those who don’t know, is an optimization problem that is encountered in several fields like computer science, investing, decision-making, etc. When defined in an abstract sense, the problem is to select a set of items each with a certain weight and value from a larger set such that the total weight does not exceed the volume of a sack. The problem is to optimize for the highest value that can be obtained through different combinations of the items. This can be done via several algorithms like greedy, dynamic programming, etc.</p>
+			<div class="markdown">
+				
+				<p><a href="https://en.wikipedia.org/wiki/Knapsack_problem">Knapsack problem</a>, for those who don’t know, is an optimization problem that is encountered in several fields like computer science, investing, decision-making, etc. When defined in an abstract sense, the problem is to select a set of items each with a certain weight and value from a larger set such that the total weight does not exceed the volume of a sack. The problem is to optimize for the highest value that can be obtained through different combinations of the items. This can be done via several algorithms like greedy, dynamic programming, etc.</p>
 <p>This is such a common problem in everyday life that we encounter is almost on a daily basis and lot of times we don’t even realize it. We just don’t name it as a knapsack problem. For example, a rock band that has a 1-hour time slot to play a bunch of songs must decide how many songs can they fit in that slot in order to provide the best experience possible. The 1-hour slot is a knapsack. Each song has a certain weight (duration) and value (popularity/crowd favorite/something else). A band can have one or more albums and the total number of songs in their arsenal far exceeds the 1-hour limit. With each song having a different value, they must choose a small set of songs very wisely so that they give the audience the best experience possible. This is one of the examples from the book <a href="https://www.amazon.com/Algorithms-Live-Computer-Science-Decisions/dp/1627790365">Algorithms to Live By</a>.</p>
 <p>The knapsack problem I deal with on a daily basis is one of prioritization of tasks. There are a lot of things I want to get done - tasks I have to do at work, chores I have to do at home, work on a personal project and other one-off tasks I want to accomplish all in one day. I generally experience <a href="https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning-Kruger effect</a> where I over-estimate how much I can get done in a day but this happens only towards the end of the day and it becomes more of a realization of poor planning. However, whenever I stop and think about the day as a Knapsack Problem, prioritization becomes much clearer. The number of available hours in a day is the limit (sack), each task (item) has a certain value (in terms of urgency, importance or what I get back in return) and there are more tasks than I can fit in one day. Visualizing each day as a knapsack problem helps put things in perspective that there’s only so much I can do in a day that I must make the most out of it.</p>
 <p>Once this is understood at a micro level at one day at a time, this can also be applied for longer time scales. But we are very inaccurate when it comes to forecasting far into the future. There are too many variables at play and we can’t predict with good enough accuracy as to what we can fit in the longer time scale <em>and</em> if it holds up until the end of that time scale. We <em>can</em>, to some extent, do this with bigger tasks like having to proritize a course we want to take that lasts a few months alongside a marathon we want to prep for, and a few other things we want to accomplish. But on a smaller timescale like a day, this works great.</p>
 
-			
-		</div>
-
-		<div class="post-tags">
-			
 				
-			
-		</div>
-		</div>
-    </article>
+			</div>
+
+			<div class="post-tags">
+				
+				
+				
+			</div>
+			</div>
+	</article>
 	<div class="footer wrapper">
 	<nav class="nav">
-		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a> | <a href="https://emacs.ch/@rrajath" rel="me">Follow me on Mastodon!</a></div>
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> |
+			Built with <a href="https://gohugo.io">Hugo</a> | <a href="https://emacs.ch/@rrajath" rel="me">Follow me on
+				Mastodon!</a></div>
 	</nav>
 </div>
 
 
-
 <script>feather.replace()</script><p class="h-card vcard" style="display:none;">
-    <a style="text-decoration: none" href="https://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
-    Rajath Ramakrishna</a>
-    <a rel="author">Rajath Ramakrishna</a>
-    <a class="p-nickname" rel="me">Rajath</a>
-    <a class="u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
-    r.rajath@pm.me
-    </a>
-    <img class="u-photo" src="images/micro-post-photo.png" alt="" />
+	<a style="text-decoration: none" href="https://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+		Rajath Ramakrishna</a>
+	<a rel="author">Rajath Ramakrishna</a>
+	<a class="p-nickname" rel="me">Rajath</a>
+	<a class="u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+		r.rajath@pm.me
+	</a>
+	<img class="u-photo" src="images/micro-post-photo.png" alt="" />
 </p>
-
 </body>
+
 </html>
