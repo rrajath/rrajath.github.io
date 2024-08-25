@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rant on Rajath Ramakrishna</title>
+    <title>Rant on Rajath Ramakrishna</title>
     <link>/tags/rant/</link>
-    <description>Recent content in rant on Rajath Ramakrishna</description>
+    <description>Recent content in Rant on Rajath Ramakrishna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
@@ -15,7 +15,7 @@
       
       <guid>/posts/the-pointlessness-of-the-mac-dockbar/</guid>
       <description>&lt;p&gt;One of the things that was initially unique to Mac was the dockbar. I remember the first time I used a Mac, I was quite fascinated by it. I liked the zoom-in effect as I hovered my mouse over each item on it.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;/images/MacDockbar.png&#34;/&gt;
+&lt;figure&gt;&lt;img src=&#34;/images/MacDockbar.png&#34;&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;A fresh install of MacOS (or OSX back in the day) comes with a persistent dockbar at the bottom taking up a good chunk of the screen real estate. So, even when you maximize any app, it won’t take up the full screen because of the dockbar sitting at the bottom..&lt;/p&gt;

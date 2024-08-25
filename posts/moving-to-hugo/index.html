@@ -15,16 +15,20 @@
     <link rel="me" href="https://micro.blog/rrajath" />
 		<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Moving to Hugo - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/rrajath_favicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content="Moving to Hugo" />
-<meta property="og:description" content="I&rsquo;ve used Jekyll as a static site generator ever since I created this blog, which was in 2013. Before that, I had tried few other blogging platforms." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/moving-to-hugo/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-06-25T17:43:30-07:00" />
-<meta property="article:modified_time" content="2022-12-15T19:15:20-08:00" />
+	<meta property="og:url" content="/posts/moving-to-hugo/">
+  <meta property="og:site_name" content="Rajath Ramakrishna">
+  <meta property="og:title" content="Moving to Hugo">
+  <meta property="og:description" content="I’ve used Jekyll as a static site generator ever since I created this blog, which was in 2013. Before that, I had tried few other blogging platforms.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-06-25T17:43:30-07:00">
+    <meta property="article:modified_time" content="2022-12-15T19:15:20-08:00">
+    <meta property="article:tag" content="100DaysToOffload">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Moving to Hugo"/>
-<meta name="twitter:description" content="I&rsquo;ve used Jekyll as a static site generator ever since I created this blog, which was in 2013. Before that, I had tried few other blogging platforms."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Moving to Hugo">
+  <meta name="twitter:description" content="I’ve used Jekyll as a static site generator ever since I created this blog, which was in 2013. Before that, I had tried few other blogging platforms.">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
@@ -35,10 +39,11 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	</head>
 
+
 <body>
-    <article class="h-entry">
-	<div class="container wrapper post e-content p-name dark" data-pagefind-body>
-		<div class="header">
+	<article class="h-entry">
+		<div class="container wrapper post e-content p-name dark" data-pagefind-body>
+			<div class="header">
 	<base href="/">
 	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
 	<div class="site-description"><nav class="nav social">
@@ -85,55 +90,58 @@
 	</nav>
 </div>
 
-		<div class="post-header">
-			<h1 class="title" data-pagefind-meta="title">Moving to Hugo</h1>
-            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="/posts/moving-to-hugo/"><time class="dt-published" data-pagefind-meta="date">Jun 25, 2020</time></a>  | 2 min read</div> 
-		</div>
+			<div class="post-header">
+				<h1 class="title" data-pagefind-meta="title">Moving to Hugo</h1>
+				<div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication"
+						href="/posts/moving-to-hugo/"><time class="dt-published" data-pagefind-meta="date">Jun 25, 2020</time></a> | 2
+					min read</div>
+			</div>
 
-		<div class="markdown">
-			
-			<p>I&rsquo;ve used <a href="https://jekyllrb.com/">Jekyll</a> as a static site generator ever since I created this blog, which was in 2013. Before that, I had <a href="https://rrajath.com/posts/weekly-noise-1">tried few other blogging platforms</a>. Over the past few years when I irregularly updated my blog, I faced some friction with Jekyll. Every time I tried to make a new post and push to GitHub, Jekyll would complain about something that&rsquo;s either deprecated or broken. And, I had to go fix that first and then make a blog post and push it. That was a minor annoyance mostly due to the fact that I hardly touched my blog and things got outdated. But what annoyed me more than anything is the slowness of Jekyll to build the site and start the server. It was taking a good 10 seconds for it to build the entire site (which consisted of less than 30 files) and serve it on localhost.</p>
+			<div class="markdown">
+				
+				<p>I&rsquo;ve used <a href="https://jekyllrb.com/">Jekyll</a> as a static site generator ever since I created this blog, which was in 2013. Before that, I had <a href="https://rrajath.com/posts/weekly-noise-1">tried few other blogging platforms</a>. Over the past few years when I irregularly updated my blog, I faced some friction with Jekyll. Every time I tried to make a new post and push to GitHub, Jekyll would complain about something that&rsquo;s either deprecated or broken. And, I had to go fix that first and then make a blog post and push it. That was a minor annoyance mostly due to the fact that I hardly touched my blog and things got outdated. But what annoyed me more than anything is the slowness of Jekyll to build the site and start the server. It was taking a good 10 seconds for it to build the entire site (which consisted of less than 30 files) and serve it on localhost.</p>
 <p>On the other hand, in the last few months I have been tinkering with few Raspberry Pis and started self-hosting few things. I&rsquo;m not done self-hosting everything I wanted, so there will be more playing around and more learnings that come out of it. This gives me a good opportunity to write about what I learned during the process so that people (including myself) can benefit from it.</p>
 <p>And finally, I recently stumbled upon the <a href="https://indieweb.org/">IndieWeb movement</a> when I was checking out few <a href="https://indieweb.social/about">Mastodon instances</a> and I got super intrigued about it. There was <a href="https://indieweb.org/Hugo">good enough support for Hugo</a> in the IndieWeb community. More details about what got me into IndieWeb movement in an other post. I&rsquo;ll also probably create a separate post about how I added IndieWeb support to my blog.</p>
 <p>So, I decided to switch the static site generator to something better. I looked around, tried a few and finally settled on <a href="https://gohugo.io">Hugo</a> for two main reasons - it&rsquo;s fast and it has good community support.</p>
 <p>Since the switch, I&rsquo;ve tweaked the theme to suit my needs, and added few specific pages that I think are important. Let&rsquo;s see where this takes me.</p>
 
-			
-		</div>
+				
+			</div>
 
-		<div class="post-tags">
-			
+			<div class="post-tags">
 				
-					<nav class="nav tags">
-							<ul class="flat">
-								
-								<li><a class="p-category" href="/tags/100daystooffload">100DaysToOffload</a></li>
-								
-							</ul>
-					</nav>
 				
-			
-		</div>
-		</div>
-    </article>
+				<nav class="nav tags">
+					<ul class="flat">
+						
+						<li><a class="p-category" href="/%20/tags/100daystooffload">100DaysToOffload</a></li>
+						
+					</ul>
+				</nav>
+				
+				
+			</div>
+			</div>
+	</article>
 	<div class="footer wrapper">
 	<nav class="nav">
-		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a> | <a href="https://emacs.ch/@rrajath" rel="me">Follow me on Mastodon!</a></div>
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> |
+			Built with <a href="https://gohugo.io">Hugo</a> | <a href="https://emacs.ch/@rrajath" rel="me">Follow me on
+				Mastodon!</a></div>
 	</nav>
 </div>
 
 
-
 <script>feather.replace()</script><p class="h-card vcard" style="display:none;">
-    <a style="text-decoration: none" href="https://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
-    Rajath Ramakrishna</a>
-    <a rel="author">Rajath Ramakrishna</a>
-    <a class="p-nickname" rel="me">Rajath</a>
-    <a class="u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
-    r.rajath@pm.me
-    </a>
-    <img class="u-photo" src="images/micro-post-photo.png" alt="" />
+	<a style="text-decoration: none" href="https://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+		Rajath Ramakrishna</a>
+	<a rel="author">Rajath Ramakrishna</a>
+	<a class="p-nickname" rel="me">Rajath</a>
+	<a class="u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+		r.rajath@pm.me
+	</a>
+	<img class="u-photo" src="images/micro-post-photo.png" alt="" />
 </p>
-
 </body>
+
 </html>

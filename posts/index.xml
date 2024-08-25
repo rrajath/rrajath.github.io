@@ -147,7 +147,7 @@ Here, you see the extension shows just the quote and the author. Hitting &lt;cod
       <guid>/posts/raycast-my-new-favorite-macos-app/</guid>
       <description>&lt;p&gt;I’ve been an &lt;a href=&#34;https://www.alfredapp.com/&#34;&gt;Alfred&lt;/a&gt; user for many many years and I’m also a Mega Supporter with a lifetime license. It provides so much value to me on a daily basis that it’s become one of the apps I install first when I set up a new laptop. I’ve used quite a few workflows an Alfred, I was using it as a clipboard manager, I had tons of dynamic snippets stored in them. I was doing everything with Alfred.&lt;/p&gt;
 &lt;p&gt;This was the case until recently. I stumbled upon &lt;a href=&#34;https://www.raycast.com/&#34;&gt;Raycast&lt;/a&gt; about a month ago and I absolutely fell in love with it. The look and feel of it itself blew me away from the get-go. And once I checked out their store and the thousands of plugins they had, I was even more intrigued. I started looking at how I can replace my Alfred setup with Raycast and what I realized was, I was not only able to recreate my Alfred setup, but also do much more.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;/images/RaycastScreenshot.png&#34;/&gt;
+&lt;figure&gt;&lt;img src=&#34;/images/RaycastScreenshot.png&#34;&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Raycast not only replaced Alfred, but also a bunch of other apps I used to depend on to be productive.
@@ -174,7 +174,7 @@ Here’s that list of apps/websites that Raycast replaced:&lt;/p&gt;
       
       <guid>/posts/the-pointlessness-of-the-mac-dockbar/</guid>
       <description>&lt;p&gt;One of the things that was initially unique to Mac was the dockbar. I remember the first time I used a Mac, I was quite fascinated by it. I liked the zoom-in effect as I hovered my mouse over each item on it.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;/images/MacDockbar.png&#34;/&gt;
+&lt;figure&gt;&lt;img src=&#34;/images/MacDockbar.png&#34;&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;A fresh install of MacOS (or OSX back in the day) comes with a persistent dockbar at the bottom taking up a good chunk of the screen real estate. So, even when you maximize any app, it won’t take up the full screen because of the dockbar sitting at the bottom..&lt;/p&gt;

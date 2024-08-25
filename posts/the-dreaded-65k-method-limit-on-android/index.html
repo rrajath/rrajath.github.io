@@ -15,16 +15,21 @@
     <link rel="me" href="https://micro.blog/rrajath" />
 		<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>The Dreaded 65k Method Limit on Android - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/rrajath_favicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content="The Dreaded 65k Method Limit on Android" />
-<meta property="og:description" content="If you&rsquo;re an Android developer, it&rsquo;s likely that you have experienced this at least a few times during your development." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/the-dreaded-65k-method-limit-on-android/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2016-03-09T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-12-15T19:15:20-08:00" />
+	<meta property="og:url" content="/posts/the-dreaded-65k-method-limit-on-android/">
+  <meta property="og:site_name" content="Rajath Ramakrishna">
+  <meta property="og:title" content="The Dreaded 65k Method Limit on Android">
+  <meta property="og:description" content="If you’re an Android developer, it’s likely that you have experienced this at least a few times during your development.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2016-03-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-12-15T19:15:20-08:00">
+    <meta property="article:tag" content="Android">
+    <meta property="article:tag" content="Dex">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="The Dreaded 65k Method Limit on Android"/>
-<meta name="twitter:description" content="If you&rsquo;re an Android developer, it&rsquo;s likely that you have experienced this at least a few times during your development."/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Dreaded 65k Method Limit on Android">
+  <meta name="twitter:description" content="If you’re an Android developer, it’s likely that you have experienced this at least a few times during your development.">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
@@ -35,10 +40,11 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	</head>
 
+
 <body>
-    <article class="h-entry">
-	<div class="container wrapper post e-content p-name dark" data-pagefind-body>
-		<div class="header">
+	<article class="h-entry">
+		<div class="container wrapper post e-content p-name dark" data-pagefind-body>
+			<div class="header">
 	<base href="/">
 	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
 	<div class="site-description"><nav class="nav social">
@@ -85,14 +91,16 @@
 	</nav>
 </div>
 
-		<div class="post-header">
-			<h1 class="title" data-pagefind-meta="title">The Dreaded 65k Method Limit on Android</h1>
-            <div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication" href="/posts/the-dreaded-65k-method-limit-on-android/"><time class="dt-published" data-pagefind-meta="date">Mar 9, 2016</time></a>  | 3 min read</div> 
-		</div>
+			<div class="post-header">
+				<h1 class="title" data-pagefind-meta="title">The Dreaded 65k Method Limit on Android</h1>
+				<div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication"
+						href="/posts/the-dreaded-65k-method-limit-on-android/"><time class="dt-published" data-pagefind-meta="date">Mar 9, 2016</time></a> | 3
+					min read</div>
+			</div>
 
-		<div class="markdown">
-			
-			<p>If you&rsquo;re an Android developer, it&rsquo;s likely that you have experienced this at least a few times during your development.</p>
+			<div class="markdown">
+				
+				<p>If you&rsquo;re an Android developer, it&rsquo;s likely that you have experienced this at least a few times during your development.</p>
 <p>The first time I heard people talk about 65k method limit I wasn&rsquo;t aware of it so much. I was thinking, &ldquo;How can a small Android app have 65,000 methods? That&rsquo;s ridiculous! I don&rsquo;t know what people are complaining about.&rdquo; Then when I read what the fuss was all about, I realized that 65k method limit includes not just all the methods in my app, but also everything my app consumes. Yes, that includes libraries; even if you don&rsquo;t use them. Surprisingly I never ran into this issue before though I used to throw in libraries for every little thing without caring about how much it&rsquo;s contributing to the 65k limit. Of course, in the beginning I was using smaller libraries with low method count. Not giants like Goole Play Services. But in a recent project I was working on, one fine day I got this error:</p>
 <pre><code>Unable to execute dex: method ID not in [0, 0xffff]: 65536
 Conversion to Dalvik format failed: Unable to execute dex: method ID not in [0, 0xffff]: 65536
@@ -115,44 +123,45 @@ compile 'com.google.android.gms:play-services-location:8.4.0'
 <li><a href="http://www.fasteque.com/deep-dive-into-android-multidex">Deep dive into Android Multidex</a></li>
 </ul>
 
-			
-		</div>
+				
+			</div>
 
-		<div class="post-tags">
-			
+			<div class="post-tags">
 				
-					<nav class="nav tags">
-							<ul class="flat">
-								
-								<li><a class="p-category" href="/tags/android">android</a></li>
-								
-								<li><a class="p-category" href="/tags/dex">dex</a></li>
-								
-							</ul>
-					</nav>
 				
-			
-		</div>
-		</div>
-    </article>
+				<nav class="nav tags">
+					<ul class="flat">
+						
+						<li><a class="p-category" href="/%20/tags/android">android</a></li>
+						
+						<li><a class="p-category" href="/%20/tags/dex">dex</a></li>
+						
+					</ul>
+				</nav>
+				
+				
+			</div>
+			</div>
+	</article>
 	<div class="footer wrapper">
 	<nav class="nav">
-		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a> | <a href="https://emacs.ch/@rrajath" rel="me">Follow me on Mastodon!</a></div>
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> |
+			Built with <a href="https://gohugo.io">Hugo</a> | <a href="https://emacs.ch/@rrajath" rel="me">Follow me on
+				Mastodon!</a></div>
 	</nav>
 </div>
 
 
-
 <script>feather.replace()</script><p class="h-card vcard" style="display:none;">
-    <a style="text-decoration: none" href="https://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
-    Rajath Ramakrishna</a>
-    <a rel="author">Rajath Ramakrishna</a>
-    <a class="p-nickname" rel="me">Rajath</a>
-    <a class="u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
-    r.rajath@pm.me
-    </a>
-    <img class="u-photo" src="images/micro-post-photo.png" alt="" />
+	<a style="text-decoration: none" href="https://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+		Rajath Ramakrishna</a>
+	<a rel="author">Rajath Ramakrishna</a>
+	<a class="p-nickname" rel="me">Rajath</a>
+	<a class="u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+		r.rajath@pm.me
+	</a>
+	<img class="u-photo" src="images/micro-post-photo.png" alt="" />
 </p>
-
 </body>
+
 </html>
