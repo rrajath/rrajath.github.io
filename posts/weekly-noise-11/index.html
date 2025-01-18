@@ -18,18 +18,18 @@
 	<meta property="og:url" content="/posts/weekly-noise-11/">
   <meta property="og:site_name" content="Rajath Ramakrishna">
   <meta property="og:title" content="Weekly Noise #11 - Online Phase">
-  <meta property="og:description" content="The online phase is where scans are made periodically and matched with the offline database to find the current location of the user.">
+  <meta property="og:description" content="The online phase is where scans are made periodically and matched with the offline database to find the current location of the user. When a scan is made the set of fingerprints are captured and compared with existing data in the database. With Nearest Neighbour algorithm, we predict 3 closest matches as to where the user could be. Initially, we were searching the whole database to find the 3 closest matches, but later on we reduced our search space significantly by searching the current and the next 2 cells along the navigation path. If the database search yields a (or any) result, then the current location of the user will be updated to the yielded result. Else, we assume that there is no change in the user’s location. This way, the search happens every 2 seconds and the position is updated accordingly as and when the car moves inside the parking lot. To illustrate this approach, refer the figure below.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2014-03-29T00:00:00+00:00">
-    <meta property="article:modified_time" content="2022-12-15T19:15:20-08:00">
+    <meta property="article:modified_time" content="2024-11-13T22:52:05-08:00">
     <meta property="article:tag" content="Weekly">
     <meta property="article:tag" content="Noise">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Weekly Noise #11 - Online Phase">
-  <meta name="twitter:description" content="The online phase is where scans are made periodically and matched with the offline database to find the current location of the user.">
+  <meta name="twitter:description" content="The online phase is where scans are made periodically and matched with the offline database to find the current location of the user. When a scan is made the set of fingerprints are captured and compared with existing data in the database. With Nearest Neighbour algorithm, we predict 3 closest matches as to where the user could be. Initially, we were searching the whole database to find the 3 closest matches, but later on we reduced our search space significantly by searching the current and the next 2 cells along the navigation path. If the database search yields a (or any) result, then the current location of the user will be updated to the yielded result. Else, we assume that there is no change in the user’s location. This way, the search happens every 2 seconds and the position is updated accordingly as and when the car moves inside the parking lot. To illustrate this approach, refer the figure below.">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
