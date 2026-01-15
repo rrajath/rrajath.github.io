@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,200&display=swap" rel="stylesheet"> 
+    <link rel="me" href="https://github.com/rrajath">
+    <link rel="me" href="https://linkedin.com/in/rrajath">
+    <link rel="webmention" href="https://webmention.io/rrajath.com/webmention" />
+    <link rel="pingback" href="https://webmention.io/rrajath.com/xmlrpc" />
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+    <link rel="microsub" href="https://aperture.p3k.io/microsub/532" />
+    <link rel="micropub" href="https://blotpub-rrajath.herokuapp.com/micropub" />
+    <link rel="me" href="https://micro.blog/rrajath" />
+		<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Add modeline indicators to Prodigy in Emacs - Rajath Ramakrishna</title><link rel="icon" type="image/png" href=icons/rrajath_favicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:url" content="/posts/add-modeline-indicators-to-prodigy-in-emacs/">
+  <meta property="og:site_name" content="Rajath Ramakrishna">
+  <meta property="og:title" content="Add modeline indicators to Prodigy in Emacs">
+  <meta property="og:description" content="I recently started using prodigy.el at work since I had to run a few services locally for development. I used to run them in my terminal in different tabs, but I thought of giving Prodigy a try and it worked great! I was able to not just run the services without having to look at the logs (unless I needed to) but also configure the status of each service based on certain text patterns in the logs. This way Prodigy would show if the service is Ready/Running/Stopped.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-15T15:04:00-08:00">
+    <meta property="article:modified_time" content="2026-01-15T15:08:54-08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Add modeline indicators to Prodigy in Emacs">
+  <meta name="twitter:description" content="I recently started using prodigy.el at work since I had to run a few services locally for development. I used to run them in my terminal in different tabs, but I thought of giving Prodigy a try and it worked great! I was able to not just run the services without having to look at the logs (unless I needed to) but also configure the status of each service based on certain text patterns in the logs. This way Prodigy would show if the service is Ready/Running/Stopped.">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><link rel="stylesheet" type="text/css" href="/css/dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="/js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+
+
+<body>
+	<article class="h-entry">
+		<div class="container wrapper post e-content p-name dark" data-pagefind-body>
+			<div class="header">
+	<base href="/">
+	<h1 class="site-title"><a href="/">Rajath Ramakrishna</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/rrajath" title="Github"><i data-feather="github"></i></a><a href="https://linkedin.com/in/rrajath" title="LinkedIn"><i data-feather="linkedin"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/micro">Micro</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+			<li>
+				<a href="/now">Now</a>
+			</li>
+			
+			<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+			<script src="/pagefind/pagefind-ui.js" type="text/javascript"></script>
+			<div id="search"></div>
+			<script>
+				window.addEventListener('DOMContentLoaded', (event) => {
+					new PagefindUI({element: "#search"});
+				});
+			</script>
+		</ul>
+	</nav>
+</div>
+
+			<div class="post-header">
+				<h1 class="title" data-pagefind-meta="title">Add modeline indicators to Prodigy in Emacs</h1>
+				<div class="meta">Posted on &mdash; <a class="u-url u-syndication" rel="syndication"
+						href="/posts/add-modeline-indicators-to-prodigy-in-emacs/"><time class="dt-published" data-pagefind-meta="date">Jan 15, 2026</time></a> | 3
+					min read</div>
+			</div>
+
+			<div class="markdown">
+				
+				<p>I recently started using <a href="https://github.com/rejeep/prodigy.el">prodigy.el</a> at work since I had to run a few services locally for development. I used to run them in my terminal in different tabs, but I thought of giving Prodigy a try and it worked great! I was able to not just run the services without having to look at the logs (unless I needed to) but also configure the status of each service based on certain text patterns in the logs. This way Prodigy would show if the service is Ready/Running/Stopped.</p>
+<p>One thing missing in Prodigy is that it doesn&rsquo;t show any modeline indicators. What I wanted was to be able to quickly find which services were running and which ones were stopped. This was going to be too much information to be displayed on the modeline, so I instead wanted just the number of services running vs stopped, and I wanted them to be color coded (green for running, blue for ready, yellow for stopped, etc.) And on hover, I wanted the respective service names to be displayed in the echo area.</p>
+<p>I asked Gemini 3 Pro to generate functions and hooks with these exact requirements and it did a great job.</p>
+<h2 id="screenshots">Screenshots</h2>
+<p>Here&rsquo;s the screenshot of mouse hover on services stopped
+<img src="/images/ProdigyServicesStopped.png" alt=""></p>
+<p>And here&rsquo;s the screenshot of mouse hover on services running
+<img src="/images/ProdigyServicesRunning.png" alt=""></p>
+<h2 id="code">Code</h2>
+<p>Like I mentioned above, the entire code was generated by an LLM (Gemini 3 Pro) and I didn&rsquo;t have to tweak anything at all.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span><span style="color:#586e75">;; 1. Define a variable to hold the modeline string</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#b58900">defvar</span> <span style="color:#268bd2">my/prodigy-mode-line-string</span> <span style="color:#2aa198">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#2aa198">&#34;String to display in the modeline for Prodigy services.&#34;</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#268bd2">put</span> <span style="color:#2aa198">&#39;my/prodigy-mode-line-string</span> <span style="color:#2aa198">&#39;risky-local-variable</span> <span style="color:#cb4b16">t</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75">;; 2. Add to mode-line-misc-info (instead of global-mode-string)</span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75">;;    We use `assq-delete-all` first to ensure we don&#39;t add duplicates if you re-eval.</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#b58900">setq</span> <span style="color:#268bd2">mode-line-misc-info</span>
+</span></span><span style="display:flex;"><span>      (<span style="color:#268bd2">append</span> (<span style="color:#268bd2">assq-delete-all</span> <span style="color:#2aa198">&#39;my/prodigy-mode-line-string</span> <span style="color:#268bd2">mode-line-misc-info</span>)
+</span></span><span style="display:flex;"><span>              <span style="color:#719e07">&#39;</span>(<span style="color:#268bd2">my/prodigy-mode-line-string</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75">;; 3. Define the function that builds the status string</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#b58900">defun</span> <span style="color:#268bd2">my/prodigy-get-services-string</span> (<span style="color:#268bd2">status</span>)
+</span></span><span style="display:flex;"><span>  (<span style="color:#b58900">let</span> ((<span style="color:#268bd2">names</span> <span style="color:#719e07">&#39;</span>()))
+</span></span><span style="display:flex;"><span>    (<span style="color:#b58900">dolist</span> (<span style="color:#268bd2">service</span> <span style="color:#268bd2">prodigy-services</span>)
+</span></span><span style="display:flex;"><span>      (<span style="color:#b58900">let</span> ((<span style="color:#268bd2">s-status</span> (<span style="color:#b58900">or</span> (<span style="color:#268bd2">plist-get</span> <span style="color:#268bd2">service</span> <span style="color:#b58900">:status</span>) <span style="color:#2aa198">&#39;stopped</span>)))
+</span></span><span style="display:flex;"><span>        (<span style="color:#b58900">when</span> (<span style="color:#b58900">if</span> (<span style="color:#268bd2">eq</span> <span style="color:#268bd2">status</span> <span style="color:#2aa198">&#39;stopped</span>)
+</span></span><span style="display:flex;"><span>                  (<span style="color:#b58900">or</span> (<span style="color:#268bd2">eq</span> <span style="color:#268bd2">s-status</span> <span style="color:#2aa198">&#39;stopped</span>) (<span style="color:#268bd2">null</span> (<span style="color:#268bd2">plist-get</span> <span style="color:#268bd2">service</span> <span style="color:#b58900">:status</span>)))
+</span></span><span style="display:flex;"><span>                (<span style="color:#268bd2">eq</span> <span style="color:#268bd2">s-status</span> <span style="color:#268bd2">status</span>))
+</span></span><span style="display:flex;"><span>          (<span style="color:#b58900">push</span> (<span style="color:#268bd2">plist-get</span> <span style="color:#268bd2">service</span> <span style="color:#b58900">:name</span>) <span style="color:#268bd2">names</span>))))
+</span></span><span style="display:flex;"><span>    (<span style="color:#268bd2">mapconcat</span> <span style="color:#268bd2">#&#39;identity</span> (<span style="color:#268bd2">nreverse</span> <span style="color:#268bd2">names</span>) <span style="color:#2aa198">&#34;, &#34;</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#b58900">defvar</span> <span style="color:#268bd2">my/prodigy-mode-line-map</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#b58900">let</span> ((<span style="color:#268bd2">map</span> (<span style="color:#268bd2">make-sparse-keymap</span>)))
+</span></span><span style="display:flex;"><span>    (<span style="color:#268bd2">define-key</span> <span style="color:#268bd2">map</span> [<span style="color:#268bd2">mode-line</span> <span style="color:#268bd2">mouse-1</span>] <span style="color:#268bd2">#&#39;</span><span style="color:#268bd2">prodigy</span>)
+</span></span><span style="display:flex;"><span>    (<span style="color:#268bd2">define-key</span> <span style="color:#268bd2">map</span> [<span style="color:#268bd2">mode-line</span> <span style="color:#268bd2">mouse-2</span>] <span style="color:#268bd2">#&#39;</span><span style="color:#268bd2">prodigy</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#268bd2">map</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75">;; 4. Define the update function (same as before)</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#b58900">defun</span> <span style="color:#268bd2">my/prodigy-update-mode-line</span> (<span style="color:#719e07">&amp;rest</span> <span style="color:#268bd2">_</span>)
+</span></span><span style="display:flex;"><span>  (<span style="color:#b58900">let</span> ((<span style="color:#268bd2">failed</span> <span style="color:#2aa198">0</span>) (<span style="color:#268bd2">stopped</span> <span style="color:#2aa198">0</span>) (<span style="color:#268bd2">running</span> <span style="color:#2aa198">0</span>) (<span style="color:#268bd2">ready</span> <span style="color:#2aa198">0</span>))
+</span></span><span style="display:flex;"><span>    (<span style="color:#b58900">dolist</span> (<span style="color:#268bd2">service</span> <span style="color:#268bd2">prodigy-services</span>)
+</span></span><span style="display:flex;"><span>      (<span style="color:#b58900">let</span> ((<span style="color:#268bd2">status</span> (<span style="color:#268bd2">plist-get</span> <span style="color:#268bd2">service</span> <span style="color:#b58900">:status</span>)))
+</span></span><span style="display:flex;"><span>        (<span style="color:#b58900">cond</span>
+</span></span><span style="display:flex;"><span>         ((<span style="color:#268bd2">eq</span> <span style="color:#268bd2">status</span> <span style="color:#2aa198">&#39;failed</span>)  (<span style="color:#b58900">cl-incf</span> <span style="color:#268bd2">failed</span>))
+</span></span><span style="display:flex;"><span>         ((<span style="color:#268bd2">eq</span> <span style="color:#268bd2">status</span> <span style="color:#2aa198">&#39;ready</span>)   (<span style="color:#b58900">cl-incf</span> <span style="color:#268bd2">ready</span>))
+</span></span><span style="display:flex;"><span>         ((<span style="color:#268bd2">eq</span> <span style="color:#268bd2">status</span> <span style="color:#2aa198">&#39;running</span>) (<span style="color:#b58900">cl-incf</span> <span style="color:#268bd2">running</span>))
+</span></span><span style="display:flex;"><span>         ((<span style="color:#b58900">or</span> (<span style="color:#268bd2">null</span> <span style="color:#268bd2">status</span>) (<span style="color:#268bd2">eq</span> <span style="color:#268bd2">status</span> <span style="color:#2aa198">&#39;stopped</span>)) (<span style="color:#b58900">cl-incf</span> <span style="color:#268bd2">stopped</span>)))))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    (<span style="color:#b58900">let</span> ((<span style="color:#268bd2">items</span> <span style="color:#719e07">&#39;</span>()))
+</span></span><span style="display:flex;"><span>      (<span style="color:#b58900">cl-flet</span> ((<span style="color:#268bd2">make-item</span> (<span style="color:#268bd2">count</span> <span style="color:#268bd2">color</span> <span style="color:#268bd2">status-label</span> <span style="color:#268bd2">status-sym</span>)
+</span></span><span style="display:flex;"><span>                  (<span style="color:#268bd2">propertize</span> (<span style="color:#268bd2">number-to-string</span> <span style="color:#268bd2">count</span>)
+</span></span><span style="display:flex;"><span>                              <span style="color:#2aa198">&#39;face</span> <span style="color:#719e07">`</span>(<span style="color:#b58900">:foreground</span> <span style="color:#719e07">,</span><span style="color:#268bd2">color</span> <span style="color:#b58900">:weight</span> <span style="color:#268bd2">bold</span>)
+</span></span><span style="display:flex;"><span>                              <span style="color:#2aa198">&#39;help-echo</span> (<span style="color:#268bd2">format</span> <span style="color:#2aa198">&#34;%s: %s&#34;</span> <span style="color:#268bd2">status-label</span> (<span style="color:#268bd2">my/prodigy-get-services-string</span> <span style="color:#268bd2">status-sym</span>))
+</span></span><span style="display:flex;"><span>                              <span style="color:#2aa198">&#39;mouse-face</span> <span style="color:#2aa198">&#39;mode-line-highlight</span>
+</span></span><span style="display:flex;"><span>                              <span style="color:#2aa198">&#39;local-map</span> <span style="color:#268bd2">my/prodigy-mode-line-map</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        (<span style="color:#b58900">when</span> (<span style="color:#268bd2">&gt;</span> <span style="color:#268bd2">failed</span> <span style="color:#2aa198">0</span>) (<span style="color:#b58900">push</span> (<span style="color:#268bd2">make-item</span> <span style="color:#268bd2">failed</span> <span style="color:#2aa198">&#34;red&#34;</span> <span style="color:#2aa198">&#34;Failed&#34;</span> <span style="color:#2aa198">&#39;failed</span>) <span style="color:#268bd2">items</span>))
+</span></span><span style="display:flex;"><span>        (<span style="color:#b58900">when</span> (<span style="color:#268bd2">&gt;</span> <span style="color:#268bd2">stopped</span> <span style="color:#2aa198">0</span>) (<span style="color:#b58900">push</span> (<span style="color:#268bd2">make-item</span> <span style="color:#268bd2">stopped</span> <span style="color:#2aa198">&#34;yellow&#34;</span> <span style="color:#2aa198">&#34;Stopped&#34;</span> <span style="color:#2aa198">&#39;stopped</span>) <span style="color:#268bd2">items</span>))
+</span></span><span style="display:flex;"><span>        (<span style="color:#b58900">when</span> (<span style="color:#268bd2">&gt;</span> <span style="color:#268bd2">running</span> <span style="color:#2aa198">0</span>) (<span style="color:#b58900">push</span> (<span style="color:#268bd2">make-item</span> <span style="color:#268bd2">running</span> <span style="color:#2aa198">&#34;green&#34;</span> <span style="color:#2aa198">&#34;Running&#34;</span> <span style="color:#2aa198">&#39;running</span>) <span style="color:#268bd2">items</span>))
+</span></span><span style="display:flex;"><span>        (<span style="color:#b58900">when</span> (<span style="color:#268bd2">&gt;</span> <span style="color:#268bd2">ready</span> <span style="color:#2aa198">0</span>) (<span style="color:#b58900">push</span> (<span style="color:#268bd2">make-item</span> <span style="color:#268bd2">ready</span> <span style="color:#2aa198">&#34;#44aaff&#34;</span> <span style="color:#2aa198">&#34;Ready&#34;</span> <span style="color:#2aa198">&#39;ready</span>) <span style="color:#268bd2">items</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        (<span style="color:#b58900">setq</span> <span style="color:#268bd2">my/prodigy-mode-line-string</span>
+</span></span><span style="display:flex;"><span>              (<span style="color:#b58900">if</span> <span style="color:#268bd2">items</span>
+</span></span><span style="display:flex;"><span>                  (<span style="color:#268bd2">concat</span> <span style="color:#2aa198">&#34; &#34;</span> (<span style="color:#268bd2">mapconcat</span> <span style="color:#268bd2">#&#39;identity</span> (<span style="color:#268bd2">nreverse</span> <span style="color:#268bd2">items</span>) <span style="color:#2aa198">&#34; | &#34;</span>) <span style="color:#2aa198">&#34; &#34;</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#2aa198">&#34;&#34;</span>))))
+</span></span><span style="display:flex;"><span>    (<span style="color:#268bd2">force-mode-line-update</span> <span style="color:#cb4b16">t</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75">;; 5. &#34;Hook&#34; into Prodigy&#39;s status changes</span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75">;;    Prodigy doesn&#39;t have a standard hook, so we advise the status setter function.</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#268bd2">advice-add</span> <span style="color:#2aa198">&#39;prodigy-set-status</span> <span style="color:#b58900">:after</span> <span style="color:#268bd2">#&#39;</span><span style="color:#268bd2">my/prodigy-update-mode-line</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#586e75">;; 6. Initial update (in case you eval this while services are already up)</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#268bd2">my/prodigy-update-mode-line</span>)
+</span></span></code></pre></div><p>The entire process took less than 20 minutes. I&rsquo;m not super familiar with elisp. I&rsquo;ve done some minor tweaking and I didn&rsquo;t have the time to learn enough elisp to be able to pull this off.</p>
+
+				
+			</div>
+
+			<div class="post-tags">
+				
+				
+				
+			</div>
+			</div>
+	</article>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> |
+			Built with <a href="https://gohugo.io">Hugo</a> | <a href="https://emacs.ch/@rrajath" rel="me">Follow me on
+				Mastodon!</a></div>
+	</nav>
+</div>
+
+
+<script>feather.replace()</script><p class="h-card vcard" style="display:none;">
+	<a style="text-decoration: none" href="https://rrajath.com" class="p-name u-url url p-author metatag" rel="me">
+		Rajath Ramakrishna</a>
+	<a rel="author">Rajath Ramakrishna</a>
+	<a class="p-nickname" rel="me">Rajath</a>
+	<a class="u-email email metatag" rel="me" href="mailto:r.rajath@pm.me">
+		r.rajath@pm.me
+	</a>
+	<img class="u-photo" src="images/micro-post-photo.png" alt="" />
+</p>
+</body>
+
+</html>

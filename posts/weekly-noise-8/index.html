@@ -20,7 +20,8 @@
   <meta property="og:title" content="Weekly Noise #8 - Database Schema">
   <meta property="og:description" content="As per the design, we created database schemas, tables and other relevant classes:
 Database:
-parking_table to store information about the parking slots. navigation_table to store information about navigation path. fingerprint_table to store information about fingerprints scanned in different cells on the grid. Other classes:">
+parking_table to store information about the parking slots. navigation_table to store information about navigation path. fingerprint_table to store information about fingerprints scanned in different cells on the grid. Other classes:
+Created two activities - one to display the grid and one to scan and save fingerprints. Created entity beans corresponding to the database schemas that were created. Added multiple scans feature wherein you can perform any number of scans you want (using Start and Stop buttons) and the mean RSS value will be considered. To make a grid we tried TableLayout, LinearLayout and GridLayout, but finally ended up using GridView to represent the grid since that is the easiest way to handle parking cells and navigation cells in our project. I changed the color of the selected cell to indicate that the scan has been performed. The only issue is that upon scroll, the colored cells change position; so every time there’s a scroll where the colored cell goes off the screen, a different cell is colored upon scrolling back. Nonetheless, it does not affect the values in the grid, it’s only the colored cell that changes.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -33,7 +34,8 @@ parking_table to store information about the parking slots. navigation_table to 
   <meta name="twitter:title" content="Weekly Noise #8 - Database Schema">
   <meta name="twitter:description" content="As per the design, we created database schemas, tables and other relevant classes:
 Database:
-parking_table to store information about the parking slots. navigation_table to store information about navigation path. fingerprint_table to store information about fingerprints scanned in different cells on the grid. Other classes:">
+parking_table to store information about the parking slots. navigation_table to store information about navigation path. fingerprint_table to store information about fingerprints scanned in different cells on the grid. Other classes:
+Created two activities - one to display the grid and one to scan and save fingerprints. Created entity beans corresponding to the database schemas that were created. Added multiple scans feature wherein you can perform any number of scans you want (using Start and Stop buttons) and the mean RSS value will be considered. To make a grid we tried TableLayout, LinearLayout and GridLayout, but finally ended up using GridView to represent the grid since that is the easiest way to handle parking cells and navigation cells in our project. I changed the color of the selected cell to indicate that the scan has been performed. The only issue is that upon scroll, the colored cells change position; so every time there’s a scroll where the colored cell goes off the screen, a different cell is colored upon scrolling back. Nonetheless, it does not affect the values in the grid, it’s only the colored cell that changes.">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
