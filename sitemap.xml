@@ -3,13 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/posts/add-modeline-indicators-to-prodigy-in-emacs/</loc>
-    <lastmod>2026-01-15T15:08:54-08:00</lastmod>
+    <lastmod>2026-01-15T21:02:23-08:00</lastmod>
+  </url><url>
+    <loc>/tags/emacs/</loc>
+    <lastmod>2026-01-15T21:02:23-08:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2026-01-15T15:08:54-08:00</lastmod>
+    <lastmod>2026-01-15T21:02:23-08:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2026-01-15T15:08:54-08:00</lastmod>
+    <lastmod>2026-01-15T21:02:23-08:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2026-01-15T21:02:23-08:00</lastmod>
   </url><url>
     <loc>/posts/a-better-back-to-indentation-in-emacs/</loc>
     <lastmod>2026-01-15T09:22:03-08:00</lastmod>
@@ -42,9 +48,6 @@
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
     <loc>/tags/rant/</loc>
-    <lastmod>2024-11-13T22:52:05-08:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
     <loc>/posts/the-pointlessness-of-the-mac-dockbar/</loc>
@@ -114,9 +117,6 @@
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
     <loc>/micro/untools-tools-for-better-thinking/</loc>
-    <lastmod>2024-11-13T22:52:05-08:00</lastmod>
-  </url><url>
-    <loc>/tags/emacs/</loc>
     <lastmod>2024-11-13T22:52:05-08:00</lastmod>
   </url><url>
     <loc>/tags/orgmode/</loc>
