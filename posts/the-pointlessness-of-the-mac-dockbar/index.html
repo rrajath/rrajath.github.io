@@ -84,75 +84,130 @@ A fresh install of MacOS (or OSX back in the day) comes with a persistent dockba
 	  <script src="/pagefind/pagefind-ui.js" type="text/javascript"></script>
       
       <style>
-         
-        :root {
-            --pagefind-ui-text: #eeeeee;
-            --pagefind-ui-background: #111111; 
-            --pagefind-ui-border: #333333;
-        }
-        
-         
-        .pagefind-ui__search-input {
-            background-color: transparent !important;
-            border: 0 !important;
-            border-bottom: 2px solid #ff7979 !important;
-            border-radius: 0 !important;
-            padding-left: 2.5rem !important;
-            color: white !important;
-            font-size: 1rem;
-        }
-        
-         
-        .pagefind-ui__search-input:focus {
-            outline: none !important;
-            box-shadow: none !important;
-            border-bottom: 2px solid #984848 !important;  
-        }
-        
-        .pagefind-ui__search-clear {
-            background-color: transparent !important;
-        }
-        
-         
-        .nav { width: 100%; display: block; }
-        .nav .flat { display: flex; align-items: center; width: 100%; margin: 0; padding: 0; }
-        .nav .flat li { margin-right: 15px; list-style: none; }
-        
-         
-        li.search-wrap {
-            margin-left: auto !important; 
-            display: flex;
-            align-items: center;
-            position: relative;  
-        }
-        
-         
-        #search {
-            width: 200px;
-            margin-top: -4px;
-        }
-        
-         
-        .pagefind-ui__drawer {
-            position: absolute !important;
-            left: auto !important;
-            right: 0 !important;  
-            top: 100% !important;  
-                            
-             
-            width: 85vw !important;  
-            max-width: 600px !important;  
-                            
-            z-index: 9999 !important;  
-                            
-             
-            background-color: #000000 !important;  
-            border: 1px solid #333 !important;
-            box-shadow: 0 10px 20px rgba(0,0,0, 0.9) !important;
-            padding: 10px !important;
-            border-radius: 4px !important;
-        }
+           
+          :root {
+              --pagefind-ui-text: #eeeeee;
+              --pagefind-ui-background: #111111; 
+              --pagefind-ui-border: #333333;
+          }
+      
+           
+          .pagefind-ui__search-input {
+              background-color: transparent !important;
+              border: 0 !important;
+              border-bottom: 2px solid #FF7979 !important;
+              border-radius: 0 !important;
+              padding-left: 2.5rem !important;
+              color: inherit !important;
+              font-size: 1rem;
+          }
+          
+          .pagefind-ui__search-input:focus {
+              outline: none !important;
+              box-shadow: none !important;
+              border-bottom: 2px solid #984848 !important;
+          }
+      
+          .pagefind-ui__search-clear {
+              background-color: transparent !important;
+          }
+      
+           
+          .nav { width: 100%; }
+          
+          .nav .flat { 
+              display: flex; 
+              align-items: center; 
+              width: 100%; 
+              margin: 0; padding: 0;
+              flex-wrap: wrap; 
+          }
+          
+          .nav .flat li { 
+              margin-right: 15px; 
+              list-style: none;
+              flex-shrink: 0; 
+          }
+          
+          .nav .flat li a { white-space: nowrap; }
+      
+           
+          li.search-wrap {
+              margin-left: auto !important; 
+              display: flex;
+              align-items: center;
+               
+              position: static !important; 
+              flex-shrink: 0;
+          }
+      
+          #search {
+              width: 200px;
+              margin-top: -4px;
+              position: relative; 
+          }
+      
+           
+          .pagefind-ui__drawer {
+              position: absolute !important;
+              top: 80px !important;  
+              
+               
+              right: 1vw !important; 
+              left: auto !important; 
+              
+               
+              width: 90vw !important; 
+              max-width: 600px !important;  
+              
+              z-index: 9999 !important; 
+              background-color: #000000 !important; 
+              border: 1px solid #333 !important;
+              box-shadow: 0 10px 30px rgba(0,0,0, 1) !important;
+              padding: 15px !important; 
+              border-radius: 8px !important;
+              box-sizing: border-box !important;
+          }
+      
+           
+          .pagefind-ui__result-tag {
+              color: #ffffff !important;            
+              background-color: #222222 !important;  
+              border: 1px solid #444444 !important;  
+          }
+          
+          .pagefind-ui__result {
+              border-bottom: 1px solid #333 !important;
+          }
+      
+           
+          @media screen and (max-width: 600px) {
+              .nav .flat { justify-content: flex-start; }
+      
+              li.search-wrap {
+                  margin-left: 0 !important; 
+                  width: 100%; 
+                  margin-top: 15px; 
+                   
+                  position: relative !important; 
+              }
+      
+              #search { width: 100%; }
+              
+              .pagefind-ui__drawer {
+                  top: 100% !important; 
+                  right: 0 !important;
+                  left: 0 !important;
+                  width: 100% !important; 
+                  max-width: none !important;
+                  border: none !important;
+                  border-top: 1px solid #333 !important;
+                  border-radius: 0 !important;
+                  box-shadow: none !important;
+              }
+          }
       </style>
+
 	  
 	  <li class="search-wrap">
 		<div id="search"></div>

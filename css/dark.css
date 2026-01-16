@@ -76,3 +76,30 @@ code {
 		display: inline-block;
 		color: darkseagreen;
 }
+
+/* Pagefind Dark Mode Overrides */
+:root {
+    --pagefind-ui-text: #eeeeee;
+    --pagefind-ui-background: #111111; 
+    --pagefind-ui-border: #333333;
+}
+
+/* Force white text in search input when dark mode is active */
+.pagefind-ui__search-input {
+    color: #ffffff !important; 
+}
+
+/* Dark background for the results drawer */
+.pagefind-ui__drawer {
+    background-color: #000000 !important;
+    color: #eeeeee !important;
+    border: 1px solid #333 !important;
+    box-shadow: 0 10px 30px rgba(0,0,0, 1) !important;
+}
+
+/* Dark tags */
+.pagefind-ui__result-tag {
+    color: #ffffff !important;
+    background-color: #222222 !important;
+    border: 1px solid #444444 !important;
+}
