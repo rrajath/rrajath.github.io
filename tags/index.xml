@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 15 Jan 2026 15:04:00 -0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jan 2026 12:16:10 -0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Defaults</title>
+      <link>/tags/defaults/</link>
+      <pubDate>Thu, 22 Jan 2026 12:16:10 -0800</pubDate>
+      
+      <guid>/tags/defaults/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Emacs</title>
       <link>/tags/emacs/</link>

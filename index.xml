@@ -7,7 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 15 Jan 2026 21:44:52 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jan 2026 12:16:10 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>App Defaults - 2025 Edition</title>
+      <link>/posts/app-defaults-2025/</link>
+      <pubDate>Thu, 22 Jan 2026 12:16:10 -0800</pubDate>
+      
+      <guid>/posts/app-defaults-2025/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been seeing quite a lot of &lt;code&gt;/defaults&lt;/code&gt; posts where people post their defaults. The first post I found was from &lt;a href=&#34;https://www.neilmacy.co.uk/blog/app-defaults-2025&#34;&gt;Neil Macy&amp;rsquo;s blog&lt;/a&gt;. Most of the blog posts reference the podcast episode &lt;a href=&#34;https://listen.hemisphericviews.com/097&#34;&gt;Hemispheric Views 097 - Duel of the Defaults!&lt;/a&gt;, so I listened to the episode. Now, I have my own app defaults list and this one&amp;rsquo;s what I was using in 2025.&lt;/p&gt;
+&lt;p&gt;(You can find other people’s defaults &lt;a href=&#34;https://defaults.rknight.me/&#34;&gt;here&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;📬 Mail Client: web on desktop, &lt;a href=&#34;https://play.google.com/store/apps/details?id=ch.protonmail.android&#34;&gt;ProtonMail on Android&lt;/a&gt;&lt;br&gt;
+📮 Mail Server: &lt;a href=&#34;https://proton.me/mail&#34;&gt;Protonmail&lt;/a&gt;&lt;br&gt;
+🗒️ Notes: &lt;a href=&#34;https://github.com/d12frosted/homebrew-emacs-plus&#34;&gt;Emacs&lt;/a&gt;&lt;br&gt;
+✅ To-Do: &lt;a href=&#34;https://www.todoist.com/&#34;&gt;Todoist&lt;/a&gt;&lt;br&gt;
+📷 Phone Photo Shooting: Default Camera app on Pixel&lt;br&gt;
+🌅 Photo Management: &lt;a href=&#34;https://immich.app/&#34;&gt;Immich&lt;/a&gt;&lt;br&gt;
+📆 Calendar: &lt;a href=&#34;https://calendar.google.com/&#34;&gt;Google Calendar&lt;/a&gt;&lt;br&gt;
+📦 Cloud File Storage: &lt;a href=&#34;https://www.synology.com/en-us/products/DS224+&#34;&gt;Synology NAS DS224+&lt;/a&gt; in my basement&lt;br&gt;
+📖 RSS: &lt;a href=&#34;https://f-droid.org/en/packages/me.ash.reader/&#34;&gt;Read You&lt;/a&gt;&lt;br&gt;
+👥 Contacts: &lt;a href=&#34;https://contacts.google.com&#34;&gt;Google Contacts&lt;/a&gt;&lt;br&gt;
+🌐 Browser: &lt;a href=&#34;https://zen-browser.app&#34;&gt;Zen Browser&lt;/a&gt; (macOS) / &lt;a href=&#34;https://play.google.com/store/apps/details?id=org.mozilla.firefox&#34;&gt;Firefox&lt;/a&gt; (Android)&lt;br&gt;
+🕵🏻 Search: &lt;a href=&#34;https://kagi.com&#34;&gt;Kagi&lt;/a&gt;&lt;br&gt;
+💬 Chat: &lt;a href=&#34;https://whatsapp.com&#34;&gt;WhatsApp&lt;/a&gt;, &lt;a href=&#34;https://signal.org&#34;&gt;Signal&lt;/a&gt;, &lt;a href=&#34;https://messages.google.com&#34;&gt;Android Messages&lt;/a&gt;&lt;br&gt;
+🔖 Bookmarks: &lt;a href=&#34;https://raindrop.io&#34;&gt;Raindrop&lt;/a&gt;&lt;br&gt;
+📑 Read Later: Signal Note to Self&lt;br&gt;
+📝 Word Processing: n/a&lt;br&gt;
+📈 Spreadsheets: n/a&lt;br&gt;
+📊 Presentations: n/a&lt;br&gt;
+🛒 Shopping Lists: &lt;a href=&#34;https://www.todoist.com/&#34;&gt;Todoist&lt;/a&gt;&lt;br&gt;
+🥘 Meal Planning: n/a&lt;br&gt;
+💸 Budgeting &amp;amp; Personal Finance: n/a&lt;br&gt;
+🗞️ News: Mastodon, &lt;a href=&#34;https://tildes.net/&#34;&gt;Tildes&lt;/a&gt;, &lt;a href=&#34;https://lobste.rs/&#34;&gt;Lobsters&lt;/a&gt;, &lt;a href=&#34;https://news.ycombinator.com&#34;&gt;HackerNews&lt;/a&gt;, &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.kagi.news&#34;&gt;Kagi News&lt;/a&gt;&lt;br&gt;
+🎹 Music: &lt;a href=&#34;https://spotify.com&#34;&gt;Spotify&lt;/a&gt; for songs and albums, &lt;a href=&#34;https://soundcloud.com&#34;&gt;Soundcloud&lt;/a&gt; for DJ mixes&lt;br&gt;
+🎙️ Podcasts: &lt;a href=&#34;https://play.google.com/store/apps/details?id=au.com.shiftyjelly.pocketcasts&#34;&gt;Pocket Casts&lt;/a&gt;&lt;br&gt;
+🔑 Password Management: &lt;a href=&#34;https://bitwarden.com&#34;&gt;Bitwarden&lt;/a&gt;&lt;br&gt;
+🔐 VPN: &lt;a href=&#34;https://protonvpn.com/&#34;&gt;ProtonVPN&lt;/a&gt;&lt;br&gt;
+🎨 Photo Editing: &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.adobe.lrmobile&#34;&gt;Lightroom&lt;/a&gt;&lt;br&gt;
+🏡 Blog Hosting: &lt;a href=&#34;https://docs.github.com/en/pages&#34;&gt;Github Pages&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Now Archive</title>
       <link>/now-archive/</link>
