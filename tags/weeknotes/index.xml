@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Weeknotes on Rajath Ramakrishna</title>
+    <link>/tags/weeknotes/</link>
+    <description>Recent content in Weeknotes on Rajath Ramakrishna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Tue, 27 Jan 2026 08:05:17 -0800</lastBuildDate><atom:link href="/tags/weeknotes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week Notes - 26-04</title>
+      <link>/posts/week-notes-26-04/</link>
+      <pubDate>Tue, 27 Jan 2026 08:05:17 -0800</pubDate>
+      
+      <guid>/posts/week-notes-26-04/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s everything I did last week&lt;/p&gt;
+&lt;h2 id=&#34;fediverse-stuff&#34;&gt;Fediverse stuff&lt;/h2&gt;
+&lt;p&gt;I stumbled upon &lt;a href=&#34;https://home.omg.lol/&#34;&gt;omg.lol&lt;/a&gt; and found it really interesting. After a few minutes of checking out the services that were offered, I joined and created a &lt;a href=&#34;https://rrajath.omg.lol/&#34;&gt;profile page&lt;/a&gt;, a &lt;a href=&#34;https://rrajath.omg.lol/now&#34;&gt;now page&lt;/a&gt; and a &lt;a href=&#34;https://rrajath.weblog.lol/&#34;&gt;weblog&lt;/a&gt;. I also joined &lt;a href=&#34;https://social.lol/home&#34;&gt;social.lol&lt;/a&gt; and it has some of the nicest people there. I&amp;rsquo;m really digging this whole ecosystem.&lt;/p&gt;
+&lt;h2 id=&#34;domain-registrar-switch&#34;&gt;Domain registrar switch&lt;/h2&gt;
+&lt;p&gt;Realized I was paying a little too much for my domain at &lt;a href=&#34;https://www.namecheap.com/&#34;&gt;Namecheap&lt;/a&gt;. And they kept increasing their prices. Found out about &lt;a href=&#34;https://porkbun.com/&#34;&gt;porkbun&lt;/a&gt; and saw some good reviews by the fine folks at social.lol and ended up switching. The whole migration took about 15 minutes and it was really smooth.&lt;/p&gt;
+&lt;h2 id=&#34;blog-posts-i-wrote&#34;&gt;Blog posts I wrote&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://rrajath.com/posts/app-defaults-2025/&#34;&gt;App Defaults - 2025 Edition&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+&lt;p&gt;Made an enhancement to &lt;a href=&#34;https://rrajath.com/&#34;&gt;my blog&lt;/a&gt; hosted on GitHub pages. The search box was huge and had a white background. It was looking ugly when the blog had a dark theme. With the help of LLM, I updated the CSS so that the search box blends with the blog theme and it now looks much nicer.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
