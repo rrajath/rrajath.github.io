@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 22 Jan 2026 12:16:10 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Jan 2026 22:54:00 -0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>org-retro-journal: an emacs package for looking back through your journal</title>
+      <link>/posts/org-retro-journal/</link>
+      <pubDate>Mon, 26 Jan 2026 22:54:00 -0800</pubDate>
+      
+      <guid>/posts/org-retro-journal/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been journaling in org-mode since 2020. It&amp;rsquo;s a simple &lt;code&gt;journal.org&lt;/code&gt; file in &lt;code&gt;datetree&lt;/code&gt; format, where I add entries each day. One thing I never did is to go back and read what I had written. I really like the Memories feature in Google Photos where it shows what I was doing that day or around that day a year ago, 2 years ago, 3 years ago and so on. And I wanted a similar feature for my journal.&lt;/p&gt;
+&lt;p&gt;So, with some assistance from the LLM, I vibecoded an emacs package called &lt;a href=&#34;https://github.com/rrajath/org-retro-journal&#34;&gt;org-retro-journal&lt;/a&gt; that does exactly this. The package scans each year to find entries from the same or nearest date in previous years. It then presents these in an ephemeral buffer. I even added a few keyboard shortcuts that enable the user to go backward and forward through time one day at a time. Or the user can pick a specific date and view past entries for each year around that date. I wanted the level of detail to be just the headings so that I could go into any of them to read more. Plus, these org subtrees are &lt;em&gt;copied&lt;/em&gt; to the ephemeral buffer, so any accidental edits won&amp;rsquo;t affect the original file.&lt;/p&gt;
+&lt;h2 id=&#34;screenshot&#34;&gt;Screenshot&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s what it looks like in action:
+&lt;img src=&#34;/images/OrgRetroJournal.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is invoked by calling the function &lt;code&gt;org-retro-journal-review&lt;/code&gt;, which can be bound to any key.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This was a fun exercise. As mentioned earlier in this post, I co-developed it with LLM assistance. I&amp;rsquo;m not super proficient in Emacs Lisp to the point where I can write complex functions. Given enough time, I would have figured it out, but due to lack of time and LLMs being pretty good at writing code, I chose to use an LLM to assist me with this. The whole process took less than half an hour.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>App Defaults - 2025 Edition</title>
       <link>/posts/app-defaults-2025/</link>
